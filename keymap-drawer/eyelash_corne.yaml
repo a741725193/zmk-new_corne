@@ -200,44 +200,44 @@ layers:
   - Q
   - W
   - E
+  - R
+  - T
+  - {t: '$$mdi:transfer$$', type: trans}
   - Y
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
+  - U
+  - I
+  - O
+  - P
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
+  - F
+  - G
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - PLAY PAUSE
+  - V
+  - B
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-caps$$
   - $$mdi:keyboard-space$$
@@ -246,5 +246,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [2, 14, 16]
-  k: {t: Gaming, h: toggle}
-  l: [QWERTY, Gaming]
+  k: {t: QWERTY, h: toggle}
+  l: [QWERTY]
