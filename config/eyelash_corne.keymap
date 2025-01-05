@@ -52,9 +52,9 @@
         compatible = "zmk,combos";
 
         gaming {
-            bindings = <&tog 4>;
+            bindings = <&tog 0>;
             key-positions = <2 14 16>;
-            layers = <0 4>;
+            layers = <0>;
             require-prior-idle-ms = <101>;
         };
     };
@@ -110,12 +110,12 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_5 {
+        gaming {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp Y     &trans                                 &trans          &kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
-&kp LSHFT  &kp A  &kp S  &kp D     &kp N1    &kp N2                         &trans  &trans  &trans  &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp N3    &kp N4     &kp C_PLAY_PAUSE            &trans          &trans     &trans  &trans  &trans   &trans   &trans
-                         &kp LALT  &kp CAPS  &kp SPACE                                              &kp ENTER  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T                        &trans          &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp LSHFT  &kp A  &kp S  &kp D     &kp F     &kp G                &trans  &trans  &trans  &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V     &kp B      &trans            &trans          &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LALT  &kp CAPS  &kp SPACE                                    &kp ENTER  &trans  &trans
             >;
 
             label = "Gaming";
