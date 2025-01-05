@@ -48,7 +48,14 @@
         tap-ms = <30>;
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        gaming {
+            bindings = <&tog 4>;
+            key-positions = <1 13 14 15>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -99,6 +106,18 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_5 {
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E     &kp Y     &trans                                 &trans          &kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
+&kp LSHFT  &kp A  &kp S  &kp D     &kp N1    &kp N2                         &trans  &trans  &trans  &kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp N3    &kp N4     &kp C_PLAY_PAUSE            &trans          &trans     &trans  &trans  &trans   &trans   &trans
+                         &kp LALT  &kp CAPS  &kp SPACE                                              &kp ENTER  &trans  &trans
+            >;
+
+            label = "Gaming";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>;
         };
     };
 };
