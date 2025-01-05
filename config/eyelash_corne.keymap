@@ -55,6 +55,7 @@
             bindings = <&tog 4>;
             key-positions = <2 14 16>;
             layers = <0>;
+            require-prior-idle-ms = <101>;
         };
     };
 
