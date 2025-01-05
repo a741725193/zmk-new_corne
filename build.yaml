@@ -14,3 +14,5 @@ include:
   - board: eyelash_corne_left
     shield: settings_reset
     #snippet: zmk-usb-logging
+  - board: nice_nano_v2
+    shield: settings_reset
