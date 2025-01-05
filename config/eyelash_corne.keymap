@@ -52,8 +52,8 @@
         compatible = "zmk,combos";
 
         gaming {
-            bindings = <&to 4>;
-            key-positions = <0 28 12 41>;
+            bindings = <&tog 4>;
+            key-positions = <2 14 16>;
             layers = <0>;
         };
     };
