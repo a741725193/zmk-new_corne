@@ -247,4 +247,4 @@ layers:
 combos:
 - p: [2, 14, 16]
   k: {t: Gaming, h: toggle}
-  l: [QWERTY]
+  l: [QWERTY, Gaming]

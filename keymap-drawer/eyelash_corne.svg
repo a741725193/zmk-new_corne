@@ -1580,6 +1580,14 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
+<g class="combo combopos-0">
+<path d="M140,74 l-40,21" class="combo"/>
+<path d="M140,74 l38,6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="61" width="28" height="26" class="combo"/>
+<a href="#Gaming">
+<text x="140" y="74" class="combo tap layer-activator">Gaming</text>
+</a><text x="140" y="85" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 </svg>
