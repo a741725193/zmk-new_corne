@@ -245,6 +245,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [0, 28, 12, 41]
+- p: [2, 14, 16]
   k: {t: Gaming, h: toggle}
   l: [QWERTY]
