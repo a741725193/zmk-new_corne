@@ -53,7 +53,8 @@
 
         gaming {
             bindings = <&tog 4>;
-            key-positions = <1 13 14 15>;
+            key-positions = <0 28 12 41>;
+            layers = <0>;
         };
     };
 
