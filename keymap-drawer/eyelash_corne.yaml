@@ -230,7 +230,7 @@ layers:
   - C
   - V
   - B
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
   - N
   - M
@@ -246,5 +246,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [2, 14, 16]
-  k: {t: QWERTY, h: toggle}
-  l: [QWERTY]
+  k: {t: Gaming, h: toggle}
+  l: [QWERTY, Gaming]
