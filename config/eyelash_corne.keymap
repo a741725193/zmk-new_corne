@@ -52,9 +52,9 @@
         compatible = "zmk,combos";
 
         gaming {
-            bindings = <&tog 0>;
+            bindings = <&tog 4>;
             key-positions = <2 14 16>;
-            layers = <0>;
+            layers = <0 4>;
             require-prior-idle-ms = <101>;
         };
     };
@@ -112,10 +112,10 @@
 
         gaming {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T                        &trans          &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BSPC
-&kp LSHFT  &kp A  &kp S  &kp D     &kp F     &kp G                &trans  &trans  &trans  &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V     &kp B      &trans            &trans          &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LALT  &kp CAPS  &kp SPACE                                    &kp ENTER  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T                                  &trans          &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp LSHFT  &kp A  &kp S  &kp D     &kp F     &kp G                          &trans  &trans  &trans  &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V     &kp B      &kp K_PLAY_PAUSE            &trans          &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LALT  &kp CAPS  &kp SPACE                                              &kp ENTER  &trans  &trans
             >;
 
             label = "Gaming";
