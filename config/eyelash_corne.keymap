@@ -32,6 +32,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        knob: knob {
+            compatible = "zmk,behavior-tap-dance";
+            label = "KNOB";
+            #binding-cells = <0>;
+            bindings = <&kp K_PLAY_PAUSE>, <&kp K_NEXT>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -65,10 +72,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                                      &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp C_PLAY_PAUSE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                                      &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                           &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A  &kp S  &kp D     &kp F  &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &knob              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &mo 1  &lt 3 SPACE                                           &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -112,14 +119,23 @@
 
         gaming {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T                                  &trans          &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BSPC
-&kp LSHFT  &kp A  &kp S  &kp D     &kp F     &kp G                          &trans  &trans  &trans  &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V     &kp B      &kp K_PLAY_PAUSE            &trans          &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LALT  &kp CAPS  &kp SPACE                                              &kp ENTER  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R     &kp T                       &trans          &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp LSHFT  &kp A  &kp S  &kp D     &kp F     &kp G               &trans  &trans  &trans  &kp H      &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V     &kp B      &knob            &trans          &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LALT  &kp CAPS  &kp SPACE                                   &kp ENTER  &trans  &trans
             >;
 
             label = "Gaming";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>;
+        };
+
+        layer_5 {
+            bindings = <
+&kp TAB    &kp N1      &kp N2      &kp N3      &kp N4  &kp N5                   &trans          &kp N6     &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC
+&kp LSHFT  &trans      &trans      &trans      &trans  &trans           &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &kp SQT
+&kp LCTRL  &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans  &trans  &knob            &trans          &trans     &trans  &trans  &trans  &trans  &kp ESC
+                                   &trans      &trans  &trans                                   &kp ENTER  &trans  &trans
+            >;
         };
     };
 };
