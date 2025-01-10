@@ -75,7 +75,7 @@
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                           &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &td0       &kp A  &kp S  &kp D     &kp F  &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &knob              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                           &lt 3 ENTER  &mo 2  &kp RALT
+                         &kp LGUI  &mo 5  &lt 3 SPACE                                           &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -136,6 +136,8 @@
 &kp LCTRL  &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans  &trans  &knob                    &mmv MOVE_DOWN                   &trans     &trans  &trans  &trans  &trans  &kp ESC
                                    &trans      &trans  &trans                                                            &kp ENTER  &trans  &trans
             >;
+
+            label = "Number";
         };
     };
 };
