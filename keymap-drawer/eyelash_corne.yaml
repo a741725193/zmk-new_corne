@@ -1,6 +1,6 @@
 layers:
   QWERTY:
-  - '&alttab'
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -28,7 +28,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - '&alttab'
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
