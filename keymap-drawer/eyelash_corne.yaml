@@ -28,7 +28,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - '&alttab'
   - Z
   - X
   - C
@@ -77,7 +77,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - HOME
   - PG UP
-  - $$mdi:apple-keyboard-control$$
+  - '&alttab'
   - $$mdi:bluetooth-off$$
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
