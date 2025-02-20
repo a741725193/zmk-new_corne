@@ -38,6 +38,8 @@
             label = "KNOB";
             #binding-cells = <0>;
             bindings = <&kp K_PLAY_PAUSE>, <&kp K_NEXT>;
+
+            tapping-term-ms = <30>;
         };
 
         new_behavior: new_behavior {
