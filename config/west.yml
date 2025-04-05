@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: m165437 
       url-base: https://github.com/M165437 
+    - name: dsifry #new entry
+      url-base: https://github.com/dsifry #new entry
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -15,5 +17,8 @@ manifest:
     - name: nice-view-gem 
       remote: m165437 
       revision: main 
+    - name: nice-view-mod #new entry
+      remote: dsifry #new entry
+      revision: main #new entry
   self:
     path: config
