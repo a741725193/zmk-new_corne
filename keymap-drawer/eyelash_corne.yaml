@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - '&td0'
   - Number
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - SYMBOL
-  - '&td0'
+  - {t: '$$mdi:backspace$$', type: backspace}
   NUMBER:
   - '&alttab'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
