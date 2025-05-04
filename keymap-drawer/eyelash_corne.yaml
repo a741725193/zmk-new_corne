@@ -14,14 +14,14 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - $$mdi:apple-keyboard-option$$
   - A
   - S
   - D
   - F
   - G
   - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - LEFT WIN
   - $$mdi:arrow-right-bold$$
   - H
   - J
@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - SYMBOL
-  - $$mdi:apple-keyboard-option$$
+  - '&td0'
   NUMBER:
   - '&alttab'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
