@@ -86,10 +86,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp E     &kp R  &kp T                           &kp UP                   &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_ALT  &kp A  &kp S  &kp D     &kp F  &kp G                 &kp LEFT  &kp LEFT_WIN  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL     &kp Z  &kp X  &kp C     &kp V  &kp B        &knob              &kp DOWN                 &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                            &kp LGUI  &mo 5  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &td0
+&kp TAB       &kp Q  &kp W  &kp E    &kp R  &kp T                           &kp UP                   &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DELETE
+&kp LEFT_ALT  &kp A  &kp S  &kp D    &kp F  &kp G                 &kp LEFT  &kp LEFT_WIN  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL     &kp Z  &kp X  &kp C    &kp V  &kp B        &knob              &kp DOWN                 &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                            &kp DEL  &mo 5  &lt 3 SPACE                                              &lt 3 ENTER  &mo 2  &td0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -110,10 +110,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&trans  &kp EXCL      &kp AT        &kp HASH        &kp DLLR         &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp DELETE
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK       &mkp RCLK        &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                    &trans          &trans           &kp SPACE                                                             &kp RET    &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>;
@@ -145,14 +145,14 @@
 
         layer_5 {
             bindings = <
-&kp TAB    &kp N1      &kp N2      &kp N3      &kp N4  &kp N5                           &mmv MOVE_UP                     &kp N6     &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC
-&kp LSHFT  &trans      &trans      &trans      &trans  &trans           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans     &trans  &trans  &trans  &trans  &kp SQT
-&kp LCTRL  &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans  &trans  &knob                    &mmv MOVE_DOWN                   &trans     &trans  &trans  &trans  &trans  &kp ESC
-                                   &trans      &trans  &trans                                                            &kp ENTER  &trans  &trans
+&trans  &kp N1      &kp N2      &kp N3      &kp N4  &kp N5                           &mmv MOVE_UP                     &kp N6     &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&trans  &trans      &trans      &trans      &trans  &trans           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans  &trans  &knob                    &mmv MOVE_DOWN                   &trans     &trans  &trans  &trans  &trans  &trans
+                                &trans      &trans  &trans                                                            &kp ENTER  &trans  &trans
             >;
 
             label = "Number";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
