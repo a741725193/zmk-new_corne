@@ -474,8 +474,8 @@ SENSIBLE_LAYER_LIST?
             key-positions = <35 36>;
         };
 
-        ctrl_space {
-            bindings = <&kp LC(SPACE)>;
+        Flow_launcher_v1 {
+            bindings = <&kp LC(LS(LA(LG(SPACE))))>;
             key-positions = <41 17>;
             timeout-ms = <30>;
             require-prior-idle-ms = <30>;
@@ -533,8 +533,8 @@ SENSIBLE_LAYER_LIST?
             key-positions = <14 15>;
         };
 
-        Ctrl_spc2 {
-            bindings = <&kp LC(SPACE)>;
+        Flow_Launcher_v2 {
+            bindings = <&kp LC(LS(LA(LG(SPACE))))>;
             key-positions = <17 16>;
             timeout-ms = <30>;
             require-prior-idle-ms = <30>;
