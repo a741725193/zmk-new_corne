@@ -182,7 +182,7 @@ SENSIBLE_LAYER_LIST?
         macro_mouse_jiggle: mouse_jiggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &mmv MOVE_UP &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT>;
+            bindings = <&to 0 &mmv MOVE_UP &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mmv MOVE_Y(600)>;
             label = "MOUSE_JIGGLE";
         };
     };
