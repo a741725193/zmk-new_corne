@@ -459,7 +459,7 @@ SENSIBLE_LAYER_LIST?
 
         Enter_v2 {
             bindings = <&kp RET>;
-            key-positions = <17 16>;
+            key-positions = <16 15>;
         };
 
         Undo_rh {
@@ -529,6 +529,13 @@ SENSIBLE_LAYER_LIST?
         Esc {
             bindings = <&kp ESC>;
             key-positions = <14 15>;
+        };
+
+        Ctrl_spc2 {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <17 16>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <30>;
         };
     };
 
