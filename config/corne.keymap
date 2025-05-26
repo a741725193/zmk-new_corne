@@ -677,16 +677,16 @@ ZMK_TAP_DANCE(
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
-        EXTEND {
+        LEADER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &to 5   &trans  &to 6   &to 4   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &to 9   &to 4     &trans  &to 5   &to 6   &trans
-                                                  &trans
+&trans  &trans  &trans             &trans  &trans          &trans    &trans  &trans  &trans  &trans          &trans  &trans  &trans
+&trans  &to 5   &kp LC(LA(LS(M)))  &to 6   &smart_num 7 0  &trans    &trans  &trans  &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans             &trans  &trans          &trans    &trans  &trans  &trans  &trans          &trans  &trans  &trans
+                &trans             &trans  &to 9           &to 4     &trans  &to 5   &to 6   &smart_num 7 0
+                                                                     &trans
             >;
 
-            label = "EXTEND";
+            label = "LEADER";
         };
 
         TAP {
