@@ -465,7 +465,7 @@ SENSIBLE_LAYER_LIST?
 
         Enter_v2 {
             bindings = <&kp RET>;
-            key-positions = <16 15>;
+            key-positions = <15 14>;
         };
 
         Undo_rh {
@@ -495,7 +495,7 @@ SENSIBLE_LAYER_LIST?
             key-positions = <23 22>;
         };
 
-        macro_dot_shift {
+        macro_dot_shift_v1 {
             bindings = <&macro_dot_shift>;
             key-positions = <41 16>;
             layers = <0>;
@@ -503,7 +503,7 @@ SENSIBLE_LAYER_LIST?
 
         to_0v2 {
             bindings = <&to 0>;
-            key-positions = <42 41>;
+            key-positions = <42 41 31>;
         };
 
         to_0v1 {
@@ -534,19 +534,19 @@ SENSIBLE_LAYER_LIST?
 
         Esc {
             bindings = <&kp ESC>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
         };
 
         Flow_Launcher_v2 {
             bindings = <&kp LC(LS(LA(LG(SPACE))))>;
-            key-positions = <17 16>;
+            key-positions = <42 44>;
             timeout-ms = <30>;
             require-prior-idle-ms = <30>;
         };
 
         To4 {
             bindings = <&to 4>;
-            key-positions = <42 44>;
+            key-positions = <42 41>;
         };
 
         Home_v1 {
@@ -587,6 +587,17 @@ SENSIBLE_LAYER_LIST?
         End_v2 {
             bindings = <&kp END>;
             key-positions = <24 42>;
+        };
+
+        Macro_dot_shift_v2 {
+            bindings = <&macro_dot_shift>;
+            key-positions = <41 45>;
+            layers = <0>;
+        };
+
+        Leader {
+            bindings = <&to 1>;
+            key-positions = <16 17>;
         };
     };
 
