@@ -679,11 +679,11 @@ ZMK_TAP_DANCE(
 
         LEADER {
             bindings = <
-&trans  &trans  &trans             &trans  &trans          &trans    &trans  &trans  &trans  &trans          &trans  &trans  &trans
-&trans  &to 5   &kp LC(LA(LS(M)))  &to 6   &smart_num 7 0  &trans    &trans  &trans  &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans             &trans  &trans          &trans    &trans  &trans  &trans  &trans          &trans  &trans  &trans
-                &trans             &trans  &to 9           &to 4     &trans  &to 5   &to 6   &smart_num 7 0
-                                                                     &trans
+&trans  &trans  &trans             &trans  &trans          &trans               &trans  &trans  &trans  &trans          &trans  &trans  &trans
+&trans  &to 5   &kp LC(LA(LS(M)))  &to 6   &smart_num 7 0  &trans               &trans  &trans  &trans  &trans          &trans  &trans  &trans
+&trans  &trans  &trans             &trans  &trans          &kp LS(LA(LC(B)))    &trans  &trans  &trans  &trans          &trans  &trans  &trans
+                &trans             &trans  &to 9           &to 4                &trans  &to 5   &to 6   &smart_num 7 0
+                                                                                &trans
             >;
 
             label = "LEADER";
