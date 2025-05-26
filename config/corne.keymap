@@ -99,7 +99,6 @@ SENSIBLE_LAYER_LIST?
 };
 
 &inc_dec_kp {
-    tap-ms = <0>;
     bindings = <&kp>, <&kp>;
 };
 
