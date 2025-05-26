@@ -1,7 +1,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 35    // 10
 
-#include <dt-bindings/zmk/outputs.h>
 #include <behaviors/num_word.dtsi> // Requires auto-layer module.
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -460,15 +459,15 @@ SENSIBLE_LAYER_LIST?
 
         Enter_v2 {
             bindings = <&kp RET>;
-            key-positions = <17 3>;
+            key-positions = <17 16>;
         };
 
-        Undo {
+        Undo_rh {
             bindings = <&kp LC(Z)>;
             key-positions = <35 34>;
         };
 
-        Redo {
+        Redo_rh {
             bindings = <&kp LS(LC(Z))>;
             key-positions = <35 36>;
         };
@@ -492,7 +491,7 @@ SENSIBLE_LAYER_LIST?
 
         macro_dot_shift {
             bindings = <&tap_dot_shift_capsword>;
-            key-positions = <16 41>;
+            key-positions = <41 15>;
             layers = <0>;
         };
 
@@ -513,7 +512,23 @@ SENSIBLE_LAYER_LIST?
 
         Select_all {
             bindings = <&kp LC(A)>;
+            key-positions = <17 14>;
+            layers = <0>;
+        };
+
+        Undo_lh {
+            bindings = <&kp LC(Z)>;
             key-positions = <27 28>;
+        };
+
+        Redo_lh {
+            bindings = <&kp LS(LC(Z))>;
+            key-positions = <26 27>;
+        };
+
+        Esc {
+            bindings = <&kp ESC>;
+            key-positions = <14 15>;
         };
     };
 
