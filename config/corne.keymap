@@ -763,7 +763,7 @@ ZMK_TAP_DANCE(
 
         Rgb {
             bindings = <
-&ext_power EP_TOG  &trans  &trans  &trans  &trans           &rgb_ug RGB_SPI    &rgb_ug RGB_HUI  &rgb_ug RGB_SPD  &trans           &trans  &trans  &trans  &trans
+&trans &trans  &trans  &trans  &trans  &trans           &rgb_ug RGB_SPI    &rgb_ug RGB_HUI  &rgb_ug RGB_SPD  &trans           &trans  &trans  &trans  &trans
 &trans             &trans  &trans  &trans  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR    &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &trans  &trans  &trans  &trans
 &to 0              &trans  &trans  &trans  &trans           &trans             &rgb_ug RGB_SAI  &trans           &trans           &trans  &trans  &trans  &trans
                            &to 0   &trans  &trans           &trans             &rgb_ug RGB_SAD  &trans           &trans           &trans
