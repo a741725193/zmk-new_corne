@@ -184,7 +184,7 @@ SENSIBLE_LAYER_LIST?
         macro_mouse_jiggle: mouse_jiggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &mmv MOVE_UP &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mmv MOVE_Y(600)>;
+            bindings = <&to 0 &mmv MOVE_UP &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT>;
             label = "MOUSE_JIGGLE";
         };
     };
@@ -492,8 +492,8 @@ SENSIBLE_LAYER_LIST?
         };
 
         macro_dot_shift {
-            bindings = <&tap_dot_shift_capsword>;
-            key-positions = <41 15>;
+            bindings = <&macro_dot_shift>;
+            key-positions = <41 16>;
             layers = <0>;
         };
 
@@ -542,7 +542,7 @@ SENSIBLE_LAYER_LIST?
 
         To4 {
             bindings = <&to 4>;
-            key-positions = <17 42>;
+            key-positions = <42 44>;
         };
     };
 
