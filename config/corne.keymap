@@ -549,12 +549,12 @@ SENSIBLE_LAYER_LIST?
             key-positions = <42 44>;
         };
 
-        Home {
+        Home_v1 {
             bindings = <&kp HOME>;
             key-positions = <18 21>;
         };
 
-        End {
+        End_v1 {
             bindings = <&kp END>;
             key-positions = <18 24>;
         };
@@ -577,6 +577,16 @@ SENSIBLE_LAYER_LIST?
         Up_v2 {
             bindings = <&kp UP>;
             key-positions = <23 42>;
+        };
+
+        Home_v2 {
+            bindings = <&kp HOME>;
+            key-positions = <21 42>;
+        };
+
+        End_v2 {
+            bindings = <&kp END>;
+            key-positions = <24 42>;
         };
     };
 
