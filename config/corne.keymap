@@ -620,16 +620,16 @@ ZMK_TAP_DANCE(
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
-        EXTRA {
+        EXTEND {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 5   &trans  &to 6   &to 4   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+                &trans  &trans  &to 9   &to 4     &trans  &to 5   &to 6   &trans
                                                   &trans
             >;
 
-            label = "EXTRA";
+            label = "EXTEND";
         };
 
         TAP {
