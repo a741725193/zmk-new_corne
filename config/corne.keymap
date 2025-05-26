@@ -112,6 +112,8 @@ SENSIBLE_LAYER_LIST?
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
+&soft_off { hold-time-ms = <5000>; };
+
 / {
     macros {
         macro_dot_shift: macro_dot_shift {
