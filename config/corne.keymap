@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/outputs.h>
 
 // Special Aliases
 
@@ -456,7 +456,7 @@ SENSIBLE_LAYER_LIST?
 
         Enter_lh {
             bindings = <&kp RET>;
-            key-positions = <16 17>;
+            key-positions = <17 4>;
             slow-release;
         };
 
@@ -523,7 +523,7 @@ SENSIBLE_LAYER_LIST?
 
         Esc_rh {
             bindings = <&kp ESC>;
-            key-positions = <22 21>;
+            key-positions = <22 23>;
             slow-release;
         };
 
@@ -590,9 +590,15 @@ SENSIBLE_LAYER_LIST?
             key-positions = <4 5>;
         };
 
-        to4_v2 {
-            bindings = <&to 4>;
-            key-positions = <14 15>;
+        Enter_rh {
+            bindings = <&kp RET>;
+            key-positions = <22 21>;
+            slow-release;
+        };
+
+        Flow_launcher_rh {
+            bindings = <&kp LS(LG(LA(LC(SPACE))))>;
+            key-positions = <21 45>;
         };
     };
 
@@ -811,7 +817,7 @@ ZMK_TAP_DANCE(
 
         Rgb {
             bindings = <
-&ext_power EP_TOG  &trans  &trans  &out OUT_TOG            &trans             &rgb_ug RGB_SPI      &rgb_ug RGB_HUI  &rgb_ug RGB_SPD  &trans           &trans  &trans  &trans  &trans
+&ext_power EP_TOG  &trans  &trans  &out OUT_TOG      &trans             &rgb_ug RGB_SPI      &rgb_ug RGB_HUI  &rgb_ug RGB_SPD  &trans           &trans  &trans  &trans  &trans
 &trans             &trans  &trans  &trans            &rgb_ug RGB_BRI    &rgb_ug RGB_EFR      &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &trans  &trans  &trans  &trans
 &to 0              &trans  &trans  &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG    &rgb_ug RGB_SAI  &trans           &trans           &trans  &trans  &trans  &trans
                            &to 0   &trans            &trans             &trans               &rgb_ug RGB_SAD  &trans           &trans           &trans
