@@ -5,7 +5,6 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "zmk-helpers/helper.h"
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
@@ -672,7 +671,7 @@ ZMK_TAP_DANCE(
 &ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LS(F10) R        &kp T                  &kp UP_ARROW    &as PAGE_UP Y           &kp U             &kp I              &kp O                    &kp P        &as RC(MINUS) MINUS
 &mod_to0_mouse_jiggle 0 ESCAPE  &ltq 4 A       &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LEFT_GUI G        &kp DOWN_ARROW  &as PAGE_DOWN H         &hmr RCTRL J      &hmr LEFT_SHIFT K  &hmr RIGHT_ALT L         &ltq 5 SEMI  &tap_quote_to_nav_mouse
 &ltq 3 LA(TAB)                  &kp Z          &kp X            &kp C              &as LC(LA(LS(V))) V  &as LS(LA(LC(V))) B    &kp LEFT        &kp N                   &kp M             &kp COMMA          &tap_dot_shift_capsword  &kp FSLH     &as RC(EQUAL) EQUAL
-                                               &ltq 6 C_MUTE    &ltq 9 ESC         &ltq 10 SPACE        &ltq 4 TAB             &kp RIGHT       &tap_key_repeat_lt 5 5  &ltq 6 BACKSPACE  &smart_num 7 7
+                                               &ltq 6 C_MUTE    &ltq 9 LA(TAB)     &ltq 10 SPACE        &ltq 4 TAB             &kp RIGHT       &tap_key_repeat_lt 5 5  &ltq 6 BACKSPACE  &smart_num 7 7
                                                                                                                                &to 5
             >;
 
@@ -819,11 +818,11 @@ ZMK_TAP_DANCE(
 
         Rgb {
             bindings = <
-&ext_power EP_TOG  &trans  &trans  &trans  &trans           &rgb_ug RGB_SPI    &rgb_ug RGB_HUI  &rgb_ug RGB_SPD  &trans           &trans  &trans  &trans  &trans
-&trans             &trans  &trans  &trans  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR    &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &trans  &trans  &trans  &trans
-&to 0              &trans  &trans  &trans  &trans           &trans             &rgb_ug RGB_SAI  &trans           &trans           &trans  &trans  &trans  &trans
-                           &to 0   &trans  &trans           &trans             &rgb_ug RGB_SAD  &trans           &trans           &trans
-                                                                               &rgb_ug RGB_TOG
+&ext_power EP_TOG  &trans  &trans  &trans            &trans             &rgb_ug RGB_SPI      &rgb_ug RGB_HUI  &rgb_ug RGB_SPD  &trans           &trans  &trans  &trans  &trans
+&trans             &trans  &trans  &trans            &rgb_ug RGB_BRI    &rgb_ug RGB_EFR      &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &trans  &trans  &trans  &trans
+&to 0              &trans  &trans  &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG    &rgb_ug RGB_SAI  &trans           &trans           &trans  &trans  &trans  &trans
+                           &to 0   &trans            &trans             &trans               &rgb_ug RGB_SAD  &trans           &trans           &trans
+                                                                                             &rgb_ug RGB_TOG
             >;
 
             label = "Rgb";
