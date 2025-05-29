@@ -490,8 +490,8 @@ SENSIBLE_LAYER_LIST?
             key-positions = <24 23>;
         };
 
-        f21 {
-            bindings = <&kp F21>;
+        Flow_launcher_v3 {
+            bindings = <&kp RS(RA(RC(RG(SPACE))))>;
             key-positions = <23 22>;
         };
 
@@ -506,7 +506,7 @@ SENSIBLE_LAYER_LIST?
             key-positions = <18 17>;
         };
 
-        to_ov3 {
+        to_0v3 {
             bindings = <&to 0>;
             key-positions = <44 45>;
         };
