@@ -6,8 +6,6 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "zmk-helpers/helper.h"
 
-// #include <dt-bindings/zmk/ext_power.h>
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
