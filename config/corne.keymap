@@ -495,6 +495,7 @@ SENSIBLE_LAYER_LIST?
         Flow_launcher_v3 {
             bindings = <&kp RS(RA(RC(RG(SPACE))))>;
             key-positions = <23 22>;
+            slow-release;
         };
 
         macro_dot_shift_v1 {
@@ -517,6 +518,7 @@ SENSIBLE_LAYER_LIST?
             bindings = <&kp LC(A)>;
             key-positions = <17 14>;
             layers = <0>;
+            slow-release;
         };
 
         Undo_lh {
@@ -532,6 +534,7 @@ SENSIBLE_LAYER_LIST?
         Esc_rh {
             bindings = <&kp ESC>;
             key-positions = <22 21>;
+            slow-release;
         };
 
         Flow_Launcher_v2 {
