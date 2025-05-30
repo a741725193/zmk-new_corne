@@ -86,17 +86,19 @@ SENSIBLE_LAYER_LIST?
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
+    acceleration-exponent = <0>;      // 0
+    time-to-max-speed-ms = <0>;       // 300
+    delay-ms = <0>;                   // 0
+};
+
+&mmv {
     time-to-max-speed-ms = <300>;
     acceleration-exponent = <1>;
 };
 
-&mmv {
-};
-
 &inc_dec_kp {
+    tap-ms = <0>;
     bindings = <&kp>, <&kp>;
-
-    tap-ms = <30>;
 };
 
 &sk { quick-release; };
@@ -105,13 +107,12 @@ SENSIBLE_LAYER_LIST?
     ignore-modifiers;          // allow chording sticky mods & layers
 };
 
+
 &lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
 };
-
-// &soft_off { hold-time-ms = <5000>; };
 
 / {
     macros {
