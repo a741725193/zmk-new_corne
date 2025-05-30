@@ -483,7 +483,7 @@ SENSIBLE_LAYER_LIST?
 
         Enter_lh {
             bindings = <&kp RET>;
-            key-positions = <17 4>;
+            key-positions = <4 17>;
             slow-release;
         };
 
