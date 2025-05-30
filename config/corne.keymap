@@ -86,6 +86,8 @@ SENSIBLE_LAYER_LIST?
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <1>;
 };
 
 &mmv {
@@ -93,6 +95,8 @@ SENSIBLE_LAYER_LIST?
 
 &inc_dec_kp {
     bindings = <&kp>, <&kp>;
+
+    tap-ms = <30>;
 };
 
 &sk { quick-release; };
@@ -397,15 +401,15 @@ SENSIBLE_LAYER_LIST?
             bindings = <&kp DOT>, <&macro_dot_shift>, <&caps_word>;
         };
 
-        tap_key_repeat_lt: tap_key_repeat_lt {
+        tap_key_repeat_ltq: tap_key_repeat_ltq {
             compatible = "zmk,behavior-hold-tap";
-            label = "TAP_KEY_REPEAT_LT";
+            label = "TAP_KEY_REPEAT_LTQ";
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             quick-tap-ms = <150>;
             flavor = "balanced";
             require-prior-idle-ms = <50>;
-            bindings = <&lt>, <&key_repeat>;
+            bindings = <&ltq>, <&key_repeat>;
         };
 
         mod_to: mod_to {
