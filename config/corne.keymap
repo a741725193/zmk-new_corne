@@ -535,7 +535,7 @@ SENSIBLE_LAYER_LIST?
 
         Esc_rh {
             bindings = <&kp ESC>;
-            key-positions = <22 21>;
+            key-positions = <22 23>;
             slow-release;
         };
 
@@ -586,6 +586,12 @@ SENSIBLE_LAYER_LIST?
         Flow_launcher_rh {
             bindings = <&kp LS(LG(LA(LC(SPACE))))>;
             key-positions = <21 45>;
+        };
+
+        Enter_rh {
+            bindings = <&kp RET>;
+            key-positions = <21 22>;
+            slow-release;
         };
     };
 
