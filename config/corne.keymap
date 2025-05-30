@@ -541,7 +541,7 @@ SENSIBLE_LAYER_LIST?
 
         Esc_rh {
             bindings = <&kp ESC>;
-            key-positions = <22 23>;
+            key-positions = <22 21>;
             slow-release;
         };
 
@@ -583,9 +583,9 @@ SENSIBLE_LAYER_LIST?
             layers = <0>;
         };
 
-        Enter_rh {
+        Enter_lh {
             bindings = <&kp RET>;
-            key-positions = <22 21>;
+            key-positions = <17 16>;
             slow-release;
         };
 
