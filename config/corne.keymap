@@ -488,12 +488,6 @@ SENSIBLE_LAYER_LIST?
             key-positions = <29 30>;
         };
 
-        Enter_lh {
-            bindings = <&kp RET>;
-            key-positions = <4 17>;
-            slow-release;
-        };
-
         Undo_rh {
             bindings = <&kp LC(Z)>;
             key-positions = <35 34>;
@@ -725,7 +719,7 @@ ZMK_TAP_DANCE(
             bindings = <
 &to 0                        &kp LS(F10)     &mmv MOVE_UP    &kp RET          &mkp LCLK            &msc SCRL_UP      &mmv MOVE_Y(-600)  &kp PAGE_UP           &msc SCRL_DOWN       &msc SCRL_DOWN       &msc SCRL_UP        &msc SCRL_LEFT  &trans
 &mod_to0_mouse_jiggle 0 ESC  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &hmr_clk LCTRL RCLK  &msc SCRL_DOWN    &mmv MOVE_Y(600)   &kp PAGE_DOWN         &hmr_clk RCTRL RCLK  &hmr_clk LSHFT LCLK  &hmr_clk RALT MCLK  &to 0           &to 0
-&to 0                        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &macro_to_0_click    &kp LC(N0)        &mmv MOVE_X(-600)  &as LC(END) LC(HOME)  &msc SCRL_LEFT       &msc SCRL_RIGHT      &trans              &trans          &to 0
+&to 0                        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &macro_to_0_click    &as N5 B          &mmv MOVE_X(-600)  &as LC(END) LC(HOME)  &msc SCRL_LEFT       &msc SCRL_RIGHT      &trans              &trans          &to 0
                                              &to 0           &mkp MCLK        &mkp LCLK            &mkp RCLK         &mmv MOVE_X(600)   &mkp LCLK             &mkp RCLK            &macro_mouse_jump
                                                                                                                      &to 0
             >;
