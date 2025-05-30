@@ -736,11 +736,11 @@ ZMK_TAP_DANCE(
 
         SWAP {
             bindings = <
-&bootloader                  &trans                &kp LA(F4)            &trans                  &bt BT_PRV            &bt BT_NXT                        &kp LC(W)        &kp LG(LC(LA(N1)))  &kp LG(LC(LA(N2)))       &kp LG(LC(LA(N3)))              &kp LG(LC(LA(N4)))  &kp LG(LC(LA(N5)))  &bootloader
-&mod_to0_mouse_jiggle 0 ESC  &kp LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))    &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))                    &kp LC(LS(T))    &kp LC(LG(N6))      &kp LC(LG(N7))           &kp LG(LC(N8))                  &kp LC(LG(N9))      &kp LC(LG(N0))      &soft_off
-&bt BT_CLR_ALL               &kp LC(LG(N0))        &kp LC(LG(N9))        &kp LC(LG(N8))          &kp LC(LG(N7))        &as N6 LC(LG(N6))                 &kp LC(LS(TAB))  &bt BT_SEL 0        &bt BT_SEL 1             &bt BT_SEL 2                    &bt BT_SEL 3        &bt BT_SEL 4        &bt BT_CLR_ALL
-                                                   &trans                &kp LS(LA(LC(LG(F9))))  &ltq 10 LA(F4)        &mod_to0_mouse_jiggle 0 LA(F4)    &kp LC(TAB)      &as RG(TAB) C_PREV  &as C_MUTE C_PLAY_PAUSE  &as RS(RA(RC(RG(F11)))) C_NEXT
-                                                                                                                                                         &trans
+&bootloader                  &trans                &kp LA(F4)            &trans                  &bt BT_PRV            &bt BT_NXT                        &kp LC(W)        &kp LG(LC(LA(N1)))  &kp LG(LC(LA(N2)))  &kp LG(LC(LA(N3)))              &kp LG(LC(LA(N4)))  &kp LG(LC(LA(N5)))  &bootloader
+&mod_to0_mouse_jiggle 0 ESC  &kp LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))    &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))                    &kp LC(LS(T))    &kp LC(LG(N6))      &kp LC(LG(N7))      &kp LG(LC(N8))                  &kp LC(LG(N9))      &kp LC(LG(N0))      &soft_off
+&bt BT_CLR_ALL               &kp LC(LG(N0))        &kp LC(LG(N9))        &kp LC(LG(N8))          &kp LC(LG(N7))        &as N6 LC(LG(N6))                 &kp LC(LS(TAB))  &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2                    &bt BT_SEL 3        &bt BT_SEL 4        &bt BT_CLR_ALL
+                                                   &trans                &kp LS(LA(LC(LG(F9))))  &ltq 10 LA(F4)        &mod_to0_mouse_jiggle 0 LA(F4)    &kp LC(TAB)      &as RG(TAB) C_PREV  &as C_MUTE LA(F4)   &as RS(RA(RC(RG(F11)))) C_NEXT
+                                                                                                                                                         &to 0
             >;
 
             label = "Swap";
@@ -790,7 +790,7 @@ ZMK_TAP_DANCE(
 &mod_to0_mouse_jiggle 0 ESC  &hml LEFT_WIN LA(F13)  &hml LALT LA(F14)    &hml LSHFT LA(F16)        &hml LCTRL LS(F16)       &kp LS(F20)                       &kp LA(F14)  &kp LG(TAB)      &hmr RCTRL F13   &hmr RSHFT F14       &hmr RALT F15    &hmr LGUI F16    &trans
 &trans                       &trans                 &kp LC(LS(LA(F17)))  &trans                    &kp LC(LS(V))            &as PERIOD B                      &kp LA(F13)  &trans           &kp RS(RA(F17))  &kp RS(RA(F18))      &kp F19          &kp F20          &kp RS(RC(ESC))
                                                     &trans               &as LC(LA(LS(M))) C_PREV  &as C_MUTE C_PLAY_PAUSE  &as LS(LA(LC(LG(F11)))) C_NEXT    &kp LA(F16)  &as RG(TAB) F21  &ltq 6 RA(F4)    &tap_flip_komorebic
-                                                                                                                                                              &trans
+                                                                                                                                                              &to 6
             >;
 
             label = "L10";
