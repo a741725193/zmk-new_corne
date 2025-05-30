@@ -467,7 +467,7 @@ SENSIBLE_LAYER_LIST?
 
         Redo_rh {
             bindings = <&kp LS(LC(Z))>;
-            key-positions = <35 36>;
+            key-positions = <7 8>;
         };
 
         Flow_launcher_v1 {
@@ -482,26 +482,10 @@ SENSIBLE_LAYER_LIST?
             key-positions = <24 23>;
         };
 
-        Flow_launcher_v3 {
-            bindings = <&kp RS(RA(RC(RG(SPACE))))>;
-            key-positions = <23 22>;
-            slow-release;
-        };
-
         macro_dot_shift_v1 {
             bindings = <&macro_dot_shift>;
             key-positions = <41 16>;
             layers = <0>;
-        };
-
-        to_0v1 {
-            bindings = <&to 0>;
-            key-positions = <18 17>;
-        };
-
-        to_0v3 {
-            bindings = <&to 0>;
-            key-positions = <44 45>;
         };
 
         Select_all {
@@ -539,26 +523,6 @@ SENSIBLE_LAYER_LIST?
             key-positions = <42 41>;
         };
 
-        Home_v1 {
-            bindings = <&kp HOME>;
-            key-positions = <18 21>;
-        };
-
-        End_v1 {
-            bindings = <&kp END>;
-            key-positions = <18 24>;
-        };
-
-        Down_v1 {
-            bindings = <&kp DOWN>;
-            key-positions = <18 22>;
-        };
-
-        Up_v1 {
-            bindings = <&kp UP>;
-            key-positions = <18 23>;
-        };
-
         Down_v2 {
             bindings = <&kp DOWN>;
             key-positions = <22 42>;
@@ -583,11 +547,6 @@ SENSIBLE_LAYER_LIST?
             bindings = <&macro_dot_shift>;
             key-positions = <41 45>;
             layers = <0>;
-        };
-
-        Leader {
-            bindings = <&to 1>;
-            key-positions = <4 5>;
         };
 
         Enter_rh {
