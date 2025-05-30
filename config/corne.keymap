@@ -736,9 +736,9 @@ ZMK_TAP_DANCE(
 
         SWAP {
             bindings = <
-&bootloader                  &trans                &kp LA(F4)            &trans                  &trans                &trans                            &kp LG(UP)     &kp LG(LC(LA(N1)))  &kp LG(LC(LA(N2)))       &kp LG(LC(LA(N3)))              &kp LG(LC(LA(N4)))  &kp LG(LC(LA(N5)))  &bootloader
+&bootloader                  &trans                &kp LA(F4)            &trans                  &bt BT_PRV            &bt BT_NXT                        &kp LG(UP)     &kp LG(LC(LA(N1)))  &kp LG(LC(LA(N2)))       &kp LG(LC(LA(N3)))              &kp LG(LC(LA(N4)))  &kp LG(LC(LA(N5)))  &bootloader
 &mod_to0_mouse_jiggle 0 ESC  &kp LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))    &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))                    &kp LG(DOWN)   &kp LC(LG(N6))      &kp LC(LG(N7))           &kp LG(LC(N8))                  &kp LC(LG(N9))      &kp LC(LG(N0))      &soft_off
-&bt BT_CLR_ALL               &kp LC(LG(N0))        &kp LC(LG(N9))        &kp LC(LG(N8))          &kp LC(LG(N7))        &as N6 LC(LG(N6))                 &kp LG(LEFT)   &bt BT_NXT          &bt BT_PRV               &trans                          &trans              &trans              &bt BT_CLR_ALL
+&bt BT_CLR_ALL               &kp LC(LG(N0))        &kp LC(LG(N9))        &kp LC(LG(N8))          &kp LC(LG(N7))        &as N6 LC(LG(N6))                 &kp LG(LEFT)   &bt BT_SEL 0        &bt BT_SEL 1             &bt BT_SEL 2                    &bt BT_SEL 3        &bt BT_SEL 4        &bt BT_CLR_ALL
                                                    &trans                &kp LS(LA(LC(LG(F9))))  &ltq 10 LA(F4)        &mod_to0_mouse_jiggle 0 LA(F4)    &kp LG(RIGHT)  &as RG(TAB) C_PREV  &as C_MUTE C_PLAY_PAUSE  &as RS(RA(RC(RG(F11)))) C_NEXT
                                                                                                                                                          &trans
             >;
@@ -749,10 +749,10 @@ ZMK_TAP_DANCE(
 
         NUM {
             bindings = <
-&kp GRAVE                    &kp EXCL        &kp AT            &kp LBKT         &kp RBKT         &kp AMPS                       &trans  &kp PLUS                     &kp N7         &kp N8         &kp N9        &kp EQUAL     &kp MINUS
-&mod_to0_mouse_jiggle 0 ESC  &hml LGUI HASH  &hml LALT DOLLAR  &hml LSHFT LPAR  &hml LCTRL RPAR  &kp UNDER                      &trans  &kp MINUS                    &hmr RCTRL N4  &hmr RSHFT N5  &hmr RALT N6  &hmr RGUI N0  &to 0
-&kp PIPE                     &kp PRCNT       &kp CARET         &kp LBRC         &kp RBRC         &as N7 BACKSLASH               &trans  &kp ASTRK                    &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
-                                             &trans            &to 0            &kp SPACE        &mod_to0_mouse_jiggle 0 TAB    &trans  &mod_to0_mouse_jiggle 0 RET  &kp BACKSPACE  &kp DOT
+&kp GRAVE                    &kp EXCL        &kp AT            &kp LBKT         &kp RBKT         &kp AMPS                       &trans  &kp PLUS     &kp N7         &kp N8         &kp N9        &kp EQUAL     &kp MINUS
+&mod_to0_mouse_jiggle 0 ESC  &hml LGUI HASH  &hml LALT DOLLAR  &hml LSHFT LPAR  &hml LCTRL RPAR  &kp UNDER                      &trans  &kp MINUS    &hmr RCTRL N4  &hmr RSHFT N5  &hmr RALT N6  &hmr RGUI N0  &to 0
+&kp PIPE                     &kp PRCNT       &kp CARET         &kp LBRC         &kp RBRC         &as N7 BACKSLASH               &trans  &kp ASTRK    &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
+                                             &trans            &to 0            &kp SPACE        &mod_to0_mouse_jiggle 0 TAB    &trans  &key_repeat  &kp BACKSPACE  &kp DOT
                                                                                                                                 &trans
             >;
 
