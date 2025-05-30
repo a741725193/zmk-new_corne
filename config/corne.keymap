@@ -749,9 +749,9 @@ ZMK_TAP_DANCE(
 
         NUM {
             bindings = <
-&bootloader                  &kp EXCL        &kp AT            &kp LBKT         &kp RBKT         &kp T                          &trans  &kp PLUS                     &kp N7         &kp N8         &kp N9        &kp EQUAL     &kp MINUS
-&mod_to0_mouse_jiggle 0 ESC  &hml LGUI HASH  &hml LALT DOLLAR  &hml LSHFT LPAR  &hml LCTRL RPAR  &kp G                          &trans  &kp MINUS                    &hmr RCTRL N4  &hmr RSHFT N5  &hmr RALT N6  &hmr RGUI N0  &to 0
-&bt BT_CLR_ALL               &kp PRCNT       &kp CARET         &kp LBRC         &kp RBRC         &as N7 B                       &trans  &kp ASTRK                    &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
+&kp GRAVE                    &kp EXCL        &kp AT            &kp LBKT         &kp RBKT         &kp AMPS                       &trans  &kp PLUS                     &kp N7         &kp N8         &kp N9        &kp EQUAL     &kp MINUS
+&mod_to0_mouse_jiggle 0 ESC  &hml LGUI HASH  &hml LALT DOLLAR  &hml LSHFT LPAR  &hml LCTRL RPAR  &kp UNDER                      &trans  &kp MINUS                    &hmr RCTRL N4  &hmr RSHFT N5  &hmr RALT N6  &hmr RGUI N0  &to 0
+&kp PIPE                     &kp PRCNT       &kp CARET         &kp LBRC         &kp RBRC         &as N7 BACKSLASH               &trans  &kp ASTRK                    &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
                                              &trans            &to 0            &kp SPACE        &mod_to0_mouse_jiggle 0 TAB    &trans  &mod_to0_mouse_jiggle 0 RET  &kp BACKSPACE  &kp DOT
                                                                                                                                 &trans
             >;
