@@ -660,10 +660,10 @@ ZMK_TAP_DANCE(
 
         BASE {
             bindings = <
-&ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LS(F10) R        &kp T              &kp UP_ARROW    &as PAGE_UP Y           &kp U             &kp I              &kp O                    &kp P        &as RC(MINUS) MINUS
-&mod_to0_mouse_jiggle 0 ESCAPE  &ltq 10 A      &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LEFT_GUI G    &kp DOWN_ARROW  &as PAGE_DOWN H         &hmr RCTRL J      &hmr LEFT_SHIFT K  &hmr RIGHT_ALT L         &ltq 5 SEMI  &tap_quote_to_nav_mouse
-&ltq 3 LA(TAB)                  &kp Z          &kp X            &kp C              &as LC(LA(LS(V))) V  &as N0 B           &kp LEFT        &kp N                   &kp M             &kp COMMA          &tap_dot_shift_capsword  &kp FSLH     &as RC(EQUAL) EQUAL
-                                               &ltq 6 C_MUTE    &ltq 9 LA(TAB)     &ltq 10 SPACE        &ltq 4 TAB         &kp RIGHT       &tap_key_repeat_to 5 5  &ltq 6 BACKSPACE  &smart_num 7 7
+&ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LS(F10) R        &kp T              &kp UP_ARROW    &as PAGE_UP Y    &kp U             &kp I              &kp O                    &kp P        &as RC(MINUS) MINUS
+&mod_to0_mouse_jiggle 0 ESCAPE  &ltq 10 A      &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LEFT_GUI G    &kp DOWN_ARROW  &as PAGE_DOWN H  &hmr RCTRL J      &hmr LEFT_SHIFT K  &hmr RIGHT_ALT L         &ltq 5 SEMI  &tap_quote_to_nav_mouse
+&ltq 3 LA(TAB)                  &kp Z          &kp X            &kp C              &as LC(LA(LS(V))) V  &as N0 B           &kp LEFT        &kp N            &kp M             &kp COMMA          &tap_dot_shift_capsword  &kp FSLH     &as RC(EQUAL) EQUAL
+                                               &ltq 6 C_MUTE    &ltq 9 LA(TAB)     &ltq 7 SPACE         &ltq 4 TAB         &kp RIGHT       &ltq 5 RET       &ltq 6 BACKSPACE  &smart_num 7 7
                                                                                                                            &to 5
             >;
 
@@ -788,7 +788,7 @@ ZMK_TAP_DANCE(
             bindings = <
 &sys_reset                   &trans                 &kp LA(F15)          &trans                    &kp LC(LA(LS(F20)))      &kp F21                           &kp LA(F15)  &trans           &kp RC(RA(F13))  &kp RC(RA(F14))      &kp RC(RA(F15))  &kp RC(RA(F16))  &kp LC(LA(DEL))
 &mod_to0_mouse_jiggle 0 ESC  &hml LEFT_WIN LA(F13)  &hml LALT LA(F14)    &hml LSHFT LA(F16)        &hml LCTRL LS(F16)       &kp LS(F20)                       &kp LA(F14)  &kp LG(TAB)      &hmr RCTRL F13   &hmr RSHFT F14       &hmr RALT F15    &hmr LGUI F16    &trans
-&trans                       &trans                 &kp LC(LS(LA(F17)))  &trans                    &kp LC(LS(V))            &as X B                           &kp LA(F13)  &trans           &kp RS(RA(F17))  &kp RS(RA(F18))      &kp F19          &kp F20          &kp RS(RC(ESC))
+&trans                       &trans                 &kp LC(LS(LA(F17)))  &trans                    &kp LC(LS(V))            &as LS(X) B                       &kp LA(F13)  &trans           &kp RS(RA(F17))  &kp RS(RA(F18))      &kp F19          &kp F20          &kp RS(RC(ESC))
                                                     &trans               &as LC(LA(LS(M))) C_PREV  &as C_MUTE C_PLAY_PAUSE  &as LS(LA(LC(LG(F11)))) C_NEXT    &kp LA(F16)  &as RG(TAB) F21  &ltq 6 RA(F4)    &tap_flip_komorebic
                                                                                                                                                               &to 6
             >;
