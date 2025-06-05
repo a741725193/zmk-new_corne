@@ -606,6 +606,12 @@ SENSIBLE_LAYER_LIST?
             key-positions = <23 22>;
             slow-release;
         };
+
+        macro_dot_shift_v3 {
+            bindings = <&macro_dot_shift>;
+            key-positions = <14 15>;
+            layers = <0>;
+        };
     };
 
     #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
