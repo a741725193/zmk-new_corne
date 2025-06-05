@@ -660,10 +660,10 @@ ZMK_TAP_DANCE(
 
         BASE {
             bindings = <
-&ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LS(F10) R        &kp T              &kp UP_ARROW    &kp Y       &kp U             &kp I              &kp O                    &kp P        &as RC(MINUS) MINUS
-&mod_to0_mouse_jiggle 0 ESCAPE  &ltq 10 A      &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LEFT_GUI G    &kp DOWN_ARROW  &as HOME H  &hmr RCTRL J      &hmr LEFT_SHIFT K  &hmr RIGHT_ALT L         &ltq 5 SEMI  &tap_quote_to_nav_mouse
-&ltq 3 LA(TAB)                  &kp Z          &kp X            &kp C              &as LC(LA(LS(V))) V  &as N0 B           &kp LEFT        &kp N       &as PG_DN M       &as PG_UP COMMA    &tap_dot_shift_capsword  &kp FSLH     &as RC(EQUAL) EQUAL
-                                               &ltq 6 C_MUTE    &ltq 9 LA(TAB)     &ltq 7 SPACE         &ltq 4 TAB         &kp RIGHT       &ltq 5 RET  &ltq 6 BACKSPACE  &smart_num 7 7
+&ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LS(F10) R        &kp T              &kp UP_ARROW    &kp Y       &kp U             &kp I                   &kp O                    &kp P        &as RC(MINUS) MINUS
+&mod_to0_mouse_jiggle 0 ESCAPE  &ltq 10 A      &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LEFT_GUI G    &kp DOWN_ARROW  &as HOME H  &hmr RCTRL J      &hmr LEFT_SHIFT K       &hmr RIGHT_ALT L         &ltq 5 SEMI  &tap_quote_to_nav_mouse
+&ltq 3 LA(TAB)                  &kp Z          &kp X            &kp C              &as LC(LA(LS(V))) V  &as N0 B           &kp LEFT        &kp N       &as PG_DN M       &as PG_UP COMMA         &tap_dot_shift_capsword  &kp FSLH     &as RC(EQUAL) EQUAL
+                                               &ltq 6 C_MUTE    &ltq 9 LA(TAB)     &ltq 7 SPACE         &ltq 4 TAB         &kp RIGHT       &ltq 5 RET  &ltq 6 BACKSPACE  &tap_key_repeat_to 4 7
                                                                                                                            &to 5
             >;
 
@@ -711,7 +711,7 @@ ZMK_TAP_DANCE(
         NAV {
             bindings = <
 &bootloader                  &kp LS(F10)         &kp LA(F4)           &kp ENTER                    &kp LS(F10)         &msc SCRL_UP                   &kp UP_ARROW    &tap_paste                   &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_UP    &tap_paste         &kp LC(LS(ESC))
-&mod_to0_mouse_jiggle 0 ESC  &hml LGUI LA(LEFT)  &hml LALT LA(RIGHT)  &hml LEFT_SHIFT LC(LS(TAB))  &hml LCTRL LC(TAB)  &msc SCRL_DOWN                 &kp DOWN_ARROW  &as HOME LEFT                &kp DOWN        &kp UP        &as END RIGHT   &to 4              &to 0
+&mod_to0_mouse_jiggle 0 ESC  &hml LGUI LA(LEFT)  &hml LALT LA(RIGHT)  &hml LEFT_SHIFT LC(LS(TAB))  &hml LCTRL LC(TAB)  &msc SCRL_DOWN                 &kp DOWN_ARROW  &as HOME LEFT                &kp DOWN        &kp UP        &as END RIGHT   &to 0              &to 0
 &bt BT_CLR_ALL               &trans              &kp LC(W)            &tap_copy_cut                &tap_paste          &as N4 B                       &kp LEFT        &as LC(END) LC(HOME)         &kp PG_DN       &kp PG_UP     &kp RC(RS(UP))  &kp RS(RC(RIGHT))  &kp RC(RA(DEL))
                                                  &to 0                &to 0                        &kp SPACE           &mod_to0_mouse_jiggle 0 TAB    &kp RIGHT       &mod_to0_mouse_jiggle 0 RET  &kp BACKSPACE   &kp DEL
                                                                                                                                                       &to 0
@@ -723,9 +723,9 @@ ZMK_TAP_DANCE(
 
         Mouse {
             bindings = <
-&to 0                        &kp LS(F10)     &mmv MOVE_UP    &kp RET          &mkp LCLK            &msc SCRL_UP      &mmv MOVE_Y(-600)  &kp PAGE_UP           &msc SCRL_DOWN       &msc SCRL_DOWN       &msc SCRL_UP        &msc SCRL_LEFT  &trans
-&mod_to0_mouse_jiggle 0 ESC  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &hmr_clk LCTRL RCLK  &msc SCRL_DOWN    &mmv MOVE_Y(600)   &kp PAGE_DOWN         &hmr_clk RCTRL RCLK  &hmr_clk LSHFT LCLK  &hmr_clk RALT MCLK  &to 0           &to 0
-&to 0                        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &macro_to_0_click    &as N5 B          &mmv MOVE_X(-600)  &as LC(END) LC(HOME)  &msc SCRL_LEFT       &msc SCRL_RIGHT      &trans              &trans          &to 0
+&to 0                        &kp LS(F10)     &mmv MOVE_UP    &kp RET          &mkp LCLK            &msc SCRL_UP      &mmv MOVE_Y(-600)  &msc SCRL_LEFT        &msc SCRL_DOWN       &msc SCRL_UP         &msc SCRL_RIGHT     &msc SCRL_LEFT  &trans
+&mod_to0_mouse_jiggle 0 ESC  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &hmr_clk LCTRL RCLK  &msc SCRL_DOWN    &mmv MOVE_Y(600)   &kp HOME              &hmr_clk RCTRL RCLK  &hmr_clk LSHFT LCLK  &hmr_clk RALT MCLK  &to 0           &to 0
+&to 0                        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &macro_to_0_click    &as N5 B          &mmv MOVE_X(-600)  &as LC(END) LC(HOME)  &kp PG_DN            &kp PG_UP            &trans              &trans          &to 0
                                              &to 0           &mkp MCLK        &mkp LCLK            &mkp RCLK         &mmv MOVE_X(600)   &mkp LCLK             &mkp RCLK            &macro_mouse_jump
                                                                                                                      &to 0
             >;
