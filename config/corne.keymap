@@ -774,11 +774,11 @@ ZMK_TAP_DANCE(
 
         Fn {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8  &kp F9     &trans        &trans  &kp F10  &kp F7  &kp F8  &kp F9  &trans  &bootloader
-&trans  &hml LGUI F1  &hml LALT F2  &hml LSHFT F3  &hml LCTRL F4     &kp F5        &trans  &kp F6  &hmr RCTRL F7  &hmr RSHFT F8  &hmr RALT F9  &hmr RGUI F10  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3     &kp F11    &trans  &kp F12  &kp F1  &kp F2  &kp F3  &trans  &bt BT_CLR_ALL
-                 &trans  &trans  &kp SPACE  &kp TAB       &trans  &trans   &trans  &trans
-                                                          &trans
+&trans  &kp F12       &kp F7        &kp F8         &kp F9         &trans     &trans  &kp F10  &kp F7         &kp F8         &kp F9        &trans         &bootloader
+&trans  &hml LGUI F1  &hml LALT F2  &hml LSHFT F3  &hml LCTRL F4  &kp F5     &trans  &kp F6   &hmr RCTRL F7  &hmr RSHFT F8  &hmr RALT F9  &hmr RGUI F10  &trans
+&trans  &kp F10       &kp F1        &kp F2         &kp F3         &kp F11    &trans  &kp F12  &kp F1         &kp F2         &kp F3        &trans         &bt BT_CLR_ALL
+                      &trans        &trans         &kp SPACE      &kp TAB    &trans  &trans   &trans         &trans
+                                                                             &trans
             >;
 
             label = "Fn";
@@ -786,9 +786,9 @@ ZMK_TAP_DANCE(
 
         L10 {
             bindings = <
-&sys_reset                   &trans                 &kp LA(F15)          &trans                    &kp LC(LA(LS(F20)))      &kp F21                           &kp LA(F15)  &trans                  &kp RC(RA(F13))  &kp RC(RA(F14))      &kp RC(RA(F15))  &kp RC(RA(F16))  &kp LC(LA(DEL))
+&sys_reset                   &trans                 &kp LA(F15)          &trans                    &kp LC(LA(LS(F20)))      &kp F21                           &kp LA(F15)  &trans                  &kp RC(RA(F13))  &kp RC(RA(F14))      &kp RC(RA(F15))  &kp RC(RA(F16))  &kp RC(RS(ESC))
 &mod_to0_mouse_jiggle 0 ESC  &hml LEFT_WIN LA(F13)  &hml LALT LA(F14)    &hml LSHFT LA(F16)        &hml LCTRL LS(F16)       &kp LS(F20)                       &kp LA(F14)  &kp LG(TAB)             &hmr RCTRL F13   &hmr RSHFT F14       &hmr RALT F15    &hmr LGUI F16    &trans
-&trans                       &trans                 &kp LC(LS(LA(F17)))  &trans                    &kp LC(LS(V))            &as LS(X) B                       &kp LA(F13)  &trans                  &kp RS(RA(F17))  &kp RS(RA(F18))      &kp F19          &kp F20          &kp RS(RC(ESC))
+&trans                       &trans                 &kp LC(LS(LA(F17)))  &trans                    &kp LC(LS(V))            &as LS(X) B                       &kp LA(F13)  &trans                  &kp RS(RA(F17))  &kp RS(RA(F18))      &kp F19          &kp F20          &kp RC(RA(DEL))
                                                     &trans               &as LC(LA(LS(M))) C_PREV  &as C_MUTE C_PLAY_PAUSE  &as LS(LA(LC(LG(F11)))) C_NEXT    &kp LA(F16)  &tap_key_repeat_to 0 0  &ltq 6 RA(F4)    &tap_flip_komorebic
                                                                                                                                                               &to 6
             >;
