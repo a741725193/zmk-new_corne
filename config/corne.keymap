@@ -419,9 +419,9 @@ SENSIBLE_LAYER_LIST?
             bindings = <&ltq>, <&key_repeat>;
         };
 
-        mod_to: mod_to {
+        kp_to: kp_to {
             compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TO";
+            label = "KP_TO";
             bindings = <&to>, <&kp>;
 
             #binding-cells = <2>;
