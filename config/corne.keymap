@@ -508,7 +508,7 @@ SENSIBLE_LAYER_LIST?
 
         Redo_rh {
             bindings = <&kp LS(LC(Z))>;
-            key-positions = <7 8>;
+            key-positions = <6 19>;
         };
 
         Flow_launcher_v1 {
@@ -548,7 +548,7 @@ SENSIBLE_LAYER_LIST?
 
         Esc_rh {
             bindings = <&kp ESC>;
-            key-positions = <22 23>;
+            key-positions = <8 7>;
             slow-release;
         };
 
@@ -586,13 +586,13 @@ SENSIBLE_LAYER_LIST?
 
         Macro_dot_shift_v2 {
             bindings = <&macro_dot_shift>;
-            key-positions = <41 45>;
+            key-positions = <41 44>;
             layers = <0>;
         };
 
         Enter_lh {
             bindings = <&kp RET>;
-            key-positions = <17 16>;
+            key-positions = <16 15>;
             slow-release;
         };
 
@@ -603,7 +603,7 @@ SENSIBLE_LAYER_LIST?
 
         Enter_rh {
             bindings = <&kp RET>;
-            key-positions = <21 22>;
+            key-positions = <23 22>;
             slow-release;
         };
     };
