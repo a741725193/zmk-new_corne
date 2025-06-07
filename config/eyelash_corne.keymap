@@ -14,18 +14,6 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
-};
-
-&mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
-};
-
 / {
     behaviors {
         td0: td0 {
@@ -40,20 +28,6 @@
             label = "MKP";
             #binding-cells = <1>;
         };
-    };
-
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
-
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-        tap-ms = <100>;
     };
 
     combos {
@@ -81,8 +55,6 @@
 &kp LA(GRAVE)  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &kp C                       &kp V                       &kp B        &kp SPACE              &kp DOWN              &kp N      &kp M                &mt RIGHT_CONTROL COMMA  &mt RIGHT_SHIFT PERIOD  &kp FSLH   &kp EQUAL
                                                      &mt LEFT_ALT K_APPLICATION  &mt LEFT_CONTROL BACKSPACE  &lt 1 SPACE                                               &lt 2 TAB  &mt RIGHT_GUI ENTER  &mt RALT ESCAPE
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         left {
@@ -93,8 +65,6 @@
 &trans  &trans    &trans     &trans    &mkp MB1   &mkp MB2  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp COMMA  &kp N1  &kp N2  &mt RIGHT_CONTROL NUMBER_3  &mt RIGHT_SHIFT SEMI  &kp FSLH
                              &trans    &trans     &trans                                                                   &trans     &trans  &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         right {
@@ -105,8 +75,6 @@
 &trans  &trans   &trans   &kp F8  &kp F7  &kp F4  &trans                    &mmv MOVE_DOWN                   &kp F11   &kp F9     &kp F1    &trans     &trans   &trans
                           &trans  &trans  &trans                                                             &kp RET   &trans     &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         onisi {
