@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-
 / {
     behaviors {
         td0: td0 {
@@ -40,15 +39,15 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC        &kp Q             &kp W               &kp E                       &kp R                       &kp T                               &kp UP                &kp Y      &kp U                &kp I                    &kp O                   &kp P      &lt 4 DEL
-&kp TAB        &kp A             &kp S               &kp D                       &kp F                       &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J                &kp K                    &kp L                   &kp MINUS  &kp SEMICOLON
-&kp LA(GRAVE)  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &kp C                       &kp V                       &kp B        &kp SPACE              &kp DOWN              &kp N      &kp M                &mt RIGHT_CONTROL COMMA  &mt RIGHT_SHIFT PERIOD  &kp FSLH   &kp EQUAL
-                                                     &mt LEFT_ALT K_APPLICATION  &mt LEFT_CONTROL BACKSPACE  &lt 1 SPACE                                               &lt 2 TAB  &mt RIGHT_GUI ENTER  &mt RALT ESCAPE
+&kp PRINTSCREEN  &kp Q             &kp W               &kp E                       &kp R                    &kp T                                   &kp UP                &kp Y        &kp U                &kp I            &kp O                     &kp P                 &to 3
+&kp TAB          &kp A             &kp S               &kp D                       &kp F                    &kp G                         &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                &kp K            &kp L                     &kp MINUS             &kp SEMICOLON
+&kp LA(GRAVE)    &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &kp C                       &kp V                    &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M                &kp LESS_THAN    &mt RIGHT_CONTROL PERIOD  &mt RIGHT_SHIFT FSLH  &kp EQUAL
+                                                       &mt LEFT_ALT K_APPLICATION  &mt LEFT_CONTROL DELETE  &lt 1 BACKSPACE                                               &lt 2 SPACE  &mt RIGHT_GUI ENTER  &mt RALT ESCAPE
             >;
         };
 
         left {
-            display-name = "lower";
+            display-name = "left";
             bindings = <
 &trans  &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp LBKT                       &none         &kp N6     &kp N7  &kp N8  &kp N9                      &kp N0                &kp DOT
 &trans  &kp END   &kp LEFT   &kp DOWN  &kp RIGHT  &kp RBKT                &none  &none  &none  &kp BSPC   &kp N4  &kp N5  &kp N6                      &kp MINUS             &kp EQUAL
@@ -58,7 +57,7 @@
         };
 
         right {
-            display-name = "upper";
+            display-name = "right";
             bindings = <
 &trans  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5                   &none         &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp SQT  &trans
 &trans  &kp F12  &kp F10  &kp F6  &kp F2  &kp F5            &none  &none  &none  &kp END   &kp LEFT   &kp DOWN  &kp RIGHT  &kp F3   &trans
@@ -69,15 +68,15 @@
 
         onisi {
             bindings = <
-&trans  &kp Q  &kp L  &kp U   &kp COMMA  &kp DOT                      &trans          &kp F   &kp W   &kp R   &kp Y  &kp P  &to 0
-&trans  &kp E  &kp I  &kp A   &kp O      &kp MINUS            &trans  &trans  &trans  &kp K   &kp T   &kp N   &kp S  &kp H  &trans
-&trans  &kp Z  &kp X  &kp C   &kp V      &kp SLASH  &trans            &trans          &kp G   &kp D   &kp M   &kp J  &kp B  &trans
-                      &trans  &trans     &trans                                       &trans  &trans  &trans
+&trans  &kp Q             &kp L               &kp U   &kp COMMA  &kp DOT                      &trans          &kp F   &kp W   &kp R   &kp Y                &kp P              &to 0
+&trans  &kp E             &kp I               &kp A   &kp O      &kp MINUS            &trans  &trans  &trans  &kp K   &kp T   &kp N   &kp S                &kp H              &trans
+&trans  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &kp C   &kp V      &kp SLASH  &trans            &trans          &kp G   &kp D   &kp M   &mt RIGHT_CONTROL J  &mt RIGHT_SHIFT B  &trans
+                                              &trans  &trans     &trans                                       &trans  &trans  &trans
             >;
         };
 
         conf {
-            display-name = "Fn";
+            display-name = "conf";
             bindings = <
 &out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                          &none         &none   &none   &none        &none       &none  &trans
 &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF                &none  &none  &none  &none   &none   &none        &none       &none  &none
@@ -92,7 +91,7 @@
 
         onisi {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <4>;
         };
     };
 };
