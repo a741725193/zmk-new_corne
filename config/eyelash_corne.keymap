@@ -76,10 +76,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC        &kp Q             &kp W               &kp E                &kp R                       &kp T                               &kp UP                &kp Y      &kp U                &kp I                    &kp O                   &kp P      &lt 4 DEL
-&kp TAB        &kp A             &kp S               &kp D                &kp F                       &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J                &kp K                    &kp L                   &kp MINUS  &kp SEMICOLON
-&kp LA(GRAVE)  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &kp C                &kp V                       &kp B        &kp SPACE              &kp DOWN              &kp N      &kp M                &mt RIGHT_CONTROL COMMA  &mt RIGHT_SHIFT PERIOD  &kp FSLH   &kp EQUAL
-                                                     &mt LEFT_ALT DELETE  &mt LEFT_CONTROL BACKSPACE  &lt 1 SPACE                                               &lt 2 TAB  &mt RIGHT_GUI ENTER  &mt RALT ESCAPE
+&kp ESC        &kp Q             &kp W               &kp E                       &kp R                       &kp T                               &kp UP                &kp Y      &kp U                &kp I                    &kp O                   &kp P      &lt 4 DEL
+&kp TAB        &kp A             &kp S               &kp D                       &kp F                       &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J                &kp K                    &kp L                   &kp MINUS  &kp SEMICOLON
+&kp LA(GRAVE)  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &kp C                       &kp V                       &kp B        &kp SPACE              &kp DOWN              &kp N      &kp M                &mt RIGHT_CONTROL COMMA  &mt RIGHT_SHIFT PERIOD  &kp FSLH   &kp EQUAL
+                                                     &mt LEFT_ALT K_APPLICATION  &mt LEFT_CONTROL BACKSPACE  &lt 1 SPACE                                               &lt 2 TAB  &mt RIGHT_GUI ENTER  &mt RALT ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
