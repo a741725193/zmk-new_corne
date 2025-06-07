@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
@@ -21,12 +20,6 @@
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
-
-        mkp: mkp {
-            compatible = "zmk,behavior-mouse-key-press";
-            label = "MKP";
-            #binding-cells = <1>;
         };
     };
 
@@ -60,20 +53,20 @@
         left {
             display-name = "lower";
             bindings = <
-&trans  &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp LBKT                                &mmv MOVE_UP                     &kp N6     &kp N7  &kp N8  &kp N9                      &kp N0                &kp DOT
-&trans  &kp END   &kp LEFT   &kp DOWN  &kp RIGHT  &kp RBKT                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp BSPC   &kp N4  &kp N5  &kp N6                      &kp MINUS             &kp EQUAL
-&trans  &trans    &trans     &trans    &mkp MB1   &mkp MB2  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp COMMA  &kp N1  &kp N2  &mt RIGHT_CONTROL NUMBER_3  &mt RIGHT_SHIFT SEMI  &kp FSLH
-                             &trans    &trans     &trans                                                                   &trans     &trans  &trans
+&trans  &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp LBKT                       &none         &kp N6     &kp N7  &kp N8  &kp N9                      &kp N0                &kp DOT
+&trans  &kp END   &kp LEFT   &kp DOWN  &kp RIGHT  &kp RBKT                &none  &none  &none  &kp BSPC   &kp N4  &kp N5  &kp N6                      &kp MINUS             &kp EQUAL
+&trans  &trans    &trans     &trans    &trans     &trans    &kp C_MUTE           &none         &kp COMMA  &kp N1  &kp N2  &mt RIGHT_CONTROL NUMBER_3  &mt RIGHT_SHIFT SEMI  &kp FSLH
+                             &trans    &trans     &trans                                       &trans     &trans  &trans
             >;
         };
 
         right {
             display-name = "upper";
             bindings = <
-&trans  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5                            &mmv MOVE_UP                     &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp SQT  &trans
-&trans  &kp F12  &kp F10  &kp F6  &kp F2  &kp F5            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp END   &kp LEFT   &kp DOWN  &kp RIGHT  &kp F3   &trans
-&trans  &trans   &trans   &kp F8  &kp F7  &kp F4  &trans                    &mmv MOVE_DOWN                   &kp F11   &kp F9     &kp F1    &trans     &trans   &trans
-                          &trans  &trans  &trans                                                             &kp RET   &trans     &trans
+&trans  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5                   &none         &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp SQT  &trans
+&trans  &kp F12  &kp F10  &kp F6  &kp F2  &kp F5            &none  &none  &none  &kp END   &kp LEFT   &kp DOWN  &kp RIGHT  &kp F3   &trans
+&trans  &trans   &trans   &kp F8  &kp F7  &kp F4  &trans           &none         &kp F11   &kp F9     &kp F1    &trans     &trans   &trans
+                          &trans  &trans  &trans                                 &trans    &trans     &trans
             >;
         };
 
@@ -89,10 +82,10 @@
         conf {
             display-name = "Fn";
             bindings = <
-&out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                                   &mmv MOVE_UP                     &none   &none   &none        &none       &none  &trans
-&rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none   &none   &none        &none       &none  &none
-&trans           &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans  &bootloader  &sys_reset  &none  &none
-                                                   &trans           &trans           &trans                                                                          &trans  &trans  &trans
+&out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                          &none         &none   &none   &none        &none       &none  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF                &none  &none  &none  &none   &none   &none        &none       &none  &none
+&trans           &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &kp C_MUTE           &none         &trans  &trans  &bootloader  &sys_reset  &none  &none
+                                                   &trans           &trans           &trans                                              &trans  &trans  &trans
             >;
         };
     };
