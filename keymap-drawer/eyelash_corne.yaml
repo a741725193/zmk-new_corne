@@ -43,7 +43,7 @@ layers:
   - {t: ., h: '$$mdi:apple-keyboard-shift$$'}
   - {t: /, s: '?'}
   - {t: '=', s: +}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: APPLICATION, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: lower}
   - {t: '$$mdi:keyboard-tab$$', h: upper}
