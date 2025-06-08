@@ -768,10 +768,10 @@ ZMK_TAP_DANCE(
 
         NUM {
             bindings = <
-&kp GRAVE                    &kp EXCL      &kp AT        &kp LBKT       &kp RBKT       &kp AMPS                       &trans  &kp PLUS     &kp N7         &kp N8         &kp N9        &kp EQUAL     &kp MINUS
-&mod_to0_mouse_jiggle 0 ESC  &hml LGUI N1  &hml LALT N2  &hml LSHFT N3  &hml LCTRL N4  &kp N5                         &trans  &kp N6       &hmr RCTRL N7  &hmr RSHFT N8  &hmr RALT N9  &hmr RGUI N0  &to 0
-&kp PIPE                     &kp PRCNT     &kp CARET     &kp LBRC       &kp RBRC       &as N7 BACKSLASH               &trans  &kp ASTRK    &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
-                                           &trans        &to 0          &kp SPACE      &mod_to0_mouse_jiggle 0 TAB    &trans  &key_repeat  &kp BACKSPACE  &kp DOT
+&kp GRAVE                    &kp EXCL      &kp AT        &kp LBKT       &kp RBKT       &kp AMPS                       &trans  &kp PLUS   &kp N7         &kp N8         &kp N9        &kp EQUAL     &kp MINUS
+&mod_to0_mouse_jiggle 0 ESC  &hml LGUI N1  &hml LALT N2  &hml LSHFT N3  &hml LCTRL N4  &kp N5                         &trans  &kp N6     &hmr RCTRL N7  &hmr RSHFT N8  &hmr RALT N9  &hmr RGUI N0  &to 0
+&kp PIPE                     &kp PRCNT     &kp CARET     &kp LBRC       &kp RBRC       &as N7 BACKSLASH               &trans  &kp ASTRK  &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
+                                           &trans        &to 0          &kp SPACE      &mod_to0_mouse_jiggle 0 TAB    &trans  &kp N0     &kp BACKSPACE  &kp DOT
                                                                                                                       &trans
             >;
 
