@@ -1,5 +1,9 @@
 
 
+[] consider updating to more recent implementation
+ -  https://github.com/a741725193/zmk-new_corne/blob/main/boards/arm/eyelash_corne/eyelash_corne.dtsi
+
+
 
 
 // features
