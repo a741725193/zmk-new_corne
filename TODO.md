@@ -9,7 +9,8 @@
 // features
 // https://github.com/rafaelromao/keyboards
 
-
+https://github.com/okdmb/nandra-irjayandi-zmk-config/tree/main/config
+- adv functions, layers, encoder etc
 
 // look at an macros and config
 // https://github.com/arilebedey/urob-zmk-config/blob/main/config/my.keymap
