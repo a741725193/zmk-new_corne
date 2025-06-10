@@ -412,7 +412,7 @@ SENSIBLE_LAYER_LIST?
             label = "TAP_DOT_SHIFT_CAPSWORD";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp DOT>, <&macro_dot_shift>, <&caps_word>;
+            bindings = <&as_dot_shift 0 DOT>, <&macro_dot_shift>, <&caps_word>;
         };
 
         tap_key_repeat_ltq: tap_key_repeat_ltq {
@@ -492,6 +492,16 @@ SENSIBLE_LAYER_LIST?
             flavor = "balanced";
             require-prior-idle-ms = <0>;
             hold-trigger-key-positions = <14 15 16 17 0 1 13 26 27 28 29 31 5 2 3 4 18 23 45 46 44 30 33 20 7 8 21 34 22 9 35 36 37 38 25 24 11 12 10 41 42 40 39 19 32 47 43 6>;
+        };
+
+        as_dot_shift: as_dot_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AS_DOT_SHIFT";
+            bindings = <&dot_shift>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            flavor = "balanced";
         };
     };
 
