@@ -1,3 +1,4 @@
 # Highlight keymap files as C++, which is better than nothing.
 *.dtsi text linguist-language=C++
 *.keymap text linguist-language=C++
+*.conf text linguist-language=C++
