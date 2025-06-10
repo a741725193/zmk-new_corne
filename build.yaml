@@ -4,12 +4,12 @@ include:
   - board: corne_left
     #shield: nice_view
     shield: nice_view_adapter nice_view_gem #updated entry
-    snippet: zmk-usb-logging    # Uncomment to log over USB.
+    #snippet: zmk-usb-logging    # Uncomment to log over USB.
     artifact-name: corne_left_nice_view
   - board: corne_right
     #shield: nice_view
     shield: nice_view_adapter nice_view_gem #updated entry
-    snippet: zmk-usb-logging    # Uncomment to log over USB.
+    #snippet: zmk-usb-logging    # Uncomment to log over USB.
     artifact-name: corne_right_nice_view
   - board: corne_left
     #shield: nice_view
