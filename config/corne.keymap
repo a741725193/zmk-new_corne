@@ -193,6 +193,13 @@ SENSIBLE_LAYER_LIST?
             bindings = <&kp LS(B) &kp LS(A) &kp LS(S) &kp LS(E)>;
             label = "PRINT_LAYER";
         };
+
+        macro_copy_path: macro_copy_path {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(L) &kp LC(C) &kp ESC>;
+            label = "MACRO_COPY_PATH";
+        };
     };
 
     behaviors {
