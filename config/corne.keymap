@@ -569,8 +569,8 @@ SENSIBLE_LAYER_LIST?
             slow-release;
         };
 
-        Flow_Launcher_v2 {
-            bindings = <&kp LC(LS(LA(LG(SPACE))))>;
+        f21 {
+            bindings = <&kp F21>;
             key-positions = <42 44>;
             timeout-ms = <30>;
             require-prior-idle-ms = <30>;
@@ -593,12 +593,12 @@ SENSIBLE_LAYER_LIST?
 
         Home_v2 {
             bindings = <&kp HOME>;
-            key-positions = <21 42>;
+            key-positions = <42 20>;
         };
 
         End_v2 {
             bindings = <&kp END>;
-            key-positions = <24 42>;
+            key-positions = <42 23>;
         };
 
         Macro_dot_shift_v2 {
