@@ -24,12 +24,42 @@
 
         rtab {
             bindings = <&kp TAB>;
-            key-positions = <45 23>;
+            key-positions = <23 22>;
         };
 
         ltab {
             bindings = <&kp TAB>;
-            key-positions = <44 17>;
+            key-positions = <17 18>;
+        };
+
+        lsh {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <14 15>;
+        };
+
+        rsh {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <25 26>;
+        };
+
+        lct {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <15 16>;
+        };
+
+        rct {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <25 24>;
+        };
+
+        lal {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <16 17>;
+        };
+
+        ral {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <23 24>;
         };
     };
 
