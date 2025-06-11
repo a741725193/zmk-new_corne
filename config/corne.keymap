@@ -747,7 +747,7 @@ ZMK_TAP_DANCE(
         NAV {
             bindings = <
 &bootloader                  &kp LS(F10)         &kp LA(F4)           &kp ENTER                    &kp LS(F10)         &msc SCRL_UP                   &kp UP_ARROW    &tap_paste                   &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_UP    &tap_paste         &kp LC(LS(ESC))
-&mod_to0_mouse_jiggle 0 ESC  &hml LGUI LA(LEFT)  &hml LALT LA(RIGHT)  &hml LEFT_SHIFT LC(LS(TAB))  &hml LCTRL LC(TAB)  &msc SCRL_DOWN                 &kp DOWN_ARROW  &kp LEFT                     &as END DOWN    &as HOME UP   &kp RIGHT       &to 0              &to 0
+&mod_to0_mouse_jiggle 0 ESC  &hml LGUI LA(LEFT)  &hml LALT LA(RIGHT)  &hml LEFT_SHIFT LC(LS(TAB))  &hml LCTRL LC(TAB)  &msc SCRL_DOWN                 &kp DOWN_ARROW  &as HOME LEFT                     &kp DOWN    &kp UP   &as END RIGHT       &to 0              &to 0
 &bt BT_CLR_ALL               &trans              &kp LC(W)            &tap_copy_cut                &tap_paste          &as N4 B                       &kp LEFT        &as LC(END) LC(HOME)         &kp PG_DN       &kp PG_UP     &kp RC(RS(UP))  &kp RS(RC(RIGHT))  &kp RC(RA(DEL))
                                                  &to 0                &to 0                        &kp SPACE           &mod_to0_mouse_jiggle 0 TAB    &kp RIGHT       &mod_to0_mouse_jiggle 0 RET  &kp BACKSPACE   &kp DEL
                                                                                                                                                       &to 0
