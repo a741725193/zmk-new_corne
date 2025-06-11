@@ -39,7 +39,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - M
-  - <
+  - {t: ',', s: <}
   - .
   - {t: /, s: '?'}
   - {t: '=', s: +}
