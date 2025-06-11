@@ -112,7 +112,7 @@
             bindings = <
 &kp PRINTSCREEN  &kp Q  &kp W  &kp E             &kp R                    &kp T                                   &kp UP                &kp Y        &kp U                &kp I                   &kp O       &kp P      &to 1
 &kp TAB          &kp A  &kp S  &kp D             &kp F                    &kp G                         &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                &kp K                   &kp L       &kp MINUS  &kp SEMICOLON
-&kp LA(GRAVE)    &kp Z  &kp X  &kp C             &kp V                    &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M                &kp LESS_THAN           &kp PERIOD  &kp SLASH  &kp EQUAL
+&kp LA(GRAVE)    &kp Z  &kp X  &kp C             &kp V                    &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M                &kp COMMA               &kp PERIOD  &kp SLASH  &kp EQUAL
                                &mt LEFT_ALT ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                               &lt 3 SPACE  &mt RIGHT_GUI ENTER  &mt RALT K_APPLICATION
             >;
         };
