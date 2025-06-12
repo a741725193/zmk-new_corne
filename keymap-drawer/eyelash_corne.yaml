@@ -246,9 +246,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [23, 22]
+- p: [23, 25]
   k: $$mdi:keyboard-tab$$
-- p: [17, 18]
+- p: [17, 15]
   k: $$mdi:keyboard-tab$$
 - p: [14, 15]
   k: $$mdi:apple-keyboard-shift$$
