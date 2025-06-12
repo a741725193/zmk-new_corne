@@ -18,6 +18,15 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        renc_scr: renc_scr {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "RENC_SCR";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+
+            tap-ms = <20>;
+        };
     };
 
     combos {
@@ -33,13 +42,13 @@
             key-positions = <17 15>;
         };
 
-        lsh {
-            bindings = <&kp LEFT_SHIFT>;
+        lal {
+            bindings = <&kp LEFT_ALT>;
             key-positions = <14 15>;
         };
 
-        rsh {
-            bindings = <&kp RIGHT_SHIFT>;
+        ral {
+            bindings = <&kp RIGHT_ALT>;
             key-positions = <25 26>;
         };
 
@@ -53,33 +62,33 @@
             key-positions = <25 24>;
         };
 
-        lal {
-            bindings = <&kp LEFT_ALT>;
+        lsh {
+            bindings = <&kp LEFT_SHIFT>;
             key-positions = <16 17>;
         };
 
-        ral {
-            bindings = <&kp RIGHT_ALT>;
+        rsh {
+            bindings = <&kp RIGHT_SHIFT>;
             key-positions = <23 24>;
         };
 
-        lsh_ct {
-            bindings = <&kp LS(LEFT_CONTROL)>;
+        lal_ct {
+            bindings = <&kp LA(LEFT_CONTROL)>;
             key-positions = <14 15 16>;
         };
 
-        rsh_ct {
-            bindings = <&kp RS(RIGHT_CONTROL)>;
+        ral_ct {
+            bindings = <&kp RA(RIGHT_CONTROL)>;
             key-positions = <24 25 26>;
         };
 
-        lct_al {
-            bindings = <&kp LC(LEFT_ALT)>;
+        lct_sh {
+            bindings = <&kp LS(LEFT_CONTROL)>;
             key-positions = <15 16 17>;
         };
 
-        rct_al {
-            bindings = <&kp RC(RIGHT_ALT)>;
+        rct_sh {
+            bindings = <&kp RS(RIGHT_CONTROL)>;
             key-positions = <23 24 25>;
         };
 
@@ -102,6 +111,11 @@
             bindings = <&kp RS(RA(RIGHT_CONTROL))>;
             key-positions = <23 24 25 26>;
         };
+
+        kana {
+            bindings = <&kp LA(GRAVE)>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
@@ -110,11 +124,13 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp PRINTSCREEN  &kp Q  &kp W  &kp E             &kp R                    &kp T                                   &kp UP                &kp Y        &kp U                &kp I                   &kp O       &kp P      &to 1
-&kp TAB          &kp A  &kp S  &kp D             &kp F                    &kp G                         &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                &kp K                   &kp L       &kp MINUS  &kp SEMICOLON
-&kp LA(GRAVE)    &kp Z  &kp X  &kp C             &kp V                    &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M                &kp COMMA               &kp PERIOD  &kp SLASH  &kp EQUAL
-                               &mt LEFT_ALT ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                               &lt 3 SPACE  &mt RIGHT_GUI ENTER  &mt RALT K_APPLICATION
+&kp LBKT  &kp Q  &kp W  &kp E             &kp R                    &kp T                                        &mmv MOVE_UP                     &kp Y        &kp U                  &kp I                        &kp O       &kp P      &to 1
+&kp RBKT  &kp A  &kp S  &kp D             &kp F                    &kp G                        &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &kp J                  &kp K                        &kp L       &kp MINUS  &kp SEMICOLON
+&kp APOS  &kp Z  &kp X  &kp C             &kp V                    &kp B            &mkp MB2                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA                    &kp PERIOD  &kp SLASH  &kp EQUAL
+                        &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                               &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI K_APPLICATION
             >;
+
+            sensor-bindings = <&renc_scr SCRL_UP SCRL_DOWN>;
         };
 
         olu {
@@ -129,30 +145,32 @@
         left {
             display-name = "left";
             bindings = <
-&trans  &kp HOME  &kp PG_UP  &kp UP         &kp PG_DN  &kp LBKT                       &none         &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
-&trans  &kp END   &kp LEFT   &kp DOWN       &kp RIGHT  &kp RBKT                &none  &none  &none  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
-&trans  &trans    &trans     &kp BACKSLASH  &mkp MB1   &mkp MB2  &kp C_MUTE           &none         &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
-                             &trans         &trans     &trans                                       &trans     &trans  &trans
+&kp BACKSLASH  &kp HOME  &kp PG_UP    &kp UP           &kp PG_DN  &kp LC(PAGE_UP)                      &trans          &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
+&kp GRAVE      &kp END   &kp LEFT     &kp DOWN         &kp RIGHT  &kp LC(PAGE_DOWN)            &trans  &trans  &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
+&trans         &trans    &kp LC(TAB)  &kp LC(LS(TAB))  &mkp MB1   &mkp MB2           &trans            &trans          &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
+                                      &trans           &trans     &trans                                               &trans     &trans  &trans
             >;
         };
 
         right {
             display-name = "right";
             bindings = <
-&trans  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5                   &none         &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN  &kp SQT  &trans
-&trans  &kp F12  &kp F10  &kp F6  &kp F2  &kp F5            &none  &none  &none  &kp END   &kp LEFT   &kp DOWN  &kp RIGHT  &kp F3   &trans
-&trans  &trans   &trans   &kp F8  &kp F7  &kp F4  &trans           &none         &kp F11   &kp F9     &kp F1    &trans     &trans   &trans
-                          &trans  &trans  &trans                                 &trans    &trans     &trans
+&trans  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5                    &trans            &kp HOME  &kp PG_UP  &kp UP       &kp PG_DN        &kp RC(PAGE_UP)    &trans
+&kp F3  &kp F12  &kp F10  &kp F6  &kp F2  &kp F5            &trans  &mkp MB3  &trans  &kp END   &kp LEFT   &kp DOWN     &kp RIGHT        &kp RC(PAGE_DOWN)  &trans
+&kp F1  &kp F9   &kp F11  &kp F8  &kp F7  &kp F4  &trans            &trans            &mkp MB1  &mkp MB2   &kp RC(TAB)  &kp RC(RS(TAB))  &trans             &trans
+                          &trans  &trans  &trans                                      &trans    &trans     &trans
             >;
+
+            sensor-bindings = <&renc_scr SCRL_RIGHT SCRL_LEFT>;
         };
 
         conf {
             display-name = "conf";
             bindings = <
-&out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                          &none         &none   &none   &none        &none       &none  &trans
-&rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF                &none  &none  &none  &none   &none   &none        &none       &none  &none
-&trans           &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &kp C_MUTE           &none         &trans  &trans  &bootloader  &sys_reset  &none  &none
-                                                   &trans           &trans           &trans                                              &trans  &trans  &trans
+&out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                       &trans          &trans  &trans      &trans             &trans           &trans  &trans
+&bt BT_CLR_ALL   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF            &trans  &trans  &trans  &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &trans            &trans          &trans  &trans      &trans             &trans           &trans  &trans
+                                                   &trans           &trans           &trans                                             &trans  &trans      &trans
             >;
         };
     };
