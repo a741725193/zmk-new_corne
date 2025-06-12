@@ -419,7 +419,7 @@ SENSIBLE_LAYER_LIST?
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_KEY_REPEAT_LTQ";
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <150>;
             flavor = "balanced";
             require-prior-idle-ms = <50>;
@@ -502,6 +502,19 @@ SENSIBLE_LAYER_LIST?
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             flavor = "balanced";
+        };
+
+        tap_key_repeat_sk_shift: tap_key_repeat_sk_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_KEY_REPEAT_SK_SHIFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            require-prior-idle-ms = <50>;
+            bindings = <&sk>, <&key_repeat>;
+
+            hold-trigger-key-positions = <0 1 14 27 2 3 4 5 15 16 17 18 28 29 30 31 6 19 43 47 32 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38>;
         };
     };
 
