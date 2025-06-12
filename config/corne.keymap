@@ -629,6 +629,20 @@ SENSIBLE_LAYER_LIST?
             key-positions = <14 15>;
             layers = <0>;
         };
+
+        tab_lh {
+            bindings = <&kp TAB>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <75>;
+        };
+
+        tab_rh {
+            bindings = <&kp TAB>;
+            key-positions = <22 21>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <75>;
+        };
     };
 
     #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
