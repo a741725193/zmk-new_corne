@@ -25,12 +25,12 @@
 
         rtab {
             bindings = <&kp TAB>;
-            key-positions = <23 22>;
+            key-positions = <23 25>;
         };
 
         ltab {
             bindings = <&kp TAB>;
-            key-positions = <17 18>;
+            key-positions = <17 15>;
         };
 
         lsh {
