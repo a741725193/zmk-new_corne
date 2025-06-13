@@ -432,9 +432,9 @@ SENSIBLE_LAYER_LIST?
             bindings = <&to>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <225>;
+            tapping-term-ms = <175>;
             quick-tap-ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             require-prior-idle-ms = <50>;
         };
 
