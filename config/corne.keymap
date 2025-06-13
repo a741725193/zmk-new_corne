@@ -516,6 +516,16 @@ SENSIBLE_LAYER_LIST?
 
             hold-trigger-key-positions = <0 1 14 27 2 3 4 5 15 16 17 18 28 29 30 31 6 19 43 47 32 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38>;
         };
+
+        sk_shift_dot_shift: sk_shift_dot_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SK_SHIFT_DOT_SHIFT";
+            bindings = <&macro_dot_shift>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     combos {
@@ -723,10 +733,10 @@ ZMK_TAP_DANCE(
 
         BASE {
             bindings = <
-&ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LC(LS(Z)) R      &kp T                      &kp UP_ARROW    &kp Y                                  &as RC(Z) U       &kp I              &kp O                    &kp P        &as RC(MINUS) MINUS
-&mod_to0_mouse_jiggle 0 ESCAPE  &ltq 10 A      &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LEFT_GUI G            &kp DOWN_ARROW  &as HOME H                             &hmr RCTRL J      &hmr LEFT_SHIFT K  &hmr RIGHT_ALT L         &ltq 5 SEMI  &tap_quote_to_nav_mouse
-&ltq 3 LA(TAB)                  &kp Z          &kp X            &kp C              &as LC(LA(LS(V))) V  &as N0 B                   &kp LEFT        &kp N                                  &as PG_DN M       &as PG_UP COMMA    &tap_dot_shift_capsword  &kp FSLH     &as RC(EQUAL) EQUAL
-                                               &ltq 6 C_MUTE    &ltq 9 F21         &ltq 7 SPACE         &tap_key_repeat_to 10 0    &kp RIGHT       &tap_key_repeat_sk_shift LEFT_SHIFT 0  &ltq 6 BACKSPACE  &kp_to 4 DEL
+&ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LC(LS(Z)) R      &kp T                      &kp UP_ARROW    &kp Y                         &as RC(Z) U       &kp I              &kp O                    &kp P        &as RC(MINUS) MINUS
+&mod_to0_mouse_jiggle 0 ESCAPE  &ltq 10 A      &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LEFT_GUI G            &kp DOWN_ARROW  &as HOME H                    &hmr RCTRL J      &hmr LEFT_SHIFT K  &hmr RIGHT_ALT L         &ltq 5 SEMI  &tap_quote_to_nav_mouse
+&ltq 3 LA(TAB)                  &kp Z          &kp X            &kp C              &as LC(LA(LS(V))) V  &as N0 B                   &kp LEFT        &kp N                         &as PG_DN M       &as PG_UP COMMA    &tap_dot_shift_capsword  &kp FSLH     &as RC(EQUAL) EQUAL
+                                               &ltq 6 C_MUTE    &ltq 9 F21         &ltq 7 SPACE         &tap_key_repeat_to 10 0    &kp RIGHT       &sk_shift_dot_shift 0 RSHIFT  &ltq 6 BACKSPACE  &kp_to 4 DEL
                                                                                                                                    &to 5
             >;
 
