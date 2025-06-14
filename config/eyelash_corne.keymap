@@ -194,8 +194,6 @@
 &trans         &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2           &trans            &trans            &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
                                           &trans       &trans     &trans                                                 &trans     &trans  &trans
             >;
-
-            sensor-bindings = <&rot_bl BL_INC BL_DEC>;
         };
 
         right {
