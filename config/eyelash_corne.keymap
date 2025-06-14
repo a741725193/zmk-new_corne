@@ -97,7 +97,12 @@
 
         kana {
             bindings = <&kp LA(GRAVE)>;
-            key-positions = <29 30>;
+            key-positions = <4 3>;
+        };
+
+        app {
+            bindings = <&kp K_APPLICATION>;
+            key-positions = <8 9>;
         };
     };
 
@@ -154,10 +159,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp LBKT  &kp Q  &kp W  &kp E             &kp R                    &kp T                                              &mmv MOVE_UP                     &kp Y        &kp U                  &kp I                        &kp O       &kp P      &to 1
-&kp RBKT  &kp A  &kp S  &kp D             &kp F                    &kp G                              &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &kp J                  &kp K                        &kp L       &kp MINUS  &kp SEMICOLON
-&kp APOS  &kp Z  &kp X  &kp C             &kp V                    &kp B            &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA                    &kp PERIOD  &kp SLASH  &kp EQUAL
-                        &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                                     &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI K_APPLICATION
+&kp LBKT  &kp Q  &kp W  &kp E             &kp R                    &kp T                                              &mmv MOVE_UP                     &kp Y        &kp U                  &kp I              &kp O       &kp P      &to 1
+&kp RBKT  &kp A  &kp S  &kp D             &kp F                    &kp G                              &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &kp J                  &kp K              &kp L       &kp MINUS  &kp SEMICOLON
+&kp APOS  &kp Z  &kp X  &kp C             &kp V                    &kp B            &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA          &kp PERIOD  &kp SLASH  &kp EQUAL
+                        &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                                     &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI TAB
             >;
 
             sensor-bindings = <&rot_ur_z 0 0>;
@@ -166,10 +171,10 @@
         QLU {
             display-name = "QLU";
             bindings = <
-&trans  &kp Q  &kp L  &kp U   &kp COMMA  &kp DOT                      &trans          &kp F   &kp W   &kp R   &kp Y  &kp P  &to 0
-&trans  &kp E  &kp I  &kp A   &kp O      &kp MINUS            &trans  &trans  &trans  &kp K   &kp T   &kp N   &kp S  &kp H  &trans
-&trans  &kp Z  &kp X  &kp C   &kp V      &kp SLASH  &trans            &trans          &kp G   &kp D   &kp M   &kp J  &kp B  &trans
-                      &trans  &trans     &trans                                       &trans  &trans  &trans
+&trans  &kp Q  &kp L  &kp U   &kp F   &kp MINUS                    &trans          &kp FSLH  &kp W   &kp R   &kp Y  &kp SEMI  &to 0
+&trans  &kp E  &kp I  &kp A   &kp O   &kp COMMA            &trans  &trans  &trans  &kp K     &kp T   &kp N   &kp S  &kp H     &kp P
+&trans  &kp Z  &kp X  &kp C   &kp V   &kp DOT    &trans            &trans          &kp G     &kp D   &kp M   &kp J  &kp B     &trans
+                      &trans  &trans  &trans                                       &trans    &trans  &trans
             >;
 
             sensor-bindings = <&rot_ur_z 0 0>;
