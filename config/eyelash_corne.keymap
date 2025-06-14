@@ -121,7 +121,7 @@
                         &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                               &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI K_APPLICATION
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         olu {
@@ -136,19 +136,19 @@
         left {
             display-name = "left";
             bindings = <
-&kp BACKSLASH  &kp HOME  &kp PG_UP    &kp UP           &kp PG_DN  &kp LC(PAGE_UP)                      &trans          &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
-&kp GRAVE      &kp END   &kp LEFT     &kp DOWN         &kp RIGHT  &kp LC(PAGE_DOWN)            &trans  &trans  &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
-&trans         &trans    &kp LC(TAB)  &kp LC(LS(TAB))  &mkp MB1   &mkp MB2           &trans            &trans          &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
-                                      &trans           &trans     &trans                                               &trans     &trans  &trans
+&kp BACKSLASH  &kp HOME  &kp PG_UP        &kp UP       &kp PG_DN  &kp LC(PAGE_UP)                      &trans          &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
+&kp GRAVE      &kp END   &kp LEFT         &kp DOWN     &kp RIGHT  &kp LC(PAGE_DOWN)            &trans  &trans  &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
+&trans         &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2           &trans            &trans          &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
+                                          &trans       &trans     &trans                                               &trans     &trans  &trans
             >;
         };
 
         right {
             display-name = "right";
             bindings = <
-&trans  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5                    &trans            &kp HOME  &kp PG_UP  &kp UP       &kp PG_DN        &kp RC(PAGE_UP)    &trans
-&kp F3  &kp F12  &kp F10  &kp F6  &kp F2  &kp F5            &trans  &mkp MB3  &trans  &kp END   &kp LEFT   &kp DOWN     &kp RIGHT        &kp RC(PAGE_DOWN)  &trans
-&kp F1  &kp F9   &kp F11  &kp F8  &kp F7  &kp F4  &trans            &trans            &mkp MB1  &mkp MB2   &kp RC(TAB)  &kp RC(RS(TAB))  &trans             &trans
+&trans  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5                    &trans            &kp HOME  &kp PG_UP  &kp UP           &kp PG_DN    &kp RC(PAGE_UP)    &trans
+&kp F3  &kp F12  &kp F10  &kp F6  &kp F2  &kp F5            &trans  &mkp MB3  &trans  &kp END   &kp LEFT   &kp DOWN         &kp RIGHT    &kp RC(PAGE_DOWN)  &trans
+&kp F1  &kp F9   &kp F11  &kp F8  &kp F7  &kp F4  &trans            &trans            &mkp MB1  &mkp MB2   &kp RC(RS(TAB))  &kp RC(TAB)  &trans             &trans
                           &trans  &trans  &trans                                      &trans    &trans     &trans
             >;
 
