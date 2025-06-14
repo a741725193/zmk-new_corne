@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - '&mkp LEFT_SHIFT'
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - N
   - M
@@ -209,7 +209,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&bl BL_INC'
-  - '&bl BL_TOG'
+  - '&bl BL_ON'
   - BT CLR ALL
   - RGB HUI
   - RGB SAI
@@ -238,7 +238,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_OFF'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
