@@ -100,6 +100,15 @@
         };
     };
 
+    behaviors {
+        enc_scr: enc_scr {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENC_SCR";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -112,7 +121,7 @@
                         &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                               &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI K_APPLICATION
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&enc_scr MOVE_Y(15) MOVE_Y(-15)>;
         };
 
         QLU {
@@ -143,7 +152,7 @@
                           &trans  &trans  &trans                                      &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&enc_scr MOVE_X(15) MOVE_X(-15)>;
         };
 
         conf {
