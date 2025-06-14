@@ -54,21 +54,21 @@ layers:
   - Q
   - L
   - U
-  - F
-  - {t: '-', s: _}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: /, s: '?'}
+  - F
   - W
   - R
   - Y
-  - {t: ;, s: ':'}
+  - P
   - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - E
   - I
   - A
   - O
-  - {t: ',', s: <}
+  - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -77,13 +77,13 @@ layers:
   - N
   - S
   - H
-  - P
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Z
   - X
   - C
   - V
-  - {t: ., s: '>'}
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - G
