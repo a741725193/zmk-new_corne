@@ -105,7 +105,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - PG DN
   - Ctl+PgUp
-  - $$mdi:pan-up$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -118,8 +118,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - Ctl+PgDn
-  - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB3'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '4', s: $}
@@ -154,7 +154,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:pan-up$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - PG UP
   - $$mdi:arrow-up-bold$$
@@ -167,9 +167,9 @@ layers:
   - F6
   - F2
   - F5
-  - $$mdi:pan-left$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
-  - $$mdi:pan-right$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - END
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -183,7 +183,7 @@ layers:
   - F7
   - F4
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:pan-down$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
   - Ctl+Sft+$$mdi:keyboard-tab$$
