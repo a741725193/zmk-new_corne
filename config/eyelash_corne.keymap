@@ -11,15 +11,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -120,9 +111,11 @@
 &kp APOS  &kp Z  &kp X  &kp C             &kp V                    &kp B            &mkp MB2                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA                    &kp PERIOD  &kp SLASH  &kp EQUAL
                         &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                               &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI K_APPLICATION
             >;
+
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
-        olu {
+        QLU {
             bindings = <
 &trans  &kp Q  &kp L  &kp U   &kp COMMA  &kp DOT                      &trans          &kp F   &kp W   &kp R   &kp Y  &kp P  &to 0
 &trans  &kp E  &kp I  &kp A   &kp O      &kp MINUS            &trans  &trans  &trans  &kp K   &kp T   &kp N   &kp S  &kp H  &trans
@@ -150,7 +143,7 @@
                           &trans  &trans  &trans                                      &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         conf {
@@ -167,7 +160,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        onisi {
+        conf {
             if-layers = <2 3>;
             then-layer = <4>;
         };
