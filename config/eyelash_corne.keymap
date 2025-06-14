@@ -18,15 +18,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-
-        enc_scr: enc_scr {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENC_SCR";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <20>;
-        };
     };
 
     combos {
@@ -130,7 +121,7 @@
                         &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                               &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI K_APPLICATION
             >;
 
-            sensor-bindings = <&enc_scr>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         olu {
