@@ -21,7 +21,7 @@ layers:
   - F
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB3'
+  - '&mkp MB1'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - H
   - J
@@ -119,7 +119,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - Ctl+PgDn
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB3'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '4', s: $}
