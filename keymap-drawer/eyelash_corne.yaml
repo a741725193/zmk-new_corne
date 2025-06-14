@@ -246,9 +246,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [23, 25]
+- p: [37, 38]
   k: $$mdi:keyboard-tab$$
-- p: [17, 15]
+- p: [32, 31]
   k: $$mdi:keyboard-tab$$
 - p: [14, 15]
   k: $$mdi:apple-keyboard-option$$
@@ -278,5 +278,5 @@ combos:
   k: Sft+Alt+$$mdi:apple-keyboard-control$$
 - p: [23, 24, 25, 26]
   k: Sft+AltGr+$$mdi:apple-keyboard-control$$
-- p: [31, 32]
+- p: [29, 30]
   k: Alt+`
