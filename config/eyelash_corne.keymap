@@ -12,8 +12,8 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &msc {
-    x-input-code = <3>;
-    y-input-code = <4>;
+    x-input-code = <0>;
+    y-input-code = <1>;
 };
 
 / {
@@ -111,7 +111,25 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ROT_SCR";
             #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+            bindings = <&rot_ur>, <&rot_dl>;
+        };
+
+        rot_ur: rot_ur {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ROT_UR";
+            bindings = <&kp PAGE_UP>, <&kp LA(PAGE_DOWN)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rot_dl: rot_dl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ROT_DL";
+            bindings = <&kp PAGE_DOWN>, <&kp LA(PAGE_UP)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -144,10 +162,10 @@
         left {
             display-name = "left";
             bindings = <
-&kp BACKSLASH  &kp HOME  &kp PG_UP        &kp UP       &kp PG_DN  &kp LC(PAGE_UP)                      &trans          &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
-&kp GRAVE      &kp END   &kp LEFT         &kp DOWN     &kp RIGHT  &kp LC(PAGE_DOWN)            &trans  &trans  &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
-&trans         &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2           &trans            &trans          &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
-                                          &trans       &trans     &trans                                               &trans     &trans  &trans
+&kp BACKSLASH  &kp HOME  &kp PG_UP        &kp UP       &kp PG_DN  &kp LC(PAGE_UP)                              &msc SCRL_UP          &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
+&kp GRAVE      &kp END   &kp LEFT         &kp DOWN     &kp RIGHT  &kp LC(PAGE_DOWN)            &msc SCRL_LEFT  &trans        &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
+&trans         &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2           &trans                    &trans                &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
+                                          &trans       &trans     &trans                                                             &trans     &trans  &trans
             >;
 
             sensor-bindings = <&rot_scr SCRL_UP SCRL_DOWN>;
@@ -162,7 +180,7 @@
                           &trans  &trans  &trans                                                             &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(LC(EQUAL)) LC(MINUS)>;
+            sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
         };
 
         conf {
