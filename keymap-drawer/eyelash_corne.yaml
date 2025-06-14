@@ -129,8 +129,8 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+Ctl+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-tab$$
-  - Ctl+Sft+$$mdi:keyboard-tab$$
   - '&mkp MB1'
   - '&mkp MB2'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -186,8 +186,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
   - '&mkp MB2'
-  - Ctl+$$mdi:keyboard-tab$$
   - Ctl+Sft+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
