@@ -17,12 +17,12 @@
 
         rtab {
             bindings = <&kp TAB>;
-            key-positions = <23 25>;
+            key-positions = <37 38>;
         };
 
         ltab {
             bindings = <&kp TAB>;
-            key-positions = <17 15>;
+            key-positions = <32 31>;
         };
 
         lal {
@@ -97,7 +97,7 @@
 
         kana {
             bindings = <&kp LA(GRAVE)>;
-            key-positions = <31 32>;
+            key-positions = <29 30>;
         };
     };
 
