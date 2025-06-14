@@ -155,7 +155,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp LBKT  &kp Q  &kp W  &kp E             &kp R                    &kp T                                              &mmv MOVE_UP                     &kp Y        &kp U                  &kp I                        &kp O       &kp P      &to 1
-&kp RBKT  &kp A  &kp S  &kp D             &kp F                    &kp G                              &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &kp H        &kp J                  &kp K                        &kp L       &kp MINUS  &kp SEMICOLON
+&kp RBKT  &kp A  &kp S  &kp D             &kp F                    &kp G                              &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &kp J                  &kp K                        &kp L       &kp MINUS  &kp SEMICOLON
 &kp APOS  &kp Z  &kp X  &kp C             &kp V                    &kp B            &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA                    &kp PERIOD  &kp SLASH  &kp EQUAL
                         &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                                     &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI K_APPLICATION
             >;
@@ -178,10 +178,10 @@
         left {
             display-name = "left";
             bindings = <
-&kp BACKSLASH  &kp HOME  &kp PG_UP        &kp UP       &kp PG_DN  &kp LC(PAGE_UP)                      &trans          &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
-&kp GRAVE      &kp END   &kp LEFT         &kp DOWN     &kp RIGHT  &kp LC(PAGE_DOWN)            &trans  &trans  &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
-&trans         &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2           &trans            &trans          &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
-                                          &trans       &trans     &trans                                               &trans     &trans  &trans
+&kp BACKSLASH  &kp HOME  &kp PG_UP        &kp UP       &kp PG_DN  &kp LC(PAGE_UP)                      &trans            &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
+&kp GRAVE      &kp END   &kp LEFT         &kp DOWN     &kp RIGHT  &kp LC(PAGE_DOWN)            &trans  &mkp MB3  &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
+&trans         &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2           &trans            &trans            &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
+                                          &trans       &trans     &trans                                                 &trans     &trans  &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
