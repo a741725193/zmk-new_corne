@@ -120,8 +120,6 @@
 &kp APOS  &kp Z  &kp X  &kp C             &kp V                    &kp B            &mkp MB2                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA                    &kp PERIOD  &kp SLASH  &kp EQUAL
                         &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                               &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI K_APPLICATION
             >;
-
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         olu {
