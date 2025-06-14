@@ -171,10 +171,10 @@
         QLU {
             display-name = "QLU";
             bindings = <
-&trans  &kp Q  &kp L  &kp U   &kp F   &kp MINUS                    &trans          &kp FSLH  &kp W   &kp R   &kp Y  &kp SEMI  &to 0
-&trans  &kp E  &kp I  &kp A   &kp O   &kp COMMA            &trans  &trans  &trans  &kp K     &kp T   &kp N   &kp S  &kp H     &kp P
-&trans  &kp Z  &kp X  &kp C   &kp V   &kp DOT    &trans            &trans          &kp G     &kp D   &kp M   &kp J  &kp B     &trans
-                      &trans  &trans  &trans                                       &trans    &trans  &trans
+&trans  &kp Q  &kp L  &kp U   &kp COMMA  &kp DOT                      &trans          &kp F   &kp W   &kp R   &kp Y  &kp P  &to 0
+&trans  &kp E  &kp I  &kp A   &kp O      &kp MINUS            &trans  &trans  &trans  &kp K   &kp T   &kp N   &kp S  &kp H  &trans
+&trans  &kp Z  &kp X  &kp C   &kp V      &kp FSLH   &trans            &trans          &kp G   &kp D   &kp M   &kp J  &kp B  &trans
+                      &trans  &trans     &trans                                       &trans  &trans  &trans
             >;
 
             sensor-bindings = <&rot_ur_z 0 0>;
