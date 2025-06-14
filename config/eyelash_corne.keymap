@@ -127,13 +127,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        rot_bl: rot_bl {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "ROT_BL";
-            #sensor-binding-cells = <2>;
-            bindings = <&bl>, <&bl>;
-        };
-
         rot_und_zd: rot_und_zd {
             compatible = "zmk,behavior-mod-morph";
             label = "ROT_UND_ZD";
@@ -211,9 +204,9 @@
         conf {
             display-name = "conf";
             bindings = <
-&out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                       &trans          &trans  &trans      &trans             &trans           &trans  &bl BL_TOG
-&bt BT_CLR_ALL   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF            &trans  &trans  &trans  &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &bl BL_CYCLE
-&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &trans            &trans          &trans  &trans      &trans             &trans           &trans  &trans
+&out OUT_TOG     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                       &trans          &trans  &trans      &trans             &trans           &bl BL_INC  &bl BL_TOG
+&bt BT_CLR_ALL   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF            &trans  &trans  &trans  &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bl BL_DEC  &bl BL_CYCLE
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &trans            &trans          &trans  &trans      &trans             &trans           &trans      &trans
                                                    &trans           &trans           &trans                                             &trans  &trans      &trans
             >;
         };
