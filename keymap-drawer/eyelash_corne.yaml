@@ -48,27 +48,27 @@ layers:
   - {t: '$$mdi:backspace$$', h: left}
   - {t: '$$mdi:keyboard-space$$', h: right}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: APPLICATION, h: RIGHT GUI}
+  - {t: '$$mdi:keyboard-tab$$', h: RIGHT GUI}
   QLU:
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
   - L
   - U
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: '$$mdi:transfer$$', type: trans}
   - F
+  - {t: '-', s: _}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, s: '?'}
   - W
   - R
   - Y
-  - P
+  - {t: ;, s: ':'}
   - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - E
   - I
   - A
   - O
-  - {t: '-', s: _}
+  - {t: ',', s: <}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -77,13 +77,13 @@ layers:
   - N
   - S
   - H
-  - {t: '$$mdi:transfer$$', type: trans}
+  - P
   - {t: '$$mdi:transfer$$', type: trans}
   - Z
   - X
   - C
   - V
-  - {t: /, s: '?'}
+  - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - G
@@ -278,5 +278,7 @@ combos:
   k: Sft+Alt+$$mdi:apple-keyboard-control$$
 - p: [23, 24, 25, 26]
   k: Sft+AltGr+$$mdi:apple-keyboard-control$$
-- p: [29, 30]
+- p: [4, 3]
   k: Alt+`
+- p: [8, 9]
+  k: APPLICATION
