@@ -208,7 +208,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_INC'
   - '&bl BL_TOG'
   - BT CLR ALL
   - RGB HUI
@@ -223,7 +223,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_DEC'
   - '&bl BL_CYCLE'
   - RGB TOG
   - RGB HUD
