@@ -11,6 +11,11 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+&msc {
+    x-input-code = <3>;
+    y-input-code = <4>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -101,6 +106,15 @@
         };
     };
 
+    behaviors {
+        rot_scr: rot_scr {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ROT_SCR";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -130,13 +144,13 @@
         left {
             display-name = "left";
             bindings = <
-&kp BACKSLASH  &kp HOME  &kp PG_UP        &kp UP       &kp PG_DN  &kp LC(PAGE_UP)                              &msc SCRL_UP                     &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
-&kp GRAVE      &kp END   &kp LEFT         &kp DOWN     &kp RIGHT  &kp LC(PAGE_DOWN)            &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
-&trans         &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2           &trans                    &msc SCRL_DOWN                   &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
-                                          &trans       &trans     &trans                                                                        &trans     &trans  &trans
+&kp BACKSLASH  &kp HOME  &kp PG_UP        &kp UP       &kp PG_DN  &kp LC(PAGE_UP)                      &trans          &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
+&kp GRAVE      &kp END   &kp LEFT         &kp DOWN     &kp RIGHT  &kp LC(PAGE_DOWN)            &trans  &trans  &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
+&trans         &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2           &trans            &trans          &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
+                                          &trans       &trans     &trans                                               &trans     &trans  &trans
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&rot_scr SCRL_UP SCRL_DOWN>;
         };
 
         right {
