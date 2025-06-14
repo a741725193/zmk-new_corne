@@ -19,11 +19,11 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        renc_scr: renc_scr {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "RENC_SCR";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+        enc_scr: enc_scr {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENC_SCR";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
             tap-ms = <20>;
         };
@@ -130,7 +130,7 @@
                         &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                               &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI K_APPLICATION
             >;
 
-            sensor-bindings = <&renc_scr SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&enc_scr>;
         };
 
         olu {
@@ -161,7 +161,7 @@
                           &trans  &trans  &trans                                      &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&renc_scr SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&none>;
         };
 
         conf {
