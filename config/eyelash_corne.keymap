@@ -101,15 +101,6 @@
         };
     };
 
-    behaviors {
-        rot_bl: rot_bl {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "ROT_BL";
-            #sensor-binding-cells = <2>;
-            bindings = <&bl>, <&bl>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -145,7 +136,7 @@
                                           &trans       &trans     &trans                                                                        &trans     &trans  &trans
             >;
 
-            sensor-bindings = <&rot_bl BL_INC BL_DEC>;
+            sensor-bindings = <&none>;
         };
 
         right {
