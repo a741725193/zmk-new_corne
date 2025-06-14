@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100   // 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -151,6 +151,13 @@
             #sensor-binding-cells = <2>;
             bindings = <&rot_red_zu>, <&rot_und_zd>;
         };
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            // 追加: スクロールのタップ時間を設定 (20ms)
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -169,6 +176,7 @@
         };
 
         QLU {
+            display-name = "QLU";
             bindings = <
 &trans  &kp Q  &kp L  &kp U   &kp COMMA  &kp DOT                      &trans          &kp F   &kp W   &kp R   &kp Y  &kp P  &to 0
 &trans  &kp E  &kp I  &kp A   &kp O      &kp MINUS            &trans  &trans  &trans  &kp K   &kp T   &kp N   &kp S  &kp H  &trans
@@ -198,7 +206,7 @@
                           &trans  &trans  &trans                                      &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&rot_scr 0 0>;
+            sensor-bindings =  <&scroll_up_down>;
         };
 
         conf {
