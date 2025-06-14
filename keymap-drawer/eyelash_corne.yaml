@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: olu, h: toggle}
+  - {t: QLU, h: toggle}
   - {t: ']', s: '}'}
   - A
   - S
@@ -49,7 +49,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: right}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: APPLICATION, h: RIGHT GUI}
-  olu:
+  QLU:
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
   - L
