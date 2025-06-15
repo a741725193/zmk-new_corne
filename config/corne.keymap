@@ -914,7 +914,7 @@ ZMK_TAP_DANCE(
 &bt BT_NXT      &hml LGUI F1  &hml LALT F2  &hml LSHFT F3  &hml LCTRL F4  &kp F5     &trans  &kp F6   &hmr RCTRL F7  &hmr RSHFT F8  &hmr RALT F9  &hmr RGUI F10  &trans
 &bt BT_CLR_ALL  &kp F10       &kp F1        &kp F2         &kp F3         &kp F11    &trans  &kp F12  &kp F1         &kp F2         &kp F3        &trans         &bt BT_CLR_ALL
                               &trans        &trans         &kp SPACE      &kp TAB    &trans  &trans   &trans         &trans
-                                                                                     &trans
+                                                                                     &to 0
             >;
 
             label = "Fn";
