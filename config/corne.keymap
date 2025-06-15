@@ -537,6 +537,25 @@ SENSIBLE_LAYER_LIST?
             flavor = "tap-preferred";
             hold-trigger-key-positions = <41>;
         };
+
+        mouse_word: mouse_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <  >;
+            ignore-numbers;
+            label = "MOUSE_WORD";
+        };
+
+        morph_column_mouse_word: morph_column_mouse_word {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MORPH_COLUMN_MOUSE_WORD";
+            bindings = <&mouse_word>, <&morph_column>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
+        };
     };
 
     combos {
