@@ -31,7 +31,7 @@
 
         ltab {
             bindings = <&kp TAB>;
-            key-positions = <32 16>;
+            key-positions = <16 43>;
         };
 
         kana {
