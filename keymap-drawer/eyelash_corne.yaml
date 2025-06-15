@@ -24,9 +24,9 @@ layers:
   - '&mkp MB1'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - H
-  - J
-  - K
-  - L
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '-', s: _}
   - {t: ;, s: ':'}
   - .
@@ -65,17 +65,17 @@ layers:
   - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - E
-  - I
-  - A
-  - O
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - K
-  - T
-  - N
-  - S
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - H
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -99,12 +99,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   left:
-  - {t: \, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - PG UP
   - $$mdi:arrow-up-bold$$
   - PG DN
-  - Ctl+PgUp
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
@@ -112,12 +112,12 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: ., s: '>'}
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - END
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - Ctl+PgDn
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -159,9 +159,9 @@ layers:
   - PG UP
   - $$mdi:arrow-up-bold$$
   - PG DN
-  - Ctl+PgUp
+  - F9
   - {t: '$$mdi:transfer$$', type: trans}
-  - F3
+  - {t: '$$mdi:transfer$$', type: trans}
   - F12
   - F10
   - F6
@@ -174,10 +174,10 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - Ctl+PgDn
+  - F3
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
-  - F9
   - F11
   - F8
   - F7
@@ -248,35 +248,19 @@ layers:
 combos:
 - p: [32, 16]
   k: $$mdi:keyboard-tab$$
-- p: [14, 15]
-  k: $$mdi:apple-keyboard-option$$
-- p: [25, 26]
-  k: $$mdi:apple-keyboard-option$$
-- p: [15, 16]
-  k: $$mdi:apple-keyboard-control$$
-- p: [25, 24]
-  k: $$mdi:apple-keyboard-control$$
-- p: [16, 17]
-  k: $$mdi:apple-keyboard-shift$$
-- p: [23, 24]
-  k: $$mdi:apple-keyboard-shift$$
-- p: [14, 15, 16]
-  k: Alt+$$mdi:apple-keyboard-control$$
-- p: [24, 25, 26]
-  k: AltGr+$$mdi:apple-keyboard-control$$
-- p: [15, 16, 17]
-  k: Sft+$$mdi:apple-keyboard-control$$
-- p: [23, 24, 25]
-  k: Sft+$$mdi:apple-keyboard-control$$
-- p: [16, 17, 18]
-  k: Sft+$$mdi:apple-keyboard-option$$
-- p: [22, 23, 24]
-  k: Sft+$$mdi:apple-keyboard-option$$
-- p: [14, 15, 16, 17]
-  k: Sft+Alt+$$mdi:apple-keyboard-control$$
-- p: [23, 24, 25, 26]
-  k: Sft+AltGr+$$mdi:apple-keyboard-control$$
 - p: [4, 3]
   k: Alt+`
 - p: [8, 9]
   k: APPLICATION
+- p: [30, 31]
+  k: Ctl+C
+- p: [30, 31, 32]
+  k: Ctl+X
+- p: [31, 32]
+  k: Ctl+V
+- p: [33, 32, 31]
+  k: Sft+Ctl+V
+- p: [29, 30]
+  k: Ctl+Z
+- p: [1, 2]
+  k: Sft+Ctl+Z
