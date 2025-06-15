@@ -556,6 +556,22 @@ SENSIBLE_LAYER_LIST?
             tapping-term-ms = <175>;
             quick-tap-ms = <150>;
         };
+
+        nav_word: nav_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <SCRL_LEFT SCRL_RIGHT SCRL_DOWN SCRL_UP LCLK RCLK MCLK MOVE_LEFT MOVE_RIGHT MOVE_UP MOVE_DOWN >;
+            ignore-numbers;
+            label = "NAV_WORD";
+        };
+
+        wm_word: wm_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <SCRL_LEFT SCRL_RIGHT SCRL_DOWN SCRL_UP LCLK RCLK MCLK MOVE_LEFT MOVE_RIGHT MOVE_UP MOVE_DOWN >;
+            ignore-numbers;
+            label = "WM_WORD";
+        };
     };
 
     combos {
