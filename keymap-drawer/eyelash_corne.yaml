@@ -16,9 +16,9 @@ layers:
   - {t: QLU, h: toggle}
   - {t: ']', s: '}'}
   - A
-  - S
-  - D
-  - F
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&mkp MB1'
