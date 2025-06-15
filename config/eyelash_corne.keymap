@@ -15,14 +15,9 @@
     combos {
         compatible = "zmk,combos";
 
-        rtab {
-            bindings = <&kp TAB>;
-            key-positions = <37 38>;
-        };
-
         ltab {
             bindings = <&kp TAB>;
-            key-positions = <32 31>;
+            key-positions = <32 16>;
         };
 
         lal {
