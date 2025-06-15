@@ -18,6 +18,13 @@
     flavor = "tap-preferred";
 };
 
+&lt {
+    tapping-term-ms = <175>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <(-1)>;
+    flavor = "balanced";
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -25,76 +32,6 @@
         ltab {
             bindings = <&kp TAB>;
             key-positions = <32 16>;
-        };
-
-        lal {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <14 15>;
-        };
-
-        ral {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <25 26>;
-        };
-
-        lct {
-            bindings = <&kp LEFT_CONTROL>;
-            key-positions = <15 16>;
-        };
-
-        rct {
-            bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <25 24>;
-        };
-
-        lsh {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <16 17>;
-        };
-
-        rsh {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <23 24>;
-        };
-
-        lal_ct {
-            bindings = <&kp LA(LEFT_CONTROL)>;
-            key-positions = <14 15 16>;
-        };
-
-        ral_ct {
-            bindings = <&kp RA(RIGHT_CONTROL)>;
-            key-positions = <24 25 26>;
-        };
-
-        lct_sh {
-            bindings = <&kp LS(LEFT_CONTROL)>;
-            key-positions = <15 16 17>;
-        };
-
-        rct_sh {
-            bindings = <&kp RS(RIGHT_CONTROL)>;
-            key-positions = <23 24 25>;
-        };
-
-        lsh_al {
-            bindings = <&kp LS(LEFT_ALT)>;
-            key-positions = <16 17 18>;
-        };
-
-        rsh_al {
-            bindings = <&kp RS(RIGHT_ALT)>;
-            key-positions = <22 23 24>;
-        };
-
-        lsh_ct_al {
-            bindings = <&kp LS(LA(LEFT_CONTROL))>;
-            key-positions = <14 15 16 17>;
-        };
-
-        rsh_ct_al {
-            bindings = <&kp RS(RA(RIGHT_CONTROL))>;
-            key-positions = <23 24 25 26>;
         };
 
         kana {
@@ -105,6 +42,36 @@
         app {
             bindings = <&kp K_APPLICATION>;
             key-positions = <8 9>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <30 31>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <30 31 32>;
+        };
+
+        pst {
+            bindings = <&kp LC(V)>;
+            key-positions = <31 32>;
+        };
+
+        shpst {
+            bindings = <&kp LS(LC(V))>;
+            key-positions = <33 32 31>;
+        };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <29 30>;
+        };
+
+        redo {
+            bindings = <&kp LS(LC(Z))>;
+            key-positions = <1 2>;
         };
     };
 
@@ -161,9 +128,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp LBKT  &kp Q  &kp W           &kp E             &kp R                    &kp T                                              &mmv MOVE_UP                     &kp Y        &kp U                  &kp I              &kp O       &kp P      &to 1
-&kp RBKT  &kp A  &mt LEFT_ALT S  &mt LCTRL D       &mt LEFT_SHIFT F         &kp G                              &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &kp J                  &kp K              &kp L       &kp MINUS  &kp SEMICOLON
-&kp APOS  &kp Z  &kp X           &kp C             &kp V                    &kp B            &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA          &kp PERIOD  &kp SLASH  &kp EQUAL
+&kp LBKT  &kp Q  &kp W           &kp E             &kp R                    &kp T                                              &mmv MOVE_UP                     &kp Y        &kp U                  &kp I                &kp O            &kp P      &to 1
+&kp RBKT  &kp A  &mt LEFT_ALT S  &mt LCTRL D       &mt LEFT_SHIFT F         &kp G                              &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &mt RSHIFT J           &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &kp MINUS  &kp SEMICOLON
+&kp APOS  &kp Z  &kp X           &kp C             &kp V                    &kp B            &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA            &kp PERIOD       &kp SLASH  &kp EQUAL
                                  &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                                     &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI TAB
             >;
 
@@ -173,10 +140,10 @@
         QLU {
             display-name = "QLU";
             bindings = <
-&trans  &kp Q  &kp L  &kp U   &kp COMMA  &kp DOT                      &trans          &kp F   &kp W   &kp R   &kp Y  &kp P  &to 0
-&trans  &kp E  &kp I  &kp A   &kp O      &kp MINUS            &trans  &trans  &trans  &kp K   &kp T   &kp N   &kp S  &kp H  &trans
-&trans  &kp Z  &kp X  &kp C   &kp V      &kp FSLH   &trans            &trans          &kp G   &kp D   &kp M   &kp J  &kp B  &trans
-                      &trans  &trans     &trans                                       &trans  &trans  &trans
+&trans  &kp Q  &kp L           &kp U        &kp COMMA         &kp DOT                      &trans          &kp F   &kp W         &kp R                &kp Y            &kp P  &to 0
+&trans  &kp E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &kp MINUS            &trans  &trans  &trans  &kp K   &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &kp H  &trans
+&trans  &kp Z  &kp X           &kp C        &kp V             &kp FSLH   &trans            &trans          &kp G   &kp D         &kp M                &kp J            &kp B  &trans
+                               &trans       &trans            &trans                                       &trans  &trans        &trans
             >;
 
             sensor-bindings = <&rot_ur_z 0 0>;
@@ -185,10 +152,10 @@
         left {
             display-name = "left";
             bindings = <
-&kp BACKSLASH  &kp HOME  &kp PG_UP        &kp UP       &kp PG_DN  &kp LC(PAGE_UP)                      &trans            &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
-&kp GRAVE      &kp END   &kp LEFT         &kp DOWN     &kp RIGHT  &kp LC(PAGE_DOWN)            &trans  &mkp MB3  &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
-&trans         &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2           &trans            &trans            &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
-                                          &trans       &trans     &trans                                                 &trans     &trans  &trans
+&trans  &kp HOME  &kp PG_UP        &kp UP       &kp PG_DN  &kp BSLH                     &trans            &kp N6     &kp N7  &kp N8  &kp N9        &kp N0     &kp DOT
+&trans  &kp END   &kp LEFT         &kp DOWN     &kp RIGHT  &kp GRAVE            &trans  &mkp MB3  &trans  &kp BSPC   &kp N4  &kp N5  &kp N6        &kp MINUS  &kp EQUAL
+&trans  &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &mkp MB1   &mkp MB2   &trans            &trans            &kp COMMA  &kp N1  &kp N2  &kp NUMBER_3  &kp SEMI   &kp FSLH
+                                   &trans       &trans     &trans                                         &trans     &trans  &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -197,9 +164,9 @@
         right {
             display-name = "right";
             bindings = <
-&trans  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5                    &trans            &kp HOME  &kp PG_UP  &kp UP           &kp PG_DN    &kp RC(PAGE_UP)    &trans
-&kp F3  &kp F12  &kp F10  &kp F6  &kp F2  &kp F5            &trans  &mkp MB3  &trans  &kp END   &kp LEFT   &kp DOWN         &kp RIGHT    &kp RC(PAGE_DOWN)  &trans
-&kp F1  &kp F9   &kp F11  &kp F8  &kp F7  &kp F4  &trans            &trans            &mkp MB1  &mkp MB2   &kp RC(RS(TAB))  &kp RC(TAB)  &trans             &trans
+&trans  &kp N1   &kp N2   &kp N3  &kp N4  &kp N5                    &trans            &kp HOME  &kp PG_UP  &kp UP           &kp PG_DN    &kp F9  &trans
+&trans  &kp F12  &kp F10  &kp F6  &kp F2  &kp F5            &trans  &mkp MB3  &trans  &kp END   &kp LEFT   &kp DOWN         &kp RIGHT    &kp F3  &trans
+&trans  &kp F1   &kp F11  &kp F8  &kp F7  &kp F4  &trans            &trans            &mkp MB1  &mkp MB2   &kp RC(RS(TAB))  &kp RC(TAB)  &trans  &trans
                           &trans  &trans  &trans                                      &trans    &trans     &trans
             >;
 
