@@ -246,7 +246,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [32, 16]
+- p: [16, 43]
   k: $$mdi:keyboard-tab$$
 - p: [37, 36]
   k: Alt+`
