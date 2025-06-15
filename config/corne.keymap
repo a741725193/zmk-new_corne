@@ -629,8 +629,8 @@ SENSIBLE_LAYER_LIST?
             require-prior-idle-ms = <30>;
         };
 
-        To4_v1 {
-            bindings = <&to 4>;
+        Tab_lhv2 {
+            bindings = <&kp TAB>;
             key-positions = <42 41>;
         };
 
@@ -695,6 +695,11 @@ SENSIBLE_LAYER_LIST?
             key-positions = <22 21>;
             timeout-ms = <50>;
             require-prior-idle-ms = <75>;
+        };
+
+        Enter_rhv2 {
+            bindings = <&kp RET>;
+            key-positions = <44 45>;
         };
     };
 
