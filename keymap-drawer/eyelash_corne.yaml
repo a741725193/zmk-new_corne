@@ -254,13 +254,5 @@ combos:
   k: APPLICATION
 - p: [30, 31]
   k: Ctl+C
-- p: [30, 31, 32]
-  k: Ctl+X
-- p: [31, 32]
-  k: Ctl+V
-- p: [33, 32, 31]
+- p: [33, 32]
   k: Sft+Ctl+V
-- p: [29, 30]
-  k: Ctl+Z
-- p: [1, 2]
-  k: Sft+Ctl+Z
