@@ -248,9 +248,9 @@ layers:
 combos:
 - p: [32, 16]
   k: $$mdi:keyboard-tab$$
-- p: [4, 3]
+- p: [37, 36]
   k: Alt+`
-- p: [8, 9]
+- p: [37, 38]
   k: APPLICATION
 - p: [30, 31]
   k: Ctl+C
