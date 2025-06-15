@@ -541,7 +541,7 @@ SENSIBLE_LAYER_LIST?
         mouse_word: mouse_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <SCRL_LEFT SCRL_RIGHT SCRL_DOWN SCRL_UP LCLK RCLK MCLK MOVE_LEFT MOVE_RIGHT MOVE_UP MOVE_DOWN  >;
+            continue-list = <PG_DN PG_UP SCRL_LEFT SCRL_RIGHT SCRL_DOWN SCRL_UP LCLK RCLK MCLK MOVE_LEFT MOVE_RIGHT MOVE_UP MOVE_DOWN  >;
             ignore-numbers;
             label = "MOUSE_WORD";
         };
