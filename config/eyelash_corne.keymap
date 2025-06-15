@@ -49,29 +49,9 @@
             key-positions = <30 31>;
         };
 
-        cut {
-            bindings = <&kp LC(X)>;
-            key-positions = <30 31 32>;
-        };
-
-        pst {
-            bindings = <&kp LC(V)>;
-            key-positions = <31 32>;
-        };
-
         shpst {
             bindings = <&kp LS(LC(V))>;
-            key-positions = <33 32 31>;
-        };
-
-        undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <29 30>;
-        };
-
-        redo {
-            bindings = <&kp LS(LC(Z))>;
-            key-positions = <1 2>;
+            key-positions = <33 32>;
         };
     };
 
