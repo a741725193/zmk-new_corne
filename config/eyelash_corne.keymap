@@ -36,12 +36,12 @@
 
         kana {
             bindings = <&kp LA(GRAVE)>;
-            key-positions = <4 3>;
+            key-positions = <37 36>;
         };
 
         app {
             bindings = <&kp K_APPLICATION>;
-            key-positions = <8 9>;
+            key-positions = <37 38>;
         };
 
         copy {
