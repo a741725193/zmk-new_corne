@@ -1,5 +1,9 @@
 
 
+magic repeat key - repeat_key unless preceded by ngram
+https://reddit.com/r/KeyboardLayouts/comments/1lbvju1/thoughts_on_colemak_dh_optimization_by_easing/
+
+
 [ ] consider updating to more recent implementation
  -  https://github.com/a741725193/zmk-new_corne/blob/main/boards/arm/eyelash_corne/eyelash_corne.dtsi
 
