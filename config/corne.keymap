@@ -826,6 +826,16 @@ SENSIBLE_LAYER_LIST?
             bindings = <&macro_mouse_jiggle>;
             key-positions = <0 13>;
         };
+
+        SCRL_UP_lh {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <5 18>;
+        };
+
+        SCRL_DOWN_lh {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <18 31>;
+        };
     };
 
     #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
