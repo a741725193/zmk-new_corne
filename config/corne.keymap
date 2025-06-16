@@ -775,6 +775,52 @@ SENSIBLE_LAYER_LIST?
             bindings = <&kp RET>;
             key-positions = <44 45>;
         };
+
+        Ent_lhv2 {
+            bindings = <&kp RET>;
+            key-positions = <16 3>;
+            slow-release;
+        };
+
+        Ent_rhv2 {
+            bindings = <&kp RET>;
+            key-positions = <9 22>;
+            slow-release;
+        };
+
+        TAB_lhv3 {
+            bindings = <&kp TAB>;
+            key-positions = <17 4>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <75>;
+        };
+
+        TAB_rhv3 {
+            bindings = <&kp TAB>;
+            key-positions = <21 8>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <75>;
+        };
+
+        HOME_rh {
+            bindings = <&kp HOME>;
+            key-positions = <20 33>;
+        };
+
+        END_rh {
+            bindings = <&kp END>;
+            key-positions = <24 37>;
+        };
+
+        PG_DN_rh {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <22 35>;
+        };
+
+        PG_UP_rh {
+            bindings = <&kp PG_UP>;
+            key-positions = <23 36>;
+        };
     };
 
     #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
