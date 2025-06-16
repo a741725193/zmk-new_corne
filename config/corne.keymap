@@ -97,7 +97,7 @@ SENSIBLE_LAYER_LIST?
 };
 
 &inc_dec_kp {
-    tap-ms = <30>;
+    tap-ms = <1>;
     bindings = <&kp>, <&kp>;
 };
 
@@ -286,7 +286,7 @@ SENSIBLE_LAYER_LIST?
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 
-            tap-ms = <30>;
+            tap-ms = <1>;
             label = "scroll_encoder";
         };
 
