@@ -821,6 +821,11 @@ SENSIBLE_LAYER_LIST?
             bindings = <&kp PG_UP>;
             key-positions = <23 36>;
         };
+
+        t0_mouse_jiggle {
+            bindings = <&macro_mouse_jiggle>;
+            key-positions = <0 13>;
+        };
     };
 
     #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
@@ -967,7 +972,7 @@ ZMK_TAP_DANCE(
 &bootloader                  &trans                &kp LA(F4)            &trans                  &bt BT_PRV            &bt BT_NXT                        &kp LC(W)        &kp LG(LC(LA(N1)))  &kp LG(LC(LA(N2)))  &kp LG(LC(LA(N3)))              &kp LG(LC(LA(N4)))  &kp LG(LC(LA(N5)))  &bootloader
 &mod_to0_mouse_jiggle 0 ESC  &kp LC(LG(NUMBER_1))  &kp LC(LG(NUMBER_2))  &kp LC(LG(NUMBER_3))    &kp LC(LG(NUMBER_4))  &kp LC(LG(N5))                    &kp LC(LS(T))    &kp LC(LG(N6))      &kp LC(LG(N7))      &kp LG(LC(N8))                  &kp LC(LG(N9))      &kp LC(LG(N0))      &soft_off
 &bt BT_CLR_ALL               &kp LC(LG(N0))        &kp LC(LG(N9))        &kp LC(LG(N8))          &kp LC(LG(N7))        &as N6 LC(LG(N6))                 &kp LC(LS(TAB))  &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2                    &bt BT_SEL 3        &bt BT_SEL 4        &bt BT_CLR_ALL
-                                                   &trans                &kp LS(LA(LC(LG(F9))))  &ltq 10 LA(F4)        &mod_to0_mouse_jiggle 0 LA(F4)    &kp LC(TAB)      &as RG(TAB) C_PREV  &as C_MUTE LA(F4)   &as RS(RA(RC(RG(F11)))) C_NEXT
+                                                   &kp N0                &kp LS(LA(LC(LG(F9))))  &ltq 10 LA(F4)        &mod_to0_mouse_jiggle 0 LA(F4)    &kp LC(TAB)      &as RG(TAB) C_PREV  &as C_MUTE LA(F4)   &as RS(RA(RC(RG(F11)))) C_NEXT
                                                                                                                                                          &to 0
             >;
 
@@ -980,7 +985,7 @@ ZMK_TAP_DANCE(
 &kp GRAVE                    &kp EXCL      &kp AT        &kp LBKT       &kp RBKT       &kp AMPS                       &trans  &kp PLUS   &kp N7         &kp N8         &kp N9        &kp EQUAL     &kp MINUS
 &mod_to0_mouse_jiggle 0 ESC  &hml LGUI N1  &hml LALT N2  &hml LSHFT N3  &hml LCTRL N4  &kp N5                         &trans  &kp N6     &hmr RCTRL N7  &hmr RSHFT N8  &hmr RALT N9  &hmr RGUI N0  &kp DOT
 &kp PIPE                     &kp PRCNT     &kp CARET     &kp LBRC       &kp RBRC       &as N7 BACKSLASH               &trans  &kp ASTRK  &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
-                                           &trans        &to 0          &kp SPACE      &mod_to0_mouse_jiggle 0 TAB    &trans  &kp N0     &kp BACKSPACE  &kp DOT
+                                           &trans        &kp DOT        &kp SPACE      &mod_to0_mouse_jiggle 0 TAB    &trans  &kp N0     &kp BACKSPACE  &kp DOT
                                                                                                                       &trans
             >;
 
