@@ -68,7 +68,7 @@
         rot_red_zu: rot_red_zu {
             compatible = "zmk,behavior-mod-morph";
             label = "ROT_RED_ZU";
-            bindings = <&kp LS(LC(Z))>, <&kp LC(EQUAL)>;
+            bindings = <&kp LS(LC(Y))>, <&kp LC(EQUAL)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
