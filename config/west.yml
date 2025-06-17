@@ -9,6 +9,8 @@ manifest:
       url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: dsifry
+      url-base: https://github.com/dsifry
     - name: m165437
       url-base: https://github.com/M165437
       # Additional modules containing boards/shields/custom code can be listed here as well.
@@ -36,10 +38,16 @@ manifest:
     - name: zmk-tri-state
       path: modules/zmk/tri-state
 
+      # Display dsifry
+    - name: nice-view-mod
+      remote: dsifry 
+      revision: main  
 
-    # Display
-    - name: nice-view-gem
-      remote: m165437
-      revision: main
+    # Display m165437
+    # - name: nice-view-gem
+    #  remote: m165437
+    #  revision: main
+
+    
   self:
     path: config
