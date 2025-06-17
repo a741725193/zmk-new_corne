@@ -11,6 +11,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: dsifry
       url-base: https://github.com/dsifry
+      # https://github.com/dsifry/nice-view-mod. Bongo Cat, including FURIOUS MODE
     - name: m165437
       url-base: https://github.com/M165437
       # Additional modules containing boards/shields/custom code can be listed here as well.
