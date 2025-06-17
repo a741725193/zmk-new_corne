@@ -966,9 +966,9 @@ ZMK_TAP_DANCE(
 
         Mouse {
             bindings = <
-&to 0                        &kp LS(F10)     &mmv MOVE_UP    &kp RET          &mkp LCLK            &msc SCRL_UP      &mmv MOVE_Y(-600)  &msc SCRL_LEFT        &msc SCRL_DOWN       &msc SCRL_UP         &msc SCRL_RIGHT     &msc SCRL_LEFT  &trans
+&bootloader                  &kp LS(F10)     &mmv MOVE_UP    &kp RET          &mkp LCLK            &msc SCRL_UP      &mmv MOVE_Y(-600)  &msc SCRL_LEFT        &msc SCRL_DOWN       &msc SCRL_UP         &msc SCRL_RIGHT     &msc SCRL_LEFT  &trans
 &mod_to0_mouse_jiggle 0 ESC  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &hmr_clk LCTRL RCLK  &msc SCRL_DOWN    &mmv MOVE_Y(600)   &kp HOME              &hmr_clk RCTRL RCLK  &hmr_clk LSHFT LCLK  &hmr_clk RALT MCLK  &to 0           &to 0
-&to 0                        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &macro_to_0_click    &as N5 B          &mmv MOVE_X(-600)  &as LC(END) LC(HOME)  &kp PG_DN            &kp PG_UP            &trans              &trans          &to 0
+&bt BT_CLR_ALL               &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &macro_to_0_click    &as N5 B          &mmv MOVE_X(-600)  &as LC(END) LC(HOME)  &kp PG_DN            &kp PG_UP            &trans              &trans          &to 0
                                              &to 0           &mkp MCLK        &mkp LCLK            &mkp RCLK         &mmv MOVE_X(600)   &mkp LCLK             &mkp RCLK            &macro_mouse_jump
                                                                                                                      &to 0
             >;
