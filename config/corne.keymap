@@ -906,7 +906,7 @@ ZMK_TAP_DANCE(
 &ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LC(LS(Z)) R      &kp T                          &kp UP_ARROW    &kp Y                    &as RC(Z) U       &kp I              &kp O                    &kp P          &as RC(MINUS) MINUS
 &mod_to0_mouse_jiggle 0 ESCAPE  &ltq 10 A      &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LGUI G                    &kp DOWN_ARROW  &as HOME H               &hmr RCTRL J      &hmr LEFT_SHIFT K  &hmr RIGHT_ALT L         &morph_column  &tap_quote_to_nav_mouse
 &ltq 3 LA(TAB)                  &kp Z          &kp X            &kp C              &as LC(LA(LS(V))) V  &as N0 B                       &kp LEFT        &kp N                    &as PG_DN M       &as PG_UP COMMA    &tap_dot_shift_capsword  &kp FSLH       &as RC(RA(DEL)) EQUAL
-                                               &ltq 6 C_MUTE    &ltq_num_word 9 7  &ltq 10 SPACE        &sk_shift_dot_shift LSHFT    &kp RIGHT       &tap_key_repeat_ltq 5 5  &ltq 6 BACKSPACE  &ltq_nav_word 4 4
+                                               &ltq 6 C_MUTE    &ltq_num_word 9 7  &ltq 10 SPACE        &sk_shift_dot_shift 0 LSHFT    &kp RIGHT       &tap_key_repeat_ltq 5 5  &ltq 6 BACKSPACE  &ltq_nav_word 4 4
                                                                                                                                        &to 5
             >;
 
