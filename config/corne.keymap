@@ -329,11 +329,11 @@ SENSIBLE_LAYER_LIST?
         morph_column: morph_column {
             compatible = "zmk,behavior-mod-morph";
             label = "MORPH_COLUMN";
-            bindings = <&kp COLON>, <&kp SEMICOLON>;
+            bindings = <&kp COLON>, <&kp SEMI>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         ltq_mouse_column: ltq_mouse_column {
