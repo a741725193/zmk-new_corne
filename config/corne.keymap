@@ -599,7 +599,7 @@ SENSIBLE_LAYER_LIST?
         ltq_num_word: ltq_num_word {
             compatible = "zmk,behavior-hold-tap";
             label = "LTQ_NUM_WORD";
-            bindings = <&ltq>, <&num_word>;
+            bindings = <&mo>, <&num_word>;
 
             #binding-cells = <2>;
             tapping-term-ms = <175>;
@@ -610,7 +610,7 @@ SENSIBLE_LAYER_LIST?
         ltq_nav_word: ltq_nav_word {
             compatible = "zmk,behavior-hold-tap";
             label = "LTQ_NAV_WORD";
-            bindings = <&ltq>, <&nav_word>;
+            bindings = <&mo>, <&nav_word>;
 
             #binding-cells = <2>;
             tapping-term-ms = <175>;
