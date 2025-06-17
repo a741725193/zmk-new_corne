@@ -3,17 +3,17 @@ include:
     shield: settings_reset
   - board: corne_left
     #shield: nice_view
-    shield: nice_view_adapter nice_view_gem #updated entry
+    shield: nice_view_custom #updated entry
     #snippet: zmk-usb-logging    # Uncomment to log over USB.
     artifact-name: corne_left_nice_view
   - board: corne_right
     #shield: nice_view
-    shield: nice_view_adapter nice_view_gem #updated entry
+    shield: nice_view_custom #updated entry
     #snippet: zmk-usb-logging    # Uncomment to log over USB.
     artifact-name: corne_right_nice_view
   - board: corne_left
     #shield: nice_view
-    shield: nice_view_adapter nice_view_gem #updated entry
+    shield: nice_view_custom #updated entry
     #snippet: zmk-usb-logging    # Uncomment to log over USB.
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
