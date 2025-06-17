@@ -419,11 +419,11 @@ SENSIBLE_LAYER_LIST?
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_KEY_REPEAT_LTQ";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <225>;
+            quick-tap-ms = <175>;
             flavor = "balanced";
             require-prior-idle-ms = <50>;
-            bindings = <&ltq>, <&key_repeat>;
+            bindings = <&mo>, <&key_repeat>;
         };
 
         kp_to: kp_to {
