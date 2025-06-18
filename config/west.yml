@@ -9,6 +9,12 @@ manifest:
       url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
+    - name: ssbb
+      url-base: https://github.com/ssbb
     - name: dsifry
       url-base: https://github.com/dsifry
       # https://github.com/dsifry/nice-view-mod. Bongo Cat, including FURIOUS MODE
@@ -18,7 +24,6 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
-  
 
       
   projects:
@@ -38,6 +43,17 @@ manifest:
       path: modules/zmk/leader-key
     - name: zmk-tri-state
       path: modules/zmk/tri-state
+
+      #, newly added
+    - name: zmk-tri-state
+      remote: urob
+      revision: main
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: main
+    - name: zmk-antecedent-morph
+      remote: ssbb
+      revision: main
 
       # Display dsifry
     - name: nice-view-mod
