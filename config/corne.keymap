@@ -620,7 +620,7 @@ SENSIBLE_LAYER_LIST?
         };
     };
 };
-{
+/ {
     tri-state {
         alt_tabber: swapper {
             compatible = "zmk,behavior-tri-state";
