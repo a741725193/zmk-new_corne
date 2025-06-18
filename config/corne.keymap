@@ -619,7 +619,7 @@ SENSIBLE_LAYER_LIST?
             require-prior-idle-ms = <150>;
         };
     };
-
+}
 / {
     tri-state {
         alt_tabber: swapper {
