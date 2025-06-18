@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: QLU, h: toggle}
+  - {t: \, s: '|'}
   - {t: ']', s: '}'}
   - A
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -99,7 +99,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   left:
-  - {t: \, s: '|'}
+  - {t: '`', s: '~'}
   - HOME
   - PG UP
   - $$mdi:arrow-up-bold$$
@@ -112,7 +112,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: ., s: '>'}
-  - {t: '`', s: '~'}
+  - $$mdi:apple-keyboard-caps$$
   - END
   - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
@@ -252,3 +252,5 @@ combos:
   k: Ctl+C
 - p: [33, 32]
   k: Sft+Ctl+V
+- p: [11, 12]
+  k: {t: QLU, h: toggle}
