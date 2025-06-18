@@ -610,6 +610,9 @@ SENSIBLE_LAYER_LIST?
             quick-tap-ms = <150>;
         };
 
+
+
+
         kp_msc: kp_msc {
             compatible = "zmk,behavior-hold-tap";
             label = "KP_MSC";
@@ -650,8 +653,8 @@ SENSIBLE_LAYER_LIST?
         Flow_launcher_v1 {
             bindings = <&kp LC(LS(LA(LG(SPACE))))>;
             key-positions = <41 17>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         to_mouse {
@@ -735,6 +738,8 @@ SENSIBLE_LAYER_LIST?
         Flow_launcher_rh {
             bindings = <&kp LS(LG(LA(LC(SPACE))))>;
             key-positions = <21 45>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <50>;
         };
 
         Enter_rh {
