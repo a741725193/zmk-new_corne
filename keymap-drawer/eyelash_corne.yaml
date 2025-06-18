@@ -44,11 +44,11 @@ layers:
   - {t: /, s: '?'}
   - {t: '=', s: +}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace$$', h: left}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: left}
   - {t: '$$mdi:keyboard-space$$', h: right}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-tab$$', h: RIGHT GUI}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: APPLICATION, h: RIGHT GUI}
   QLU:
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
@@ -246,12 +246,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [16, 43]
-  k: $$mdi:keyboard-tab$$
 - p: [37, 36]
   k: Alt+`
-- p: [37, 38]
-  k: APPLICATION
 - p: [30, 31]
   k: Ctl+C
 - p: [33, 32]
