@@ -29,19 +29,9 @@
     combos {
         compatible = "zmk,combos";
 
-        ltab {
-            bindings = <&kp TAB>;
-            key-positions = <16 43>;
-        };
-
         kana {
             bindings = <&kp LA(GRAVE)>;
             key-positions = <37 36>;
-        };
-
-        app {
-            bindings = <&kp K_APPLICATION>;
-            key-positions = <37 38>;
         };
 
         copy {
@@ -100,6 +90,15 @@
 
             tap-ms = <20>;
         };
+
+        bs_del: bs_del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BS_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -108,10 +107,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp LBKT  &kp Q  &kp W           &kp E             &kp R                    &kp T                                              &mmv MOVE_UP                     &kp Y        &kp U                  &kp I                &kp O            &kp P      &to 1
-&kp RBKT  &kp A  &mt LEFT_ALT S  &mt LCTRL D       &mt LEFT_SHIFT F         &kp G                              &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &mt RSHIFT J           &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &kp MINUS  &kp SEMICOLON
-&kp APOS  &kp Z  &kp X           &kp C             &kp V                    &kp B            &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp N        &kp M                  &kp COMMA            &kp PERIOD       &kp SLASH  &kp EQUAL
-                                 &mt LEFT_GUI ESC  &mt LEFT_CONTROL DELETE  &lt 2 BACKSPACE                                                                     &lt 3 SPACE  &mt RIGHT_SHIFT ENTER  &mt RIGHT_GUI TAB
+&kp LBKT  &kp Q  &kp W           &kp E             &kp R             &kp T                                        &mmv MOVE_UP                     &kp Y        &kp U         &kp I                        &kp O            &kp P      &to 1
+&kp RBKT  &kp A  &mt LEFT_ALT S  &mt LCTRL D       &mt LEFT_SHIFT F  &kp G                        &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &mt RSHIFT J  &mt RIGHT_CONTROL K          &mt RIGHT_ALT L  &kp MINUS  &kp SEMICOLON
+&kp APOS  &kp Z  &kp X           &kp C             &kp V             &kp B      &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp N        &kp M         &kp COMMA                    &kp PERIOD       &kp SLASH  &kp EQUAL
+                                 &mt LEFT_GUI ESC  &bs_del           &lt 2 TAB                                                                     &lt 3 SPACE  &kp ENTER     &mt RIGHT_GUI K_APPLICATION
             >;
 
             sensor-bindings = <&rot_ur_z 0 0>;
