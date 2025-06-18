@@ -187,13 +187,6 @@ SENSIBLE_LAYER_LIST?
             label = "MOUSE_JIGGLE";
         };
 
-        Print_layer: Print_layer {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(B) &kp LS(A) &kp LS(S) &kp LS(E)>;
-            label = "PRINT_LAYER";
-        };
-
         macro_copy_path: macro_copy_path {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -626,6 +619,35 @@ SENSIBLE_LAYER_LIST?
             require-prior-idle-ms = <150>;
         };
     };
+
+/ {
+    tri-state {
+        alt_tabber: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <RT2 RM1 RM2 RM3>; // arrow keys
+            timeout-ms = <5000>;
+            display-name = "Swapper";
+        };
+
+        sel_word: sel_word {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&sel_word_base>, <&kp LS(LC(RIGHT))>, <&none>;
+            tap-ms = <0>;
+            display-name = "Select Word";
+        };
+
+        sel_line: sel_line {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&sel_line_base>, <&sel_line_next>, <&none>;
+            tap-ms = <0>;
+            display-name = "Select Line";
+        };
+    };
+
 
     combos {
         compatible = "zmk,combos";
