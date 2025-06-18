@@ -132,10 +132,10 @@
         left {
             display-name = "left";
             bindings = <
-&trans  &kp HOME  &kp PG_UP                &kp UP                 &kp PG_DN        &kp BSLH                     &trans            &kp N6     &kp N7                    &kp N8                &kp N9                  &kp N0     &kp DOT
-&trans  &kp END   &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN  &mt LSHFT RIGHT  &kp GRAVE            &trans  &mkp MB3  &trans  &kp BSPC   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &kp MINUS  &kp EQUAL
-&trans  &trans    &kp LS(LC(TAB))          &kp LC(TAB)            &mkp MB1         &mkp MB2   &trans            &trans            &kp COMMA  &kp N1                    &kp N2                &kp NUMBER_3            &kp SEMI   &kp FSLH
-                                           &trans                 &trans           &trans                                         &trans     &trans                    &trans
+&kp BSLH   &kp HOME  &kp PG_UP                &kp UP                 &kp PG_DN        &mkp MB2                       &trans            &kp N6     &kp N7                    &kp N8                &kp N9                  &kp N0     &kp DOT
+&kp GRAVE  &kp END   &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN  &mt LSHFT RIGHT  &mkp MB2               &trans  &mkp MB3  &trans  &kp BSPC   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &kp MINUS  &kp EQUAL
+&trans     &trans    &trans                   &trans                 &kp LS(LC(TAB))  &kp LC(TAB)  &trans            &trans            &kp COMMA  &kp N1                    &kp N2                &kp NUMBER_3            &kp SEMI   &kp FSLH
+                                              &trans                 &trans           &trans                                           &trans     &trans                    &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -144,10 +144,10 @@
         right {
             display-name = "right";
             bindings = <
-&trans  &kp N1   &kp N2            &kp N3               &kp N4             &kp N5                    &trans            &kp HOME  &kp PG_UP             &kp UP                        &kp PG_DN            &kp F9  &trans
-&trans  &kp F12  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F5            &trans  &mkp MB3  &trans  &kp END   &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp F3  &trans
-&trans  &kp F1   &kp F11           &kp F8               &kp F7             &kp F4  &trans            &trans            &mkp MB1  &mkp MB2              &kp RC(RS(TAB))               &kp RC(TAB)          &trans  &trans
-                                   &trans               &trans             &trans                                      &trans    &trans                &trans
+&kp F11  &kp N1   &kp N2            &kp N3               &kp N4             &kp N5                    &trans            &mkp MB2         &kp PG_UP             &kp UP                        &kp PG_DN            &kp HOME  &kp F9
+&kp F5   &kp F12  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F8            &trans  &mkp MB3  &trans  &mkp MB1         &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp END   &kp F1
+&trans   &trans   &trans            &trans               &kp F7             &kp F4  &trans            &trans            &kp RS(RC(TAB))  &kp RC(TAB)           &trans                        &trans               &trans    &kp F3
+                                    &trans               &trans             &trans                                      &trans           &trans                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
