@@ -41,8 +41,6 @@ manifest:
       path: modules/zmk/helpers
     - name: zmk-leader-key
       path: modules/zmk/leader-key
-    - name: zmk-tri-state
-      path: modules/zmk/tri-state
 
       #, newly added
     - name: zmk-tri-state
