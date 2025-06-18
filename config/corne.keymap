@@ -309,14 +309,6 @@ SENSIBLE_LAYER_LIST?
             tapping-term-ms = <250>;
         };
 
-        c_tap_copy_cut: c_tap_copy_cut {
-            compatible = "zmk,behavior-tap-dance";
-            label = "C_TAP_COPY_CUT";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp C>, <&kp LC(C)>, <&kp LC(X)>;
-        };
-
         sk_qr: sk_qr {
             compatible = "zmk,behavior-sticky-key";
             label = "SK_QR";
@@ -541,7 +533,7 @@ SENSIBLE_LAYER_LIST?
         mouse_word: mouse_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <PG_DN PG_UP SCRL_LEFT SCRL_RIGHT SCRL_DOWN SCRL_UP LCLK RCLK MCLK MOVE_LEFT MOVE_RIGHT MOVE_UP MOVE_DOWN  >;
+            continue-list = <PG_DN PG_UP SCRL_LEFT SCRL_RIGHT SCRL_DOWN SCRL_UP LCLK RCLK MCLK MOVE_LEFT MOVE_RIGHT MOVE_UP MOVE_DOWN>;
             ignore-numbers;
             label = "MOUSE_WORD";
         };
