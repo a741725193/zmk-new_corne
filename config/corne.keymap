@@ -546,7 +546,7 @@ SENSIBLE_LAYER_LIST?
         nav_word: nav_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <SCRL_LEFT SCRL_RIGHT SCRL_DOWN SCRL_UP LCLK RCLK MCLK MOVE_LEFT MOVE_RIGHT MOVE_UP MOVE_DOWN LEFT DOWN UP RIGHT PG_DN PG_UP HOME END>;
+            continue-list = <SCRL_LEFT SCRL_RIGHT SCRL_DOWN SCRL_UP LCLK RCLK MCLK MOVE_LEFT MOVE_RIGHT MOVE_UP MOVE_DOWN LEFT DOWN UP RIGHT PG_DN PG_UP HOME END ENTER BACKSPACE DEL>;
             ignore-numbers;
             label = "NAV_WORD";
         };
