@@ -630,6 +630,8 @@ SENSIBLE_LAYER_LIST?
         };
     };
 };
+
+
 /*
 / {
     tri-state {
@@ -663,6 +665,8 @@ SENSIBLE_LAYER_LIST?
         };
     }; */
 
+
+/ {
 
     combos {
         compatible = "zmk,combos";
