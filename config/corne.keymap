@@ -508,8 +508,9 @@ SENSIBLE_LAYER_LIST?
             bindings = <&macro_dot_shift>, <&sk>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "balanced";
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
         };
 
         mo_num_word: mo_num_word {
