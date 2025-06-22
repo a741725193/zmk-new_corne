@@ -136,10 +136,10 @@
         left {
             display-name = "left";
             bindings = <
-&kp EXCLAMATION  &mmv MOVE_LEFT  &mmv MOVE_DOWN                 &mmv MOVE_UP              &mmv MOVE_RIGHT              &mkp MB2                       &trans            &kp N6     &kp N7                    &kp N8                &kp N9                  &kp N0     &kp DOT
-&kp GRAVE        &kp POUND       &mt LEFT_ALT LEFT_PARENTHESIS  &mt LEFT_CONTROL AT_SIGN  &mt LSHFT RIGHT_PARENTHESIS  &mkp MB1               &trans  &mkp MB3  &trans  &kp BSPC   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &kp SLASH  &trans
-&kp ASTERISK     &trans          &trans                         &kp AMPERSAND             &kp LS(LC(TAB))              &kp LC(TAB)  &trans            &trans            &kp COMMA  &kp N1                    &kp N2                &kp NUMBER_3            &kp MINUS  &trans
-                                                                &trans                    &trans                       &trans                                           &trans     &trans                    &trans
+&trans  &kp DOLLAR       &kp POUND                &kp UP_ARROW                 &kp ASTERISK           &kp PERCENT                      &trans            &bs_del     &kp N7                    &kp N8                &kp N9                  &kp N0     &trans
+&trans  &kp EXCLAMATION  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LSHFT RIGHT_ARROW  &kp GRAVE                &trans  &mkp MB3  &trans  &kp COMMA   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &kp SLASH  &trans
+&trans  &trans           &kp LEFT_PARENTHESIS     &kp AT                       &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &trans            &trans            &kp PERIOD  &kp N1                    &kp N2                &kp NUMBER_3            &kp MINUS  &trans
+                                                  &trans                       &trans                 &trans                                             &trans      &trans                    &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -148,17 +148,17 @@
         right {
             display-name = "right";
             bindings = <
-&kp F11   &kp N1   &kp N2            &kp N3               &kp N4             &kp N5                    &trans            &mkp MB2         &kp PG_UP             &kp UP                        &kp PG_DN            &kp HOME  &kp F9
-&kp F5    &kp F12  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F8            &trans  &mkp MB3  &trans  &mkp MB1         &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp END   &kp F1
-&kp CAPS  &trans   &trans            &trans               &kp F7             &kp F4  &trans            &trans            &kp RS(RC(TAB))  &kp RC(TAB)           &trans                        &trans               &trans    &kp F3
-                                     &trans               &trans             &trans                                      &trans           &trans                &trans
+&kp F11   &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP         &mmv MOVE_RIGHT    &mkp MB2                    &trans            &mkp MB2         &kp PG_UP             &kp UP                        &kp PG_DN            &kp HOME  &kp F9
+&kp F5    &kp F12         &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &mkp MB1            &trans  &mkp MB3  &trans  &mkp MB1         &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp END   &kp F1
+&kp CAPS  &trans          &trans            &kp F8               &kp F7             &kp F4    &trans            &trans            &kp RS(RC(TAB))  &kp RC(TAB)           &trans                        &trans               &trans    &kp F3
+                                            &trans               &trans             &trans                                        &trans           &trans                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        conf {
-            display-name = "conf";
+        both {
+            display-name = "both";
             bindings = <
 &out OUT_USB     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                       &trans          &bt BT_CLR     &bt BT_CLR_ALL  &trans             &trans           &bl BL_INC     &bl BL_ON
 &out OUT_BLE     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF            &trans  &trans  &trans  &trans         &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bl BL_DEC     &bl BL_CYCLE
