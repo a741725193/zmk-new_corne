@@ -136,10 +136,10 @@
         left {
             display-name = "left";
             bindings = <
-&kp GRAVE  &kp HOME  &kp PG_UP                &kp UP                 &kp PG_DN        &mkp MB2                       &trans            &kp N6     &kp N7                    &kp N8                &kp N9                  &kp N0     &kp DOT
-&kp CAPS   &kp END   &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN  &mt LSHFT RIGHT  &mkp MB1               &trans  &mkp MB3  &trans  &kp BSPC   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &kp MINUS  &kp EQUAL
-&trans     &trans    &trans                   &trans                 &kp LS(LC(TAB))  &kp LC(TAB)  &trans            &trans            &kp COMMA  &kp N1                    &kp N2                &kp NUMBER_3            &kp SEMI   &kp FSLH
-                                              &trans                 &trans           &trans                                           &trans     &trans                    &trans
+&kp GRAVE  &mmv MOVE_LEFT  &mmv MOVE_DOWN                 &mmv MOVE_UP              &mmv MOVE_RIGHT              &mkp MB2                       &trans            &kp N6     &kp N7                    &kp N8                &kp N9                  &kp N0     &kp DOT
+&kp CAPS   &kp POUND       &mt LEFT_ALT LEFT_PARENTHESIS  &mt LEFT_CONTROL AT_SIGN  &mt LSHFT RIGHT_PARENTHESIS  &mkp MB1               &trans  &mkp MB3  &trans  &kp BSPC   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &kp MINUS  &kp EQUAL
+&trans     &trans          &trans                         &trans                    &kp LS(LC(TAB))              &kp LC(TAB)  &trans            &trans            &kp COMMA  &kp N1                    &kp N2                &kp NUMBER_3            &kp SEMI   &kp FSLH
+                                                          &trans                    &trans                       &trans                                           &trans     &trans                    &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
