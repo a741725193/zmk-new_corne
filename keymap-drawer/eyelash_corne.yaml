@@ -100,10 +100,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   left:
   - {t: '`', s: '~'}
-  - HOME
-  - PG UP
-  - $$mdi:arrow-up-bold$$
-  - PG DN
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '6', s: ^}
@@ -113,10 +113,10 @@ layers:
   - {t: '0', s: )}
   - {t: ., s: '>'}
   - $$mdi:apple-keyboard-caps$$
-  - END
-  - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '#'
+  - {t: (, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '@', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
   - '&mkp MB1'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
