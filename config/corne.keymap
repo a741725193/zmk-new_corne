@@ -616,7 +616,7 @@ SENSIBLE_LAYER_LIST?
             hold-trigger-key-positions = <21 22 23 24 45>;
             require-prior-idle-ms = <150>;
         };
-        
+
         tap_repeat_mouse_word: tap_repeat_mouse_word {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_REPEAT_MOUSE_WORD";
@@ -630,7 +630,6 @@ SENSIBLE_LAYER_LIST?
         };
     };
 };
-
 
 /*
 / {
@@ -665,9 +664,7 @@ SENSIBLE_LAYER_LIST?
         };
     }; */
 
-
 / {
-
     combos {
         compatible = "zmk,combos";
 
@@ -941,11 +938,11 @@ ZMK_TAP_DANCE(
 
         BASE {
             bindings = <
-&ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LC(LS(Z)) R      &kp T                         &kp UP_ARROW    &kp Y                        &as RC(Z) U       &kp I              &kp O                    &kp P     &as RC(RS(ESC)) MINUS
-&mod_to0_mouse_jiggle 0 ESCAPE  &ltq 10 A      &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LGUI G                   &kp DOWN_ARROW  &as HOME H                   &hmr RCTRL J      &hmr LEFT_SHIFT K  &hmr RIGHT_ALT L         &kp SEMI  &tap_quote_to_nav_mouse
-&ltq 3 LA(TAB)                  &kp Z          &as DEL X        &kp C              &as LC(LA(LS(V))) V  &as N0 B                      &kp LEFT        &as END N                        &as PG_DN M       &as PG_UP COMMA    &tap_dot_shift_capsword  &kp FSLH  &as RC(RA(DEL)) EQUAL
-                                               &ltq 6 C_MUTE    &ltq_num_word 7 7  &ltq 10 SPACE        &tap_key_repeat_ltq 5 5       &kp RIGHT       &sk_shift_dot_shift 0 LSHFT  &ltq 6 BACKSPACE  &ltq_nav_word 4 4
-                                                                                                                                      &to 5
+&ltq 12 GRAVE                   &as LS(F10) Q  &kp W            &as RET E          &as LC(LS(Z)) R      &kp T                      &kp UP_ARROW    &kp Y                        &as RC(Z) U       &kp I              &kp O                    &kp P     &as RC(RS(ESC)) MINUS
+&mod_to0_mouse_jiggle 0 ESCAPE  &ltq 10 A      &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F         &hml LGUI G                &kp DOWN_ARROW  &as HOME H                   &hmr RCTRL J      &hmr LEFT_SHIFT K  &hmr RIGHT_ALT L         &kp SEMI  &tap_quote_to_nav_mouse
+&ltq 3 LA(TAB)                  &kp Z          &as DEL X        &kp C              &as LC(LA(LS(V))) V  &as N0 B                   &kp LEFT        &as END N                    &as PG_DN M       &as PG_UP COMMA    &tap_dot_shift_capsword  &kp FSLH  &as RC(RA(DEL)) EQUAL
+                                               &ltq 6 C_MUTE    &ltq_num_word 7 7  &ltq 10 SPACE        &tap_key_repeat_ltq 5 5    &kp RIGHT       &sk_shift_dot_shift 0 LSHFT  &ltq 6 BACKSPACE  &ltq_nav_word 4 4
+                                                                                                                                   &to 5
             >;
 
             label = "BASE";
@@ -1030,7 +1027,7 @@ ZMK_TAP_DANCE(
 
         NUM {
             bindings = <
-&kp F12     &kp F1      &kp F2        &kp F3         &kp F4         &kp F5         &trans  &kp F6   &kp F7         &kp F8         &kp F9        &kp F10       &kp F11
+&kp F12                      &kp F1        &kp F2        &kp F3         &kp F4         &kp F5                         &trans  &kp F6     &kp F7         &kp F8         &kp F9        &kp F10       &kp F11
 &mod_to0_mouse_jiggle 0 ESC  &hml LGUI N1  &hml LALT N2  &hml LSHFT N3  &hml LCTRL N4  &kp N5                         &trans  &kp N6     &hmr RCTRL N7  &hmr RSHFT N8  &hmr RALT N9  &hmr RGUI N0  &kp MINUS
 &kp PIPE                     &kp PRCNT     &kp CARET     &kp LBRC       &kp RBRC       &as N7 BACKSLASH               &trans  &kp ASTRK  &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
                                            &trans        &kp DOT        &kp SPACE      &mod_to0_mouse_jiggle 0 TAB    &trans  &kp N0     &kp BACKSPACE  &kp DOT
@@ -1093,7 +1090,7 @@ ZMK_TAP_DANCE(
             bindings = <
 &ext_power EP_TOG            &out OUT_BLE  &out OUT_USB  &out OUT_TOG      &trans             &rgb_ug RGB_SPI      &rgb_ug RGB_HUI  &rgb_ug RGB_SPD  &trans           &trans  &trans  &trans  &trans
 &mod_to0_mouse_jiggle 0 ESC  &trans        &trans        &trans            &rgb_ug RGB_BRI    &rgb_ug RGB_EFR      &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &trans  &trans  &trans  &trans
-&to 0                        &trans        &trans        &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG    &rgb_ug RGB_SAI  &trans           &trans           &trans  &trans  &trans  &trans
+&to 0                        &kp CAPSLOCK  &trans        &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG    &rgb_ug RGB_SAI  &trans           &trans           &trans  &trans  &trans  &trans
                                            &to 0         &trans            &trans             &trans               &rgb_ug RGB_SAD  &trans           &trans           &trans
                                                                                                                    &rgb_ug RGB_TOG
             >;
