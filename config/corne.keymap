@@ -1050,11 +1050,11 @@ ZMK_TAP_DANCE(
 
         NUM {
             bindings = <
-&kp F12                      &kp F1        &kp F2        &kp F3         &kp F4         &kp F5                         &trans  &kp F6     &kp F7         &kp F8         &kp F9        &kp F10       &kp F11
-&mod_to0_mouse_jiggle 0 ESC  &hml LGUI N1  &hml LALT N2  &hml LSHFT N3  &hml LCTRL N4  &kp N5                         &trans  &kp N6     &hmr RCTRL N7  &hmr RSHFT N8  &hmr RALT N9  &hmr RGUI N0  &kp MINUS
-&kp PIPE                     &kp PRCNT     &kp CARET     &kp LBRC       &kp RBRC       &as N7 BACKSLASH               &trans  &kp ASTRK  &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
-                                           &trans        &kp DOT        &kp SPACE      &mod_to0_mouse_jiggle 0 TAB    &trans  &kp N0     &kp BACKSPACE  &kp DOT
-                                                                                                                      &trans
+&kp F12                      &kp F1        &kp F2        &kp F3         &kp F4         &kp F5              &trans  &kp F6     &kp F7         &kp F8         &kp F9        &kp F10       &kp F11
+&mod_to0_mouse_jiggle 0 ESC  &hml LGUI N1  &hml LALT N2  &hml LSHFT N3  &hml LCTRL N4  &kp N5              &trans  &kp N6     &hmr RCTRL N7  &hmr RSHFT N8  &hmr RALT N9  &hmr RGUI N0  &kp MINUS
+&kp PIPE                     &kp PRCNT     &kp CARET     &kp LBRC       &kp RBRC       &as N7 BACKSLASH    &trans  &kp ASTRK  &kp N1         &kp N2         &kp N3        &kp FSLH      &kp EQUAL
+                                           &trans        &kp DOT        &kp SPACE      &key_repeat         &trans  &kp DOT    &kp BACKSPACE  &kp MINUS
+                                                                                                           &trans
             >;
 
             label = "Num";
