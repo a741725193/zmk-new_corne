@@ -343,9 +343,9 @@ SENSIBLE_LAYER_LIST?
             tapping-term-ms = <150>;
         };
 
-        dot_shift: dot_shift {
+        mo_dot_shift: mo_dot_shift {
             compatible = "zmk,behavior-hold-tap";
-            label = "DOT_SHIFT";
+            label = "MO_DOT_SHIFT";
             bindings = <&macro_dot_shift>, <&kp>;
 
             #binding-cells = <2>;
@@ -482,7 +482,7 @@ SENSIBLE_LAYER_LIST?
         as_dot_shift: as_dot_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "AS_DOT_SHIFT";
-            bindings = <&dot_shift>, <&kp>;
+            bindings = <&mo_dot_shift>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <175>;
@@ -629,11 +629,13 @@ SENSIBLE_LAYER_LIST?
             flavor = "tap-preferred";
         };
 
-        new_behavior: new_behavior {
+        tap_sk_shift_dot_caps_word_ltq: tap_sk_shift_dot_caps_word_ltq {
             compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
+            label = "TAP_SK_SHIFT_DOT_CAPS_WORD_LTQ";
             #binding-cells = <0>;
-            bindings = <&sk LSHIFT>, <&macro_dot_shift>, <&none>;
+            bindings = <&sk LSHIFT>, <&macro_dot_shift>, <&caps_word>;
+
+            tapping-term-ms = <250>;
         };
     };
 };
