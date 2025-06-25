@@ -637,7 +637,7 @@ SENSIBLE_LAYER_LIST?
             #binding-cells = <0>;
             bindings = <&sk LSHIFT>, <&macro_dot_shift>, <&caps_word>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <350>;
         };
 
         smart_sk_ltq: smart_sk_ltq {
