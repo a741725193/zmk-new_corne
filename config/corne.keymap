@@ -759,29 +759,24 @@ SENSIBLE_LAYER_LIST?
             require-prior-idle-ms = <30>;
         };
 
-        Tab_lhv2 {
-            bindings = <&kp TAB>;
-            key-positions = <42 41>;
-        };
-
         Down_v2 {
             bindings = <&kp DOWN>;
-            key-positions = <22 42>;
+            key-positions = <41 21>;
         };
 
         Up_v2 {
             bindings = <&kp UP>;
-            key-positions = <23 42>;
+            key-positions = <41 22>;
         };
 
-        Home_v2 {
-            bindings = <&kp HOME>;
-            key-positions = <42 20>;
+        Left {
+            bindings = <&kp LEFT>;
+            key-positions = <20 41>;
         };
 
-        End_v2 {
-            bindings = <&kp END>;
-            key-positions = <42 23>;
+        Right {
+            bindings = <&kp RIGHT>;
+            key-positions = <23 41>;
         };
 
         Macro_dot_shift_v2 {
@@ -792,7 +787,7 @@ SENSIBLE_LAYER_LIST?
 
         Enter_lh {
             bindings = <&kp RET>;
-            key-positions = <16 15>;
+            key-positions = <16 29>;
             slow-release;
         };
 
@@ -805,7 +800,7 @@ SENSIBLE_LAYER_LIST?
 
         Enter_rh {
             bindings = <&kp RET>;
-            key-positions = <23 22>;
+            key-positions = <22 35>;
             slow-release;
         };
 
@@ -817,14 +812,14 @@ SENSIBLE_LAYER_LIST?
 
         tab_lh {
             bindings = <&kp TAB>;
-            key-positions = <16 17>;
+            key-positions = <17 30>;
             timeout-ms = <50>;
             require-prior-idle-ms = <75>;
         };
 
         tab_rh {
             bindings = <&kp TAB>;
-            key-positions = <22 21>;
+            key-positions = <21 34>;
             timeout-ms = <50>;
             require-prior-idle-ms = <75>;
         };
@@ -858,26 +853,6 @@ SENSIBLE_LAYER_LIST?
             key-positions = <21 8>;
             timeout-ms = <50>;
             require-prior-idle-ms = <75>;
-        };
-
-        HOME_rh {
-            bindings = <&kp HOME>;
-            key-positions = <20 33>;
-        };
-
-        END_rh {
-            bindings = <&kp END>;
-            key-positions = <24 37>;
-        };
-
-        PG_DN_rh {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <22 35>;
-        };
-
-        PG_UP_rh {
-            bindings = <&kp PG_UP>;
-            key-positions = <23 36>;
         };
 
         t0_mouse_jiggle {
