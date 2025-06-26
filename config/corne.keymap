@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 35    // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // 10
 
 #include <behaviors/num_word.dtsi> // Requires auto-layer module.
 #include <input/processors.dtsi>
