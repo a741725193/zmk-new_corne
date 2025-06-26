@@ -998,11 +998,11 @@ ZMK_TAP_DANCE(
 
         BUTTON {
             bindings = <
-&trans  &kp LS(LG(LC(LA(Q))))  &kp LA(F4)  &kp LG(LC(LA(E)))         &kp LC(F24)              &as N3 LS(LA(LC(LG(T))))          &trans  &trans             &trans              &trans             &trans      &kp LG(LC(LA(P)))    &kp RC(RS(ESCAPE))
-&trans  &kp LG(LC(LA(T)))      &kp F24     &kp LS(F24)               &kp LG(LC(LA(F)))        &kp LG(LC(LA(G)))                 &trans  &kp LG(LC(LA(H)))  &kp LG(LEFT_ARROW)  &kp LG(DOWN)       &kp LG(UP)  &kp LG(RIGHT_ARROW)  &trans
-&trans  &macro_win_sleep       &trans      &kp LG(LC(LA(C)))         &kp LS(LC(V))            &as N3 LS(LA(LC(LG(B))))          &trans  &trans             &trans              &trans             &trans      &trans               &kp RC(RA(DELETE))
-                               &trans      &as LC(LA(LS(M))) C_PREV  &as C_MUTE C_PLAY_PAUSE  &as LS(LG(LA(LC(F11)))) C_NEXT    &trans  &kp F24            &kp RS(F24)         &kp LG(LC(LA(H)))
-                                                                                                                                &trans
+&kp CAPS  &kp LS(LG(LC(LA(Q))))  &kp LA(F4)  &kp LG(LC(LA(E)))         &kp LC(F24)              &as N3 LS(LA(LC(LG(T))))          &trans  &trans             &trans              &trans             &trans      &kp LG(LC(LA(P)))    &kp RC(RS(ESCAPE))
+&trans    &kp LG(LC(LA(T)))      &kp F24     &kp LS(F24)               &kp LG(LC(LA(F)))        &kp LG(LC(LA(G)))                 &trans  &kp LG(LC(LA(H)))  &kp LG(LEFT_ARROW)  &kp LG(DOWN)       &kp LG(UP)  &kp LG(RIGHT_ARROW)  &trans
+&trans    &macro_win_sleep       &trans      &kp LG(LC(LA(C)))         &kp LS(LC(V))            &as N3 LS(LA(LC(LG(B))))          &trans  &trans             &trans              &trans             &trans      &trans               &kp RC(RA(DELETE))
+                                 &trans      &as LC(LA(LS(M))) C_PREV  &as C_MUTE C_PLAY_PAUSE  &as LS(LG(LA(LC(F11)))) C_NEXT    &trans  &kp F24            &kp RS(F24)         &kp LG(LC(LA(H)))
+                                                                                                                                  &trans
             >;
 
             label = "BUTTON";
