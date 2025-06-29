@@ -8,6 +8,8 @@ https://reddit.com/r/KeyboardLayouts/comments/1lbvju1/thoughts_on_colemak_dh_opt
  -  https://github.com/a741725193/zmk-new_corne/blob/main/boards/arm/eyelash_corne/eyelash_corne.dtsi
 
 
+// look at config, keypos.h,  combos behaviour etc https://github.com/englmaxi/zmk-config/blob/main/config/keymap/keymap.dtsi
+
 
 
 // features
