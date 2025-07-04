@@ -14,6 +14,11 @@
 #include <dt-bindings/zmk/rgb.h>
 
 
+/* Global defaults */
+
+#define QUICK_TAP_MS 175
+
+
 / {
     zip_scroll_scaler: zip_scroll_scaler {
         compatible = "zmk,input-processor-scaler";
