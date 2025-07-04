@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 300  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // 10
 
 #include <behaviors/num_word.dtsi> // Requires auto-layer module.
@@ -12,11 +12,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-
-
-/* Global defaults */
-
-#define QUICK_TAP_MS 175
 
 
 / {
@@ -58,7 +53,7 @@
 &lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
+    quick-tap-ms = <175>;
 };
 
 / {
