@@ -4,9 +4,7 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -28,7 +26,7 @@
 
 / {
     behaviors {
-                hrm: hrm {
+        hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM";
             bindings = <&kp>, <&kp>;
@@ -64,38 +62,36 @@
 
     keymap {
         compatible = "zmk,keymap";
+
         QWERTY {
             bindings = <
-            &kp EQUAL   &kp Q                &kp W              &kp E            &kp R            &kp T     &kp Y   &kp U                 &kp I             &kp O               &kp P                         &kp MINUS
-            &kp ESC     &hrm LEFT_CONTROL A  &hrm LS(LSHIFT) S  &hrm D LEFT_ALT  &hrm LEFT_GUI F  &kp G     &kp H   &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_SHIFT L  &hrm RIGHT_CONTROL SEMICOLON  &kp APOS
-            &caps_word  &kp Z                &kp X              &kp C            &kp V            &kp B     &kp N   &kp M                 &kp COMMA         &kp DOT             &kp FSLH                      &none
-                                                                &kp SPACE        &kp BSPC         &tog 1    &tog 2  &kp TAB               &kp ENTER
-                        >;
+&kp EQUAL   &kp Q                &kp W              &kp E            &kp R                    &kp T                          &kp UP_ARROW             &kp Y  &kp U                 &kp I             &kp O               &kp P                         &kp MINUS
+&kp ESCAPE  &hrm LEFT_CONTROL A  &hrm LEFT_SHIFT S  &hrm LEFT_ALT D  &hrm LEFT_COMMAND LS(F)  &kp G                &kp LEFT  &kp ENTER     &kp RIGHT  &kp H  &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_SHIFT L  &hrm RIGHT_CONTROL SEMICOLON  &kp APOS
+&caps_word  &kp Z                &kp X              &kp C            &kp V                    &kp B  &kp K_MUTE              &kp DOWN                 &kp N  &kp M                 &kp COMMA         &kp DOT             &kp FSLH                      &kp PIPE
+            >;
+
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         Symbols {
             bindings = <
-            &none  &kp SINGLE_QUOTE  &kp LBRC  &kp RBRC  &none     &none       &none  &kp DOLLAR  &kp UNDERSCORE  &kp LBKT              &kp RBKT               &kp PERCENT
-            &none  &kp EXCL          &kp LT    &kp GT    &kp SEMI  &kp SEMI    &none  &kp PIPE    &kp COLON       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QMARK
-            &none  &kp LSHFT         &kp FSLH  &kp STAR  &kp BSLH  &none       &none  &none       &kp AMPERSAND   &kp EQUAL             &kp PLUS               &kp AT_SIGN
-                                               &none     &none     &none       &none  &none       &none
-                        >;
+&none  &kp SINGLE_QUOTE        &kp LBRC                   &kp RBRC                    &kp DOUBLE_QUOTES            &kp DOT                    &none         &kp DOLLAR  &kp UNDERSCORE            &kp LBKT                         &kp RBKT                            &kp PERCENT               &none
+&none  &hrm LEFT_CONTROL EXCL  &hrm LEFT_SHIFT LESS_THAN  &hrm LEFT_ALT GREATER_THAN  &hrm LEFT_COMMAND SEMICOLON  &kp POUND           &none  &none  &none  &kp PIPE    &hrm RIGHT_COMMAND COLON  &hrm RIGHT_ALT LEFT_PARENTHESIS  &hrm RIGHT_SHIFT RIGHT_PARENTHESIS  &hrm RIGHT_CONTROL QMARK  &none
+&none  &kp CARET               &kp SLASH                  &kp STAR                    &kp NON_US_BACKSLASH         &kp GRAVE  &none           &none         &kp TILDE   &kp AMPERSAND             &kp EQUAL                        &kp PLUS                            &kp AT                    &none
+            >;
 
             sensor-bindings = <&rgb_encoder>;
-
         };
 
         Numbers {
             bindings = <
-            &none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
-            &none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
-            &none  &none   &none   &none   &none   &none     &none   &none   &none   &none   &none   &none
-                                   &none   &none   &none     &none   &none   &none
-                        >;
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &none         &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &none
+&none  &none   &none   &none   &none   &none            &none  &none  &none  &none   &none   &none   &none   &none   &none
+&none  &none   &none   &none   &none   &none   &none           &none         &none   &none   &none   &none   &none   &none
+            >;
 
             sensor-bindings = <&scroll_encoder>;
         };
     };
-
 };
+
