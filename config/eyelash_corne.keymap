@@ -68,7 +68,7 @@
             bindings = <
 &kp EQUAL   &kp Q                &kp W              &kp E            &kp R                &kp T                              &kp UP_ARROW             &kp Y      &kp U                 &kp I             &kp O               &kp P                         &kp MINUS
 &kp ESCAPE  &hrm LEFT_CONTROL A  &hrm LEFT_SHIFT S  &hrm LEFT_ALT D  &hrm LEFT_COMMAND F  &kp G                    &kp LEFT  &kp ENTER     &kp RIGHT  &kp H      &hrm RIGHT_COMMAND J  &hrm RIGHT_ALT K  &hrm RIGHT_SHIFT L  &hrm RIGHT_CONTROL SEMICOLON  &kp APOS
-&caps_word  &kp Z                &kp X              &kp C            &kp V                &kp B      &kp K_MUTE              &kp DOWN                 &kp N      &kp M                 &kp COMMA         &kp DOT             &kp FSLH                      &sl 2
+&caps_word  &kp Z                &kp X              &kp C            &kp V                &kp B      &kp C_MUTE              &kp DOWN                 &kp N      &kp M                 &kp COMMA         &kp DOT             &kp FSLH                      &sl 2
                                                     &sl 1            &kp BACKSPACE        &kp SPACE                                                   &kp ENTER  &kp TAB               &sl 3
             >;
 
@@ -81,7 +81,7 @@
 &none  &kp SINGLE_QUOTE        &kp LBRC                   &kp RBRC                    &kp DOUBLE_QUOTES            &kp DOT                    &none         &kp DOLLAR  &kp UNDERSCORE            &kp LBKT                         &kp RBKT                            &kp PERCENT               &none
 &none  &hrm LEFT_CONTROL EXCL  &hrm LEFT_SHIFT LESS_THAN  &hrm LEFT_ALT GREATER_THAN  &hrm LEFT_COMMAND SEMICOLON  &kp POUND           &none  &none  &none  &kp PIPE    &hrm RIGHT_COMMAND COLON  &hrm RIGHT_ALT LEFT_PARENTHESIS  &hrm RIGHT_SHIFT RIGHT_PARENTHESIS  &hrm RIGHT_CONTROL QMARK  &none
 &none  &kp CARET               &kp SLASH                  &kp STAR                    &kp NON_US_BACKSLASH         &kp GRAVE  &none           &none         &kp TILDE   &kp AMPERSAND             &kp EQUAL                        &kp PLUS                            &kp AT                    &none
-                                                          &none                       &none                        &none                                    &none       &none                     &none
+                                                          &none                       &trans                       &trans                                   &trans      &trans                    &none
             >;
 
             sensor-bindings = <&rgb_encoder>;
@@ -93,7 +93,7 @@
 &none   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &none         &kp N6  &kp N7  &kp N8  &kp N9   &kp N0   &none
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6           &none  &none  &none  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &none   &none   &none   &none   &none   &none   &none           &none         &none   &none   &none   &none    &none    &none
-                        &none   &none   &none                                 &none   &none   &none
+                        &none   &trans  &trans                                &trans  &trans  &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -113,10 +113,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans          &trans      &trans      &trans  &trans                             &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_CLR      &bt BT_PRV  &bt BT_NXT  &trans  &trans            &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_CLR_ALL  &trans      &trans      &trans  &trans  &trans                     &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans      &trans  &trans                                                               &trans  &trans  &trans
+&none  &none           &none       &none       &none  &none                            &rgb_ug RGB_HUI                   &none  &none  &none  &none  &none  &none
+&none  &bt BT_CLR      &bt BT_PRV  &bt BT_NXT  &none  &none           &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &none  &none  &none  &none  &none  &none
+&none  &bt BT_CLR_ALL  &none       &none       &none  &none  &none                     &rgb_ug RGB_HUD                   &none  &none  &none  &none  &none  &none
+                                   &none       &none  &none                                                              &none  &none  &none
             >;
 
             label = "Settings";
