@@ -141,14 +141,13 @@
         };
 
         mouse {
+            display-name = "mouse";
             bindings = <
 &none  &none     &none         &none             &none           &none                  &none         &none     &none           &mmv MOVE_UP    &none            &none  &none
 &none  &mkp MB1  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none           &none  &none  &none  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
 &none  &mkp MB2  &none         &none             &none           &none  &none           &none         &none     &none           &none           &none            &none  &none
                                &none             &none           &none                                &mkp MB1  &mkp MB2        &none
             >;
-
-            label = "mouse";
         };
 
         conf {
@@ -161,6 +160,4 @@
             >;
         };
     };
-
-    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
