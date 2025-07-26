@@ -142,10 +142,10 @@
 
         mouse {
             bindings = <
-&trans  &trans    &trans        &trans            &trans          &trans                    &trans          &trans    &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &mkp MB1  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans            &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &mkp MB2  &trans        &trans            &trans          &trans  &trans            &trans          &trans    &trans          &trans          &trans           &trans  &trans
-                                &trans            &trans          &trans                                    &mkp MB1  &mkp MB2        &trans
+&none  &none     &none         &none             &none           &none                  &none         &none     &none           &mmv MOVE_UP    &none            &none  &none
+&none  &mkp MB1  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none           &none  &none  &none  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+&none  &mkp MB2  &none         &none             &none           &none  &none           &none         &none     &none           &none           &none            &none  &none
+                               &none             &none           &none                                &mkp MB1  &mkp MB2        &none
             >;
 
             label = "mouse";
@@ -154,10 +154,10 @@
         conf {
             display-name = "conf";
             bindings = <
-&out OUT_USB     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                       &trans          &bt BT_CLR     &bt BT_CLR_ALL  &trans             &trans           &bl BL_INC     &bl BL_ON
-&out OUT_BLE     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF            &trans  &trans  &trans  &trans         &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bl BL_DEC     &bl BL_CYCLE
-&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &trans            &trans          &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2      &bt BT_DISC 3    &bt BT_DISC 4  &bl BL_OFF
-                                                   &trans           &trans           &trans                                             &trans         &trans          &trans
+&out OUT_USB     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                     &none         &bt BT_CLR     &bt BT_CLR_ALL  &none              &none            &bl BL_INC     &bl BL_ON
+&out OUT_BLE     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF           &none  &none  &none  &none          &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bl BL_DEC     &bl BL_CYCLE
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &none           &none         &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2      &bt BT_DISC 3    &bt BT_DISC 4  &bl BL_OFF
+                                                   &none            &none            &none                                          &none          &none           &none
             >;
         };
     };
