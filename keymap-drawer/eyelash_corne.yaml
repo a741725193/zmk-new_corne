@@ -1,47 +1,47 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  QWERTY:
+  QLU:
   - {t: '[', s: '{'}
   - Q
-  - W
-  - E
-  - R
-  - T
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - Y
+  - L
   - U
-  - I
-  - O
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - F
+  - W
+  - R
+  - Y
   - P
   - {t: \, s: '|'}
   - {t: ']', s: '}'}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
+  - {t: E, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '-', s: _}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&mkp MB1'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '-', h: RIGHT GUI, s: _}
+  - K
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: H, h: RIGHT GUI}
   - {t: ;, s: ':'}
   - .
   - Z
   - X
   - C
   - V
-  - B
+  - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - N
+  - G
+  - D
   - M
-  - {t: ',', s: <}
-  - .
-  - {t: /, s: '?'}
+  - J
+  - B
   - {t: '=', s: +}
   - {t: '$$mdi:keyboard-esc$$', h: mouse}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
@@ -49,55 +49,6 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: right}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: APPLICATION, h: conf}
-  QLU:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Q
-  - L
-  - U
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F
-  - W
-  - R
-  - Y
-  - P
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: E, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '-', s: _}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - K
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: H, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Z
-  - X
-  - C
-  - V
-  - {t: /, s: '?'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - G
-  - D
-  - M
-  - J
-  - B
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   left:
   - {t: '$$mdi:transfer$$', type: trans}
   - $
@@ -301,5 +252,3 @@ combos:
   k: Ctl+C
 - p: [33, 32]
   k: Sft+Ctl+V
-- p: [11, 12]
-  k: {t: QLU, h: toggle}
