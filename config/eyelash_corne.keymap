@@ -43,11 +43,6 @@
             bindings = <&kp LS(LC(V))>;
             key-positions = <33 32>;
         };
-
-        tog01 {
-            bindings = <&tog 1>;
-            key-positions = <11 12>;
-        };
     };
 
     behaviors {
@@ -110,24 +105,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
-            bindings = <
-&kp LBKT  &kp Q           &kp W           &kp E        &kp R             &kp T                                        &mmv MOVE_UP                     &kp Y        &kp U         &kp I                &kp O            &kp P                &kp BSLH
-&kp RBKT  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                        &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp H        &mt RSHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI MINUS  &kp SEMICOLON
-&kp APOS  &kp Z           &kp X           &kp C        &kp V             &kp B      &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp N        &kp M         &kp COMMA            &kp PERIOD       &kp SLASH            &kp EQUAL
-                                          &lt 4 ESC    &bs_del           &lt 2 TAB                                                                     &lt 3 SPACE  &kp ENTER     &lt 5 K_APPLICATION
-            >;
-
-            sensor-bindings = <&rot_ur_z 0 0>;
-        };
-
-        QLU {
             display-name = "QLU";
             bindings = <
-&trans  &kp Q           &kp L           &kp U        &kp COMMA         &kp DOT                      &trans          &kp F   &kp W         &kp R                &kp Y            &kp P           &trans
-&trans  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &kp MINUS            &trans  &trans  &trans  &kp K   &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt LEFT_GUI H  &trans
-&trans  &kp Z           &kp X           &kp C        &kp V             &kp FSLH   &trans            &trans          &kp G   &kp D         &kp M                &kp J            &kp B           &trans
-                                        &trans       &trans            &trans                                       &trans  &trans        &trans
+&kp LBKT  &kp Q           &kp L           &kp U        &kp COMMA         &kp DOT                                      &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp BSLH
+&kp RBKT  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &kp MINUS                    &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &kp SEMICOLON
+&kp APOS  &kp Z           &kp X           &kp C        &kp V             &kp FSLH   &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp EQUAL
+                                          &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &lt 4 K_APPLICATION
             >;
 
             sensor-bindings = <&rot_ur_z 0 0>;
