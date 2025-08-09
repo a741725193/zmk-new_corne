@@ -8,6 +8,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/key-labels/glove80.h"
+#include "zmk-helpers/unicode-chars/german.dtsi"
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
