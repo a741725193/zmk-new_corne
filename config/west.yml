@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: eyelash_corne
-      url: https://github.com/a741725193/zmk-new_corn
+      url: https://github.com/a741725193/zmk-new_corne
       revision: main
     - name: zmk
       remote: urob
