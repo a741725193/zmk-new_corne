@@ -56,20 +56,22 @@
 &kp TAB        &kp Q               &kp W           &kp F               &kp P             &kp B                                    &kp UP               &kp J      &kp L              &kp U                &kp Y            &kp SEMICOLON        &kp MINUS
 &kp GRAVE      &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &kp SQT
 &kp BACKSLASH  &kp Z               &kp X           &kp C               &kp D             &kp V      &kp C_PLAY_PAUSE              &kp DOWN             &kp K      &kp H              &kp COMMA            &kp PERIOD       &kp SLASH            &kp EQUAL
-                                                   &lt 3 CAPS          &kp SPACE         &lt 2 ESC                                                     &lt 1 DEL  &kp ENTER          &trans
+                                                   &lt 3 CAPS          &kp SPACE         &lt 2 ESC                                                     &lt 1 DEL  &kp ENTER          &tog 4
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
             label = "COLEDH";
         };
 
         numbers {
             bindings = <
-&kp TAB    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                            &mmv MOVE_UP                     &trans  &trans     &trans         &trans            &kp COLON     &kp PLUS
-&kp TILDE  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5                 &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &trans  &kp RSHFT  &kp RGUI       &kp RALT          &kp RCTRL     &kp DOUBLE_QUOTES
-&kp PIPE   &kp N6           &kp N7       &kp N8    &kp N9      &kp N0       &trans                    &mmv MOVE_DOWN                   &trans  &trans     &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp UNDER
-                                         &trans    &trans      &trans                                                                  &trans  &trans     &trans
+&kp TAB    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                                      &mmv MOVE_UP                     &trans  &trans     &trans         &trans            &kp COLON     &kp PLUS
+&kp TILDE  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5                           &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &trans  &kp RSHFT  &kp RGUI       &kp RALT          &kp RCTRL     &kp DOUBLE_QUOTES
+&kp PIPE   &kp N6           &kp N7       &kp N8    &kp N9      &kp N0       &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &trans  &trans     &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp UNDER
+                                         &trans    &trans      &trans                                                                            &trans  &trans     &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         symbols {
@@ -81,13 +83,38 @@
             >;
         };
 
-        numbers {
+        function_layer {
             bindings = <
-&kp TAB    &kp T  &kp Q  &kp W   &kp E   &kp R                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp I  &kp A  &kp S   &kp D   &kp F                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp B  &kp Z  &kp X   &kp C   &kp V      &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp N1  &kp N2  &kp SPACE                                    &trans  &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans                    &trans          &trans  &trans     &trans    &trans    &trans     &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans            &trans  &trans  &trans  &trans  &kp RSHFT  &kp RGUI  &kp RALT  &kp RCTRL  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans            &trans          &trans  &trans     &trans    &trans    &trans     &trans
+                         &trans   &trans   &trans                                    &trans  &trans     &trans
             >;
+
+            label = "FN";
+        };
+
+        gaming_layer {
+            bindings = <
+&kp TAB    &kp T  &kp Q  &kp W   &kp E      &kp R                             &trans          &trans           &trans           &trans           &trans           &trans           &trans
+&kp LCTRL  &kp I  &kp A  &kp S   &kp D      &kp F                     &trans  &trans  &trans  &trans           &trans           &trans           &trans           &trans           &trans
+&kp LSHFT  &kp B  &kp Z  &kp X   &kp C      &kp V           &trans            &trans          &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &trans
+                         &kp N1  &kp SPACE  &lt 5 NUMBER_2                                    &trans           &trans           &trans
+            >;
+
+            label = "WASD";
+            sensor-bindings = <&rgb_encoder>;
+        };
+
+        hotkey_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "HOT";
         };
     };
 };
