@@ -77,19 +77,21 @@
 
         symbols {
             bindings = <
-&kp TAB    &kp EXCLAMATION   &kp AT_SIGN        &kp HASH      &kp DOLLAR      &kp PERCENT                             &mmv MOVE_UP                     &kp LEFT_BRACKET  &kp LESS_THAN         &kp EQUAL     &kp GREATER_THAN       &kp RIGHT_BRACKET  &kp SLASH
-&kp GRAVE  &kp LEFT_CONTROL  &kp LEFT_ALT       &kp LEFT_GUI  &kp LEFT_SHIFT  &kp QUESTION            &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp LEFT_BRACE    &kp LEFT_PARENTHESIS  &kp COLON     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp MINUS
-&kp N1     &kp SQT           &kp DOUBLE_QUOTES  &kp CARET     &kp BACKSLASH   &kp TILDE     &kp N1                    &mmv MOVE_DOWN                   &kp PIPE          &kp AMPERSAND         &kp ASTERISK  &kp PLUS               &kp UNDERSCORE     &kp GRAVE
-                                                &trans        &trans          &trans                                                                   &trans            &trans                &trans
+&kp TAB        &kp EXCLAMATION   &kp AT_SIGN        &kp HASH      &kp DOLLAR      &kp PERCENT                                       &mmv MOVE_UP                     &kp LEFT_BRACKET  &kp LESS_THAN         &kp EQUAL     &kp GREATER_THAN       &kp RIGHT_BRACKET  &kp SLASH
+&kp GRAVE      &kp LEFT_CONTROL  &kp LEFT_ALT       &kp LEFT_GUI  &kp LEFT_SHIFT  &kp QUESTION                      &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp LEFT_BRACE    &kp LEFT_PARENTHESIS  &kp COLON     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp MINUS
+&kp BACKSLASH  &kp SQT           &kp DOUBLE_QUOTES  &kp CARET     &kp BACKSLASH   &kp TILDE     &kp K_PLAY_PAUSE                    &mmv MOVE_DOWN                   &kp PIPE          &kp AMPERSAND         &kp ASTERISK  &kp PLUS               &kp UNDERSCORE     &kp GRAVE
+                                                    &trans        &trans          &trans                                                                             &trans            &trans                &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         function_layer {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans                    &trans          &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &trans     &trans     &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans            &trans  &trans  &trans  &trans      &kp RSHFT   &kp RGUI    &kp RALT   &kp RCTRL  &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans            &trans          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &kp RIGHT  &trans
-                         &trans   &trans   &trans                                    &trans      &trans      &trans
+&kp C_FAST_FORWARD  &kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOLUME_UP                      &trans            &mkp LCLK   &mkp MCLK  &mkp RCLK  &mkp MB5   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&kp C_PLAY_PAUSE    &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_DOWN            &trans  &mkp MB4  &trans  &bt BT_NXT  &kp RSHFT  &kp RGUI   &kp RALT   &kp RCTRL             &trans
+&kp C_PREVIOUS      &kp F9  &kp F10  &kp F11  &kp F12  &kp K_MUTE         &trans            &trans            &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RIGHT             &trans
+                                     &trans   &trans   &trans                                                 &trans      &trans     &trans
             >;
 
             label = "FN";
