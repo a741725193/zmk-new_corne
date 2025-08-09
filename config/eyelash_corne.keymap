@@ -57,10 +57,10 @@
 
         base_layer {
             bindings = <
-&kp TAB        &kp Q               &kp W           &kp F               &kp P             &kp B                                    &kp UP               &kp J            &kp L              &kp U                &kp Y            &kp SEMICOLON        &kp MINUS
-&kp GRAVE      &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &mt LEFT_SHIFT T  &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M            &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &kp SQT
-&kp BACKSLASH  &kp Z               &kp X           &kp C               &kp D             &kp V      &kp C_PLAY_PAUSE              &kp DOWN             &kp K            &kp H              &kp COMMA            &kp PERIOD       &kp SLASH            &kp EQUAL
-                                                   &lt 3 CAPS          &kp SPACE         &lt 2 ESC                                                     &lt 1 BACKSPACE  &kp ENTER          &tog 4
+&kp TAB        &kp Q               &kp W           &kp F               &kp P         &kp B                                    &kp UP               &kp J           &kp L      &kp U                &kp Y            &kp SEMICOLON        &kp MINUS
+&kp GRAVE      &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_COMMAND S  &kp T         &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M           &kp N      &mt RIGHT_COMMAND E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &kp SQT
+&kp BACKSLASH  &kp Z               &kp X           &kp C               &kp D         &kp V      &kp C_PLAY_PAUSE              &kp DOWN             &kp K           &kp H      &kp COMMA            &kp PERIOD       &kp SLASH            &kp EQUAL
+                                                   &lt 3 CAPS          &lt 2 ESCAPE  &kp SPACE                                                     &sk LEFT_SHIFT  &kp ENTER  &lt 1 BACKSPACE
             >;
 
             sensor-bindings = <&scroll_encoder>;
