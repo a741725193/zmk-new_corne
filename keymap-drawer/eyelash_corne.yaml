@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-caps$$', h: FN}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-esc$$', h: symbols}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: numbers}
+  - {t: '$$mdi:backspace$$', h: numbers}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: WASD, h: toggle}
   numbers:
