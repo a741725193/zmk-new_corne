@@ -18,13 +18,13 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: R, h: '$$mdi:apple-keyboard-option$$'}
   - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - T
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - M
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - N
   - {t: E, h: '$$mdi:apple-keyboard-command$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
@@ -44,11 +44,11 @@ layers:
   - {t: /, s: '?'}
   - {t: '=', s: +}
   - {t: '$$mdi:apple-keyboard-caps$$', h: FN}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-esc$$', h: symbols}
-  - {t: '$$mdi:backspace$$', h: numbers}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: WASD, h: toggle}
+  - {t: '$$mdi:backspace$$', h: numbers}
   numbers:
   - $$mdi:keyboard-tab$$
   - '!'
@@ -95,9 +95,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   symbols:
   - $$mdi:keyboard-tab$$
   - '!'
@@ -142,8 +142,8 @@ layers:
   - _
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
