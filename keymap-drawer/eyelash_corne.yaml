@@ -27,7 +27,7 @@ layers:
   - {t: N, h: '$$mdi:apple-keyboard-command$$'}
   - {t: E, h: '$$mdi:apple-keyboard-option$$'}
   - {t: I, h: '$$mdi:apple-keyboard-control$$'}
-  - '&mt O'
+  - O
   - {t: '''', s: '"'}
   - {t: \, s: '|'}
   - Z
