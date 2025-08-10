@@ -224,7 +224,7 @@ layers:
   - RGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: WASD, h: toggle}
   - $$mdi:apple-keyboard-shift$$
   - B
   - Z
