@@ -15,19 +15,19 @@ layers:
   - {t: ;, s: ':'}
   - {t: '-', s: _}
   - {t: '`', s: '~'}
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - T
+  - A
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - M
-  - N
-  - {t: E, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-control$$'}
+  - '&mt O'
   - {t: '''', s: '"'}
   - {t: \, s: '|'}
   - Z
@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '=', s: +}
   - {t: '$$mdi:apple-keyboard-caps$$', h: FN}
-  - {t: '$$mdi:keyboard-esc$$', h: symbols}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: numbers}
-  numbers:
+  - {t: '$$mdi:backspace$$', h: NUMBER}
+  NUMBER:
   - $$mdi:keyboard-tab$$
   - '!'
   - '@'
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  symbols:
+  SYMBOL:
   - $$mdi:keyboard-tab$$
   - '!'
   - '@'
