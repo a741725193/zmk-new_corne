@@ -196,7 +196,7 @@
         function_layer {
             bindings = <
 &kp C_FAST_FORWARD  &kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOLUME_UP                      &trans            &mkp LCLK   &mkp MCLK  &mkp RCLK  &mkp MB5   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
-&kp C_PLAY_PAUSE    &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_DOWN            &trans  &mkp MB4  &trans  &bt BT_NXT  &kp RSHFT  &kp RGUI   &kp RALT   &kp RCTRL             &trans
+&kp C_PLAY_PAUSE    &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_DOWN            &trans  &mkp MB4  &trans  &bt BT_NXT  &kp RSHFT  &kp RGUI   &kp RALT   &kp RCTRL             &tog 4
 &kp C_PREVIOUS      &kp F9  &kp F10  &kp F11  &kp F12  &kp K_MUTE         &trans            &trans            &kp LEFT    &kp DOWN   &kp UP     &kp RIGHT  &kp RIGHT             &trans
                                      &trans   &trans   &trans                                                 &trans      &trans     &trans
             >;
