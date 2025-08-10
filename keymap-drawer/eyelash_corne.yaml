@@ -175,7 +175,7 @@ layers:
   - RGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: WASD, h: toggle}
   - PREVIOUS
   - F9
   - F10
