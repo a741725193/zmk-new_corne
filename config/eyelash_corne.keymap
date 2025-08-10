@@ -207,7 +207,7 @@
         gaming_layer {
             bindings = <
 &kp TAB    &kp T  &kp Q  &kp W   &kp E      &kp R                                        &kp UP                       &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_SPD                    &rgb_ug RGB_SPI
-&kp LCTRL  &kp I  &kp A  &kp S   &kp D      &kp F                              &kp LEFT  &kt K_PLAY_PAUSE  &kp RIGHT  &rgb_ug RGB_TOG  &kp RSHFT        &kp RGUI         &kp RALT         &kp RCTRL                          &trans
+&kp LCTRL  &kp I  &kp A  &kp S   &kp D      &kp F                              &kp LEFT  &kt K_PLAY_PAUSE  &kp RIGHT  &rgb_ug RGB_TOG  &kp RSHFT        &kp RGUI         &kp RALT         &kp RCTRL                          &tog 4
 &kp LSHFT  &kp B  &kp Z  &kp X   &kp C      &kp V           &rgb_ug RGB_TOG              &kp DOWN                     &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_COLOR_HSB(302,100,50)  &rgb_ug RGB_COLOR_HSB(181,100,50)
                          &kp N1  &kp SPACE  &lt 5 NUMBER_2                                                            &trans           &trans           &trans
             >;
