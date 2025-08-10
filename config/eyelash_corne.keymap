@@ -156,7 +156,7 @@
         base_layer {
             bindings = <
 &kp TAB        &kp Q     &kp W                 &kp F             &kp P                  &kp B                                    &kp UP               &kp J           &kp L      &kp U                &kp Y            &kp SEMICOLON        &kp MINUS
-&kp GRAVE      &kp A     &hm_l LEFT_CONTROL R  &hm_l LEFT_ALT S  &hm_l LEFT_COMMAND T    &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M           &hm_r RIGHT_COMMAND N      &hm_r RIGHT_ALT E  &hm_r RIGHT_CONTROL I  &mt O  &kp SQT
+&kp GRAVE      &kp A     &hm_l LEFT_CONTROL R  &hm_l LEFT_ALT S  &hm_l LEFT_COMMAND T    &kp G                          &kp LEFT  &kp RET   &kp RIGHT  &kp M           &hm_r RIGHT_COMMAND N      &hm_r RIGHT_ALT E  &hm_r RIGHT_CONTROL I  &kp O  &kp SQT
 &kp BACKSLASH  &kp Z               &kp X           &kp C               &kp D         &kp V      &kp C_PLAY_PAUSE              &kp DOWN             &kp K           &kp H      &kp COMMA            &kp PERIOD       &kp SLASH            &kp EQUAL
                                                    &lt 3 CAPS          &lt 2 ESCAPE  &kp SPACE                                                     &sk LEFT_SHIFT  &kp ENTER  &lt 1 BACKSPACE
             >;
