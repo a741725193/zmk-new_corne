@@ -224,7 +224,7 @@ layers:
   - RGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - RGB COLOR HSB(60,99,50)
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - B
   - Z
