@@ -138,10 +138,10 @@
         right {
             display-name = "right";
             bindings = <
-&trans  &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &trans            &trans  &kp PG_UP             &kp UP                        &kp PG_DN            &kp BACKSLASH  &trans
-&trans  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &trans  &mkp MB3  &trans  &trans  &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp RIGHT_GUI  &trans
-&trans  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &trans            &trans  &kp RC(RS(TAB))       &kp RC(TAB)                   &kp HOME             &kp END        &trans
-                                           &trans               &trans             &trans                                        &trans  &trans                &trans
+&trans  &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &trans            &kp LEFT_BRACKET   &kp PG_UP             &kp UP                        &kp PG_DN            &kp BACKSLASH  &trans
+&trans  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &trans  &mkp MB3  &trans  &kp RIGHT_BRACKET  &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp RIGHT_GUI  &trans
+&trans  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &trans            &kp APOS           &kp RC(RS(TAB))       &kp RC(TAB)                   &kp HOME             &kp END        &trans
+                                           &trans               &trans             &trans                                        &trans             &trans                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
