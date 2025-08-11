@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QLU:
-  - {t: '[', s: '{'}
+  - (
   - Q
   - L
   - U
@@ -13,8 +13,8 @@ layers:
   - R
   - Y
   - P
-  - {t: \, s: '|'}
-  - {t: ']', s: '}'}
+  - '"'
+  - )
   - {t: E, h: '$$mdi:apple-keyboard-command$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
@@ -29,7 +29,7 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: H, h: RIGHT GUI}
   - {t: ;, s: ':'}
-  - .
+  - '@'
   - Z
   - X
   - C
@@ -48,11 +48,11 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: left}
   - {t: '$$mdi:keyboard-space$$', h: right}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: APPLICATION, h: conf}
+  - '&app_lt4_del'
   left:
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - $
-  - '#'
   - $$mdi:arrow-up-bold$$
   - '*'
   - '%'
@@ -68,7 +68,7 @@ layers:
   - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '`', s: '~'}
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -83,7 +83,7 @@ layers:
   - (
   - '@'
   - )
-  - '&'
+  - \
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - .
@@ -99,7 +99,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   right:
-  - F1
+  - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F5
   - F4
@@ -110,10 +110,10 @@ layers:
   - PG UP
   - $$mdi:arrow-up-bold$$
   - PG DN
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-command$$
+  - {t: F1, h: '$$mdi:apple-keyboard-command$$'}
   - {t: F10, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F2, h: '$$mdi:apple-keyboard-shift$$'}
@@ -151,7 +151,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PRINTSCREEN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -244,9 +244,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
-- p: [37, 36]
+- p: [36, 38]
   k: Alt+`
 - p: [30, 31]
   k: Ctl+C
