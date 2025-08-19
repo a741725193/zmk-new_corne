@@ -132,7 +132,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MI_PL";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp PLUS>;
+            bindings = <&kp MINUS>, <&kp EQUAL>;
         };
 
         com_col: com_col {
