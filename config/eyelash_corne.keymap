@@ -80,7 +80,7 @@
             bindings = <
 &none  &kp SINGLE_QUOTE        &kp LBRC                   &kp RBRC                    &kp DOUBLE_QUOTES            &kp DOT                    &none         &kp DOLLAR  &kp UNDERSCORE            &kp LBKT                         &kp RBKT                            &kp PERCENT               &none
 &none  &hrm LEFT_CONTROL EXCL  &hrm LEFT_SHIFT LESS_THAN  &hrm LEFT_ALT GREATER_THAN  &hrm LEFT_COMMAND SEMICOLON  &kp POUND           &none  &none  &none  &kp PIPE    &hrm RIGHT_COMMAND COLON  &hrm RIGHT_ALT LEFT_PARENTHESIS  &hrm RIGHT_SHIFT RIGHT_PARENTHESIS  &hrm RIGHT_CONTROL QMARK  &none
-&none  &kp CARET               &kp SLASH                  &kp STAR                    &kp NON_US_BACKSLASH         &kp GRAVE  &none           &none         &kp TILDE   &kp AMPERSAND             &kp EQUAL                        &kp PLUS                            &kp AT                    &none
+&none  &kp CARET               &kp SLASH                  &kp STAR                    &kp BACKSLASH                &kp GRAVE  &none           &none         &kp TILDE   &kp AMPERSAND             &kp EQUAL                        &kp PLUS                            &kp AT                    &none
                                                           &none                       &trans                       &trans                                   &trans      &trans                    &none
             >;
 
