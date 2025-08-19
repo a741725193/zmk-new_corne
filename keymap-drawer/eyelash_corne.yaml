@@ -1,25 +1,25 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QLU:
-  - (
+  - '!'
   - Q
   - L
   - U
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - '&com_col'
+  - '&peri_til'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F
   - W
   - R
   - Y
   - P
-  - .
-  - )
+  - '#'
+  - '&left_kakko'
   - {t: E, h: '$$mdi:apple-keyboard-command$$'}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '-', s: _}
+  - '&mi_pl'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&mkp MB1'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -28,13 +28,13 @@ layers:
   - {t: N, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: H, h: RIGHT GUI}
-  - {t: ;, s: ':'}
+  - '&right_kakko'
   - '@'
   - Z
   - X
   - C
   - V
-  - {t: /, s: '?'}
+  - '&slash'
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - G
@@ -42,7 +42,7 @@ layers:
   - M
   - J
   - B
-  - {t: '=', s: +}
+  - '&'
   - {t: '$$mdi:keyboard-esc$$', h: mouse}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-tab$$', h: left}
@@ -51,7 +51,7 @@ layers:
   - '&app_lt4_del'
   left:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
+  - '#'
   - $
   - $$mdi:arrow-up-bold$$
   - '*'
@@ -61,18 +61,18 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: /, s: '?'}
+  - '&slash'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '!', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '=', s: +}
+  - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ',', s: <}
+  - '&com_col'
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-control$$', s: '%'}
   - {t: '6', h: '$$mdi:apple-keyboard-option$$'}
@@ -80,17 +80,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - (
+  - '&left_kakko'
   - '@'
-  - )
-  - \
+  - '&right_kakko'
+  - '&'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - .
+  - '&peri_til'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - '3'
-  - {t: '-', s: _}
+  - '&mi_pl'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -106,11 +106,11 @@ layers:
   - F12
   - F9
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '[', s: '{'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PG UP
   - $$mdi:arrow-up-bold$$
   - PG DN
-  - {t: \, s: '|'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: F1, h: '$$mdi:apple-keyboard-command$$'}
@@ -121,7 +121,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ']', s: '}'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -135,7 +135,7 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - .
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+Sft+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-tab$$
   - HOME
