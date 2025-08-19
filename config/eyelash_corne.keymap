@@ -106,6 +106,55 @@
             #binding-cells = <0>;
             bindings = <&lt 4 K_APPLICATION>, <&kp DELETE>;
         };
+
+        left_kakko: left_kakko {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LEFT_KAKKO";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACKET>;
+        };
+
+        right_kakko: right_kakko {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RIGHT_KAKKO";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
+        };
+
+        accent: accent {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ACCENT";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp SQT>;
+        };
+
+        mi_pl: mi_pl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MI_PL";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp PLUS>;
+        };
+
+        com_col: com_col {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COM_COL";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+        };
+
+        slash: slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SLASH";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+        };
+
+        peri_til: peri_til {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PERI_TIL";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>, <&kp GRAVE>;
+        };
     };
 
     keymap {
@@ -114,10 +163,10 @@
         default_layer {
             display-name = "QLU";
             bindings = <
-&kp LEFT_PARENTHESIS   &kp Q           &kp L           &kp U        &kp COMMA         &kp DOT                                      &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp APOS
-&kp RIGHT_PARENTHESIS  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &kp MINUS                    &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &kp SEMICOLON
-&kp AT_SIGN            &kp Z           &kp X           &kp C        &kp V             &kp FSLH   &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp EQUAL
-                                                       &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
+&kp EXCLAMATION  &kp Q           &kp L           &kp U        &com_col          &peri_til                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp HASH
+&left_kakko      &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &mi_pl                       &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &right_kakko
+&kp AT_SIGN      &kp Z           &kp X           &kp C        &kp V             &slash     &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp AMPERSAND
+                                                 &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
             >;
 
             sensor-bindings = <&rot_ur_z 0 0>;
@@ -126,10 +175,10 @@
         left {
             display-name = "left";
             bindings = <
-&trans  &kp GRAVE          &kp DOLLAR               &kp UP_ARROW                 &kp ASTERISK           &kp PERCENT                             &trans            &bs_del     &kp N7                    &kp N8                &kp N9                  &kp FSLH          &trans
-&trans  &mt LEFT_GUI EXCL  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LSHFT RIGHT_ARROW  &kp EQUAL                       &trans  &mkp MB3  &trans  &kp COMMA   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI N0  &trans
-&trans  &trans             &kp LEFT_PARENTHESIS     &kp AT                       &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &trans            &trans            &kp PERIOD  &kp N1                    &kp N2                &kp NUMBER_3            &kp MINUS         &trans
-                                                    &trans                       &trans                 &trans                                                    &trans      &trans                    &trans
+&trans  &kp HASH                  &kp DOLLAR               &kp UP_ARROW                 &kp ASTERISK           &kp PERCENT                      &trans            &bs_del    &kp N7                    &kp N8                &kp N9                  &slash            &trans
+&trans  &mt LEFT_GUI EXCLAMATION  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LSHFT RIGHT_ARROW  &kp CARET                &trans  &mkp MB3  &trans  &com_col   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI N0  &trans
+&trans  &trans                    &left_kakko              &kp AT                       &right_kakko           &kp AMPERSAND  &trans            &trans            &peri_til  &kp N1                    &kp N2                &kp NUMBER_3            &mi_pl            &trans
+                                                           &trans                       &trans                 &trans                                             &trans     &trans                    &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -138,10 +187,10 @@
         right {
             display-name = "right";
             bindings = <
-&trans  &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &trans            &kp LBKT  &kp PG_UP             &kp UP                        &kp PG_DN            &kp BACKSLASH  &trans
-&trans  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &trans  &mkp MB3  &trans  &kp RBKT  &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp RIGHT_GUI  &trans
-&trans  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &trans            &kp APOS  &kp RC(RS(TAB))       &kp RC(TAB)                   &kp HOME             &kp END        &trans
-                                           &trans               &trans             &trans                                        &trans    &trans                &trans
+&trans  &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &trans            &none   &kp PG_UP             &kp UP                        &kp PG_DN            &none          &trans
+&trans  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &trans  &mkp MB3  &trans  &none   &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp RIGHT_GUI  &trans
+&trans  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &trans            &none   &kp RC(RS(TAB))       &kp RC(TAB)                   &kp HOME             &kp END        &trans
+                                           &trans               &trans             &trans                                        &trans  &trans                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
