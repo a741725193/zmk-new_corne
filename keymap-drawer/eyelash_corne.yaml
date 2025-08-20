@@ -6,7 +6,7 @@ layers:
   - L
   - U
   - '&com_col'
-  - '&peri_til'
+  - '&peri_apo'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F
   - W
@@ -86,7 +86,7 @@ layers:
   - '&'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&peri_til'
+  - '&peri_apo'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - '3'
@@ -135,7 +135,7 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - Ctl+Sft+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-tab$$
   - HOME
