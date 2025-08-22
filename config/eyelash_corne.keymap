@@ -113,10 +113,10 @@
 
         layer_4 {
             bindings = <
-&none  &none           &none       &none       &none  &none                            &rgb_ug RGB_HUI                   &none  &none  &none  &none  &none  &none
-&none  &bt BT_CLR      &bt BT_PRV  &bt BT_NXT  &none  &none           &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &none  &none  &none  &none  &none  &none
-&none  &bt BT_CLR_ALL  &none       &none       &none  &none  &none                     &rgb_ug RGB_HUD                   &none  &none  &none  &none  &none  &none
-                                   &none       &none  &none                                                              &none  &none  &none
+&none  &none  &none       &none       &none          &none                                   &rgb_ug RGB_HUI                   &none         &none          &none  &none  &none  &bt BT_CLR
+&none  &none  &bt BT_PRV  &bt BT_NXT  &none          &none                  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &none         &none          &none  &none  &none  &bt BT_CLR_ALL
+&none  &none  &none       &none       &none          &none         &none                     &rgb_ug RGB_HUD                   &none         &none          &none  &none  &none  &none
+                          &none       &bt BT_DISC 1  &bt BT_SEL 0                                                              &bt BT_SEL 1  &bt BT_DISC 0  &none
             >;
 
             label = "Settings";
