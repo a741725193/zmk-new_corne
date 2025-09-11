@@ -165,7 +165,7 @@ layers:
   - A
   - S
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&move_src_td_down'
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
