@@ -151,9 +151,9 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:menu-left$$'}
-  - '&ht_mmv_msc MOVE_UP SCRL_UP'
-  - {t: '$$mdi:mouse-right-click-outline$$', h: '$$mdi:menu-right$$'}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-up-bold$$
   - Y
   - U
@@ -164,9 +164,9 @@ layers:
   - '&td0'
   - A
   - S
-  - '&lclk_mb4_td'
-  - '&ht_mmv_msc MOVE_DOWN SCRL_DOWN'
-  - '&rclk_mb5_td'
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-right-click-outline$$
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
