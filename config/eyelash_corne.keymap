@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp LEFT_SHIFT &kp CAPS>; // 쉼표 제거
         };
 
         // 탭: 마우스 위로 이동, 홀드: 스크롤 업
