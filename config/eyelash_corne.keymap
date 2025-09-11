@@ -36,27 +36,27 @@
             bindings = <&kp LEFT_SHIFT &kp CAPS>;
         };
 
-        // 템플릿 1: 스크롤(msc)과 이동(mmv)을 조합하기 위한 hold-tap 틀
-        ht_msc_mmv: ht_msc_mmv {
+        // 1. 기본: 이동 / 홀드: 스크롤 동작
+        ht_move_scroll: ht_move_scroll {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_MSC_MMV";
+            label = "HT_MOVE_SCROLL";
             bindings = <&msc>, <&mmv>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred"; // 탭 동작(마우스 이동) 우선 실행
+            flavor = "tap-preferred";
         };
 
-        // 템플릿 2: 이동(mmv)과 클릭(mkp)을 조합하기 위한 hold-tap 틀
-        ht_mmv_mkp: ht_mmv_mkp {
+        // 2. 기본: 이동 / 홀드: 클릭 동작
+        ht_move_click: ht_move_click {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_MMV_MKP";
-            bindings = <&mmv>, <&mkp>;
+            label = "HT_MOVE_CLICK";
+            bindings = <&mkp>, <&mmv>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred"; // 탭 동작(마우스 이동) 우선 실행
+            flavor = "tap-preferred";
         };
         
-        // tap-dance는 특정 동작을 미리 정의해야 하므로 그대로 유지합니다.
+        // tap-dance는 그대로 유지
         lclk_mb4_td: lclk_mb4_td {
             compatible = "zmk,behavior-tap-dance";
             label = "LCLK_MB4_TAP_DANCE";
