@@ -1116,23 +1116,21 @@ rect.held, rect.combo.held {
 <g transform="translate(196, 28)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;ht_mmv_m…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MOVE_LEFT</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">LCLK</tspan>
-</text>
+<use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:mouse-left-click-outline"/>
+<use href="#mdi:menu-left" xlink:href="#mdi:menu-left" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:menu-left"/>
 </g>
 <g transform="translate(252, 35)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;ht_msc_m…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">SCRL_UP</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MOVE_UP</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;ht_mmv_m…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MOVE_UP</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">SCRL_UP</tspan>
 </text>
 </g>
 <g transform="translate(308, 41)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;ht_mmv_m…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MOVE_RIGHT</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">RCLK</tspan>
-</text>
+<use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:mouse-right-click-outline"/>
+<use href="#mdi:menu-right" xlink:href="#mdi:menu-right" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:menu-right"/>
 </g>
 <g transform="translate(546, 41)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1193,7 +1191,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;ht_msc_m…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">SCRL_DOWN</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MOVE_DOWN</tspan>
+<tspan x="0" dy="-1.2em" style="font-size: 60%">&amp;ht_mmv_m…</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MOVE_DOWN</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">SCRL_DOWN</tspan>
 </text>
 </g>
 <g transform="translate(308, 97)" class="key keypos-18">
