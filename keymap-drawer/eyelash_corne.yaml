@@ -152,7 +152,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - '&move_src_td_up'
+  - {t: '$$mdi:menu-up$$', h: '$$mdi:pan-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-up-bold$$
   - Y
@@ -165,7 +165,7 @@ layers:
   - A
   - S
   - $$mdi:mouse-left-click-outline$$
-  - '&move_src_td_down'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
