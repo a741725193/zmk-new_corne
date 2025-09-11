@@ -152,11 +152,11 @@ layers:
   - $$mdi:arrow-up-bold$$
   - '&homd_end_td'
   - '&mkp MB1'
-  - {t: PgUp, h: '$$mdi:menu-up$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
   - $$mdi:arrow-up-bold$$
   - '&mkp MB1'
-  - {t: PgUp, h: '$$mdi:menu-up$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
   - '&homd_end_td'
   - $$mdi:arrow-up-bold$$
@@ -165,29 +165,29 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: PgDn, h: '$$mdi:menu-down$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: PgDn, h: '$$mdi:menu-down$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:apple-keyboard-control$$
   - Z
-  - X
-  - C
+  - PgUp
+  - PgDn
   - $$mdi:pan-up$$
   - $$mdi:pan-down$$
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:pan-up$$
   - $$mdi:pan-down$$
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - PG UP
+  - PgDn
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
