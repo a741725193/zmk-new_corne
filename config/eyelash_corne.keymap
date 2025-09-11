@@ -44,7 +44,14 @@
 
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <69>;
+            tapping-term-ms = <99>;
+        };
+
+        homd_end_td: homd_end_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HOMD_END_TD";
+            #binding-cells = <0>;
+            bindings = <&kp HOME>, <&kp END>;
         };
     };
 
@@ -113,10 +120,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp TAB    &kp HOME  &kp PAGE_UP    &mkp MB1        &move_src MOVE_UP PAGE_UP  &mkp MB2                                &kp UP                &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp O    &kp P     &kp BSPC
-&td0       &kp END   &kp PAGE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN             &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z     &kp X          &kp C           &kp V                      &kp B            &kp SPACE              &kp DOWN              &kp N           &kp M           &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
-                                    &kp LGUI        &mo 1                      &lt 3 SPACE                                                   &lt 3 ENTER     &mo 2           &kp RALT
+&trans          &kp UP_ARROW    &homd_end_td     &mkp MB1        &move_src MOVE_UP PAGE_UP      &mkp MB2                                &kp UP                &mkp MB1        &move_src MOVE_UP PAGE_UP      &mkp MB2         &homd_end_td    &kp UP_ARROW    &kp ESC
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &move_src MOVE_DOWN PAGE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &move_src MOVE_DOWN PAGE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LCTRL       &kp Z           &kp X            &kp C           &msc SCRL_UP                   &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN                 &kp COMMA        &kp DOT         &kp FSLH        &kp ENTER
+                                                 &kp LGUI        &mo 1                          &lt 3 SPACE                                                   &lt 3 ENTER     &mo 2                          &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
