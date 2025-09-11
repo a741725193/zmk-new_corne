@@ -43,7 +43,16 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <50>;
+        };
+
+        move_src_td_down: move_src_td_down {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOVE_SRC_TD_DOWN";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN>, <&msc SCRL_DOWN>;
+
+            tapping-term-ms = <50>;
         };
     };
 
@@ -112,10 +121,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp TAB    &trans  &trans  &mmv MOVE_LEFT  &move_src_td_up  &mmv MOVE_RIGHT                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A   &kp S   &mkp LCLK       &mmv MOVE_DOWN   &mkp RCLK                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z   &kp X   &kp C           &kp V            &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                           &kp LGUI        &mo 1            &lt 3 SPACE                                                   &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB    &trans  &trans  &mmv MOVE_LEFT  &move_src_td_up    &mmv MOVE_RIGHT                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A   &kp S   &mkp LCLK       &move_src_td_down  &mkp RCLK                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z   &kp X   &kp C           &kp V              &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                           &kp LGUI        &mo 1              &lt 3 SPACE                                                   &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
