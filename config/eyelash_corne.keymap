@@ -36,6 +36,61 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        // 탭: 마우스 위로 이동, 홀드: 스크롤 업
+        mv_up_sc_up: mv_up_sc_up {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_UP_OR_SCROLL_UP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&msc SCRL_UP &mmv MOVE_UP>;
+        };
+
+        // 탭: 마우스 아래로 이동, 홀드: 스크롤 다운
+        mv_dn_sc_dn: mv_dn_sc_dn {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOUSE_DOWN_OR_SCROLL_DOWN";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&msc SCRL_DOWN &mmv MOVE_DOWN>;
+        };
+
+        // 1번 탭: 좌클릭, 2번 탭: MB4
+        lclk_mb4_td: lclk_mb4_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LCLK_MB4_TAP_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mkp LCLK &mkp MB4>;
+        };
+
+        // 1번 탭: 우클릭, 2번 탭: MB5
+        rclk_mb5_td: rclk_mb5_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RCLK_MB5_TAP_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mkp RCLK &mkp MB5>;
+        };
+
+        // 홀드: 왼쪽 이동, 탭: 좌클릭
+        mv_l_lclk_ht: mv_l_lclk_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOVE_LEFT_OR_LCLK";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&mmv MOVE_LEFT &mkp LCLK>;
+        };
+
+        // 홀드: 오른쪽 이동, 탭: 우클릭
+        mv_r_rclk_ht: mv_r_rclk_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOVE_RIGHT_OR_RCLK";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&mmv MOVE_RIGHT &mkp RCLK>;
+        };
+
     };
 
     rgb_encoder: rgb_encoder {
