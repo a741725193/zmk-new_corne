@@ -40,12 +40,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MoveUp/ScrollUp";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;   // 탭/홀드 구분 시간
-            quick-tap-ms = <150>;      // 빠른 탭 허용 시간
-            flavor = "tap-preferred";  // 탭 우선
-            bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&mmv MOVE_UP &msc SCRL_UP>;
         };
-
+        
         move_down_or_scroll: move_down_or_scroll {
             compatible = "zmk,behavior-hold-tap";
             label = "MoveDown/ScrollDown";
@@ -53,7 +53,25 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
-            bindings = <&mmv MOVE_DOWN>, <&msc SCRL_DOWN>;
+            bindings = <&mmv MOVE_DOWN &msc SCRL_DOWN>;
+        };
+        
+        lclick_or_mb4: lclick_or_mb4 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LClick/MB4";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&mkp LCLK &mkp MB4>;
+        };
+        
+        rclick_or_mb5: rclick_or_mb5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RClick/MB5";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&mkp RCLK &mkp MB5>;
         };
 
     };
