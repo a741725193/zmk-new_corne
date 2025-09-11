@@ -165,7 +165,7 @@ layers:
   - A
   - S
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:pan-down$$', h: '$$mdi:menu-down$$'}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
