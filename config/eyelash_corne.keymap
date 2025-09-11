@@ -14,7 +14,7 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    acceleration-exponent = <1>;
+    acceleration-exponent = <2>;
     time-to-max-speed-ms = <100>;
     delay-ms = <0>;
 };
@@ -71,16 +71,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mkp RCLK &mkp MB5>;
-        };
-
-        // 1. 위로 이동/스크롤
-        move_up_scroll: move_up_scroll {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOVE_UP_SCROLL";
-            bindings = <&msc SCRL_UP &mmv MOVE_UP>;
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
         };
 
     };
