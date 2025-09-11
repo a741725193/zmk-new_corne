@@ -14,7 +14,7 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    acceleration-exponent = <2>;
+    acceleration-exponent = <1>;
     time-to-max-speed-ms = <100>;
     delay-ms = <0>;
 };
@@ -36,27 +36,27 @@
             bindings = <&kp LEFT_SHIFT &kp CAPS>;
         };
 
-        // 1. 기본: 이동 / 홀드: 스크롤 동작
-        ht_move_scroll: ht_move_scroll {
+        // 템플릿 1: 스크롤(msc)과 이동(mmv)을 조합하기 위한 hold-tap 틀
+        ht_msc_mmv: ht_msc_mmv {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_MOVE_SCROLL";
-            bindings = <&msc>, <&mmv>;
+            label = "HT_MSC_MMV";
+            bindings = <&mmv>, <&msc>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            flavor = "tap-preferred"; // 탭 동작(마우스 이동) 우선 실행
         };
 
-        // 2. 기본: 이동 / 홀드: 클릭 동작
-        ht_move_click: ht_move_click {
+        // 템플릿 2: 이동(mmv)과 클릭(mkp)을 조합하기 위한 hold-tap 틀
+        ht_mmv_mkp: ht_mmv_mkp {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_MOVE_CLICK";
-            bindings = <&mkp>, <&mmv>;
+            label = "HT_MMV_MKP";
+            bindings = <&mmv>, <&mkp>;
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            flavor = "tap-preferred"; // 탭 동작(마우스 이동) 우선 실행
         };
         
-        // tap-dance는 그대로 유지
+        // tap-dance는 특정 동작을 미리 정의해야 하므로 그대로 유지합니다.
         lclk_mb4_td: lclk_mb4_td {
             compatible = "zmk,behavior-tap-dance";
             label = "LCLK_MB4_TAP_DANCE";
@@ -72,7 +72,6 @@
             tapping-term-ms = <200>;
             bindings = <&mkp RCLK &mkp MB5>;
         };
-
     };
 
     rgb_encoder: rgb_encoder {
@@ -136,8 +135,8 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp TAB   &trans &trans &ht_mmv_mkp MOVE_LEFT LCLK   &ht_msc_mmv SCRL_UP MOVE_UP   &ht_mmv_mkp MOVE_RIGHT RCLK   &kp UP         &kp Y     &kp U &kp I     &kp O   &kp P    &kp BSPC
-&td0      &kp A  &kp S  &lclk_mb4_td                 &ht_msc_mmv SCRL_DOWN MOVE_DOWN   &rclk_mb5_td                  &kp LEFT &kp ENTER &kp RIGHT &kp H     &kp J &kp K     &kp L   &kp SEMI &kp SQT
+&kp TAB   &trans &trans &ht_mmv_mkp MOVE_LEFT LCLK   &&ht_mmv_msc MOVE_UP SCRL_UP       &ht_mmv_mkp MOVE_RIGHT RCLK   &kp UP         &kp Y     &kp U &kp I     &kp O   &kp P    &kp BSPC
+&td0      &kp A  &kp S  &lclk_mb4_td                 &&ht_mmv_msc MOVE_DOWN SCRL_DOWN   &rclk_mb5_td                  &kp LEFT &kp ENTER &kp RIGHT &kp H     &kp J &kp K     &kp L   &kp SEMI &kp SQT
 &kp LCTRL &kp Z  &kp X  &kp C                        &kp V &kp B  &kp SPACE              &kp DOWN                      &kp N     &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
                        &kp LGUI                     &mo 1 &lt 3 SPACE                  &lt 3 ENTER &mo 2 &kp RALT
             >;
