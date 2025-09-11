@@ -12,7 +12,7 @@
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 4 1>; };
 
 &msc {
     acceleration-exponent = <1>;      // 0
@@ -44,7 +44,7 @@
 
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <99>;
+            tapping-term-ms = <60>;
         };
 
         homd_end_td: homd_end_td {
