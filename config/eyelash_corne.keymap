@@ -54,34 +54,6 @@
 
             tapping-term-ms = <99>;
         };
-
-        // 1. 즉시 발동하는 '홀드'와 '탭'을 구분하는 핵심 동작
-        move_or_scroll: move_or_scroll {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOVE_OR_SCROLL";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>; // 홀드와 탭을 구분하는 시간 (조절 가능)
-            flavor = "hold-preferred"; // 누르는 즉시 홀드 동작 시작!
-        };
-
-        // 2. '홀드' 시 실행될 마우스 이동 동작 (래퍼)
-        mmv_up_wrapper: mmv_up_wrapper {
-            compatible = "zmk,behavior-key-press";
-            label = "MMV_UP_WRAPPER";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP>;
-        };
-
-        // 3. '탭' 시 실행될 더블 탭 스크롤 동작
-        double_tap_scroll: double_tap_scroll {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLE_TAP_SCROLL";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>; // 더블 탭으로 인정되는 시간 (조절 가능)
-            bindings = <&none>, <&msc SCRL_UP>; // 첫 탭은 무시, 두 번째 탭에 스크롤
-        };
-
-
     };
 
     rgb_encoder: rgb_encoder {
@@ -149,7 +121,7 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp TAB    &trans  &trans  &mmv MOVE_LEFT  &move_or_scroll &mmv_up_wrapper &double_tap_scroll    &mmv MOVE_RIGHT                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB    &trans  &trans  &mmv MOVE_LEFT  &move_src_td_up    &mmv MOVE_RIGHT                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &td0       &kp A   &kp S   &mkp LCLK       &move_src_td_down  &mkp RCLK                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z   &kp X   &kp C           &kp V              &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                            &kp LGUI        &mo 1              &lt 3 SPACE                                                   &lt 3 ENTER  &mo 2  &kp RALT
