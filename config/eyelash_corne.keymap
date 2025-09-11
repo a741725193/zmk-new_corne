@@ -43,7 +43,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
         };
 
         move_src_td_down: move_src_td_down {
@@ -52,7 +52,7 @@
             #binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN>, <&msc SCRL_DOWN>;
 
-            tapping-term-ms = <50>;
+            tapping-term-ms = <99>;
         };
     };
 
