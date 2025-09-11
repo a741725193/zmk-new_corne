@@ -113,10 +113,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp TAB    &trans  &trans  &mmv MOVE_LEFT  &move_src SCRL_UP MOVE_UP      &mmv MOVE_RIGHT                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A   &kp S   &mkp LCLK       &move_src MOVE_DOWN SCRL_DOWN  &mkp RCLK                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z   &kp X   &kp C           &kp V                          &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                           &kp LGUI        &mo 1                          &lt 3 SPACE                                                   &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB    &kp HOME  &kp PAGE_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2                                &kp UP                &mkp MB1        &mmv MOVE_UP    &mkp MB2         &kp O    &kp P     &kp BSPC
+&td0       &kp END   &kp PAGE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z     &kp X          &kp C           &kp V           &kp B            &kp SPACE              &kp DOWN              &kp N           &kp M           &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
+                                    &kp LGUI        &mo 1           &lt 3 SPACE                                                   &lt 3 ENTER     &mo 2           &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
