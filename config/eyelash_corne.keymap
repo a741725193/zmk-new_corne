@@ -72,6 +72,17 @@
             tapping-term-ms = <200>;
             bindings = <&mkp RCLK &mkp MB5>;
         };
+
+        // 1. 위로 이동/스크롤
+        move_up_scroll: move_up_scroll {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOVE_UP_SCROLL";
+            bindings = <&msc SCRL_UP &mmv MOVE_UP>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
     };
 
     rgb_encoder: rgb_encoder {
