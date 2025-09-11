@@ -37,13 +37,15 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        // [유지] 마우스 이동/스크롤을 위한 hold-tap (이전 답변과 동일)
+        /* ▼▼▼ 아래 코드로 전체를 교체하세요 ▼▼▼ */
+
+        // [수정] 마우스 이동/스크롤을 위한 hold-tap
         mv_up_sc_up: mv_up_sc_up {
             compatible = "zmk,behavior-hold-tap";
             label = "MOUSE_UP_OR_SCROLL_UP";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            bindings = <&msc SCRL_UP>, <&mmv MOVE_UP>;
+            bindings = <&msc SCRL_UP &mmv MOVE_UP>; // 쉼표(,)를 삭제했습니다.
         };
 
         mv_dn_sc_dn: mv_dn_sc_dn {
@@ -51,25 +53,25 @@
             label = "MOUSE_DOWN_OR_SCROLL_DOWN";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            bindings = <&msc SCRL_DOWN>, <&mmv MOVE_DOWN>;
+            bindings = <&msc SCRL_DOWN &mmv MOVE_DOWN>; // 쉼표(,)를 삭제했습니다.
         };
 
-        // [변경] 좌클릭/MB4를 위한 tap-dance
+        // [수정] 좌클릭/MB4를 위한 tap-dance
         lclk_mb4_td: lclk_mb4_td {
             compatible = "zmk,behavior-tap-dance";
             label = "LCLK_MB4_TAP_DANCE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>; // 더블클릭 인식 시간(ms)
-            bindings = <&mkp LCLK>, <&mkp MB4>; // 1번 탭, 2번 탭
+            tapping-term-ms = <200>;
+            bindings = <&mkp LCLK &mkp MB4>; // 쉼표(,)를 삭제했습니다.
         };
 
-        // [변경] 우클릭/MB5를 위한 tap-dance
+        // [수정] 우클릭/MB5를 위한 tap-dance
         rclk_mb5_td: rclk_mb5_td {
             compatible = "zmk,behavior-tap-dance";
             label = "RCLK_MB5_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mkp RCLK>, <&mkp MB5>; // 1번 탭, 2번 탭
+            bindings = <&mkp RCLK &mkp MB5>; // 쉼표(,)를 삭제했습니다.
         };
 
     };
