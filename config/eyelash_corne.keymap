@@ -30,49 +30,84 @@
 
 / {
     behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+
+        /* --- Mouse button wrappers (mouse-keys behavior) --- */
+        mb4_button: mb4_button {
+            compatible = "zmk,behavior-mouse-keys";
+            #binding-cells = <1>;
+            /* 이 노드가 실제로 MB4를 내보내도록 래핑 */
+            bindings = <&mkp MB4>;
         };
+
+        mb5_button: mb5_button {
+            compatible = "zmk,behavior-mouse-keys";
+            #binding-cells = <1>;
+            bindings = <&mkp MB5>;
+        };
+
+        /* --- Mouse move / scroll wrappers (experimental / pointer PR API) --- */
+        move_up: move_up {
+            compatible = "zmk,behavior-mouse-move";
+            #binding-cells = <1>;
+            /* 내부적으로 mmv MOVE_UP 를 실행하도록 정의된 behavior 타입입니다 */
+            bindings = <&mmv MOVE_UP>;
+        };
+
+        scroll_up: scroll_up {
+            compatible = "zmk,behavior-mouse-scroll";
+            #binding-cells = <1>;
+            bindings = <&msc SCRL_UP>;
+        };
+
+        move_down: move_down {
+            compatible = "zmk,behavior-mouse-move";
+            #binding-cells = <1>;
+            bindings = <&mmv MOVE_DOWN>;
+        };
+
+        scroll_down: scroll_down {
+            compatible = "zmk,behavior-mouse-scroll";
+            #binding-cells = <1>;
+            bindings = <&msc SCRL_DOWN>;
+        };
+
+        /* --- Hold-tap wrappers: (탭=move, 홀드=scroll) --- */
         move_up_or_scroll: move_up_or_scroll {
             compatible = "zmk,behavior-hold-tap";
-            label = "MoveUp/ScrollUp";
             #binding-cells = <0>;
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-            bindings = <&mmv MOVE_UP &msc SCRL_UP>;
+            /* 반드시 behavior 노드 레이블만 넣어야 함(숫자 파라미터 X) */
+            bindings = <&move_up &scroll_up>;
         };
-        
+
         move_down_or_scroll: move_down_or_scroll {
             compatible = "zmk,behavior-hold-tap";
-            label = "MoveDown/ScrollDown";
             #binding-cells = <0>;
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-            bindings = <&mmv MOVE_DOWN &msc SCRL_DOWN>;
+            bindings = <&move_down &scroll_down>;
         };
-        
+
+        /* --- Hold-tap for left/right click -> MB4/MB5 --- */
         lclick_or_mb4: lclick_or_mb4 {
             compatible = "zmk,behavior-hold-tap";
-            label = "LClick/MB4";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&mkp LCLK &mkp MB4>;
+            tapping-term-ms = <200>;
+            bindings = <&mkp &mb4_button>;
         };
-        
+
         rclick_or_mb5: rclick_or_mb5 {
             compatible = "zmk,behavior-hold-tap";
-            label = "RClick/MB5";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&mkp RCLK &mkp MB5>;
+            tapping-term-ms = <200>;
+            bindings = <&mkp &mb5_button>;
         };
+    }; /* behaviors */
 
     };
 
