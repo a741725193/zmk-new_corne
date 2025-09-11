@@ -37,12 +37,12 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        src_move: src_move {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SRC_MOVE";
-            bindings = <&msc>, <&mmv>;
+        move_src_td_up: move_src_td_up {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOVE_SRC_TD_UP";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
 
-            #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
     };
@@ -112,10 +112,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&kp TAB    &trans  &trans  &mmv MOVE_LEFT  &src_move SCRL_UP MOVE_UP  &mmv MOVE_RIGHT                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A   &kp S   &mkp LCLK       &mmv MOVE_DOWN             &mkp RCLK                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z   &kp X   &kp C           &kp V                      &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                           &kp LGUI        &mo 1                      &lt 3 SPACE                                                   &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB    &trans  &trans  &mmv MOVE_LEFT  &move_src_td_up  &mmv MOVE_RIGHT                         &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A   &kp S   &mkp LCLK       &mmv MOVE_DOWN   &mkp RCLK                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z   &kp X   &kp C           &kp V            &kp B            &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                           &kp LGUI        &mo 1            &lt 3 SPACE                                                   &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
