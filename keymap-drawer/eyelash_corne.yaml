@@ -152,7 +152,7 @@ layers:
   - HOME
   - PgUp
   - '&mkp MB1'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: PgUp, h: '$$mdi:menu-up$$'}
   - '&mkp MB2'
   - $$mdi:arrow-up-bold$$
   - '&mkp MB1'
