@@ -148,48 +148,48 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - $$mdi:keyboard-tab$$
-  - HOME
-  - PgUp
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
+  - '&homd_end_td'
   - '&mkp MB1'
   - {t: PgUp, h: '$$mdi:menu-up$$'}
   - '&mkp MB2'
   - $$mdi:arrow-up-bold$$
   - '&mkp MB1'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: PgUp, h: '$$mdi:menu-up$$'}
   - '&mkp MB2'
-  - O
-  - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
-  - END
-  - PgDn
+  - '&homd_end_td'
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:keyboard-esc$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: PgDn, h: '$$mdi:menu-down$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: PgDn, h: '$$mdi:menu-down$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
-  - V
-  - B
+  - $$mdi:pan-up$$
+  - $$mdi:pan-down$$
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - N
-  - M
+  - $$mdi:pan-up$$
+  - $$mdi:pan-down$$
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
   - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: Fn, type: held}
