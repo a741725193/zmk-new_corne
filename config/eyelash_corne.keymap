@@ -36,6 +36,26 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+        move_up_or_scroll: move_up_or_scroll {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MoveUp/ScrollUp";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;   // 탭/홀드 구분 시간
+            quick-tap-ms = <150>;      // 빠른 탭 허용 시간
+            flavor = "tap-preferred";  // 탭 우선
+            bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
+        };
+
+        move_down_or_scroll: move_down_or_scroll {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MoveDown/ScrollDown";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&mmv MOVE_DOWN>, <&msc SCRL_DOWN>;
+        };
+
     };
 
     rgb_encoder: rgb_encoder {
