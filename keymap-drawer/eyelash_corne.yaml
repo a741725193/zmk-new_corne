@@ -149,30 +149,30 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '&msc MOVE_UP', h: '&mmv SCRL_UP'}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - HOME
+  - PgUp
+  - '&mkp MB1'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB2'
   - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
+  - '&mkp MB1'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB2'
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
-  - A
-  - S
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:pan-down$$', h: '$$mdi:menu-down$$'}
-  - $$mdi:mouse-right-click-outline$$
+  - END
+  - PgDn
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - K
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
