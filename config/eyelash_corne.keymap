@@ -15,9 +15,9 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 4 1>; };
 
 &msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
+    acceleration-exponent = <3>;    // 가속 곡선 (1=선형, 2=곡선, 3=더 강하게)
+    time-to-max-speed-ms = <300>;   // 천천히 눌러도 0.3초에 최고 속도
+    delay-ms = <0>;                 // 딜레이 없음
 };
 
 &mmv {
@@ -44,7 +44,7 @@
 
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <60>;
+            tapping-term-ms = <70>;
         };
 
         homd_end_td: homd_end_td {
