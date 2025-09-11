@@ -40,10 +40,10 @@
         move_src: move_src {
             compatible = "zmk,behavior-hold-tap";
             label = "MOVE_SRC";
-            bindings = <&msc>, <&mmv>;
+            bindings = <&mmv>, <&msc>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
         };
     };
