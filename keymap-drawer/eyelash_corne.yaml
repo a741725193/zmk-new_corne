@@ -151,9 +151,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
   - '&homd_end_td'
-  - '&td_mb1_mb2'
+  - '&mkp MB1'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&td_pgdn_pgup'
+  - '&pgdn_pgup'
   - $$mdi:arrow-up-bold$$
   - '&mkp MB1'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
