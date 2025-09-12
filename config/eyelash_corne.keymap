@@ -1,14 +1,15 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
-#define td_two_keys(name, key1, key2) \
+#define td_two_keys(name, binding1, binding2) \
     name: behavior_##name { \
         compatible = "zmk,behavior-tap-dance"; \
         label = #name; \
         #binding-cells = <0>; \
         tapping-term-ms = <200>; \
-        bindings = <&kp key1>, <&kp key2>; \
+        bindings = <binding1>, <binding2>; \
     };
+
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -40,7 +41,9 @@
 / {
     behaviors {
 
-        td_two_keys(pgdn_pgup,  PG_DN, PG_UP)
+        td_two_keys(td_pgdn_pgup, &kp PG_DN, &kp PG_UP)
+
+        td_two_keys(td_mb1_mb2, &mkp LB, &mkp RB)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -132,7 +135,7 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans          &kp UP_ARROW    &homd_end_td     &mkp MB1        &mmv MOVE_UP    &mkp MB2                                &kp UP                &mkp MB1        &mmv MOVE_UP    &mkp MB2         &homd_end_td    &kp UP_ARROW    &kp ESC
+&trans          &kp UP_ARROW    &homd_end_td     &td_two_keys        &mmv MOVE_UP    &td_pgdn_pgup                                &kp UP                &mkp MB1        &mmv MOVE_UP    &mkp MB2         &homd_end_td    &kp UP_ARROW    &kp ESC
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
 &kp LCTRL       &kp Z           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN   &kp FSLH        &kp ENTER
                                                  &kp LGUI        &mo 1           &lt 3 SPACE                                                   &lt 3 ENTER     &mo 2           &kp RALT
