@@ -39,7 +39,6 @@
 
 / {
     behaviors {
-
         TD_KEYS(td_down_up, 450, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
         TD_KEYS(td_mb_src, 450, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
 
@@ -60,7 +59,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-
     };
 
     rgb_encoder: rgb_encoder {
@@ -84,6 +82,25 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+        combo_x {
+            bindings = <&kp K_CUT>;
+            key-positions = <29 30 29 30>;
+            layers = <0>;
+            slow-release;
+        };
+
+        combo_c {
+            bindings = <&kp K_COPY>;
+            key-positions = <30 31 30 31>;
+            slow-release;
+            layers = <0>;
+        };
+
+        combo_paste {
+            bindings = <&kp K_PASTE>;
+            key-positions = <32 31 31 32 31 32 31 32 31 32>;
+        };
     };
 
     keymap {
@@ -104,10 +121,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &td_1    &td_2    &td_3    &td_0        &kp F11                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &td_4    &td_5    &td_6  &kp F12  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &td_7    &td_8    &td_9        &trans        &bt BT_CLR_ALL  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&trans  &td_1  &td_2  &td_3   &td_0    &kp F11                                       &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans  &td_4  &td_5  &td_6   &kp F12  &bt BT_SEL 3                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &td_7  &td_8  &td_9   &trans   &bt BT_CLR_ALL  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                      &trans  &trans   &trans                                                                         &kp INS          &kp DEL          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -128,7 +145,7 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans          &kp UP_ARROW    &trans     &td_mb_src        &mmv MOVE_UP    &td_down_up                                &kp UP                &td_mb_src        &mmv MOVE_UP    &td_down_up         &trans    &kp UP_ARROW    &kp ESC
+&trans          &kp UP_ARROW    &trans           &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &trans          &kp UP_ARROW    &kp ESC
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
 &kp LCTRL       &kp Z           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN   &kp FSLH        &kp ENTER
                                                  &kp LGUI        &mo 1           &lt 3 SPACE                                                   &lt 3 ENTER     &mo 2           &kp RALT
