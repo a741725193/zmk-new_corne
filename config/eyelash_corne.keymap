@@ -49,7 +49,7 @@
         TD_KEYS(4td_, 250, <&kp N4>, <&kp DLLR>, <&kp F4>)
         TD_KEYS(5td_, 250, <&kp N5>, <&kp PRCNT>, <&kp F5>)
         TD_KEYS(6td_, 250, <&kp N6>, <&kp CARET>, <&kp F6>)
-        TD_KEYS(7td_, 250, <&kp N7>, <&kp AMPS>, <&kp F7)
+        TD_KEYS(7td_, 250, <&kp N7>, <&kp AMPS>, <&kp F7>)
         TD_KEYS(8td_, 250, <&kp N8>, <&kp ASTRK>, <&kp F8>)
         TD_KEYS(9td_, 250, <&kp N9>, <&kp LPAR>, <&kp F9>)
         TD_KEYS(0td_, 250, <&kp N0>, <&kp RPAR>, <&kp F10>)
