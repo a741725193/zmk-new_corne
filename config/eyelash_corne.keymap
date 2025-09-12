@@ -40,8 +40,8 @@
 / {
     behaviors {
 
-        TD_KEYS(td_down_up, 200, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
-        TD_KEYS(td_mb_src, 200, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
+        TD_KEYS(td_down_up, 500, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
+        TD_KEYS(td_mb_src, 500, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
