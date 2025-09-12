@@ -42,6 +42,10 @@
         TD_KEYS(td_down_up, 450, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
         TD_KEYS(td_mb_src, 450, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
 
+        TD_KEYS(td_bracket, 150, <&kp LBKT>, <&kp RBKT>) // [ ]
+        TD_KEYS(td_brace, 150, <&kp LBRC>, <&kp RBRC>) // { }
+        TD_KEYS(td_paren, 150, <&kp LPAR>, <&kp RPAR>) // ( )
+
         TD_KEYS(td_1, 250, <&kp N1>, <&kp EXCL>,  <&kp F1>)
         TD_KEYS(td_2, 250, <&kp N2>, <&kp AT>,    <&kp F2>)
         TD_KEYS(td_3, 250, <&kp N3>, <&kp HASH>,  <&kp F3>)
@@ -85,21 +89,23 @@
 
         combo_x {
             bindings = <&kp K_CUT>;
-            key-positions = <29 30 29 30>;
-            layers = <0>;
+            key-positions = <29 30>;
             slow-release;
+            layers = <0>;
         };
 
         combo_c {
             bindings = <&kp K_COPY>;
-            key-positions = <30 31 30 31>;
+            key-positions = <30 31>;
             slow-release;
             layers = <0>;
         };
 
         combo_paste {
             bindings = <&kp K_PASTE>;
-            key-positions = <32 31 31 32 31 32 31 32 31 32>;
+            key-positions = <31 32>;
+            slow-release;
+            layers = <0>;
         };
     };
 
@@ -133,8 +139,8 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &td_bracket  &td_brace  &kp BSPC
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &td_paren  &kp BSLH  &kp GRAVE
 &trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
             >;
