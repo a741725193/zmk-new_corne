@@ -1,15 +1,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
-#define td_two_keys(name, key1, key2) \
-    name: behavior_##name { \
-        compatible = "zmk,behavior-tap-dance"; \
-        label = #name; \
-        #binding-cells = <0>; \
-        tapping-term-ms = <200>; \
-        bindings = <&kp key1>, <&kp key2>; \
-    };
-
 #define td_keys(name, term_ms, ...) \
     name: behavior_##name { \
         compatible = "zmk,behavior-tap-dance"; \
@@ -48,8 +39,6 @@
 
 / {
     behaviors {
-
-        td_two_keys(pgdn_pgup,  PG_DN, PG_UP)
         
         td_keys(td_down_up, 200, &kp PG_DN, &kp PG_UP, &kp HOME, &kp END)
         td_keys(td_mb_src, 200, &mkp MB1, &mkp MB2, &msc SCRL_DOWN, &msc SCRL_UP)
