@@ -90,7 +90,7 @@
 
         combo_x {
             timeout-ms = <80>;
-            bindings = <&kp K_CUT>;
+            bindings = <&kp LCTL X>;
             key-positions = <29 30>;
             require-prior-idle-ms = <150>;
             layers = <0>;
@@ -98,7 +98,7 @@
 
         combo_c {
             timeout-ms = <80>;
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LCTL C>;
             key-positions = <30 31>;
             require-prior-idle-ms = <150>;
             layers = <0>;
@@ -106,7 +106,7 @@
 
         combo_paste {
             timeout-ms = <80>;
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp LCTL V>;
             key-positions = <31 32>;
             require-prior-idle-ms = <150>;
             layers = <0>;
