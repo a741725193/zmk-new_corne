@@ -202,6 +202,6 @@ combos:
 - p: [29, 30]
   k: A
 - p: [30, 31]
-  k: COPY
+  k: LCTL C
 - p: [31, 32]
   k: PASTE

@@ -551,7 +551,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap">COPY</text>
+<text x="168" y="143" class="combo tap">
+<tspan x="168" dy="-0.6em">LCTL</tspan><tspan x="168" dy="1.2em">C</tspan>
+</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
@@ -836,7 +838,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap">COPY</text>
+<text x="168" y="143" class="combo tap">
+<tspan x="168" dy="-0.6em">LCTL</tspan><tspan x="168" dy="1.2em">C</tspan>
+</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
@@ -1114,7 +1118,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap">COPY</text>
+<text x="168" y="143" class="combo tap">
+<tspan x="168" dy="-0.6em">LCTL</tspan><tspan x="168" dy="1.2em">C</tspan>
+</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
@@ -1393,7 +1399,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap">COPY</text>
+<text x="168" y="143" class="combo tap">
+<tspan x="168" dy="-0.6em">LCTL</tspan><tspan x="168" dy="1.2em">C</tspan>
+</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
