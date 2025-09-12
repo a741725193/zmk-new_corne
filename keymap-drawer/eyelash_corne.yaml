@@ -51,10 +51,10 @@ layers:
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&1td_'
-  - '&2td_'
-  - '&3td_'
-  - '&0td_'
+  - '&td_1'
+  - '&td_2'
+  - '&td_3'
+  - '&td_0'
   - F11
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '6', s: ^}
@@ -64,9 +64,9 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&4td_'
-  - '&5td_'
-  - '&6td_'
+  - '&td_4'
+  - '&td_5'
+  - '&td_6'
   - F12
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -79,9 +79,9 @@ layers:
   - HOME
   - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&7td_'
-  - '&8td_'
-  - '&9td_'
+  - '&td_7'
+  - '&td_8'
+  - '&td_9'
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - $$mdi:volume-off$$
