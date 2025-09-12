@@ -43,16 +43,16 @@
         TD_KEYS(td_down_up, 450, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
         TD_KEYS(td_mb_src, 450, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
 
-        TD_KEYS(1td_, 250, <&kp N1>, <&kp EXCL>,  <&kp F1>)
-        TD_KEYS(2td_, 250, <&kp N2>, <&kp AT>, <&kp F2>)
-        TD_KEYS(3td_, 250, <&kp N3>, <&kp HASH>, <&kp F3>)
-        TD_KEYS(4td_, 250, <&kp N4>, <&kp DLLR>, <&kp F4>)
-        TD_KEYS(5td_, 250, <&kp N5>, <&kp PRCNT>, <&kp F5>)
-        TD_KEYS(6td_, 250, <&kp N6>, <&kp CARET>, <&kp F6>)
-        TD_KEYS(7td_, 250, <&kp N7>, <&kp AMPS>, <&kp F7>)
-        TD_KEYS(8td_, 250, <&kp N8>, <&kp ASTRK>, <&kp F8>)
-        TD_KEYS(9td_, 250, <&kp N9>, <&kp LPAR>, <&kp F9>)
-        TD_KEYS(0td_, 250, <&kp N0>, <&kp RPAR>, <&kp F10>)
+        TD_KEYS(td_1, 250, <&kp N1>, <&kp EXCL>,  <&kp F1>)
+        TD_KEYS(td_2, 250, <&kp N2>, <&kp AT>,    <&kp F2>)
+        TD_KEYS(td_3, 250, <&kp N3>, <&kp HASH>,  <&kp F3>)
+        TD_KEYS(td_4, 250, <&kp N4>, <&kp DLLR>,  <&kp F4>)
+        TD_KEYS(td_5, 250, <&kp N5>, <&kp PRCNT>, <&kp F5>)
+        TD_KEYS(td_6, 250, <&kp N6>, <&kp CARET>, <&kp F6>)
+        TD_KEYS(td_7, 250, <&kp N7>, <&kp AMPS>,  <&kp F7>)
+        TD_KEYS(td_8, 250, <&kp N8>, <&kp ASTRK>, <&kp F8>)
+        TD_KEYS(td_9, 250, <&kp N9>, <&kp LPAR>,  <&kp F9>)
+        TD_KEYS(td_0, 250, <&kp N0>, <&kp RPAR>,  <&kp F10>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -104,9 +104,9 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &1td_    &2td_    &3td_    &0td_        &kp F11                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &4td_    &5td_    &6td_  &kp F12  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &7td_    &8td_    &9td_        &trans        &bt BT_CLR_ALL  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+&trans  &td_1    &td_2    &td_3    &td_0        &kp F11                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans  &td_4    &td_5    &td_6  &kp F12  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &td_7    &td_8    &td_9        &trans        &bt BT_CLR_ALL  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                          &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
             >;
 
