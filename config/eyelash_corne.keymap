@@ -92,21 +92,18 @@
             timeout-ms = <80>;
             bindings = <&kp K_CUT>;
             key-positions = <29 30>;
-            key-positions-release-trigger;
         };
 
         combo_c {
             timeout-ms = <80>;
             bindings = <&kp K_COPY>;
             key-positions = <30 31>;
-            key-positions-release-trigger;
         };
 
         combo_paste {
             timeout-ms = <80>;
             bindings = <&kp K_PASTE>;
             key-positions = <31 32>;
-            key-positions-release-trigger;
         };
     };
 
