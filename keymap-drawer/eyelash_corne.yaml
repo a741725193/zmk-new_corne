@@ -200,11 +200,11 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
 - p: [29, 30]
-  k: CUT
+  k: LCTL X
   l: [QWERTY]
 - p: [30, 31]
-  k: COPY
+  k: LCTL C
   l: [QWERTY]
 - p: [31, 32]
-  k: PASTE
+  k: LCTL V
   l: [QWERTY]
