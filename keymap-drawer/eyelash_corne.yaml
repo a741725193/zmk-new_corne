@@ -109,8 +109,8 @@ layers:
   - ^
   - '&'
   - '*'
-  - (
-  - )
+  - '&td_bracket'
+  - '&td_brace'
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
@@ -124,7 +124,7 @@ layers:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - '&td_paren'
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -199,11 +199,12 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-- p: [29, 30, 29, 30]
+- p: [29, 30]
   k: CUT
   l: [QWERTY]
-- p: [30, 31, 30, 31]
+- p: [30, 31]
   k: COPY
   l: [QWERTY]
-- p: [32, 31, 31, 32, 31, 32, 31, 32, 31, 32]
+- p: [31, 32]
   k: PASTE
+  l: [QWERTY]
