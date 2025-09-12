@@ -155,9 +155,9 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&td_down_up'
   - $$mdi:arrow-up-bold$$
-  - '&mkp MB1'
+  - '&td_mb_src'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB2'
+  - '&td_down_up'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
   - $$mdi:keyboard-esc$$
