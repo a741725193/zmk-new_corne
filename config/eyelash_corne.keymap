@@ -42,9 +42,9 @@
         TD_KEYS(td_down_up, 450, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
         TD_KEYS(td_mb_src, 450, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
 
-        TD_KEYS(td_bracket, 150, <&kp LBKT>, <&kp RBKT>) // [ ]
-        TD_KEYS(td_brace, 150, <&kp LBRC>, <&kp RBRC>) // { }
-        TD_KEYS(td_paren, 150, <&kp LPAR>, <&kp RPAR>) // ( )
+        TD_KEYS(td_bracket, 210, <&kp LBKT>, <&kp RBKT>) // [ ]
+        TD_KEYS(td_brace, 210, <&kp LBRC>, <&kp RBRC>) // { }
+        TD_KEYS(td_paren, 210, <&kp LPAR>, <&kp RPAR>) // ( )
 
         TD_KEYS(td_1, 250, <&kp N1>, <&kp EXCL>,  <&kp F1>)
         TD_KEYS(td_2, 250, <&kp N2>, <&kp AT>,    <&kp F2>)
@@ -90,21 +90,18 @@
         combo_x {
             bindings = <&kp K_CUT>;
             key-positions = <29 30>;
-            slow-release;
             layers = <0>;
         };
 
         combo_c {
             bindings = <&kp K_COPY>;
             key-positions = <30 31>;
-            slow-release;
             layers = <0>;
         };
 
         combo_paste {
             bindings = <&kp K_PASTE>;
             key-positions = <31 32>;
-            slow-release;
             layers = <0>;
         };
     };
