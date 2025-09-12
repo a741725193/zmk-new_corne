@@ -45,7 +45,6 @@
         TD_KEYS(td_bracket, 250, <&kp LBKT>, <&kp RBKT>) // [ ]
         TD_KEYS(td_brace, 250, <&kp LBRC>, <&kp RBRC>) // { }
         TD_KEYS(td_paren, 250, <&kp LPAR>, <&kp RPAR>) // ( )
-
         TD_KEYS(td_1, 250, <&kp N1>, <&kp EXCL>,  <&kp F1>)
         TD_KEYS(td_2, 250, <&kp N2>, <&kp AT>,    <&kp F2>)
         TD_KEYS(td_3, 250, <&kp N3>, <&kp HASH>,  <&kp F3>)
@@ -87,7 +86,6 @@
             key-positions = <1 15 29>;
         };
 
-
         combo_x {
             timeout-ms = <80>;
             bindings = <&kp A>;
@@ -96,13 +94,13 @@
 
         combo_c {
             timeout-ms = <80>;
-            bindings = <&kp LCTL C>;
+            bindings = <&kp LC(C)>;
             key-positions = <30 31>;
         };
 
         combo_paste {
             timeout-ms = <80>;
-            bindings = <&kp K_PASTE>;
+            bindings = <&kp LC(V)>;
             key-positions = <31 32>;
         };
     };
@@ -138,8 +136,8 @@
             display-name = "SYMBOL";
             bindings = <
 &trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &td_bracket  &td_brace  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &td_paren  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &td_paren    &kp BSLH   &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC     &kp PIPE   &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
             >;
 
