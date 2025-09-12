@@ -200,7 +200,7 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
 - p: [29, 30]
-  k: CUT
+  k: A
 - p: [30, 31]
   k: COPY
 - p: [31, 32]
