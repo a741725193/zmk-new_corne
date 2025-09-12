@@ -200,9 +200,15 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
 - p: [29, 30]
-  k: CUT
+  k: Ctl+X
+  l: [QWERTY]
 - p: [30, 31]
   k: Ctl+C
   l: [QWERTY]
 - p: [31, 32]
   k: Ctl+V
+  l: [QWERTY]
+- p: [17, 18]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [22, 23]
+  k: $$mdi:keyboard-space$$
