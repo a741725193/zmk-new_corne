@@ -7,7 +7,7 @@
         label = #name; \
         #binding-cells = <0>; \
         tapping-term-ms = <term_ms>; \
-        bindings = <__VA_ARGS__>; \
+        bindings = __VA_ARGS__; \
     };
 
 #include <input/processors.dtsi>
@@ -39,9 +39,9 @@
 
 / {
     behaviors {
-        
-        TD_KEYS(td_down_up, 200, &kp PG_DN, &kp PG_UP, &kp HOME, &kp END)
-        TD_KEYS(td_mb_src, 200, &mkp MB1, &mkp MB2, &msc SCRL_DOWN, &msc SCRL_UP)
+
+        TD_KEYS(td_down_up, 200, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
+        TD_KEYS(td_mb_src, 200, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
