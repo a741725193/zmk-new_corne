@@ -10,6 +10,15 @@
         bindings = <&kp key1>, <&kp key2>; \
     };
 
+#define td_keys(name, term_ms, ...) \
+    name: behavior_##name { \
+        compatible = "zmk,behavior-tap-dance"; \
+        label = #name; \
+        #binding-cells = <0>; \
+        tapping-term-ms = <term_ms>; \
+        bindings = <__VA_ARGS__>; \
+    };
+
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
