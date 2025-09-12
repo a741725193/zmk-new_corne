@@ -1,6 +1,15 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
+#define td_two_keys(name, key1, key2) \
+    name: behavior_##name { \
+        compatible = "zmk,behavior-tap-dance"; \
+        label = #name; \
+        #binding-cells = <0>; \
+        tapping-term-ms = <200>; \
+        bindings = <&kp key1>, <&kp key2>; \
+    };
+
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
@@ -30,6 +39,9 @@
 
 / {
     behaviors {
+
+        td_two_keys(pgdn_pgup,  PG_DN, PG_UP)
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
