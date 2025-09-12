@@ -96,7 +96,7 @@
 
         combo_c {
             timeout-ms = <80>;
-            bindings = <&kp K_COPY>;
+            bindings = <&kp LCTL C>;
             key-positions = <30 31>;
         };
 
