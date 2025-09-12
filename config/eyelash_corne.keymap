@@ -1,12 +1,13 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
-#define TD_KEYS(name, term_ms, ...) \
+#define TD_KEYS(name, term_ms, quick_ms, ...) \
     name: behavior_##name { \
         compatible = "zmk,behavior-tap-dance"; \
         label = #name; \
         #binding-cells = <0>; \
         tapping-term-ms = <term_ms>; \
+        quick-tap-ms = <quick_ms>; \
         bindings = __VA_ARGS__; \
     };
 
@@ -40,8 +41,8 @@
 / {
     behaviors {
 
-        TD_KEYS(td_down_up, 500, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
-        TD_KEYS(td_mb_src, 500, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
+        TD_KEYS(td_down_up, 500, 150, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
+        TD_KEYS(td_mb_src, 500, 150, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
