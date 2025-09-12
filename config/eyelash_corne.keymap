@@ -135,7 +135,7 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans          &kp UP_ARROW    &homd_end_td     &td_two_keys        &mmv MOVE_UP    &td_pgdn_pgup                                &kp UP                &mkp MB1        &mmv MOVE_UP    &mkp MB2         &homd_end_td    &kp UP_ARROW    &kp ESC
+&trans          &kp UP_ARROW    &homd_end_td     &td_mb1_mb2        &mmv MOVE_UP    &td_pgdn_pgup                                &kp UP                &mkp MB1        &mmv MOVE_UP    &mkp MB2         &homd_end_td    &kp UP_ARROW    &kp ESC
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
 &kp LCTRL       &kp Z           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN   &kp FSLH        &kp ENTER
                                                  &kp LGUI        &mo 1           &lt 3 SPACE                                                   &lt 3 ENTER     &mo 2           &kp RALT
