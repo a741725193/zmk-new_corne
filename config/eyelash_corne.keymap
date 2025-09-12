@@ -90,7 +90,7 @@
 
         combo_x {
             timeout-ms = <80>;
-            bindings = <&kp K_CUT>;
+            bindings = <&kp A>;
             key-positions = <29 30>;
         };
 
