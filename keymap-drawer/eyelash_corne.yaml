@@ -151,7 +151,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
   - '&homd_end_td'
-  - '&mkp td_mb_src'
+  - '&td_mb_src'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&td_down_up'
   - $$mdi:arrow-up-bold$$
