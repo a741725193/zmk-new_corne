@@ -150,7 +150,7 @@ layers:
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
-  - '&homd_end_td'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&td_mb_src'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&td_down_up'
