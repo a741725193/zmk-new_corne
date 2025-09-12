@@ -88,8 +88,9 @@
 
         combo_x {
             timeout-ms = <80>;
-            bindings = <&kp K_CUT>;
+            bindings = <&kp LC(X)>;
             key-positions = <29 30>;
+            layers = <0>;
         };
 
         combo_c {
@@ -103,6 +104,17 @@
             timeout-ms = <80>;
             bindings = <&kp LC(V)>;
             key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        enter_fg {
+            bindings = <&kp ENTER>;
+            key-positions = <17 18>;
+        };
+
+        space_hj {
+            bindings = <&kp SPACE>;
+            key-positions = <22 23>;
         };
     };
 
