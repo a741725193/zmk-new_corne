@@ -1,10 +1,11 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50    // 10
 
+// 'label'을 'display-name'으로 수정하여 경고 메시지를 해결했습니다.
 #define TD_KEYS(name, term_ms, ...) \
     name: behavior_##name { \
         compatible = "zmk,behavior-tap-dance"; \
-        label = #name; \
+        display-name = #name; \
         #binding-cells = <0>; \
         tapping-term-ms = <term_ms>; \
         bindings = __VA_ARGS__; \
@@ -37,21 +38,23 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
+    // 매크로 정의에 필수 속성(compatible, label, #binding-cells)을 추가하여
+    // 치명적인 빌드 오류를 해결했습니다.
     macros {
         // 된소리(Double Consonants) 매크로
-        macro_pp: macro_pp { bindings = <&kp LS(Q)>; }; // ㅃ
-        macro_jj: macro_jj { bindings = <&kp LS(W)>; }; // ㅉ
-        macro_tt: macro_tt { bindings = <&kp LS(E)>; }; // ㄸ
-        macro_kk: macro_kk { bindings = <&kp LS(R)>; }; // ㄲ
-        macro_ss: macro_ss { bindings = <&kp LS(T)>; }; // ㅆ
+        macro_pp: macro_pp { compatible = "zmk,behavior-macro"; label = "MACRO_PP"; #binding-cells = <0>; bindings = <&kp LS(Q)>; };
+        macro_jj: macro_jj { compatible = "zmk,behavior-macro"; label = "MACRO_JJ"; #binding-cells = <0>; bindings = <&kp LS(W)>; };
+        macro_tt: macro_tt { compatible = "zmk,behavior-macro"; label = "MACRO_TT"; #binding-cells = <0>; bindings = <&kp LS(E)>; };
+        macro_kk: macro_kk { compatible = "zmk,behavior-macro"; label = "MACRO_KK"; #binding-cells = <0>; bindings = <&kp LS(R)>; };
+        macro_ss: macro_ss { compatible = "zmk,behavior-macro"; label = "MACRO_SS"; #binding-cells = <0>; bindings = <&kp LS(T)>; };
 
         // 쌍모음(Double Vowels) 매크로
-        macro_ya:  macro_ya  { bindings = <&kp K &kp I>; }; // ㅑ
-        macro_yeo: macro_yeo { bindings = <&kp J &kp U>; }; // ㅕ
-        macro_yo:  macro_yo  { bindings = <&kp H &kp Y>; }; // ㅛ
-        macro_yu:  macro_yu  { bindings = <&kp M &kp P>; }; // ㅠ
-        macro_yae: macro_yae { bindings = <&kp O &kp I>; }; // ㅒ
-        macro_ye:  macro_ye  { bindings = <&kp P &kp I>; }; // ㅖ
+        macro_ya:  macro_ya  { compatible = "zmk,behavior-macro"; label = "MACRO_YA";  #binding-cells = <0>; bindings = <&kp K &kp I>; };
+        macro_yeo: macro_yeo { compatible = "zmk,behavior-macro"; label = "MACRO_YEO"; #binding-cells = <0>; bindings = <&kp J &kp U>; };
+        macro_yo:  macro_yo  { compatible = "zmk,behavior-macro"; label = "MACRO_YO";  #binding-cells = <0>; bindings = <&kp H &kp Y>; };
+        macro_yu:  macro_yu  { compatible = "zmk,behavior-macro"; label = "MACRO_YU";  #binding-cells = <0>; bindings = <&kp M &kp P>; };
+        macro_yae: macro_yae { compatible = "zmk,behavior-macro"; label = "MACRO_YAE"; #binding-cells = <0>; bindings = <&kp O &kp I>; };
+        macro_ye:  macro_ye  { compatible = "zmk,behavior-macro"; label = "MACRO_YE";  #binding-cells = <0>; bindings = <&kp P &kp I>; };
     };
 
     behaviors {
@@ -71,18 +74,17 @@
         TD_KEYS(td_9, 250, <&kp N9>, <&kp LPAR>,  <&kp F9>)
         TD_KEYS(td_0, 250, <&kp N0>, <&kp RPAR>,  <&kp F10>)
 
-        // 한글 된소리 및 쌍모음 Tap-Dance 규칙
-        TD_KEYS(td_p_pp,   180, <&kp Q>, <&macro_pp>)   // ㅂ -> ㅃ
-        TD_KEYS(td_j_jj,   180, <&kp W>, <&macro_jj>)   // ㅈ -> ㅉ
-        TD_KEYS(td_t_tt,   180, <&kp E>, <&macro_tt>)   // ㄷ -> ㄸ
-        TD_KEYS(td_k_kk,   180, <&kp R>, <&macro_kk>)   // ㄱ -> ㄲ
-        TD_KEYS(td_s_ss,   180, <&kp T>, <&macro_ss>)   // ㅅ -> ㅆ
-        TD_KEYS(td_a_ya,   180, <&kp K>, <&macro_ya>)   // ㅏ -> ㅑ
-        TD_KEYS(td_eo_yeo, 180, <&kp J>, <&macro_yeo>)  // ㅓ -> ㅕ
-        TD_KEYS(td_o_yo,   180, <&kp H>, <&macro_yo>)   // ㅗ -> ㅛ
-        TD_KEYS(td_u_yu,   180, <&kp M>, <&macro_yu>)   // ㅜ -> ㅠ
-        TD_KEYS(td_ae_yae, 180, <&kp O>, <&macro_yae>)  // ㅐ -> ㅒ
-        TD_KEYS(td_e_ye,   180, <&kp P>, <&macro_ye>)   // ㅔ -> ㅖ
+        TD_KEYS(td_p_pp,   180, <&kp Q>, <&macro_pp>)
+        TD_KEYS(td_j_jj,   180, <&kp W>, <&macro_jj>)
+        TD_KEYS(td_t_tt,   180, <&kp E>, <&macro_tt>)
+        TD_KEYS(td_k_kk,   180, <&kp R>, <&macro_kk>)
+        TD_KEYS(td_s_ss,   180, <&kp T>, <&macro_ss>)
+        TD_KEYS(td_a_ya,   180, <&kp K>, <&macro_ya>)
+        TD_KEYS(td_eo_yeo, 180, <&kp J>, <&macro_yeo>)
+        TD_KEYS(td_o_yo,   180, <&kp H>, <&macro_yo>)
+        TD_KEYS(td_u_yu,   180, <&kp M>, <&macro_yu>)
+        TD_KEYS(td_ae_yae, 180, <&kp O>, <&macro_yae>)
+        TD_KEYS(td_e_ye,   180, <&kp P>, <&macro_ye>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -107,7 +109,6 @@
 
     combos {
         compatible = "zmk,combos";
-
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
@@ -142,7 +143,6 @@
 
     keymap {
         compatible = "zmk,keymap";
-
         default_layer {
             display-name = "QWERTY";
             bindings = <
