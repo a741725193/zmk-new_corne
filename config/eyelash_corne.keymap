@@ -76,18 +76,16 @@
         ht_mo1_ltog3: ht_mo1_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MO1_LTOG3";
-            #binding-cells = <0>;
+            #binding-cells = <2>; // [수정됨] Hold-Tap은 2개의 인자를 가지므로 2로 설정
             tapping-term-ms = <280>;
-            // [수정됨] 쉼표(,)를 제거하고 하나의 괄호 안에 공백으로 구분하여 정의
             bindings = <&mo 1 &td_toggle_layer_3>;
         };
 
         ht_mo2_ltog3: ht_mo2_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MO2_LTOG3";
-            #binding-cells = <0>;
+            #binding-cells = <2>; // [수정됨] Hold-Tap은 2개의 인자를 가지므로 2로 설정
             tapping-term-ms = <280>;
-            // [수정됨] 쉼표(,)를 제거하고 하나의 괄호 안에 공백으로 구분하여 정의
             bindings = <&mo 2 &td_toggle_layer_3>;
         };
     };
