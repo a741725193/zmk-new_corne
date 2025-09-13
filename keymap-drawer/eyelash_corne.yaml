@@ -2,11 +2,11 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - '&td_qq'
+  - '&td_ww'
+  - '&td_ee'
+  - '&td_rr'
+  - '&td_tt'
   - $$mdi:arrow-up-bold$$
   - Y
   - U
