@@ -60,6 +60,14 @@
             #binding-cells = <0>;
             bindings = <&kp LS(P)>;
         };
+
+        macro_enter: macro_enter {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_ENTER";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER>;
+        };
+
     };
 
     behaviors {
@@ -112,8 +120,8 @@
         ht_enter_ltog3: ht_enter_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_ENTER_LTOG3";
-            bindings = <&kp ENTER &td_toggle_layer_3>;
-
+            // &kp ENTER 대신 새로 만든 매크로의 이름을 사용합니다.
+            bindings = <&macro_enter &td_toggle_layer_3>;
             #binding-cells = <0>;
             tapping-term-ms = <380>;
         };
