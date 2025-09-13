@@ -50,7 +50,7 @@ layers:
   - raise
   - $$mdi:apple-keyboard-option$$
   lower:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - '&td_1'
   - '&td_2'
   - '&td_3'
