@@ -120,7 +120,7 @@
         ht_enter_ltog3: ht_enter_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_ENTER_LTOG3";
-            bindings = <&macro_enter &td_toggle_layer_3>; // 이전 단계에서 만든 매크로 사용
+            bindings = <&td_toggle_layer_3 &macro_enter>; // 이전 단계에서 만든 매크로 사용
             #binding-cells = <2>; // ZMK의 규칙에 따라 반드시 2로 설정해야 합니다.
             tapping-term-ms = <380>;
         };
