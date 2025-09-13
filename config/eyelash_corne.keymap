@@ -120,9 +120,8 @@
         ht_enter_ltog3: ht_enter_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_ENTER_LTOG3";
-            // &kp ENTER 대신 새로 만든 매크로의 이름을 사용합니다.
-            bindings = <&macro_enter &td_toggle_layer_3>;
-            #binding-cells = <0>;
+            bindings = <&macro_enter &td_toggle_layer_3>; // 이전 단계에서 만든 매크로 사용
+            #binding-cells = <2>; // ZMK의 규칙에 따라 반드시 2로 설정해야 합니다.
             tapping-term-ms = <380>;
         };
 
@@ -217,7 +216,7 @@
 &kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk  &td_s_ss                               &kp UP                &kp Y            &kp U              &kp I      &td_ae_yae  &td_e_ye            &kp BSLH
 &td0       &kp A  &kp S  &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J              &kp K      &kp L       &kp SEMI            &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M              &kp COMMA  &kp DOT     &td_slash_question  &ht_mo1_ltog3 2 3
-                         &kp LGUI  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &ht_enter_ltog3  &kp RALT
+                         &kp LGUI  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &ht_enter_ltog3 0 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
