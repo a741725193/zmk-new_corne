@@ -184,7 +184,7 @@
 &kp TAB    &kp Q  &kp W  &kp E     &kp R              &kp T                               &kp UP                &kp Y            &kp U              &kp I      &td_ae_yae  &td_e_ye            &kp BSLH
 &td0       &kp A  &kp S  &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J              &kp K      &kp L       &kp SEMI            &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M              &kp COMMA  &kp DOT     &td_slash_question  &kp ENTER
-                         &kp LGUI  &ht_mo1_ltog3 1 2  &lt 0 SPACE                                               &lt 2 BACKSPACE  &ht_mo1_ltog3 3 2  &kp RALT
+                         &kp LGUI  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &ht_mo1_ltog3 3 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
