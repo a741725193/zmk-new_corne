@@ -154,6 +154,12 @@
             bindings = <&kp ESC>;
             layers = <0>;
         };
+
+        gh_han {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <18 22>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -174,10 +180,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &td_1  &td_2  &td_3   &td_0          &td_f11_minus                                 &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &td_4  &td_5  &td_6   &td_f12_equal  &bt BT_SEL 3                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &td_7  &td_8  &td_9   &trans         &bt BT_CLR_ALL  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                      &trans  &trans         &trans                                                                         &kp INS          &kp DEL          &trans
+&trans  &td_1  &td_2  &td_3   &td_0          &td_f11_minus                                &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans  &td_4  &td_5  &td_6   &td_f12_equal  &trans                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &td_7  &td_8  &td_9   &trans         &trans         &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                      &trans  &trans         &trans                                                                        &kp INS          &kp DEL          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
