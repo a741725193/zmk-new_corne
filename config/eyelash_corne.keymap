@@ -78,11 +78,12 @@
         TD_KEYS(td_8, 250, <&kp N8>, <&kp ASTRK>, <&kp F8>)
         TD_KEYS(td_9, 250, <&kp N9>, <&kp LPAR>,  <&kp F9>)
         TD_KEYS(td_0, 250, <&kp N0>, <&kp RPAR>,  <&kp F10>)
-        TD_KEYS(td_ae_yae, 180, <&kp O>, <&macro_yae>)
-        TD_KEYS(td_e_ye,   180, <&kp P>, <&macro_ye>)
         TD_KEYS(td_slash_question, 250, <&kp FSLH>, <&kp LS(FSLH)>)
         TD_KEYS(td_f11_minus, 250, <&kp MINUS>, <&kp UNDER>, <&kp F11>)
         TD_KEYS(td_f12_equal, 250, <&kp EQUAL>, <&kp PLUS>, <&kp F12>)
+
+        TD_KEYS(td_ae_yae, 250, <&kp O>, <&macro_yae>)
+        TD_KEYS(td_e_ye,   250, <&kp P>, <&macro_ye>)
 
         TD_KEYS(td_p_pp,   250, <&kp Q>, <&macro_pp>)
         TD_KEYS(td_j_jj,   250, <&kp W>, <&macro_jj>)
