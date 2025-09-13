@@ -106,9 +106,9 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: Ctl+Alt+1, s: Ctl+Alt+!}
-  - {t: Alt+Ctl+2, s: Alt+Ctl+@}
-  - {t: Alt+Ctl+3, s: Alt+Ctl+#}
+  - {t: AltGr+1, s: AltGr+!}
+  - {t: AltGr+2, s: AltGr+@}
+  - {t: AltGr+3, s: AltGr+#}
   - '&td_bracket'
   - '&td_brace'
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -121,9 +121,9 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: Alt+Ctl+4, s: Alt+Ctl+$}
-  - {t: Alt+Ctl+5, s: Alt+Ctl+%}
-  - {t: Ctl+Alt+6, s: Ctl+Alt+^}
+  - {t: AltGr+4, s: AltGr+$}
+  - {t: AltGr+5, s: AltGr+%}
+  - {t: AltGr+6, s: AltGr+^}
   - '&td_paren'
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
@@ -135,9 +135,9 @@ layers:
   - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: Ctl+Alt+7, s: Ctl+Alt+&}
-  - {t: Alt+Ctl+8, s: Alt+Ctl+*}
-  - {t: Alt+Ctl+9, s: Alt+Ctl+(}
+  - {t: AltGr+7, s: AltGr+&}
+  - {t: AltGr+8, s: AltGr+*}
+  - {t: AltGr+9, s: AltGr+(}
   - '}'
   - '|'
   - '~'
