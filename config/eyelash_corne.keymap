@@ -146,6 +146,7 @@
         space_hj {
             bindings = <&kp SPACE>;
             key-positions = <22 23>;
+            layers = <0>;
         };
 
         combo_esc: combo_esc {
@@ -158,6 +159,18 @@
         gh_han {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <18 22>;
+            layers = <0>;
+        };
+
+        op_alt_f4 {
+            bindings = <&kp LA(F4)>;
+            key-positions = <10 11 12>;
+            layers = <0>;
+        };
+
+        sd_shift_del {
+            bindings = <&kp LS(DELETE)>;
+            key-positions = <15 16>;
             layers = <0>;
         };
     };
