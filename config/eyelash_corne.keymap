@@ -201,7 +201,7 @@
 &trans          &kp UP_ARROW    &trans           &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &trans          &kp UP_ARROW        &kp BSLH
 &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW
 &kp LCTRL       &kp Z           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN   &td_slash_question  &kp ENTER
-                                                 &kp LGUI        &trams           &lt 3 SPACE                                                   &lt 3 ENTER     &trams           &kp RALT
+                                                 &kp LGUI        &trans           &lt 3 SPACE                                                   &lt 3 ENTER     &trans           &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
