@@ -42,12 +42,12 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - '&td_slash_question'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - ht mo1 ltog3 3 2
   - LGUI
   - {t: '&td_toggle_layer_3 2', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:backspace$$', h: Fn}
-  - {t: '&td_toggle_layer_3 2', h: SYMBOL}
+  - '&ht_enter_ltog3 2'
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -194,7 +194,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 15, 29]
