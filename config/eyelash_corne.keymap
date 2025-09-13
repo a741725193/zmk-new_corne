@@ -76,7 +76,7 @@
         TD_KEYS(td_f11_minus, 250, <&kp MINUS>, <&kp UNDER>, <&kp F11>)
         TD_KEYS(td_f12_equal, 250, <&kp EQUAL>, <&kp PLUS>, <&kp F12>)
 
-        TD_KEYS(td_toggle_layer_3, 250, <&none>, <&tog 3>)
+        TD_KEYS(td_toggle_layer_3, 250, <&none>, <&tog 2>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -88,7 +88,7 @@
         ht_mo1_ltog3: ht_mo1_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MO1_LTOG3";
-            bindings = <&mo>, <&td_toggle_layer_2>;
+            bindings = <&mo>, <&td_toggle_layer_3>;
 
             #binding-cells = <2>;
             tapping-term-ms = <380>;
