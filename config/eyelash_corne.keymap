@@ -43,7 +43,6 @@
     };
 
     behaviors {
-        // 기존 Tap-Dance 동작들
         TD_KEYS(td_down_up, 450, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
         TD_KEYS(td_mb_src, 450, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
         TD_KEYS(td_bracket, 250, <&kp LBKT>, <&kp RBKT>)
@@ -61,11 +60,7 @@
         TD_KEYS(td_0, 250, <&kp N0>, <&kp RPAR>,  <&kp F10>)
         TD_KEYS(td_ae_yae, 180, <&kp O>, <&macro_yae>)
         TD_KEYS(td_e_ye,   180, <&kp P>, <&macro_ye>)
-
-        // [추가됨] 슬래시/물음표 Tap-Dance
         TD_KEYS(td_slash_question, 250, &kp FSLH, &kp LS(FSLH))
-
-        // [추가됨] F11, F12를 위한 트리플 탭
         TD_KEYS(td_f11_minus, 250, &kp MINUS, &kp UNDER, &kp F11)
         TD_KEYS(td_f12_equal, 250, &kp EQUAL, &kp PLUS, &kp F12)
 
@@ -76,16 +71,15 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        // [추가됨] 3번 레이어 토글을 위한 Tap-Dance (Hold-Tap과 조합용)
         TD_KEYS(td_toggle_layer_3, 250, &none, &tog 3)
 
-        // [추가됨] Hold-Tap 동작 정의
         ht_mo1_ltog3: ht_mo1_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MO1_LTOG3";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&mo 1>, <&td_toggle_layer_3>;
+            // [수정됨] 쉼표(,)를 제거하고 하나의 괄호 안에 공백으로 구분하여 정의
+            bindings = <&mo 1 &td_toggle_layer_3>;
         };
 
         ht_mo2_ltog3: ht_mo2_ltog3 {
@@ -93,7 +87,8 @@
             label = "HT_MO2_LTOG3";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&mo 2>, <&td_toggle_layer_3>;
+            // [수정됨] 쉼표(,)를 제거하고 하나의 괄호 안에 공백으로 구분하여 정의
+            bindings = <&mo 2 &td_toggle_layer_3>;
         };
     };
 
@@ -142,10 +137,9 @@
             bindings = <&kp SPACE>;
             key-positions = <22 23>;
         };
-        // [추가됨] P 키와 \ 키를 합쳐 ESC 기능
         combo_esc: combo_esc {
             timeout-ms = <50>;
-            key-positions = <10 11>; // P=10, \=11
+            key-positions = <10 11>;
             bindings = <&kp ESC>;
             layers = <0>;
         };
