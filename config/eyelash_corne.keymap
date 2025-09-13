@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50    // 10
 
 #define TD_KEYS(name, term_ms, ...) \
@@ -20,7 +20,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
 &msc_input_listener { input-processors = <&zip_scroll_scaler 4 1>; };
 
 &msc {
@@ -39,90 +38,12 @@
 
 / {
     macros {
-        // 된소리 매크로는 변경 없습니다.
-
-        macro_pp: macro_pp {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_PP";
-            #binding-cells = <0>;
-            bindings = <&kp LS(Q)>;
-        };
-
-        macro_jj: macro_jj {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_JJ";
-            #binding-cells = <0>;
-            bindings = <&kp LS(W)>;
-        };
-
-        macro_tt: macro_tt {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_TT";
-            #binding-cells = <0>;
-            bindings = <&kp LS(E)>;
-        };
-
-        macro_kk: macro_kk {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_KK";
-            #binding-cells = <0>;
-            bindings = <&kp LS(R)>;
-        };
-
-        macro_ss: macro_ss {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_SS";
-            #binding-cells = <0>;
-            bindings = <&kp LS(T)>;
-        };
-
-        // 최종 쌍모음 매크로: Backspace로 지우고, 쌍모음 키만 입력합니다.
-
-        macro_ya: macro_ya {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_YA";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE &kp I>;
-        };
-
-        macro_yeo: macro_yeo {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_YEO";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE &kp U>;
-        };
-
-        macro_yo: macro_yo {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_YO";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE &kp Y>;
-        };
-
-        macro_yu: macro_yu {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_YU";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE &kp B>;
-        };
-
-        // [수정됨] ㅒ와 ㅖ를 Shift 조합으로 직접 입력하도록 수정
-
-        macro_yae: macro_yae {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_YAE";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE &kp LS(O)>;
-        }; // ㅐ(O) -> ㅒ(Shift+O)
-        macro_ye: macro_ye {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_YE";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE &kp LS(P)>;
-        }; // ㅔ(P) -> ㅖ(Shift+P)
+        macro_yae: macro_yae { compatible = "zmk,behavior-macro"; label = "MACRO_YAE"; #binding-cells = <0>; bindings = <&kp LS(O)>; };
+        macro_ye:  macro_ye  { compatible = "zmk,behavior-macro"; label = "MACRO_YE";  #binding-cells = <0>; bindings = <&kp LS(P)>; };
     };
 
     behaviors {
+        // 기존 Tap-Dance 동작들
         TD_KEYS(td_down_up, 450, <&kp PG_DN>, <&kp PG_UP>, <&kp HOME>, <&kp END>)
         TD_KEYS(td_mb_src, 450, <&mkp MB1>, <&mkp MB2>, <&msc SCRL_DOWN>, <&msc SCRL_UP>)
         TD_KEYS(td_bracket, 250, <&kp LBKT>, <&kp RBKT>)
@@ -138,24 +59,41 @@
         TD_KEYS(td_8, 250, <&kp N8>, <&kp ASTRK>, <&kp F8>)
         TD_KEYS(td_9, 250, <&kp N9>, <&kp LPAR>,  <&kp F9>)
         TD_KEYS(td_0, 250, <&kp N0>, <&kp RPAR>,  <&kp F10>)
+        TD_KEYS(td_ae_yae, 180, <&kp O>, <&macro_yae>)
+        TD_KEYS(td_e_ye,   180, <&kp P>, <&macro_ye>)
 
-        TD_KEYS(td_p_pp,   250, <&kp Q>, <&macro_pp>)
-        TD_KEYS(td_j_jj,   250, <&kp W>, <&macro_jj>)
-        TD_KEYS(td_t_tt,   250, <&kp E>, <&macro_tt>)
-        TD_KEYS(td_k_kk,   250, <&kp R>, <&macro_kk>)
-        TD_KEYS(td_s_ss,   250, <&kp T>, <&macro_ss>)
-        TD_KEYS(td_a_ya,   250, <&kp K>, <&macro_ya>)
-        TD_KEYS(td_eo_yeo, 250, <&kp J>, <&macro_yeo>)
-        TD_KEYS(td_o_yo,   250, <&kp H>, <&macro_yo>)
-        TD_KEYS(td_u_yu,   250, <&kp N>, <&macro_yu>)
-        TD_KEYS(td_ae_yae, 250, <&kp O>, <&macro_yae>)
-        TD_KEYS(td_e_ye,   250, <&kp P>, <&macro_ye>)
+        // [추가됨] 슬래시/물음표 Tap-Dance
+        TD_KEYS(td_slash_question, 250, &kp FSLH, &kp LS(FSLH))
+
+        // [추가됨] F11, F12를 위한 트리플 탭
+        TD_KEYS(td_f11_minus, 250, &kp MINUS, &kp UNDER, &kp F11)
+        TD_KEYS(td_f12_equal, 250, &kp EQUAL, &kp PLUS, &kp F12)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             label = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        // [추가됨] 3번 레이어 토글을 위한 Tap-Dance (Hold-Tap과 조합용)
+        TD_KEYS(td_toggle_layer_3, 250, &none, &tog 3)
+
+        // [추가됨] Hold-Tap 동작 정의
+        ht_mo1_ltog3: ht_mo1_ltog3 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MO1_LTOG3";
+            #binding-cells = <0>;
+            tapping-term-ms = <280>;
+            bindings = <&mo 1>, <&td_toggle_layer_3>;
+        };
+
+        ht_mo2_ltog3: ht_mo2_ltog3 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_MO2_LTOG3";
+            #binding-cells = <0>;
+            tapping-term-ms = <280>;
+            bindings = <&mo 2>, <&td_toggle_layer_3>;
         };
     };
 
@@ -169,47 +107,47 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
         tap-ms = <100>;
     };
 
     combos {
         compatible = "zmk,combos";
-
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
-
         combo_x {
             timeout-ms = <80>;
             bindings = <&kp LC(X)>;
             key-positions = <29 30>;
             layers = <0>;
         };
-
         combo_c {
             timeout-ms = <80>;
             bindings = <&kp LC(C)>;
             key-positions = <30 31>;
             layers = <0>;
         };
-
         combo_paste {
             timeout-ms = <80>;
             bindings = <&kp LC(V)>;
             key-positions = <31 32>;
             layers = <0>;
         };
-
         enter_fg {
             bindings = <&kp ENTER>;
             key-positions = <17 18>;
         };
-
         space_hj {
             bindings = <&kp SPACE>;
             key-positions = <22 23>;
+        };
+        // [추가됨] P 키와 \ 키를 합쳐 ESC 기능
+        combo_esc: combo_esc {
+            timeout-ms = <50>;
+            key-positions = <10 11>; // P=10, \=11
+            bindings = <&kp ESC>;
+            layers = <0>;
         };
     };
 
@@ -217,46 +155,46 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "QWERTY";
             bindings = <
-&kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk  &td_s_ss                            &kp UP                &kp Y            &kp U       &kp I      &td_ae_yae  &td_e_ye  &kp ESC
-&td0       &kp A     &kp S     &kp D     &kp F     &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &td_o_yo         &td_eo_yeo  &td_a_ya   &kp L       &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z     &kp X     &kp C     &kp V     &kp B        &kp SPACE              &kp DOWN              &td_u_yu         &kp M       &kp COMMA  &kp DOT     &kp FSLH  &kp ENTER
-                               &kp LGUI  &mo 1     &lt 3 SPACE                                               &lt 3 BACKSPACE  &mo 2       &kp RALT
+&kp TAB  &kp Q     &kp W     &kp E     &kp R     &kp T                          &kp UP             &kp Y       &kp U       &kp I       &td_ae_yae  &td_e_ye    &kp BSLH
+&td0     &kp A     &kp S     &kp D     &kp F     &kp G          &kp LEFT &kp ENTER &kp RIGHT &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
+&kp LCTRL &kp Z    &kp X     &kp C     &kp V     &kp B   &kp SPACE                &kp DOWN           &kp N       &kp M       &kp COMMA   &kp DOT     &td_slash_question &kp ENTER
+                           &kp LGUI  &ht_mo1_ltog3 &lt 3 SPACE                  &lt 3 BACKSPACE  &ht_mo2_ltog3   &kp RALT
             >;
-
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
+            display-name = "NUMBER";
             bindings = <
-&kp GRAVE  &td_1  &td_2  &td_3   &td_0    &kp F11                                       &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans     &td_4  &td_5  &td_6   &kp F12  &bt BT_SEL 3                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans     &td_7  &td_8  &td_9   &trans   &bt BT_CLR_ALL  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                         &trans  &trans   &trans                                                                         &kp INS          &kp DEL          &trans
+&trans  &td_1   &td_2   &td_3   &td_0   &td_f11_minus                   &mmv MOVE_UP                                &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
+&trans  &td_4   &td_5   &td_6   &td_f12_equal &bt BT_SEL 3 &mmv MOVE_LEFT &mkp LCLK     &mmv MOVE_RIGHT &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp HOME    &kp PG_UP
+&trans  &td_7   &td_8   &td_9   &trans  &bt BT_CLR_ALL &kp C_MUTE       &mmv MOVE_DOWN                              &rgb_ug RGB_EFR &rgb_ug RGB_SPI &rgb_ug RGB_BRI &rgb_ug RGB_BRD &kp END     &kp PG_DN
+                &trans  &trans  &trans                                                                              &kp INS     &kp DEL     &trans
             >;
-
             sensor-bindings = <&scroll_encoder>;
         };
 
         raise_layer {
+            display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &td_bracket  &td_brace  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &td_paren    &kp BSLH   &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC     &kp PIPE   &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                       &mmv MOVE_UP                                &kp CARET   &kp AMPS    &kp ASTRK   &td_bracket &td_brace   &kp BSPC
+&trans  &bt BT_CLR &mkp LCLK  &mkp MCLK &mkp RCLK &mkp MB4       &mmv MOVE_LEFT &mkp LCLK     &mmv MOVE_RIGHT &kp MINUS   &kp EQUAL   &kp LBKT    &td_paren   &kp BSLH    &kp GRAVE
+&trans  &out OUT_USB &out OUT_BLE &none   &none   &mkp MB5  &trans         &mmv MOVE_DOWN                              &kp UNDER   &kp PLUS    &kp LBRC    &kp RBRC    &kp PIPE    &kp TILDE
+                                &trans  &trans  &kp SPACE                                                               &kp RET     &trans      &trans
             >;
-
             sensor-bindings = <&scroll_encoder>;
         };
 
         layer_3 {
+            display-name = "Fn";
             bindings = <
-&trans          &kp UP_ARROW    &trans           &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &trans          &kp UP_ARROW    &kp ESC
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-&kp LCTRL       &kp Z           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN   &kp FSLH        &kp ENTER
-                                                 &kp LGUI        &mo 1           &lt 3 SPACE                                                   &lt 3 ENTER     &mo 2           &kp RALT
+&trans      &kp UP_ARROW    &trans          &td_mb_src      &mmv MOVE_UP   &td_down_up                      &kp UP             &td_mb_src      &mmv MOVE_UP   &td_down_up     &trans          &kp UP_ARROW    &kp BSLH
+&kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT     &kp LEFT &kp ENTER &kp RIGHT &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LCTRL   &kp Z           &kp PAGE_UP     &kp PAGE_DOWN   &msc SCRL_UP  &msc SCRL_DOWN &kp SPACE         &kp DOWN           &msc SCRL_UP    &msc SCRL_DOWN &kp PG_UP       &kp PAGE_DOWN   &td_slash_question &kp ENTER
+                                            &kp LGUI        &trans        &lt 3 SPACE                      &lt 3 ENTER      &trans          &kp RALT
             >;
-
             sensor-bindings = <&scroll_encoder>;
         };
     };
