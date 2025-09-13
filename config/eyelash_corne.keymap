@@ -45,13 +45,16 @@
         macro_kk: macro_kk { compatible = "zmk,behavior-macro"; label = "MACRO_KK"; #binding-cells = <0>; bindings = <&kp LS(R)>; };
         macro_ss: macro_ss { compatible = "zmk,behavior-macro"; label = "MACRO_SS"; #binding-cells = <0>; bindings = <&kp LS(T)>; };
 
-        // 쌍모음 매크로: BACKSPACE를 추가하여 이전 글자를 지우고 새로 조합합니다.
-        macro_ya:  macro_ya  { compatible = "zmk,behavior-macro"; label = "MACRO_YA";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp K &kp I>; };
-        macro_yeo: macro_yeo { compatible = "zmk,behavior-macro"; label = "MACRO_YEO"; #binding-cells = <0>; bindings = <&kp BACKSPACE &kp J &kp U>; };
-        macro_yo:  macro_yo  { compatible = "zmk,behavior-macro"; label = "MACRO_YO";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp H &kp Y>; };
-        macro_yu:  macro_yu  { compatible = "zmk,behavior-macro"; label = "MACRO_YU";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp M &kp P>; };
-        macro_yae: macro_yae { compatible = "zmk,behavior-macro"; label = "MACRO_YAE"; #binding-cells = <0>; bindings = <&kp BACKSPACE &kp O &kp I>; };
-        macro_ye:  macro_ye  { compatible = "zmk,behavior-macro"; label = "MACRO_YE";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp P &kp I>; };
+        // 최종 쌍모음 매크로: Backspace로 지우고, 쌍모음 키만 입력합니다.
+        macro_ya:  macro_ya  { compatible = "zmk,behavior-macro"; label = "MACRO_YA";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp I>; };
+        macro_yeo: macro_yeo { compatible = "zmk,behavior-macro"; label = "MACRO_YEO"; #binding-cells = <0>; bindings = <&kp BACKSPACE &kp U>; };
+        macro_yo:  macro_yo  { compatible = "zmk,behavior-macro"; label = "MACRO_YO";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp Y>; };
+        macro_yu:  macro_yu  { compatible = "zmk,behavior-macro"; label = "MACRO_YU";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp B>; };
+
+        // [수정됨] ㅒ와 ㅖ를 Shift 조합으로 직접 입력하도록 수정
+        macro_yae: macro_yae { compatible = "zmk,behavior-macro"; label = "MACRO_YAE"; #binding-cells = <0>; bindings = <&kp BACKSPACE &kp LS(O)>; }; // ㅐ(O) -> ㅒ(Shift+O)
+        macro_ye:  macro_ye  { compatible = "zmk,behavior-macro"; label = "MACRO_YE";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp LS(P)>; }; // ㅔ(P) -> ㅖ(Shift+P)
+
     };
 
     behaviors {
