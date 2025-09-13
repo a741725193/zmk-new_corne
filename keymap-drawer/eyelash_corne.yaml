@@ -44,10 +44,10 @@ layers:
   - '&td_slash_question'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
-  - '&ht_mo1_ltog3'
+  - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:backspace$$', h: Fn}
-  - '&ht_mo2_ltog3'
+  - SYMBOL
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -93,7 +93,7 @@ layers:
   - END
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - INS
   - $$mdi:backspace-reverse-outline$$
@@ -145,7 +145,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -191,10 +191,10 @@ layers:
   - '&td_slash_question'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
-  - {t: '$$mdi:transfer$$', type: trans}
+  - NUMBER
   - {t: '$$mdi:keyboard-space$$', h: Fn, type: held}
   - {t: '$$mdi:keyboard-return$$', h: Fn, type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - SYMBOL
   - $$mdi:apple-keyboard-option$$
 combos:
 - p: [1, 15, 29]
