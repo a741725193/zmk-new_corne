@@ -191,10 +191,10 @@ layers:
   - '&td_slash_question'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
-  - NUMBER
+  - '&trams'
   - {t: '$$mdi:keyboard-space$$', h: Fn, type: held}
   - {t: '$$mdi:keyboard-return$$', h: Fn, type: held alternate}
-  - SYMBOL
+  - '&trams'
   - $$mdi:apple-keyboard-option$$
 combos:
 - p: [1, 15, 29]
