@@ -76,7 +76,7 @@
         TD_KEYS(td_f11_minus, 250, <&kp MINUS>, <&kp UNDER>, <&kp F11>)
         TD_KEYS(td_f12_equal, 250, <&kp EQUAL>, <&kp PLUS>, <&kp F12>)
 
-        TD_KEYS(td_toggle_layer_3, 250, <&none>, <&tog 2>)
+        TD_KEYS(td_toggle_layer_3, 400, <&none>, <&tog 2>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
