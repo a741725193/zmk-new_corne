@@ -20,6 +20,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+
 &msc_input_listener { input-processors = <&zip_scroll_scaler 4 1>; };
 
 &msc {
@@ -39,22 +40,86 @@
 / {
     macros {
         // 된소리 매크로는 변경 없습니다.
-        macro_pp: macro_pp { compatible = "zmk,behavior-macro"; label = "MACRO_PP"; #binding-cells = <0>; bindings = <&kp LS(Q)>; };
-        macro_jj: macro_jj { compatible = "zmk,behavior-macro"; label = "MACRO_JJ"; #binding-cells = <0>; bindings = <&kp LS(W)>; };
-        macro_tt: macro_tt { compatible = "zmk,behavior-macro"; label = "MACRO_TT"; #binding-cells = <0>; bindings = <&kp LS(E)>; };
-        macro_kk: macro_kk { compatible = "zmk,behavior-macro"; label = "MACRO_KK"; #binding-cells = <0>; bindings = <&kp LS(R)>; };
-        macro_ss: macro_ss { compatible = "zmk,behavior-macro"; label = "MACRO_SS"; #binding-cells = <0>; bindings = <&kp LS(T)>; };
+
+        macro_pp: macro_pp {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_PP";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Q)>;
+        };
+
+        macro_jj: macro_jj {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_JJ";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W)>;
+        };
+
+        macro_tt: macro_tt {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_TT";
+            #binding-cells = <0>;
+            bindings = <&kp LS(E)>;
+        };
+
+        macro_kk: macro_kk {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_KK";
+            #binding-cells = <0>;
+            bindings = <&kp LS(R)>;
+        };
+
+        macro_ss: macro_ss {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_SS";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T)>;
+        };
 
         // 최종 쌍모음 매크로: Backspace로 지우고, 쌍모음 키만 입력합니다.
-        macro_ya:  macro_ya  { compatible = "zmk,behavior-macro"; label = "MACRO_YA";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp I>; };
-        macro_yeo: macro_yeo { compatible = "zmk,behavior-macro"; label = "MACRO_YEO"; #binding-cells = <0>; bindings = <&kp BACKSPACE &kp U>; };
-        macro_yo:  macro_yo  { compatible = "zmk,behavior-macro"; label = "MACRO_YO";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp Y>; };
-        macro_yu:  macro_yu  { compatible = "zmk,behavior-macro"; label = "MACRO_YU";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp B>; };
+
+        macro_ya: macro_ya {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_YA";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &kp I>;
+        };
+
+        macro_yeo: macro_yeo {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_YEO";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &kp U>;
+        };
+
+        macro_yo: macro_yo {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_YO";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &kp Y>;
+        };
+
+        macro_yu: macro_yu {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_YU";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &kp B>;
+        };
 
         // [수정됨] ㅒ와 ㅖ를 Shift 조합으로 직접 입력하도록 수정
-        macro_yae: macro_yae { compatible = "zmk,behavior-macro"; label = "MACRO_YAE"; #binding-cells = <0>; bindings = <&kp BACKSPACE &kp LS(O)>; }; // ㅐ(O) -> ㅒ(Shift+O)
-        macro_ye:  macro_ye  { compatible = "zmk,behavior-macro"; label = "MACRO_YE";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp LS(P)>; }; // ㅔ(P) -> ㅖ(Shift+P)
 
+        macro_yae: macro_yae {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_YAE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &kp LS(O)>;
+        }; // ㅐ(O) -> ㅒ(Shift+O)
+        macro_ye: macro_ye {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_YE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &kp LS(P)>;
+        }; // ㅔ(P) -> ㅖ(Shift+P)
     };
 
     behaviors {
@@ -104,37 +169,44 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
         tap-ms = <100>;
     };
 
     combos {
         compatible = "zmk,combos";
+
         softoff {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
         combo_x {
             timeout-ms = <80>;
             bindings = <&kp LC(X)>;
             key-positions = <29 30>;
             layers = <0>;
         };
+
         combo_c {
             timeout-ms = <80>;
             bindings = <&kp LC(C)>;
             key-positions = <30 31>;
             layers = <0>;
         };
+
         combo_paste {
             timeout-ms = <80>;
             bindings = <&kp LC(V)>;
             key-positions = <31 32>;
             layers = <0>;
         };
+
         enter_fg {
             bindings = <&kp ENTER>;
             key-positions = <17 18>;
         };
+
         space_hj {
             bindings = <&kp SPACE>;
             key-positions = <22 23>;
@@ -143,43 +215,48 @@
 
     keymap {
         compatible = "zmk,keymap";
+
         default_layer {
             bindings = <
-&kp TAB  &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk  &td_s_ss                       &kp UP             &kp Y       &kp U       &kp I       &td_ae_yae  &td_e_ye    &kp ESC
-&td0     &kp A     &kp S     &kp D     &kp F     &kp G          &kp LEFT &kp ENTER &kp RIGHT &td_o_yo    &td_eo_yeo  &td_a_ya    &kp L       &kp SEMI    &kp SQT
-&kp LCTRL &kp Z    &kp X     &kp C     &kp V     &kp B   &kp SPACE                &kp DOWN           &td_u_yu       &kp M    &kp COMMA   &kp DOT     &kp FSLH    &kp ENTER
-                           &kp LGUI  &mo 1     &lt 3 SPACE                      &lt 3 BACKSPACE  &mo 2       &kp RALT
+&kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk  &td_s_ss                            &kp UP                &kp Y            &kp U       &kp I      &td_ae_yae  &td_e_ye  &kp ESC
+&td0       &kp A     &kp S     &kp D     &kp F     &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &td_o_yo         &td_eo_yeo  &td_a_ya   &kp L       &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z     &kp X     &kp C     &kp V     &kp B        &kp SPACE              &kp DOWN              &td_u_yu         &kp M       &kp COMMA  &kp DOT     &kp FSLH  &kp ENTER
+                               &kp LGUI  &mo 1     &lt 3 SPACE                                               &lt 3 BACKSPACE  &mo 2       &kp RALT
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
             bindings = <
-&trans  &td_1   &td_2   &td_3   &td_0   &kp F11                         &mmv MOVE_UP                                &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
-&trans  &td_4   &td_5   &td_6   &kp F12 &bt BT_SEL 3      &mmv MOVE_LEFT &mkp LCLK     &mmv MOVE_RIGHT &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp HOME    &kp PG_UP
-&trans  &td_7   &td_8   &td_9   &trans  &bt BT_CLR_ALL &kp C_MUTE       &mmv MOVE_DOWN                              &rgb_ug RGB_EFR &rgb_ug RGB_SPI &rgb_ug RGB_BRI &rgb_ug RGB_BRD &kp END     &kp PG_DN
-                &trans  &trans  &trans                                                                              &kp INS     &kp DEL     &trans
+&kp GRAVE  &td_1  &td_2  &td_3   &td_0    &kp F11                                       &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans     &td_4  &td_5  &td_6   &kp F12  &bt BT_SEL 3                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans     &td_7  &td_8  &td_9   &trans   &bt BT_CLR_ALL  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                         &trans  &trans   &trans                                                                         &kp INS          &kp DEL          &trans
             >;
+
             sensor-bindings = <&scroll_encoder>;
         };
 
         raise_layer {
             bindings = <
-&trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                       &mmv MOVE_UP                                &kp CARET   &kp AMPS    &kp ASTRK   &td_bracket &td_brace   &kp BSPC
-&trans  &bt BT_CLR &mkp LCLK  &mkp MCLK &mkp RCLK &mkp MB4       &mmv MOVE_LEFT &mkp LCLK     &mmv MOVE_RIGHT &kp MINUS   &kp EQUAL   &kp LBKT    &td_paren   &kp BSLH    &kp GRAVE
-&trans  &out OUT_USB &out OUT_BLE &none   &none   &mkp MB5  &trans         &mmv MOVE_DOWN                              &kp UNDER   &kp PLUS    &kp LBRC    &kp RBRC    &kp PIPE    &kp TILDE
-                                &trans  &trans  &kp SPACE                                                               &kp RET     &trans      &trans
+&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &td_bracket  &td_brace  &kp BSPC
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &td_paren    &kp BSLH   &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC     &kp PIPE   &kp TILDE
+                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
             >;
+
             sensor-bindings = <&scroll_encoder>;
         };
 
         layer_3 {
             bindings = <
-&trans      &kp UP_ARROW    &trans          &td_mb_src      &mmv MOVE_UP   &td_down_up                      &kp UP             &td_mb_src      &mmv MOVE_UP   &td_down_up     &trans          &kp UP_ARROW    &kp ESC
-&kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT     &kp LEFT &kp ENTER &kp RIGHT &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
-&kp LCTRL   &kp Z           &kp PAGE_UP     &kp PAGE_DOWN   &msc SCRL_UP  &msc SCRL_DOWN &kp SPACE         &kp DOWN           &msc SCRL_UP    &msc SCRL_DOWN &kp PG_UP       &kp PAGE_DOWN   &kp FSLH        &kp ENTER
-                                            &kp LGUI        &mo 1         &lt 3 SPACE                      &lt 3 ENTER      &mo 2           &kp RALT
+&trans          &kp UP_ARROW    &trans           &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &trans          &kp UP_ARROW    &kp ESC
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LCTRL       &kp Z           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN   &kp FSLH        &kp ENTER
+                                                 &kp LGUI        &mo 1           &lt 3 SPACE                                                   &lt 3 ENTER     &mo 2           &kp RALT
             >;
+
             sensor-bindings = <&scroll_encoder>;
         };
     };
