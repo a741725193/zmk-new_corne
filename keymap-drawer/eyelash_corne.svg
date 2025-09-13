@@ -906,17 +906,26 @@ rect.held, rect.combo.held {
 <g transform="translate(672, 41)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F13</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">Ctl+</tspan><tspan x="0" dy="1.2em">Alt+1</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Ctl+Alt+!</tspan></text>
 </g>
 <g transform="translate(728, 35)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F14</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+2</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Alt+Ctl+@</tspan></text>
 </g>
 <g transform="translate(784, 28)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F15</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+3</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Alt+Ctl+#</tspan></text>
 </g>
 <g transform="translate(840, 35)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -985,17 +994,26 @@ rect.held, rect.combo.held {
 <g transform="translate(672, 97)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F16</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+4</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Alt+Ctl+$</tspan></text>
 </g>
 <g transform="translate(728, 91)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F17</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+5</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Alt+Ctl+%</tspan></text>
 </g>
 <g transform="translate(784, 84)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F18</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">Ctl+</tspan><tspan x="0" dy="1.2em">Alt+6</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Ctl+Alt+^</tspan></text>
 </g>
 <g transform="translate(840, 91)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1064,17 +1082,26 @@ rect.held, rect.combo.held {
 <g transform="translate(672, 153)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F19</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">Ctl+</tspan><tspan x="0" dy="1.2em">Alt+7</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Ctl+Alt+&amp;</tspan></text>
 </g>
 <g transform="translate(728, 147)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F20</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+8</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Alt+Ctl+*</tspan></text>
 </g>
 <g transform="translate(784, 140)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">F21</text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+9</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 67%">Alt+Ctl+(</tspan></text>
 </g>
 <g transform="translate(840, 147)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
