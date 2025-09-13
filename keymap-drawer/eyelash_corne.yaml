@@ -2,17 +2,17 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - '&td_qq'
-  - '&td_ww'
-  - '&td_ee'
-  - '&td_rr'
-  - '&td_tt'
+  - '&td_p_pp'
+  - '&td_j_jj'
+  - '&td_t_tt'
+  - '&td_k_kk'
+  - '&td_s_ss'
   - $$mdi:arrow-up-bold$$
   - Y
   - U
   - I
-  - O
-  - P
+  - '&td_ae_yae'
+  - '&td_e_ye'
   - $$mdi:keyboard-esc$$
   - '&td0'
   - A
@@ -23,9 +23,9 @@ layers:
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - K
+  - '&td_o_yo'
+  - '&td_eo_yeo'
+  - '&td_a_ya'
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
@@ -38,7 +38,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - N
-  - M
+  - '&td_u_yu'
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
