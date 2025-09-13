@@ -212,9 +212,16 @@ combos:
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [22, 23]
   k: $$mdi:keyboard-space$$
+  l: [QWERTY]
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
 - p: [18, 22]
   k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY]
+- p: [10, 11, 12]
+  k: Alt+F4
+  l: [QWERTY]
+- p: [15, 16]
+  k: Sft+$$mdi:backspace-reverse-outline$$
   l: [QWERTY]
