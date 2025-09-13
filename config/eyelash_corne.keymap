@@ -109,9 +109,9 @@
             tapping-term-ms = <380>;
         };
 
-        ht_enter_ltog3: ht_mo1_ltog3 {
+        ht_enter_ltog3: ht_enter_ltog3 {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_MO1_LTOG3";
+            label = "HT_ENTER_LTOG3";
             bindings = <&kp ENTER>, <&td_toggle_layer_3>;
 
             #binding-cells = <2>;
