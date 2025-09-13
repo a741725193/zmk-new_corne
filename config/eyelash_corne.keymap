@@ -162,9 +162,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R              &kp T                               &kp UP                &kp Y            &kp U  &kp I      &td_ae_yae  &td_e_ye            &kp BSLH
-&td0       &kp A  &kp S  &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J  &kp K      &kp L       &kp SEMI            &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M  &kp COMMA  &kp DOT     &td_slash_question  &kp ENTER
+&kp TAB    &kp Q  &kp W  &kp E     &kp R              &kp T                               &kp UP                &kp Y            &kp U              &kp I      &td_ae_yae  &td_e_ye            &kp BSLH
+&td0       &kp A  &kp S  &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J              &kp K      &kp L       &kp SEMI            &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M              &kp COMMA  &kp DOT     &td_slash_question  &kp ENTER
                          &kp LGUI  &ht_mo1_ltog3 1 3  &lt 3 SPACE                                               &lt 3 BACKSPACE  &ht_mo1_ltog3 2 3  &kp RALT
             >;
 
@@ -198,10 +198,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans          &kp UP_ARROW    &trans           &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &trans          &kp UP_ARROW        &kp BSLH
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW
-&kp LCTRL       &kp Z           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN   &td_slash_question  &kp ENTER
-                                                 &kp LGUI        &trans           &lt 3 SPACE                                                   &lt 3 ENTER     &trans           &kp RALT
+&kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &kp LS(LC(TAB))  &kp UP_ARROW        &kp LC(TAB)
+&kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW   &kp DOWN_ARROW      &kp RIGHT_ARROW
+&kp LCTRL        &kp Z           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN    &td_slash_question  &kp ENTER
+                                                  &kp LGUI        &trans          &lt 3 SPACE                                                   &lt 3 ENTER     &trans          &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
