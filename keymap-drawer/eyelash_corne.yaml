@@ -44,7 +44,7 @@ layers:
   - '&td_slash_question'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
-  - NUMBER
+  - {t: Fn, h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:backspace$$', h: Fn}
   - SYMBOL
