@@ -1,8 +1,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50    // 10
 
-// 'display-name'을 다시 'label'로 되돌려 치명적인 빌드 오류를 해결했습니다.
-// 'deprecated' 경고는 다시 나타나지만, 빌드 성공에는 영향을 주지 않습니다.
 #define TD_KEYS(name, term_ms, ...) \
     name: behavior_##name { \
         compatible = "zmk,behavior-tap-dance"; \
@@ -40,18 +38,20 @@
 
 / {
     macros {
+        // 된소리 매크로는 변경 없습니다.
         macro_pp: macro_pp { compatible = "zmk,behavior-macro"; label = "MACRO_PP"; #binding-cells = <0>; bindings = <&kp LS(Q)>; };
         macro_jj: macro_jj { compatible = "zmk,behavior-macro"; label = "MACRO_JJ"; #binding-cells = <0>; bindings = <&kp LS(W)>; };
         macro_tt: macro_tt { compatible = "zmk,behavior-macro"; label = "MACRO_TT"; #binding-cells = <0>; bindings = <&kp LS(E)>; };
         macro_kk: macro_kk { compatible = "zmk,behavior-macro"; label = "MACRO_KK"; #binding-cells = <0>; bindings = <&kp LS(R)>; };
         macro_ss: macro_ss { compatible = "zmk,behavior-macro"; label = "MACRO_SS"; #binding-cells = <0>; bindings = <&kp LS(T)>; };
 
-        macro_ya:  macro_ya  { compatible = "zmk,behavior-macro"; label = "MACRO_YA";  #binding-cells = <0>; bindings = <&kp K &kp I>; };
-        macro_yeo: macro_yeo { compatible = "zmk,behavior-macro"; label = "MACRO_YEO"; #binding-cells = <0>; bindings = <&kp J &kp U>; };
-        macro_yo:  macro_yo  { compatible = "zmk,behavior-macro"; label = "MACRO_YO";  #binding-cells = <0>; bindings = <&kp H &kp Y>; };
-        macro_yu:  macro_yu  { compatible = "zmk,behavior-macro"; label = "MACRO_YU";  #binding-cells = <0>; bindings = <&kp M &kp P>; };
-        macro_yae: macro_yae { compatible = "zmk,behavior-macro"; label = "MACRO_YAE"; #binding-cells = <0>; bindings = <&kp O &kp I>; };
-        macro_ye:  macro_ye  { compatible = "zmk,behavior-macro"; label = "MACRO_YE";  #binding-cells = <0>; bindings = <&kp P &kp I>; };
+        // 쌍모음 매크로: BACKSPACE를 추가하여 이전 글자를 지우고 새로 조합합니다.
+        macro_ya:  macro_ya  { compatible = "zmk,behavior-macro"; label = "MACRO_YA";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp K &kp I>; };
+        macro_yeo: macro_yeo { compatible = "zmk,behavior-macro"; label = "MACRO_YEO"; #binding-cells = <0>; bindings = <&kp BACKSPACE &kp J &kp U>; };
+        macro_yo:  macro_yo  { compatible = "zmk,behavior-macro"; label = "MACRO_YO";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp H &kp Y>; };
+        macro_yu:  macro_yu  { compatible = "zmk,behavior-macro"; label = "MACRO_YU";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp M &kp P>; };
+        macro_yae: macro_yae { compatible = "zmk,behavior-macro"; label = "MACRO_YAE"; #binding-cells = <0>; bindings = <&kp BACKSPACE &kp O &kp I>; };
+        macro_ye:  macro_ye  { compatible = "zmk,behavior-macro"; label = "MACRO_YE";  #binding-cells = <0>; bindings = <&kp BACKSPACE &kp P &kp I>; };
     };
 
     behaviors {
@@ -71,21 +71,21 @@
         TD_KEYS(td_9, 250, <&kp N9>, <&kp LPAR>,  <&kp F9>)
         TD_KEYS(td_0, 250, <&kp N0>, <&kp RPAR>,  <&kp F10>)
 
-        TD_KEYS(td_p_pp,   180, <&kp Q>, <&macro_pp>)
-        TD_KEYS(td_j_jj,   180, <&kp W>, <&macro_jj>)
-        TD_KEYS(td_t_tt,   180, <&kp E>, <&macro_tt>)
-        TD_KEYS(td_k_kk,   180, <&kp R>, <&macro_kk>)
-        TD_KEYS(td_s_ss,   180, <&kp T>, <&macro_ss>)
-        TD_KEYS(td_a_ya,   180, <&kp K>, <&macro_ya>)
-        TD_KEYS(td_eo_yeo, 180, <&kp J>, <&macro_yeo>)
-        TD_KEYS(td_o_yo,   180, <&kp H>, <&macro_yo>)
-        TD_KEYS(td_u_yu,   180, <&kp M>, <&macro_yu>)
-        TD_KEYS(td_ae_yae, 180, <&kp O>, <&macro_yae>)
-        TD_KEYS(td_e_ye,   180, <&kp P>, <&macro_ye>)
+        TD_KEYS(td_p_pp,   250, <&kp Q>, <&macro_pp>)
+        TD_KEYS(td_j_jj,   250, <&kp W>, <&macro_jj>)
+        TD_KEYS(td_t_tt,   250, <&kp E>, <&macro_tt>)
+        TD_KEYS(td_k_kk,   250, <&kp R>, <&macro_kk>)
+        TD_KEYS(td_s_ss,   250, <&kp T>, <&macro_ss>)
+        TD_KEYS(td_a_ya,   250, <&kp K>, <&macro_ya>)
+        TD_KEYS(td_eo_yeo, 250, <&kp J>, <&macro_yeo>)
+        TD_KEYS(td_o_yo,   250, <&kp H>, <&macro_yo>)
+        TD_KEYS(td_u_yu,   250, <&kp M>, <&macro_yu>)
+        TD_KEYS(td_ae_yae, 250, <&kp O>, <&macro_yae>)
+        TD_KEYS(td_e_ye,   250, <&kp P>, <&macro_ye>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Shift/Caps Lock Tap Dance"; // 일반 behavior에서는 display-name보다 label이 안정적일 수 있습니다.
+            label = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
