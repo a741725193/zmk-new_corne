@@ -42,12 +42,12 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - '&td_slash_question'
-  - {t: '&td_toggle_layer_3 3', h: Fn}
+  - {t: '&td_toggle_layer_3 3', h: SYMBOL}
   - LGUI
   - {t: '&td_toggle_layer_3 2', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:backspace$$', h: Fn}
-  - {t: '&macro_enter 2', h: '&td_toggle_layer_3'}
+  - '&td_enter_layer2'
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -140,10 +140,10 @@ layers:
   - PG UP
   - PgDn
   - '&td_slash_question'
-  - {t: '$$mdi:keyboard-return$$', type: held}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-space$$', h: Fn, type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', h: Fn, type: held}
   - {t: '$$mdi:keyboard-return$$', h: Fn, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
@@ -189,7 +189,7 @@ layers:
   - Alt+Ctl+F9
   - '}'
   - '|'
-  - '~'
+  - {t: '~', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
