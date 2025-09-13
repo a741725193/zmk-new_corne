@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
+ㅠ#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50    // 10
 
 #define TD_KEYS(name, term_ms, ...) \
@@ -82,7 +82,7 @@
         TD_KEYS(td_a_ya,   250, <&kp K>, <&macro_ya>)
         TD_KEYS(td_eo_yeo, 250, <&kp J>, <&macro_yeo>)
         TD_KEYS(td_o_yo,   250, <&kp H>, <&macro_yo>)
-        TD_KEYS(td_u_yu,   250, <&kp M>, <&macro_yu>)
+        TD_KEYS(td_u_yu,   250, <&kp N>, <&macro_yu>)
         TD_KEYS(td_ae_yae, 250, <&kp O>, <&macro_yae>)
         TD_KEYS(td_e_ye,   250, <&kp P>, <&macro_ye>)
 
@@ -147,7 +147,7 @@
             bindings = <
 &kp TAB  &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk  &td_s_ss                       &kp UP             &kp Y       &kp U       &kp I       &td_ae_yae  &td_e_ye    &kp ESC
 &td0     &kp A     &kp S     &kp D     &kp F     &kp G          &kp LEFT &kp ENTER &kp RIGHT &td_o_yo    &td_eo_yeo  &td_a_ya    &kp L       &kp SEMI    &kp SQT
-&kp LCTRL &kp Z    &kp X     &kp C     &kp V     &kp B   &kp SPACE                &kp DOWN           &kp N       &td_u_yu    &kp COMMA   &kp DOT     &kp FSLH    &kp ENTER
+&kp LCTRL &kp Z    &kp X     &kp C     &kp V     &kp B   &kp SPACE                &kp DOWN           &td_u_yu       &kp M    &kp COMMA   &kp DOT     &kp FSLH    &kp ENTER
                            &kp LGUI  &mo 1     &lt 3 SPACE                      &lt 3 BACKSPACE  &mo 2       &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
