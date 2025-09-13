@@ -84,11 +84,11 @@
         TD_KEYS(td_f11_minus, 250, <&kp MINUS>, <&kp UNDER>, <&kp F11>)
         TD_KEYS(td_f12_equal, 250, <&kp EQUAL>, <&kp PLUS>, <&kp F12>)
 
-        TD_KEYS(td_p_pp,   180, <&kp Q>, <&macro_pp>)
-        TD_KEYS(td_j_jj,   180, <&kp W>, <&macro_jj>)
-        TD_KEYS(td_t_tt,   180, <&kp E>, <&macro_tt>)
-        TD_KEYS(td_k_kk,   180, <&kp R>, <&macro_kk>)
-        TD_KEYS(td_s_ss,   180, <&kp T>, <&macro_ss>)
+        TD_KEYS(td_p_pp,   250, <&kp Q>, <&macro_pp>)
+        TD_KEYS(td_j_jj,   250, <&kp W>, <&macro_jj>)
+        TD_KEYS(td_t_tt,   250, <&kp E>, <&macro_tt>)
+        TD_KEYS(td_k_kk,   250, <&kp R>, <&macro_kk>)
+        TD_KEYS(td_s_ss,   250, <&kp T>, <&macro_ss>)
 
         TD_KEYS(td_toggle_layer_3, 400, <&none>, <&tog 2>)
 
