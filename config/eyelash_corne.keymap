@@ -70,25 +70,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-
-        TD_KEYS(td_toggle_layer_3, 250, <&none>, <&tog 3>)
-
-        // [최종 수정] ZMK 버전에 맞는 올바른 Hold-Tap 문법으로 최종 수정
-        ht_mo1_ltog3: ht_mo1_ltog3 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_MO1_LTOG3";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            bindings = <&mo 1>, <&td_toggle_layer_3>;
-        };
-
-        ht_mo2_ltog3: ht_mo2_ltog3 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_MO2_LTOG3";
-            #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            bindings = <&mo 2>, <&td_toggle_layer_3>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -153,7 +134,7 @@
 &kp TAB  &kp Q     &kp W     &kp E     &kp R     &kp T                          &kp UP             &kp Y       &kp U       &kp I       &td_ae_yae  &td_e_ye    &kp BSLH
 &td0     &kp A     &kp S     &kp D     &kp F     &kp G          &kp LEFT &kp ENTER &kp RIGHT &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
 &kp LCTRL &kp Z    &kp X     &kp C     &kp V     &kp B   &kp SPACE                &kp DOWN           &kp N       &kp M       &kp COMMA   &kp DOT     &td_slash_question &kp ENTER
-                           &kp LGUI  &ht_mo1_ltog3 &lt 3 SPACE                  &lt 3 BACKSPACE  &ht_mo2_ltog3   &kp RALT
+                           &kp LGUI  &mo 1     &lt 3 SPACE                      &lt 3 BACKSPACE  &mo 2       &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -186,7 +167,7 @@
 &trans      &kp UP_ARROW    &trans          &td_mb_src      &mmv MOVE_UP   &td_down_up                      &kp UP             &td_mb_src      &mmv MOVE_UP   &td_down_up     &trans          &kp UP_ARROW    &kp BSLH
 &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT     &kp LEFT &kp ENTER &kp RIGHT &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
 &kp LCTRL   &kp Z           &kp PAGE_UP     &kp PAGE_DOWN   &msc SCRL_UP  &msc SCRL_DOWN &kp SPACE         &kp DOWN           &msc SCRL_UP    &msc SCRL_DOWN &kp PG_UP       &kp PAGE_DOWN   &td_slash_question &kp ENTER
-                                            &kp LGUI        &trans        &lt 3 SPACE                      &lt 3 ENTER      &trans          &kp RALT
+                                            &kp LGUI        &mo 1         &lt 3 SPACE                      &lt 3 ENTER      &mo 2           &kp RALT
             >;
             sensor-bindings = <&scroll_encoder>;
         };
