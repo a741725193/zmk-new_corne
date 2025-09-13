@@ -68,7 +68,7 @@ layers:
   - '&td_5'
   - '&td_6'
   - '&td_f12_equal'
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -83,7 +83,7 @@ layers:
   - '&td_8'
   - '&td_9'
   - {t: '$$mdi:transfer$$', type: trans}
-  - BT CLR ALL
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB EFR
@@ -214,4 +214,7 @@ combos:
   k: $$mdi:keyboard-space$$
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
+  l: [QWERTY]
+- p: [18, 22]
+  k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
