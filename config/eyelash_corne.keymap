@@ -60,9 +60,9 @@
         TD_KEYS(td_0, 250, <&kp N0>, <&kp RPAR>,  <&kp F10>)
         TD_KEYS(td_ae_yae, 180, <&kp O>, <&macro_yae>)
         TD_KEYS(td_e_ye,   180, <&kp P>, <&macro_ye>)
-        TD_KEYS(td_slash_question, 250, &kp FSLH, &kp LS(FSLH))
-        TD_KEYS(td_f11_minus, 250, &kp MINUS, &kp UNDER, &kp F11)
-        TD_KEYS(td_f12_equal, 250, &kp EQUAL, &kp PLUS, &kp F12)
+        TD_KEYS(td_slash_question, 250, <&kp FSLH>, <&kp LS(FSLH)>)
+        TD_KEYS(td_f11_minus, 250, <&kp MINUS>, <&kp UNDER>, <&kp F11>)
+        TD_KEYS(td_f12_equal, 250, <&kp EQUAL>, <&kp PLUS>, <&kp F12>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -71,9 +71,9 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        TD_KEYS(td_toggle_layer_3, 250, &none, &tog 3)
+        // [수정됨] Tap-Dance의 각 인자를 < > 로 감싸는 문법 오류 수정
+        TD_KEYS(td_toggle_layer_3, 250, <&none>, <&tog 3>)
 
-        // [수정됨] 올바른 Hold-Tap 문법으로 최종 수정
         ht_mo1_ltog3: ht_mo1_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MO1_LTOG3";
