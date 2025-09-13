@@ -205,10 +205,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp LC(LA(N1))  &kp LA(LC(N2))  &kp LA(LC(N3))  &td_bracket  &td_brace  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LA(LC(N4))  &kp LA(LC(N5))  &kp LC(LA(N6))  &td_paren    &kp BSLH   &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp LC(LA(N7))  &kp LA(LC(N8))  &kp LA(LC(N9))  &kp RBRC     &kp PIPE   &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET         &trans          &trans
+&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp RA(N1)  &kp RA(N2)  &kp RA(N3)  &td_bracket  &td_brace  &kp BSPC
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RA(N4)  &kp RA(N5)  &kp RA(N6)  &td_paren    &kp BSLH   &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp RA(N7)  &kp RA(N8)  &kp RA(N9)  &kp RBRC     &kp PIPE   &kp TILDE
+                                    &trans     &trans     &kp SPACE                                                             &kp RET     &trans      &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
