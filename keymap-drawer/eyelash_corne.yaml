@@ -148,9 +148,9 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft+$$mdi:keyboard-tab$$
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:keyboard-tab$$
   - '&td_mb_src'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&td_down_up'
@@ -158,9 +158,9 @@ layers:
   - '&td_mb_src'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&td_down_up'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+Ctl+$$mdi:keyboard-tab$$
   - $$mdi:arrow-up-bold$$
-  - {t: \, s: '|'}
+  - Ctl+$$mdi:keyboard-tab$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
