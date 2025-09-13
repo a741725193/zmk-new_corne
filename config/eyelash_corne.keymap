@@ -73,20 +73,23 @@
 
         TD_KEYS(td_toggle_layer_3, 250, &none, &tog 3)
 
+        // [수정됨] 올바른 Hold-Tap 문법으로 최종 수정
         ht_mo1_ltog3: ht_mo1_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MO1_LTOG3";
-            #binding-cells = <2>; // [수정됨] Hold-Tap은 2개의 인자를 가지므로 2로 설정
+            #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&mo 1 &td_toggle_layer_3>;
+            hold-bindings = <&mo 1>;
+            tap-bindings = <&td_toggle_layer_3>;
         };
 
         ht_mo2_ltog3: ht_mo2_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MO2_LTOG3";
-            #binding-cells = <2>; // [수정됨] Hold-Tap은 2개의 인자를 가지므로 2로 설정
+            #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&mo 2 &td_toggle_layer_3>;
+            hold-bindings = <&mo 2>;
+            tap-bindings = <&td_toggle_layer_3>;
         };
     };
 
