@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  QWERTY:
+  default:
   - $$mdi:keyboard-tab$$
   - '&td_p_pp'
   - '&td_j_jj'
@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
-  - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:backspace$$', h: Fn}
-  - SYMBOL
+  - lower
+  - {t: '$$mdi:keyboard-space$$', h: '3'}
+  - {t: '$$mdi:backspace$$', h: '3'}
+  - raise
   - $$mdi:apple-keyboard-option$$
-  NUMBER:
+  lower:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&td_1'
   - '&td_2'
@@ -98,7 +98,7 @@ layers:
   - INS
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  SYMBOL:
+  raise:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  '3':
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -191,23 +191,23 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
-  - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: Fn, type: held}
-  - {t: '$$mdi:keyboard-return$$', h: Fn, type: held alternate}
-  - SYMBOL
+  - lower
+  - {t: '$$mdi:keyboard-space$$', h: '3', type: held}
+  - {t: '$$mdi:keyboard-return$$', h: '3', type: held alternate}
+  - raise
   - $$mdi:apple-keyboard-option$$
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
 - p: [29, 30]
   k: Ctl+X
-  l: [QWERTY]
+  l: [default]
 - p: [30, 31]
   k: Ctl+C
-  l: [QWERTY]
+  l: [default]
 - p: [31, 32]
   k: Ctl+V
-  l: [QWERTY]
+  l: [default]
 - p: [17, 18]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [22, 23]
