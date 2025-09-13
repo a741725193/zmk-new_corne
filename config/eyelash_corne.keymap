@@ -56,6 +56,22 @@
         TD_KEYS(td_9, 250, <&kp N9>, <&kp LPAR>,  <&kp F9>)
         TD_KEYS(td_0, 250, <&kp N0>, <&kp RPAR>,  <&kp F10>)
 
+        // ㅂ → ㅂ / ㅃ
+        TD_KEYS(td_qq, 150, <&kp Q>, <&kp Q>)
+
+        // ㅈ → ㅈ / ㅉ
+        TD_KEYS(td_ww, 150, <&kp W>, <&kp W>)
+
+        // ㄷ → ㄷ / ㄸ
+        TD_KEYS(td_ee, 150, <&kp E>, <&kp E>)
+
+        // ㄱ → ㄱ / ㄲ
+        TD_KEYS(td_rr, 150, <&kp R>, <&kp R>)
+
+        // ㅅ → ㅅ / ㅆ
+        TD_KEYS(td_tt, 150, <&kp T>, <&kp T>)
+
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
@@ -124,7 +140,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y            &kp U  &kp I      &kp O    &kp P     &kp ESC
+&kp TAB    &td_qq  &td_ww  &td_ee  &td_rr  &td_tt                               &kp UP                &kp Y            &kp U  &kp I      &kp O    &kp P     &kp ESC
 &td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
                          &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 BACKSPACE  &mo 2  &kp RALT
