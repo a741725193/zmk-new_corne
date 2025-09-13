@@ -44,10 +44,10 @@ layers:
   - '&td_slash_question'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
-  - {t: '&td_toggle_layer_3 3', h: NUMBER}
+  - {t: '&td_toggle_layer_3 2', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:backspace$$', h: Fn}
-  - {t: '&td_toggle_layer_3 3', h: SYMBOL}
+  - {t: '&td_toggle_layer_3 2', h: SYMBOL}
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
