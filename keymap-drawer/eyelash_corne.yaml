@@ -47,7 +47,7 @@ layers:
   - {t: '&td_toggle_layer_3 2', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:backspace$$', h: Fn}
-  - '&ht_enter_ltog3'
+  - {t: '&td_toggle_layer_3 2', h: '&macro_enter'}
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
