@@ -88,7 +88,7 @@
         ht_mo1_ltog3: ht_mo1_ltog3 {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MO1_LTOG3";
-            bindings = <&mo>, <&tog>;
+            bindings = <&mo>, <&td_toggle_layer_3>;
 
             #binding-cells = <2>;
             tapping-term-ms = <280>;
@@ -165,7 +165,7 @@
 &kp TAB    &kp Q  &kp W  &kp E     &kp R              &kp T                               &kp UP                &kp Y            &kp U  &kp I      &td_ae_yae  &td_e_ye            &kp BSLH
 &td0       &kp A  &kp S  &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J  &kp K      &kp L       &kp SEMI            &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M  &kp COMMA  &kp DOT     &td_slash_question  &kp ENTER
-                         &kp LGUI  &ht_mo1_ltog3 1 3  &lt 3 SPACE                                               &lt 3 BACKSPACE  &mo 2  &kp RALT
+                         &kp LGUI  &ht_mo1_ltog3 1 3  &lt 3 SPACE                                               &lt 3 BACKSPACE  &ht_mo1_ltog3 2 3  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
