@@ -1,11 +1,12 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50    // 10
 
-// 'label'을 'display-name'으로 수정하여 경고 메시지를 해결했습니다.
+// 'display-name'을 다시 'label'로 되돌려 치명적인 빌드 오류를 해결했습니다.
+// 'deprecated' 경고는 다시 나타나지만, 빌드 성공에는 영향을 주지 않습니다.
 #define TD_KEYS(name, term_ms, ...) \
     name: behavior_##name { \
         compatible = "zmk,behavior-tap-dance"; \
-        display-name = #name; \
+        label = #name; \
         #binding-cells = <0>; \
         tapping-term-ms = <term_ms>; \
         bindings = __VA_ARGS__; \
@@ -38,17 +39,13 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    // 매크로 정의에 필수 속성(compatible, label, #binding-cells)을 추가하여
-    // 치명적인 빌드 오류를 해결했습니다.
     macros {
-        // 된소리(Double Consonants) 매크로
         macro_pp: macro_pp { compatible = "zmk,behavior-macro"; label = "MACRO_PP"; #binding-cells = <0>; bindings = <&kp LS(Q)>; };
         macro_jj: macro_jj { compatible = "zmk,behavior-macro"; label = "MACRO_JJ"; #binding-cells = <0>; bindings = <&kp LS(W)>; };
         macro_tt: macro_tt { compatible = "zmk,behavior-macro"; label = "MACRO_TT"; #binding-cells = <0>; bindings = <&kp LS(E)>; };
         macro_kk: macro_kk { compatible = "zmk,behavior-macro"; label = "MACRO_KK"; #binding-cells = <0>; bindings = <&kp LS(R)>; };
         macro_ss: macro_ss { compatible = "zmk,behavior-macro"; label = "MACRO_SS"; #binding-cells = <0>; bindings = <&kp LS(T)>; };
 
-        // 쌍모음(Double Vowels) 매크로
         macro_ya:  macro_ya  { compatible = "zmk,behavior-macro"; label = "MACRO_YA";  #binding-cells = <0>; bindings = <&kp K &kp I>; };
         macro_yeo: macro_yeo { compatible = "zmk,behavior-macro"; label = "MACRO_YEO"; #binding-cells = <0>; bindings = <&kp J &kp U>; };
         macro_yo:  macro_yo  { compatible = "zmk,behavior-macro"; label = "MACRO_YO";  #binding-cells = <0>; bindings = <&kp H &kp Y>; };
@@ -88,7 +85,7 @@
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
+            label = "Shift/Caps Lock Tap Dance"; // 일반 behavior에서는 display-name보다 label이 안정적일 수 있습니다.
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
@@ -144,7 +141,6 @@
     keymap {
         compatible = "zmk,keymap";
         default_layer {
-            display-name = "QWERTY";
             bindings = <
 &kp TAB  &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk  &td_s_ss                       &kp UP             &kp Y       &kp U       &kp I       &td_ae_yae  &td_e_ye    &kp ESC
 &td0     &kp A     &kp S     &kp D     &kp F     &kp G          &kp LEFT &kp ENTER &kp RIGHT &td_o_yo    &td_eo_yeo  &td_a_ya    &kp L       &kp SEMI    &kp SQT
@@ -155,7 +151,6 @@
         };
 
         lower_layer {
-            display-name = "NUMBER";
             bindings = <
 &trans  &td_1   &td_2   &td_3   &td_0   &kp F11                         &mmv MOVE_UP                                &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BSPC
 &trans  &td_4   &td_5   &td_6   &kp F12 &bt BT_SEL 3      &mmv MOVE_LEFT &mkp LCLK     &mmv MOVE_RIGHT &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp HOME    &kp PG_UP
@@ -166,7 +161,6 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
             bindings = <
 &trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                       &mmv MOVE_UP                                &kp CARET   &kp AMPS    &kp ASTRK   &td_bracket &td_brace   &kp BSPC
 &trans  &bt BT_CLR &mkp LCLK  &mkp MCLK &mkp RCLK &mkp MB4       &mmv MOVE_LEFT &mkp LCLK     &mmv MOVE_RIGHT &kp MINUS   &kp EQUAL   &kp LBKT    &td_paren   &kp BSLH    &kp GRAVE
@@ -177,7 +171,6 @@
         };
 
         layer_3 {
-            display-name = "Fn";
             bindings = <
 &trans      &kp UP_ARROW    &trans          &td_mb_src      &mmv MOVE_UP   &td_down_up                      &kp UP             &td_mb_src      &mmv MOVE_UP   &td_down_up     &trans          &kp UP_ARROW    &kp ESC
 &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT     &kp LEFT &kp ENTER &kp RIGHT &mmv MOVE_LEFT   &mmv MOVE_DOWN &mmv MOVE_RIGHT   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
