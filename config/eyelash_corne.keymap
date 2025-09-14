@@ -39,13 +39,42 @@
 
 / {
     macros {
-
         // 된소리 매크로
-        macro_pp: macro_pp { compatible = "zmk,behavior-macro"; label = "MACRO_PP"; #binding-cells = <0>; bindings = <&kp LS(Q)>; };
-        macro_jj: macro_jj { compatible = "zmk,behavior-macro"; label = "MACRO_JJ"; #binding-cells = <0>; bindings = <&kp LS(W)>; };
-        macro_tt: macro_tt { compatible = "zmk,behavior-macro"; label = "MACRO_TT"; #binding-cells = <0>; bindings = <&kp LS(E)>; };
-        macro_kk: macro_kk { compatible = "zmk,behavior-macro"; label = "MACRO_KK"; #binding-cells = <0>; bindings = <&kp LS(R)>; };
-        macro_ss: macro_ss { compatible = "zmk,behavior-macro"; label = "MACRO_SS"; #binding-cells = <0>; bindings = <&kp LS(T)>; };
+
+        macro_pp: macro_pp {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_PP";
+            #binding-cells = <0>;
+            bindings = <&kp LS(Q)>;
+        };
+
+        macro_jj: macro_jj {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_JJ";
+            #binding-cells = <0>;
+            bindings = <&kp LS(W)>;
+        };
+
+        macro_tt: macro_tt {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_TT";
+            #binding-cells = <0>;
+            bindings = <&kp LS(E)>;
+        };
+
+        macro_kk: macro_kk {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_KK";
+            #binding-cells = <0>;
+            bindings = <&kp LS(R)>;
+        };
+
+        macro_ss: macro_ss {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_SS";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T)>;
+        };
 
         macro_yae: macro_yae {
             compatible = "zmk,behavior-macro";
@@ -74,7 +103,6 @@
             #binding-cells = <0>;
             bindings = <&mkp MB1 &mkp MB1>;
         };
-
     };
 
     behaviors {
@@ -134,6 +162,12 @@
             tapping-term-ms = <380>;
         };
 
+        alt_gui: alt_gui {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ALT_GUI";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT>, <&kp LEFT_GUI>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -215,12 +249,11 @@
             layers = <0>;
         };
 
-    combo_double_click: combo_double_click {
-        bindings = <&macro_double_click>;
-        key-positions = <7 8>; 
-        layers = <2>; 
-    };
-
+        combo_double_click: combo_double_click {
+            bindings = <&macro_double_click>;
+            key-positions = <7 8>;
+            layers = <2>;
+        };
     };
 
     keymap {
@@ -229,10 +262,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk  &td_s_ss                               &kp UP                &kp Y            &kp U              &kp I      &td_ae_yae  &td_e_ye            &kp BSLH
-&td0       &kp A  &kp S  &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J              &kp K      &kp L       &kp SEMI            &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M              &kp COMMA  &kp DOT     &td_slash_question  &ht_mo1_ltog3 3 3
-                         &kp LGUI  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &td_enter_layer2  &kp RALT
+&kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk           &td_s_ss                            &kp UP                &kp Y            &kp U             &kp I      &td_ae_yae  &td_e_ye            &kp BSLH
+&td0       &kp A     &kp S     &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J             &kp K      &kp L       &kp SEMI            &kp SQT
+&kp LCTRL  &kp Z     &kp X     &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M             &kp COMMA  &kp DOT     &td_slash_question  &ht_mo1_ltog3 3 3
+                               &alt_gui  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &td_enter_layer2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
