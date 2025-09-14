@@ -32,7 +32,7 @@
 &mmv {
     time-to-max-speed-ms = <150>;
     acceleration-exponent = <2>;
-    trigger-period-ms = <10>;
+    trigger-period-ms = <1>;
 };
 
 &soft_off { hold-time-ms = <2000>; };
