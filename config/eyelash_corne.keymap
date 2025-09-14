@@ -270,7 +270,7 @@
         };
 
         dfg_mouse {
-            bindings = <&tog 2>;
+            bindings = <&tog 5>;
             key-positions = <16 17 18>;
         };
 
@@ -342,6 +342,17 @@
 
             sensor-bindings = <&scroll_encoder>;
         };
+
+        left_mouse_layer {
+            display-name = "left_mouse_layer_";
+            bindings = <
+&kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &trans  &trans    &trans      &trans      &trans    &trans
+&kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &trans  &trans    &trans      &trans      &trans    &trans
+&kp LCTRL        &trans           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &trans  &trans    &trans      &trans      &trans    &trans
+                                                  &kp LGUI        &trans          &lt 2 SPACE                                                   &trans     &trans          &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
 
     };
 };
