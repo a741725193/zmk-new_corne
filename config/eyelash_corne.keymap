@@ -68,6 +68,13 @@
             bindings = <&kp ENTER>;
         };
 
+        macro_double_click: macro_double_click {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_DOUBLE_CLICK";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1 &mkp MB1>;
+        };
+
     };
 
     behaviors {
@@ -207,6 +214,13 @@
             key-positions = <15 16>;
             layers = <0>;
         };
+
+    combo_double_click: combo_double_click {
+        bindings = <&macro_double_click>;
+        key-positions = <7 8>; 
+        layers = <2>; 
+    };
+
     };
 
     keymap {
