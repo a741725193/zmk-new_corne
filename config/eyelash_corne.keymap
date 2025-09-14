@@ -174,7 +174,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "UC_BS";
             #binding-cells = <0>;
-            bindings = <&kp UNDERSCORE>, <&kp LS(BACKSLASH)>;
+            bindings = <&kp UNDERSCORE>, <&kp BACKSLASH>;
+
+            tapping-term-ms = <330>;
         };
     };
 
@@ -334,10 +336,10 @@
         right_mouse_layer {
             display-name = "right_mouse_layer_";
             bindings = <
-&trans  &trans    &trans      &trans      &trans    &trans                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &kp LS(LC(TAB))  &kp UP_ARROW        &kp LC(TAB)
-&trans  &trans    &trans      &trans      &trans    &trans               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW   &kp DOWN_ARROW      &kp RIGHT_ARROW
-&trans  &trans    &trans      &trans      &trans    &trans   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN    &td_slash_question  &mo 3
-                                                  &trans        &trans          &trans                                                   &lt 2 ENTER     &trans          &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans                         &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &kp LS(LC(TAB))  &kp UP_ARROW        &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW   &kp DOWN_ARROW      &kp RIGHT_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN    &td_slash_question  &mo 3
+                        &trans  &trans  &trans                                               &lt 2 ENTER     &trans          &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -346,10 +348,10 @@
         left_mouse_layer {
             display-name = "left_mouse_layer_";
             bindings = <
-&kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &trans  &trans    &trans      &trans      &trans    &trans
-&kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &trans  &trans    &trans      &trans      &trans    &trans
-&kp LCTRL        &trans           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &trans  &trans    &trans      &trans      &trans    &trans
-                                                  &kp LGUI        &trans          &lt 2 SPACE                                                   &trans     &trans          &trans
+&kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL        &trans          &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &trans  &trans  &trans  &trans  &trans  &trans
+                                                  &kp LGUI        &trans          &lt 2 SPACE                                                   &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
