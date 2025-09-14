@@ -228,3 +228,6 @@ combos:
 - p: [7, 8]
   k: '&macro_double_click'
   l: [Fn]
+- p: [0, 1]
+  k: {t: '`', s: '~'}
+  l: [NUMBER]
