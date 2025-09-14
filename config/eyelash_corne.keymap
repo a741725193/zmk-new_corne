@@ -169,6 +169,13 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT>, <&kp LEFT_GUI>;
         };
+
+        UC_BS: UC_BS {
+            compatible = "zmk,behavior-tap-dance";
+            label = "UC_BS";
+            #binding-cells = <0>;
+            bindings = <&kp UNDERSCORE>, <&kp LS(BACKSLASH)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -261,6 +268,16 @@
             key-positions = <0 1>;
             layers = <1>;
         };
+
+        dfg_mouse {
+            bindings = <&tog 2>;
+            key-positions = <16 17 18>;
+        };
+
+        hjk_mouse {
+            bindings = <&tog 2>;
+            key-positions = <22 23 24>;
+        };
     };
 
     keymap {
@@ -269,7 +286,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk           &td_s_ss                            &kp UP                &kp Y            &kp U             &kp I      &td_ae_yae  &td_e_ye            &kp BSLH
+&kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk           &td_s_ss                            &kp UP                &kp Y            &kp U             &kp I      &td_ae_yae  &td_e_ye            &UC_BS
 &td0       &kp A     &kp S     &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J             &kp K      &kp L       &kp SEMI            &kp SQT
 &kp LCTRL  &kp Z     &kp X     &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M             &kp COMMA  &kp DOT     &td_slash_question  &ht_mo1_ltog3 3 3
                                &alt_gui  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &td_enter_layer2  &kp RALT
