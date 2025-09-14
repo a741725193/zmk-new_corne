@@ -13,7 +13,7 @@ layers:
   - I
   - '&td_ae_yae'
   - '&td_e_ye'
-  - {t: \, s: '|'}
+  - '&UC_BS'
   - '&td0'
   - A
   - S
@@ -231,3 +231,7 @@ combos:
 - p: [0, 1]
   k: {t: '`', s: '~'}
   l: [NUMBER]
+- p: [16, 17, 18]
+  k: {t: Fn, h: toggle}
+- p: [22, 23, 24]
+  k: {t: Fn, h: toggle}

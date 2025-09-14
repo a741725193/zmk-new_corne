@@ -349,8 +349,7 @@ rect.held, rect.combo.held {
 <g transform="translate(952, 49)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">\</text>
-<text x="0" y="-24" class="key shifted">|</text>
+<text x="0" y="-4" class="key tap">&amp;UC_BS</text>
 </g>
 <g transform="translate(28, 105)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -587,6 +586,22 @@ rect.held, rect.combo.held {
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="159" y="78" height="18" width="18.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
+</g>
+<g class="combo combopos-10">
+<path d="M252,91 l-37,-4" class="combo"/>
+<path d="M252,91 l37,4" class="combo"/>
+<rect rx="6" ry="6" x="238" y="78" width="28" height="26" class="combo"/>
+<a href="#Fn">
+<text x="252" y="91" class="combo tap layer-activator">Fn</text>
+</a><text x="252" y="102" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-11">
+<path d="M728,91 l-37,4" class="combo"/>
+<path d="M728,91 l37,-4" class="combo"/>
+<rect rx="6" ry="6" x="714" y="78" width="28" height="26" class="combo"/>
+<a href="#Fn">
+<text x="728" y="91" class="combo tap layer-activator">Fn</text>
+</a><text x="728" y="102" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -867,6 +882,22 @@ rect.held, rect.combo.held {
 <text x="56" y="49" class="combo tap">`</text>
 <text x="56" y="38" class="combo shifted">~</text>
 </g>
+<g class="combo combopos-3">
+<path d="M252,91 l-37,-4" class="combo"/>
+<path d="M252,91 l37,4" class="combo"/>
+<rect rx="6" ry="6" x="238" y="78" width="28" height="26" class="combo"/>
+<a href="#Fn">
+<text x="252" y="91" class="combo tap layer-activator">Fn</text>
+</a><text x="252" y="102" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<path d="M728,91 l-37,4" class="combo"/>
+<path d="M728,91 l37,-4" class="combo"/>
+<rect rx="6" ry="6" x="714" y="78" width="28" height="26" class="combo"/>
+<a href="#Fn">
+<text x="728" y="91" class="combo tap layer-activator">Fn</text>
+</a><text x="728" y="102" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-Fn">
@@ -1138,6 +1169,22 @@ rect.held, rect.combo.held {
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="686" y="25" width="28" height="26" class="combo"/>
 <text x="700" y="38" class="combo tap"><tspan style="font-size: 60%">&amp;macro_do…</tspan></text>
+</g>
+<g class="combo combopos-3">
+<path d="M252,91 l-37,-4" class="combo"/>
+<path d="M252,91 l37,4" class="combo"/>
+<rect rx="6" ry="6" x="238" y="78" width="28" height="26" class="combo"/>
+<a href="#Fn">
+<text x="252" y="91" class="combo tap layer-activator">Fn</text>
+</a><text x="252" y="102" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<path d="M728,91 l-37,4" class="combo"/>
+<path d="M728,91 l37,-4" class="combo"/>
+<rect rx="6" ry="6" x="714" y="78" width="28" height="26" class="combo"/>
+<a href="#Fn">
+<text x="728" y="91" class="combo tap layer-activator">Fn</text>
+</a><text x="728" y="102" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1424,6 +1471,22 @@ rect.held, rect.combo.held {
 <g class="combo enter combopos-1">
 <rect rx="6" ry="6" x="266" y="81" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="271" y="85" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+</g>
+<g class="combo combopos-2">
+<path d="M252,91 l-37,-4" class="combo"/>
+<path d="M252,91 l37,4" class="combo"/>
+<rect rx="6" ry="6" x="238" y="78" width="28" height="26" class="combo"/>
+<a href="#Fn">
+<text x="252" y="91" class="combo tap layer-activator">Fn</text>
+</a><text x="252" y="102" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-3">
+<path d="M728,91 l-37,4" class="combo"/>
+<path d="M728,91 l37,-4" class="combo"/>
+<rect rx="6" ry="6" x="714" y="78" width="28" height="26" class="combo"/>
+<a href="#Fn">
+<text x="728" y="91" class="combo tap layer-activator">Fn</text>
+</a><text x="728" y="102" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
