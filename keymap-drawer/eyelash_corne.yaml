@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - '&td_slash_question'
   - {t: '&td_toggle_layer_3 3', h: SYMBOL}
-  - LGUI
+  - '&alt_gui'
   - {t: '&td_toggle_layer_3 2', h: NUMBER}
   - {t: '$$mdi:keyboard-space$$', h: Fn}
   - {t: '$$mdi:backspace$$', h: Fn}
