@@ -275,7 +275,7 @@
         };
 
         hjk_mouse {
-            bindings = <&tog 2>;
+            bindings = <&tog 4>;
             key-positions = <22 23 24>;
         };
     };
@@ -330,5 +330,18 @@
 
             sensor-bindings = <&scroll_encoder>;
         };
+
+        right_mouse_layer {
+            display-name = "right_mouse_layer_";
+            bindings = <
+&trans  &trans    &trans      &trans      &trans    &trans                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &kp LS(LC(TAB))  &kp UP_ARROW        &kp LC(TAB)
+&trans  &trans    &trans      &trans      &trans    &trans               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW   &kp DOWN_ARROW      &kp RIGHT_ARROW
+&trans  &trans    &trans      &trans      &trans    &trans   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN    &td_slash_question  &mo 3
+                                                  &trans        &trans          &trans                                                   &lt 2 ENTER     &trans          &kp RALT
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
     };
 };
