@@ -288,10 +288,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk           &td_s_ss                            &kp UP                &kp Y            &kp U             &kp I      &td_ae_yae  &td_e_ye            &UC_BS
-&td0       &kp A     &kp S     &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J             &kp K      &kp L       &kp SEMI            &kp SQT
-&kp LCTRL  &kp Z     &kp X     &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M             &kp COMMA  &kp DOT     &td_slash_question  &ht_mo1_ltog3 3 3
-                               &alt_gui  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &td_enter_layer2  &kp RALT
+&kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk           &td_s_ss                            &kp UP                &kp Y            &kp U        &kp I      &td_ae_yae  &td_e_ye            &UC_BS
+&td0       &kp A     &kp S     &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J        &kp K      &kp L       &kp SEMI            &kp SQT
+&kp LCTRL  &kp Z     &kp X     &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M        &kp COMMA  &kp DOT     &td_slash_question  &ht_mo1_ltog3 3 3
+                               &alt_gui  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &lt 3 ENTER  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -321,7 +321,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        raise_layer {
+        GO_MOUSE {
             display-name = "SYMBOL";
             bindings = <
 &trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp LA(LC(F1))  &kp LA(LC(F2))  &kp LA(LC(F3))  &td_bracket  &td_brace  &kp BSPC
@@ -355,6 +355,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        funtion_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
