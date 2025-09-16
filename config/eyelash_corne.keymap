@@ -365,10 +365,10 @@
 
         funtion_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp LC(LS(ESC))  &trans  &kp LG(LS(S))  &kp K_VOL_UP    &kp K_VOLUME_DOWN  &kp K_MUTE
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans           &trans  &trans         &kp K_PREVIOUS  &kp K_NEXT         &kp K_PLAY_PAUSE
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &bt BT_CLR_ALL   &trans  &trans         &trans          &trans             &trans
-                        &trans  &trans  &trans                                    &soft_off        &trans  &kp K_SLEEP
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp LC(LS(ESC))  &trans  &kp LG(LS(S))  &kp C_VOL_UP  &kp C_VOL_DN  &kp C_MUTE
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans           &trans  &trans         &kp C_PREV    &kp C_NEXT    &kp C_PLAY_PAUSE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &bt BT_CLR_ALL   &trans  &trans         &trans        &trans        &trans
+                        &trans  &trans  &trans                                    &soft_off        &trans  &kp C_SLEEP
             >;
         };
     };
