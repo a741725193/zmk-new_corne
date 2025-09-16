@@ -626,10 +626,10 @@ rect.held, rect.combo.held {
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="643" y="124" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
 <g class="combo combopos-14">
-<path d="M683,153 l-8,-38" class="combo"/>
-<path d="M683,153 l8,38" class="combo"/>
-<rect rx="6" ry="6" x="669" y="140" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="674" y="144" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+<path d="M680,158 l-37,52" class="combo"/>
+<path d="M680,158 l37,-52" class="combo"/>
+<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="671" y="149" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
 </g>
 <g class="combo combopos-15">
 <path d="M652,161 l15,-46" class="combo"/>

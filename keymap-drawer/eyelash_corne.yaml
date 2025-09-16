@@ -388,7 +388,7 @@ combos:
 - p: [45, 7]
   k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
-- p: [22, 46]
+- p: [45, 23]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
 - p: [22, 45]
