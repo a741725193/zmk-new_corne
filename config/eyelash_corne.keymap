@@ -304,9 +304,9 @@
             layers = <0>;
         };
 
-        hk_alt {
+        hm2_alt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <22 24>;
+            key-positions = <22 46>;
             layers = <0>;
         };
     };
