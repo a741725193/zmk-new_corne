@@ -305,9 +305,9 @@ layers:
   - Ctl+Sft+$$mdi:keyboard-esc$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Sft+S
-  - VOL UP
-  - VOLUME DOWN
-  - MUTE
+  - $$mdi:volume-high$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -320,8 +320,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PREVIOUS
-  - NEXT
+  - $$mdi:skip-previous$$
+  - $$mdi:skip-next$$
   - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
