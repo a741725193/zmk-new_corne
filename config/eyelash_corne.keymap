@@ -180,6 +180,15 @@
 
             tapping-term-ms = <330>;
         };
+
+        td_grave: td_grave {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+
+            tapping-term-ms = <350>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -311,19 +320,19 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        lower_layer {
+        number_layer {
             display-name = "NUMBER";
             bindings = <
-&td_1  &td_2  &td_3  &td_0   &td_f11_minus  &td_f12_equal                                &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&td_4  &td_5  &td_6  &trans  &kp LC(MINUS)  &kp LC(PLUS)                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&td_7  &td_8  &td_9  &trans  &trans         &trans         &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                     &trans  &trans         &trans                                                                        &kp INS          &kp DEL          &trans
+&td_1  &td_2  &td_3  &td_0      &td_f11_minus  &td_f12_equal                                &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&td_4  &td_5  &td_6  &td_grave  &kp LC(MINUS)  &kp LC(PLUS)                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&td_7  &td_8  &td_9  &trans     &trans         &trans         &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                     &trans     &trans         &trans                                                                        &kp INS          &kp DEL          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        mo_mouse_layer {
             display-name = "Fn";
             bindings = <
 &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &kp LS(LC(TAB))  &kp UP_ARROW        &kp LC(TAB)
