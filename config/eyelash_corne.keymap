@@ -224,12 +224,12 @@
         };
 
         enter_fg {
-            bindings = <&kp ENTER>;
+            bindings = <&kp SPACE>;
             key-positions = <17 18>;
         };
 
-        space_hj {
-            bindings = <&kp SPACE>;
+        enter_hj {
+            bindings = <&kp ENTER>;
             key-positions = <22 23>;
             layers = <0>;
         };
@@ -243,7 +243,7 @@
 
         gh_han {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <18 22>;
+            key-positions = <22 8>;
             layers = <0>;
         };
 
@@ -307,7 +307,7 @@
             display-name = "NUMBER";
             bindings = <
 &td_1  &td_2  &td_3  &td_0   &td_f11_minus  &td_f12_equal                                &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&td_4  &td_5  &td_6  &trans  &trans         &trans                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&td_4  &td_5  &td_6  &trans  &kp LC(MINUS)  &kp LC(PLUS)                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &td_7  &td_8  &td_9  &trans  &trans         &trans         &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                      &trans  &trans         &trans                                                                        &kp INS          &kp DEL          &trans
             >;
@@ -365,10 +365,10 @@
 
         funtion_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp LC(LS(ESC))  &trans  &kp LG(LS(S))  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans           &trans  &trans         &kp C_PREV    &kp C_NEXT       &kp C_PLAY_PAUSE
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &bt BT_CLR_ALL   &bt BT_SEL 0  &bt BT_SEL 1         &bt BT_SEL 2        &bt BT_SEL 3           &trans
-                        &trans  &trans  &trans                                    &soft_off        &trans  &kp C_SLEEP
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp LC(LS(ESC))  &trans        &kp LG(LS(S))  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans           &trans        &trans         &kp C_PREV    &kp C_NEXT       &kp C_PLAY_PAUSE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &bt BT_CLR_ALL   &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3     &trans
+                        &trans  &trans  &trans                                    &soft_off        &trans        &kp C_SLEEP
             >;
         };
     };
