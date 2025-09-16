@@ -391,3 +391,6 @@ combos:
 - p: [22, 46]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
+- p: [22, 45]
+  k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY]
