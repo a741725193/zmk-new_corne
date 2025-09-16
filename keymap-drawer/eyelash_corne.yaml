@@ -67,8 +67,8 @@ layers:
   - '&td_5'
   - '&td_6'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Ctl+-, s: Ctl+_}
+  - Ctl++
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -356,14 +356,14 @@ combos:
   k: Ctl+V
   l: [QWERTY]
 - p: [17, 18]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [22, 23]
   k: $$mdi:keyboard-space$$
+- p: [22, 23]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY]
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
-- p: [18, 22]
+- p: [22, 8]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
 - p: [10, 11, 12]
