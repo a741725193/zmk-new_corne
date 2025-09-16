@@ -288,6 +288,12 @@
             key-positions = <1 2>;
             layers = <0>;
         };
+
+        ctrl_back {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <45 7>;
+            layers = <0>;
+        };
     };
 
     keymap {
