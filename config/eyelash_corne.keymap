@@ -168,6 +168,8 @@
             label = "ALT_GUI";
             #binding-cells = <0>;
             bindings = <&kp LEFT_ALT>, <&kp LEFT_GUI>;
+
+            tapping-term-ms = <400>;
         };
 
         UC_BS: UC_BS {
