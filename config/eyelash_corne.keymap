@@ -262,7 +262,7 @@
         combo_double_click: combo_double_click {
             bindings = <&macro_double_click>;
             key-positions = <7 8>;
-            layers = <2>;
+            layers = <2 4>;
         };
 
         grave {
@@ -280,6 +280,12 @@
             bindings = <&tog 4>;
             key-positions = <22 23 24>;
         };
+
+        esc_asd {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -290,7 +296,7 @@
             bindings = <
 &kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk           &td_s_ss                            &kp UP                &kp Y            &kp U        &kp I      &td_ae_yae  &td_e_ye            &UC_BS
 &td0       &kp A     &kp S     &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J        &kp K      &kp L       &kp SEMI            &kp SQT
-&kp LCTRL  &kp Z     &kp X     &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M        &kp COMMA  &kp DOT     &td_slash_question  &ht_mo1_ltog3 3 3
+&kp LCTRL  &kp Z     &kp X     &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M        &kp COMMA  &kp DOT     &td_slash_question  &mo 6
                                &alt_gui  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &lt 3 ENTER  &kp RALT
             >;
 
@@ -359,10 +365,10 @@
 
         funtion_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp LC(LS(ESC))  &trans  &kp LG(LS(S))  &kp K_VOL_UP    &kp K_VOLUME_DOWN  &kp K_MUTE
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans           &trans  &trans         &kp K_PREVIOUS  &kp K_NEXT         &kp K_PLAY_PAUSE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &bt BT_CLR_ALL   &trans  &trans         &trans          &trans             &trans
+                        &trans  &trans  &trans                                    &soft_off        &trans  &kp K_SLEEP
             >;
         };
     };
