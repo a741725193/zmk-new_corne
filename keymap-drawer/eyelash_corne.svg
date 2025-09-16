@@ -619,6 +619,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="103" y="33" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo backspace combopos-13">
+<path d="M652,133 l-16,73" class="combo"/>
+<path d="M652,133 l16,-73" class="combo"/>
+<rect rx="6" ry="6" x="638" y="120" width="28" height="26" class="combo backspace"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="643" y="124" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-NUMBER">

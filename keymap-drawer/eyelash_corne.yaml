@@ -385,3 +385,6 @@ combos:
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
+- p: [45, 7]
+  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
+  l: [QWERTY]
