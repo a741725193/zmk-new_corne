@@ -309,6 +309,12 @@
             key-positions = <22 46>;
             layers = <0>;
         };
+
+        hb_alt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <22 45>;
+            layers = <0>;
+        };
     };
 
     keymap {
