@@ -303,7 +303,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Sft+$$mdi:keyboard-esc$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+$$mdi:arrow-up-bold$$
   - Gui+Sft+S
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
@@ -317,9 +317,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-down-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
   - PLAY PAUSE
