@@ -347,9 +347,9 @@
         mo_mouse_layer {
             display-name = "Fn";
             bindings = <
-&kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &kp LS(LC(TAB))  &kp UP_ARROW        &kp LC(TAB)
-&kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW   &kp DOWN_ARROW      &kp RIGHT_ARROW
-&kp LCTRL        &kp Z           &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN    &td_slash_question  &kp ENTER
+&kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)
+&kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LCTRL        &kp LEFT_SHIFT  &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN    &kp LEFT_SHIFT  &kp LCTRL
                                                   &kp LGUI        &trans          &lt 2 SPACE                                                   &lt 2 ENTER     &trans          &kp RALT
             >;
 
@@ -371,9 +371,9 @@
         right_mouse_layer {
             display-name = "right_mouse_layer_";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                         &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &kp LS(LC(TAB))  &kp UP_ARROW        &kp LC(TAB)
-&trans  &trans  &trans  &trans  &trans  &trans               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW   &kp DOWN_ARROW      &kp RIGHT_ARROW
-&trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN    &td_slash_question  &mo 3
+&trans  &trans  &trans  &trans  &trans  &trans                         &kp UP                &td_mb_src      &mmv MOVE_UP    &td_down_up      &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans               &kp LEFT  &kp ENTER  &kp RIGHT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE              &kp DOWN              &msc SCRL_UP    &msc SCRL_DOWN  &kp PG_UP        &kp PAGE_DOWN    &kp LEFT_SHIFT  &kp LCTRL
                         &trans  &trans  &trans                                               &lt 2 ENTER     &trans          &kp RALT
             >;
 
@@ -385,7 +385,7 @@
             bindings = <
 &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &td_mb_src      &mmv MOVE_UP    &td_down_up                             &kp UP                &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL        &trans          &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL        &kp LEFT_SHIFT  &kp PAGE_UP      &kp PAGE_DOWN   &msc SCRL_UP    &msc SCRL_DOWN   &kp SPACE              &kp DOWN              &trans  &trans  &trans  &trans  &trans  &trans
                                                   &kp LGUI        &trans          &lt 2 SPACE                                                   &trans  &trans  &trans
             >;
 
