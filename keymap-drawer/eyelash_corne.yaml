@@ -128,7 +128,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:apple-keyboard-control$$
-  - Z
+  - $$mdi:apple-keyboard-shift$$
   - PgUp
   - PgDn
   - $$mdi:pan-up$$
@@ -139,8 +139,8 @@ layers:
   - $$mdi:pan-down$$
   - PG UP
   - PgDn
-  - '&td_slash_question'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - LGUI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-space$$', h: Fn, type: held}
@@ -237,8 +237,8 @@ layers:
   - $$mdi:pan-down$$
   - PG UP
   - PgDn
-  - '&td_slash_question'
-  - SYMBOL
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -275,7 +275,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - PgUp
   - PgDn
   - $$mdi:pan-up$$
