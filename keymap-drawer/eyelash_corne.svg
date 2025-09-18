@@ -584,11 +584,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="81" width="28" height="26" class="combo enter"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="691" y="85" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
 </g>
-<g class="combo enter combopos-6">
+<g class="combo combopos-6">
 <path d="M728,91 l-37,4" class="combo"/>
 <path d="M728,91 l37,-4" class="combo"/>
-<rect rx="6" ry="6" x="714" y="78" width="28" height="26" class="combo enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="719" y="82" height="18" width="18.0" class="combo enter tap glyph mdi:keyboard-return"/>
+<rect rx="6" ry="6" x="714" y="78" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="719" y="82" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="854" y="29" width="28" height="26" class="combo"/>
