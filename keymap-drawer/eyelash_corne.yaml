@@ -50,10 +50,10 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - $$mdi:apple-keyboard-option$$
   NUMBER:
+  - '&td_grave'
   - '&td_1'
   - '&td_2'
   - '&td_3'
-  - '&td_0'
   - '&td_f11_minus'
   - '&td_f12_equal'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -63,10 +63,10 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&td_4'
   - '&td_5'
   - '&td_6'
-  - '&td_grave'
   - {t: Ctl+-, s: Ctl+_}
   - Ctl++
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -78,11 +78,11 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - PG UP
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&td_7'
   - '&td_8'
   - '&td_9'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td_0'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
