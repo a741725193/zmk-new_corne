@@ -81,14 +81,15 @@
             tap-ms = <20>;
         };
 
-        scroll_right_left: behavior_sensor_rotate_mouse_wheel_right_left {
+        ug_prev_nex: ug_prev_nex {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
 
             // 追加: スクロールのタップ時間を設定 (20ms)
 
             tap-ms = <20>;
+            label = "UG_PREV_NEX";
         };
 
         bs_del: bs_del {
@@ -261,13 +262,13 @@
         left {
             display-name = "left";
             bindings = <
-&ppt_l  &kp HASH                  &kp DOLLAR               &kp UP_ARROW                 &kp ASTERISK           &kp PERCENT                      &trans            &bs_del    &kp N7                    &kp N8                &kp N9                  &slash            &ppt_r
-&ppt_t  &mt LEFT_GUI EXCLAMATION  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LSHFT RIGHT_ARROW  &kp CARET                &trans  &mkp MB3  &trans  &com_col   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI N0  &ppt_b
-&ppt_h  &trans                    &left_kakko              &letf_arrow                  &r_arrow               &kp AMPERSAND  &trans            &trans            &peri_apo  &kp N1                    &kp N2                &kp NUMBER_3            &mi_pl            &ppt_v
+&ppt_l  &kp HASH                  &kp DOLLAR               &kp UP_ARROW                 &kp ASTERISK           &kp PERCENT                      &ppt_t            &bs_del    &kp N7                    &kp N8                &kp N9                  &slash            &ppt_r
+&ppt_t  &mt LEFT_GUI EXCLAMATION  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LSHFT RIGHT_ARROW  &kp CARET                &ppt_l  &mkp MB3  &ppt_r  &com_col   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI N0  &ppt_b
+&ppt_h  &trans                    &left_kakko              &letf_arrow                  &r_arrow               &kp AMPERSAND  &trans            &ppt_b            &peri_apo  &kp N1                    &kp N2                &kp NUMBER_3            &mi_pl            &ppt_v
                                                            &trans                       &trans                 &trans                                             &trans     &trans                    &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&ug_prev_nex>;
         };
 
         right {
