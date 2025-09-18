@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
   - $$mdi:apple-keyboard-option$$
   NUMBER:
-  - '&td_grave'
+  - '&td_grave_'
   - '&td_1'
   - '&td_2'
   - '&td_3'
