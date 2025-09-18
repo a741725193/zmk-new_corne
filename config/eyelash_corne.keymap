@@ -191,13 +191,6 @@
             tapping-term-ms = <350>;
         };
 
-        drag_toggle: drag_toggle {
-            compatible = "zmk,behavior-key-toggle";
-            label = "DRAG_TOGGLE";
-            #binding-cells = <0>;
-            bindings = <&mkp MB1>; // LCLK 대신 MB1 사용
-        };
-
     };
 
     rgb_encoder: rgb_encoder {
