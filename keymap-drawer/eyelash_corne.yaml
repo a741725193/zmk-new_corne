@@ -360,6 +360,9 @@ combos:
 - p: [22, 23]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY]
+- p: [22, 24]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  l: [QWERTY]
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
