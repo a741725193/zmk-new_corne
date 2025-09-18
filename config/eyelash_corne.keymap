@@ -191,12 +191,6 @@
             tapping-term-ms = <350>;
         };
 
-        // 마우스 좌클릭 토글 동작 정의
-        drag_toggle: drag_toggle {
-            compatible = "zmk,behavior-key-toggle";
-            bindings = <&mkp LCLK>; // 좌클릭(LCLK)을 토글
-        };
-
     };
 
     rgb_encoder: rgb_encoder {
