@@ -56,7 +56,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - '*'
   - '%'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ppt_t'
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -69,9 +69,9 @@ layers:
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
   - ^
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ppt_l'
   - '&mkp MB3'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ppt_r'
   - '&com_col'
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-control$$', s: '%'}
@@ -85,7 +85,7 @@ layers:
   - '&r_arrow'
   - '&'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&ppt_b'
   - '&peri_apo'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
