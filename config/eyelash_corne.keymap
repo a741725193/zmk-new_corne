@@ -104,7 +104,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "APP_LT4_DEL";
             #binding-cells = <0>;
-            bindings = <&lt 4 K_APPLICATION>, <&kp DELETE>;
+            bindings = <&lt 3 K_APPLICATION>, <&kp DELETE>;
         };
 
         left_kakko: left_kakko {
@@ -150,16 +150,109 @@
         };
     };
 
+    macros {
+        letf_arrow: letf_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp MINUS>;
+            label = "LETF_ARROW";
+        };
+
+        r_arrow: r_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "R_ARROW";
+        };
+
+        ppt_l: ppt_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp G &kp A &kp L>;
+            label = "PPT_L";
+        };
+
+        ppt_t: ppt_t {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp G &kp A &kp T>;
+            label = "PPT_T";
+        };
+
+        ppt_b: ppt_b {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp G &kp A &kp B>;
+            label = "PPT_B";
+        };
+
+        ppt_r: ppt_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp G &kp A &kp R>;
+            label = "PPT_R";
+        };
+
+        ppt_h: ppt_h {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp G &kp A &kp H>;
+            label = "PPT_H";
+        };
+
+        ppt_v: ppt_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp G &kp A &kp V>;
+            label = "PPT_V";
+        };
+
+        ppt_m: ppt_m {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp G &kp A &kp M>;
+            label = "PPT_M";
+        };
+
+        ppt_c: ppt_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp G &kp A &kp C>;
+            label = "PPT_C";
+        };
+
+        ppt_waku: ppt_waku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp J &kp D &kp S &kp O>;
+            label = "PPT_WAKU";
+        };
+
+        ppt_nuri: ppt_nuri {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp J &kp D &kp S &kp F>;
+            label = "PPT_NURI";
+        };
+
+        ppt_chobj: ppt_chobj {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp J &kp D &kp E>;
+            label = "PPT_CHOBJ";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "QLU";
             bindings = <
-&kp EXCLAMATION  &kp Q           &kp L           &kp U        &com_col          &peri_apo                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp HASH
-&left_kakko      &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &mi_pl                       &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &right_kakko
-&kp AT_SIGN      &kp Z           &kp X           &kp C        &kp V             &slash     &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp AMPERSAND
-                                                 &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
+&kp AT_SIGN    &kp Q           &kp L           &kp U        &com_col          &peri_apo                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp RS(RG(S))
+&left_kakko    &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &mi_pl                       &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &right_kakko
+&kp LA(GRAVE)  &kp Z           &kp X           &kp C        &kp V             &slash     &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp AMPERSAND
+                                               &kp ESC      &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
             >;
 
             sensor-bindings = <&rot_ur_z 0 0>;
@@ -168,9 +261,9 @@
         left {
             display-name = "left";
             bindings = <
-&trans  &kp HASH                  &kp DOLLAR               &kp UP_ARROW                 &kp ASTERISK           &kp PERCENT                      &trans            &bs_del    &kp N7                    &kp N8                &kp N9                  &slash            &trans
-&trans  &mt LEFT_GUI EXCLAMATION  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LSHFT RIGHT_ARROW  &kp CARET                &trans  &mkp MB3  &trans  &com_col   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI N0  &trans
-&trans  &trans                    &left_kakko              &kp AT                       &right_kakko           &kp AMPERSAND  &trans            &trans            &peri_apo  &kp N1                    &kp N2                &kp NUMBER_3            &mi_pl            &trans
+&ppt_l  &kp HASH                  &kp DOLLAR               &kp UP_ARROW                 &kp ASTERISK           &kp PERCENT                      &trans            &bs_del    &kp N7                    &kp N8                &kp N9                  &slash            &ppt_r
+&ppt_t  &mt LEFT_GUI EXCLAMATION  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LSHFT RIGHT_ARROW  &kp CARET                &trans  &mkp MB3  &trans  &com_col   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI N0  &ppt_b
+&ppt_h  &trans                    &left_kakko              &letf_arrow                  &r_arrow               &kp AMPERSAND  &trans            &trans            &peri_apo  &kp N1                    &kp N2                &kp NUMBER_3            &mi_pl            &ppt_v
                                                            &trans                       &trans                 &trans                                             &trans     &trans                    &trans
             >;
 
@@ -180,23 +273,13 @@
         right {
             display-name = "right";
             bindings = <
-&trans  &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &trans            &none      &kp PG_UP             &kp UP                        &kp PG_DN            &none          &trans
-&trans  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &trans  &mkp MB3  &trans  &none      &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp RIGHT_GUI  &trans
-&trans  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &trans            &kp GRAVE  &kp RC(RS(TAB))       &kp RC(TAB)                   &kp HOME             &kp END        &trans
-                                           &trans               &trans             &trans                                        &trans     &trans                &trans
+&ppt_m     &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &trans            &kp HOME   &kp PG_UP             &kp UP                        &kp PG_DN            &none           &ppt_c
+&ppt_waku  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &trans  &mkp MB3  &trans  &kp END    &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &mmv MOVE_UP    &ppt_chobj
+&ppt_nuri  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &trans            &kp GRAVE  &kp RC(RS(TAB))       &kp RC(TAB)                   &mmv MOVE_LEFT       &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+                                              &mkp MB3             &mkp MB2           &mkp MB1                                      &trans     &trans                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
-        };
-
-        mouse {
-            display-name = "mouse";
-            bindings = <
-&none  &none     &none         &kp PRINTSCREEN   &none           &none                  &none         &none     &none           &mmv MOVE_UP    &none            &none  &none
-&none  &mkp MB1  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none           &none  &none  &none  &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
-&none  &mkp MB2  &none         &none             &none           &none  &none           &none         &none     &none           &none           &none            &none  &none
-                               &none             &none           &none                                &mkp MB1  &mkp MB2        &none
-            >;
         };
 
         conf {
