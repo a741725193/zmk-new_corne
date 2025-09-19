@@ -83,7 +83,7 @@ layers:
   - '&td_8'
   - '&td_9'
   - '&td_0'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&dotcom_bh'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB EFR
