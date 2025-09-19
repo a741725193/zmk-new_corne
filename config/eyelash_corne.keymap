@@ -81,17 +81,6 @@
             tap-ms = <20>;
         };
 
-        ug_prev_nex: ug_prev_nex {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>;
-
-            // 追加: スクロールのタップ時間を設定 (20ms)
-
-            tap-ms = <20>;
-            label = "UG_PREV_NEX";
-        };
-
         bs_del: bs_del {
             compatible = "zmk,behavior-mod-morph";
             label = "BS_DEL";
@@ -268,7 +257,7 @@
                                                            &trans                       &trans                 &trans                                             &trans     &trans                    &trans
             >;
 
-            sensor-bindings = <&ug_prev_nex>;
+            sensor-bindings = <&none>;
         };
 
         right {
