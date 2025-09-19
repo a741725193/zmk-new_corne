@@ -190,6 +190,13 @@
 
             tapping-term-ms = <350>;
         };
+
+        dotcom_bh: dotcom_bh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOTCOM_BH";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>, <&kp COMMA>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -344,7 +351,7 @@
             bindings = <
 &td_grave_  &td_1  &td_2  &td_3   &td_f11_minus  &td_f12_equal                                &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &trans      &td_4  &td_5  &td_6   &kp LC(MINUS)  &kp LC(PLUS)                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans      &td_7  &td_8  &td_9   &td_0          &trans         &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+&trans      &td_7  &td_8  &td_9   &td_0          &dotcom_bh     &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                           &trans  &trans         &trans                                                                        &kp INS          &kp DEL          &trans
             >;
 
