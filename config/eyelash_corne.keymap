@@ -210,7 +210,7 @@
                                                &kp ESC      &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt3_del
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
         };
 
         left {
@@ -222,7 +222,7 @@
                                                            &trans                       &trans                 &trans                                             &trans     &trans                    &trans
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         right {
@@ -234,7 +234,7 @@
                                               &mkp MB3             &mkp MB2           &mkp MB1                                      &trans     &trans                &trans
             >;
 
-            sensor-bindings = <&none>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         conf {
