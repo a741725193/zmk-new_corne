@@ -46,42 +46,6 @@
     };
 
     behaviors {
-        rot_und_zd: rot_und_zd {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ROT_UND_ZD";
-            bindings = <&kp LC(Z)>, <&kp LC(MINUS)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        rot_red_zu: rot_red_zu {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ROT_RED_ZU";
-            bindings = <&kp LC(Y)>, <&kp LC(EQUAL)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        rot_ur_z: rot_ur_z {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "ROT_UR_Z";
-            #sensor-binding-cells = <2>;
-            bindings = <&rot_red_zu>, <&rot_und_zd>;
-        };
-
-        scroll_up_down: scroll_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            // 追加: スクロールのタップ時間を設定 (20ms)
-
-            tap-ms = <20>;
-            label = "scroll_up_down";
-        };
-
         bs_del: bs_del {
             compatible = "zmk,behavior-mod-morph";
             label = "BS_DEL";
@@ -91,9 +55,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        app_lt4_del: app_lt4_del {
+        app_lt3_del: app_lt3_del {
             compatible = "zmk,behavior-tap-dance";
-            label = "APP_LT4_DEL";
+            label = "APP_LT3_DEL";
             #binding-cells = <0>;
             bindings = <&lt 3 K_APPLICATION>, <&kp DELETE>;
         };
@@ -243,10 +207,10 @@
 &kp AT_SIGN    &kp Q           &kp L           &kp U        &com_col          &peri_apo                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp RS(RG(S))
 &left_kakko    &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &mi_pl                       &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &right_kakko
 &kp LA(GRAVE)  &kp Z           &kp X           &kp C        &kp V             &slash     &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp RG(RC(V))
-                                               &kp ESC      &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
+                                               &kp ESC      &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt3_del
             >;
 
-            sensor-bindings = <&rot_ur_z 0 0>;
+            sensor-bindings = <&none>;
         };
 
         left {
@@ -270,7 +234,7 @@
                                               &mkp MB3             &mkp MB2           &mkp MB1                                      &trans     &trans                &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&none>;
         };
 
         conf {
