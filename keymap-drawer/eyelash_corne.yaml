@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: left}
   - {t: '$$mdi:keyboard-space$$', h: right}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '&app_lt4_del'
+  - '&app_lt3_del'
   left:
   - '&ppt_l'
   - '#'
