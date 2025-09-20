@@ -9,23 +9,23 @@ layers:
   - '&td_s_ss'
   - $$mdi:arrow-up-bold$$
   - Y
-  - U
+  - {t: U, h: '$$mdi:arrow-up-bold$$'}
   - I
   - '&td_ae_yae'
   - '&td_e_ye'
   - '&UC_BS'
   - '&td0'
-  - A
-  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
-  - D
-  - F
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: D}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - H
-  - J
-  - K
+  - {t: H, h: '$$mdi:arrow-left-bold$$'}
+  - {t: J, h: '$$mdi:arrow-down-bold$$'}
+  - {t: K, h: '$$mdi:arrow-right-bold$$'}
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
@@ -33,8 +33,8 @@ layers:
   - Z
   - X
   - C
-  - V
-  - B
+  - {t: V, h: PgUp}
+  - {t: B, h: PgDn}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - N
