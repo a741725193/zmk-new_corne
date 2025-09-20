@@ -27,7 +27,7 @@ layers:
   - {t: J, h: '$$mdi:menu-down$$'}
   - {t: K, h: '$$mdi:menu-right$$'}
   - {t: L, h: '$$mdi:keyboard-return$$'}
-  - {t: ;, s: ':'}
+  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - {t: Z, h: HOME}
