@@ -8,8 +8,8 @@ layers:
   - '&td_k_kk'
   - '&td_s_ss'
   - $$mdi:arrow-up-bold$$
-  - Y
-  - {t: U, h: '$$mdi:arrow-up-bold$$'}
+  - {t: Y, h: '$$mdi:mouse-left-click-outline$$'}
+  - {t: U, h: '$$mdi:menu-up$$'}
   - I
   - '&td_ae_yae'
   - '&td_e_ye'
@@ -23,10 +23,10 @@ layers:
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - {t: H, h: '$$mdi:arrow-left-bold$$'}
-  - {t: J, h: '$$mdi:arrow-down-bold$$'}
-  - {t: K, h: '$$mdi:arrow-right-bold$$'}
-  - L
+  - {t: H, h: '$$mdi:menu-left$$'}
+  - {t: J, h: '$$mdi:menu-down$$'}
+  - {t: K, h: '$$mdi:menu-right$$'}
+  - {t: L, h: '$$mdi:keyboard-return$$'}
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
@@ -37,10 +37,10 @@ layers:
   - {t: B, h: PgDn}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - {t: N, h: '$$mdi:menu-left$$'}
-  - {t: M, h: '$$mdi:menu-down$$'}
-  - {t: ',', h: '$$mdi:menu-up$$', s: <}
-  - {t: ., h: '$$mdi:menu-right$$'}
+  - {t: N, h: '$$mdi:arrow-left-bold$$'}
+  - {t: M, h: '$$mdi:arrow-down-bold$$'}
+  - {t: ',', h: '$$mdi:arrow-up-bold$$', s: <}
+  - {t: ., h: '$$mdi:arrow-right-bold$$'}
   - '&td_slash_question'
   - funtion
   - '&alt_gui'
