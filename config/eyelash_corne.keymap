@@ -204,7 +204,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
         };
 
         ht_bh_mmv: ht_bh_mmv {
@@ -213,7 +214,8 @@
             bindings = <&mmv>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
         };
 
         ht_bh_mkp: ht_bh_mkp {
@@ -222,7 +224,8 @@
             bindings = <&mkp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
         };
 
         ht_bh_msc: ht_bh_msc {
@@ -231,7 +234,8 @@
             bindings = <&msc>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
         };
     };
 
