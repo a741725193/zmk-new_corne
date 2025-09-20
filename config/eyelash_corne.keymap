@@ -215,6 +215,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        ht_bh_mkp: ht_bh_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_BH_MKP";
+            bindings = <&mkp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -355,9 +364,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &td_p_pp        &td_j_jj           &td_t_tt             &td_k_kk           &td_s_ss                                   &kp UP                &kp Y                   &ht_bh UP_ARROW U       &kp I                     &td_ae_yae                    &td_e_ye            &UC_BS
-&td0       &ht_bh LCTRL A  &ht_bh LEFT_ALT S  &ht_bh LEFT_SHIFT D  &ht_bh LEFT_GUI F  &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &ht_bh LEFT H           &ht_bh DOWN_ARROW J     &ht_bh RIGHT K            &kp L                         &kp SEMI            &kp SQT
-&kp LCTRL  &kp Z           &ht_bh HOME X      &ht_bh END C         &ht_bh PAGE_UP V   &ht_bh PAGE_DOWN B  &kp SPACE              &kp DOWN              &ht_bh_mmv MOVE_LEFT N  &ht_bh_mmv MOVE_DOWN M  &ht_bh_mmv MOVE_UP COMMA  &ht_bh_mmv MOVE_RIGHT PERIOD  &td_slash_question  &mo 6
+&kp TAB    &td_p_pp        &td_j_jj           &td_t_tt             &td_k_kk           &td_s_ss                                   &kp UP                &ht_bh_mkp LCLK Y       &ht_bh_mmv MOVE_UP U    &kp I                    &td_ae_yae                 &td_e_ye            &UC_BS
+&td0       &ht_bh LCTRL A  &ht_bh LEFT_ALT S  &ht_bh LEFT_SHIFT D  &ht_bh LEFT_GUI F  &kp G                            &kp LEFT  &kp ENTER  &kp RIGHT  &ht_bh_mmv MOVE_LEFT H  &ht_bh_mmv MOVE_DOWN J  &ht_bh_mmv MOVE_RIGHT K  &ht_bh ENTER L             &kp SEMI            &kp SQT
+&kp LCTRL  &kp Z           &ht_bh HOME X      &ht_bh END C         &ht_bh PAGE_UP V   &ht_bh PAGE_DOWN B  &kp SPACE              &kp DOWN              &ht_bh LEFT_ARROW N     &ht_bh DOWN_ARROW M     &ht_bh UP_ARROW COMMA    &ht_bh RIGHT_ARROW PERIOD  &td_slash_question  &mo 6
                                               &alt_gui             &ht_mo1_ltog3 1 2  &lt 2 SPACE                                                      &lt 2 BACKSPACE         &lt 3 ENTER             &kp RALT
             >;
 
