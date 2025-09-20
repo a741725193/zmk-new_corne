@@ -30,10 +30,10 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
-  - Z
-  - {t: X, h: HOME}
-  - {t: C, h: END}
-  - {t: V, h: PgUp}
+  - {t: Z, h: HOME}
+  - {t: X, h: END}
+  - {t: C, h: PG UP}
+  - {t: V, h: PgDn}
   - {t: B, h: PgDn}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
