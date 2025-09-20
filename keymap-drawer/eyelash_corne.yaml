@@ -34,7 +34,7 @@ layers:
   - {t: X, h: END}
   - {t: C, h: PG UP}
   - {t: V, h: PgDn}
-  - {t: B, h: PgDn}
+  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - {t: N, h: '$$mdi:arrow-left-bold$$'}
