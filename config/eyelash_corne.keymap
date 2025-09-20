@@ -214,7 +214,7 @@
             bindings = <&mmv>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <199>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
 
@@ -234,7 +234,7 @@
             bindings = <&msc>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <199>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
     };
