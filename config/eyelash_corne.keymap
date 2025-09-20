@@ -197,6 +197,15 @@
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&kp COMMA>;
         };
+
+        ht_bh: ht_bh {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_BH";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -337,10 +346,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &td_p_pp  &td_j_jj  &td_t_tt  &td_k_kk           &td_s_ss                            &kp UP                &kp Y            &kp U        &kp I      &td_ae_yae  &td_e_ye            &UC_BS
-&td0       &kp A     &kp S     &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J        &kp K      &kp L       &kp SEMI            &kp SQT
-&kp LCTRL  &kp Z     &kp X     &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M        &kp COMMA  &kp DOT     &td_slash_question  &mo 6
-                               &alt_gui  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &lt 3 ENTER  &kp RALT
+&kp TAB    &td_p_pp  &td_j_jj             &td_t_tt  &td_k_kk           &td_s_ss                            &kp UP                &kp Y            &kp U        &kp I      &td_ae_yae  &td_e_ye            &UC_BS
+&td0       &kp A     &ht_bh LEFT_SHIFT S  &kp D     &kp F              &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H            &kp J        &kp K      &kp L       &kp SEMI            &kp SQT
+&kp LCTRL  &kp Z     &kp X                &kp C     &kp V              &kp B        &kp SPACE              &kp DOWN              &kp N            &kp M        &kp COMMA  &kp DOT     &td_slash_question  &mo 6
+                                          &alt_gui  &ht_mo1_ltog3 1 2  &lt 2 SPACE                                               &lt 2 BACKSPACE  &lt 3 ENTER  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
