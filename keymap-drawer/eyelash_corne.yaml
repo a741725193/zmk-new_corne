@@ -16,7 +16,7 @@ layers:
   - '&UC_BS'
   - '&td0'
   - A
-  - S
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
   - D
   - F
   - G
