@@ -17,7 +17,7 @@ layers:
   - '&td0'
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: D}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - $$mdi:arrow-left-bold$$
@@ -31,16 +31,16 @@ layers:
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
-  - X
-  - C
+  - {t: X, h: HOME}
+  - {t: C, h: END}
   - {t: V, h: PgUp}
   - {t: B, h: PgDn}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: N, h: '$$mdi:menu-left$$'}
+  - {t: M, h: '$$mdi:menu-down$$'}
+  - {t: ',', h: '$$mdi:menu-up$$', s: <}
+  - {t: ., h: '$$mdi:menu-right$$'}
   - '&td_slash_question'
   - funtion
   - '&alt_gui'
