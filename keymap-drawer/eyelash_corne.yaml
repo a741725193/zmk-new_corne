@@ -28,7 +28,7 @@ layers:
   - {t: K, h: '$$mdi:menu-right$$'}
   - {t: L, h: '$$mdi:keyboard-return$$'}
   - {t: ;, h: 'Ctl+$$mdi:backspace$$', s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '''', h: '&macro_all_del', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - {t: Z, h: HOME}
   - {t: X, h: END}
