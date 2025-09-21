@@ -117,7 +117,7 @@
         macro_all_del: macro_all_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(HOME)) &kp BACKSPACE>;
+            bindings = <&kp LS(HOME) &kp BACKSPACE>;
             label = "MACRO_ALL_DEL";
         };
     };
