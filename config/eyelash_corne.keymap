@@ -1,6 +1,26 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 90    // 10
 
+// ───────────────────────────────
+// Hold-Tap + Tap-Dance 매크로 정의
+// ───────────────────────────────
+#define HT_TD_KEYS(name, term_ms, flavor, tap1, tap2, hold) \
+    td_##name: behavior_td_##name { \
+        compatible = "zmk,behavior-tap-dance"; \
+        label = "TD_" #name; \
+        #binding-cells = <0>; \
+        tapping-term-ms = <term_ms>; \
+        bindings = tap1, tap2; \
+    }; \
+    ht_##name: behavior_ht_##name { \
+        compatible = "zmk,behavior-hold-tap"; \
+        label = "HT_" #name; \
+        #binding-cells = <0>; \
+        flavor = #flavor; \
+        tapping-term-ms = <term_ms>; \
+        bindings = <&td_##name>, hold; \
+    };
+
 #define TD_KEYS(name, term_ms, ...) \
     name: behavior_##name { \
         compatible = "zmk,behavior-tap-dance"; \
