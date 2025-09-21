@@ -139,7 +139,7 @@
             compatible = "zmk,behavior-macro";
             label = "MACRO_CTRL_BSPC";
             #binding-cells = <0>;
-            bindings = <&kp LC(BACKSPACE)>;
+            bindings = <&kp LC(BSPC)>;
         };
     };
 
