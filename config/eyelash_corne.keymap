@@ -30,15 +30,15 @@
         bindings = __VA_ARGS__; \
     };
 
-#define HT_KEYS(name, term_ms, flavor, hold_binding, tap_binding) \
-    name: behavior_##name { \
-        compatible = "zmk,behavior-hold-tap"; \
-        label = #name; \
-        #binding-cells = <0>; \
-        flavor = #flavor; \
-        tapping-term-ms = <term_ms>; \
-        bindings = hold_binding, tap_binding; \
-    };
+#define HT_KEYS(name, term_ms, flavor, ...) \
+    name: behavior_##name { \
+        compatible = "zmk,behavior-hold-tap"; \
+        label = #name; \
+        #binding-cells = <0>; \
+        flavor = #flavor; \
+        tapping-term-ms = <term_ms>; \
+        bindings = <__VA_ARGS__>; \
+    };
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
