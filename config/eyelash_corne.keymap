@@ -155,7 +155,7 @@
 
         TD_KEYS(td_enter_layer2, 250, <&macro_enter>, <&tog 2>)
 
-        HT_KEYS(ht_space, 200, tap-preferred, kp SPACE, kp LG(LC(SPC)))
+        HT_KEYS(ht_space, 200, balanced, <&kp SPACE>, <&kp TAB>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
