@@ -9,15 +9,7 @@
         tapping-term-ms = <term_ms>; \
         bindings = __VA_ARGS__; \
     };
-#define HT_KEYS(name, term_ms, flavor, tap_binding, hold_binding) \
-    name: behavior_##name { \
-        compatible = "zmk,behavior-hold-tap"; \
-        label = #name; \
-        #binding-cells = <2>; \
-        flavor = #flavor; \
-        tapping-term-ms = <term_ms>; \
-        bindings = <&tap_binding &hold_binding>; \
-    };
+
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
@@ -154,8 +146,6 @@
         TD_KEYS(td_toggle_layer_3, 400, <&none>, <&tog 2>)
 
         TD_KEYS(td_enter_layer2, 250, <&macro_enter>, <&tog 2>)
-
-        HT_KEYS(ht_space, 200, balanced, <&kp SPACE>, <&kp TAB>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
