@@ -10,7 +10,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - {t: Y, h: '$$mdi:mouse-left-click-outline$$'}
   - {t: U, h: '$$mdi:menu-up$$'}
-  - I
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - '&td_ae_yae'
   - '&td_e_ye'
   - '&UC_BS'
@@ -27,7 +27,7 @@ layers:
   - {t: J, h: '$$mdi:menu-down$$'}
   - {t: K, h: '$$mdi:menu-right$$'}
   - {t: L, h: '$$mdi:keyboard-return$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
+  - {t: ;, h: macro ctrl bspc, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - {t: Z, h: HOME}
