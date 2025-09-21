@@ -13,12 +13,11 @@
     name: behavior_##name { \
         compatible = "zmk,behavior-hold-tap"; \
         label = #name; \
-        #binding-cells = <0>; \
+        #binding-cells = <2>; \
         flavor = #flavor; \
         tapping-term-ms = <term_ms>; \
-        bindings = <tap_binding>, <hold_binding>; \
+        bindings = <tap_binding hold_binding>; \
     };
-
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
