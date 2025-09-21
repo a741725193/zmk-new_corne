@@ -17,10 +17,11 @@
         compatible = "zmk,behavior-hold-tap"; \
         label = "HT_" #name; \
         #binding-cells = <0>; \
-        flavor = #flavor; \
+        flavor = flavor; /* <- 수정된 부분: '#'를 제거하여 식별자로 처리 */ \
         tapping-term-ms = <term_ms>; \
         bindings = <&td_##name>, hold; \
     };
+
 #define TD_KEYS(name, term_ms, ...) \
     name: behavior_##name { \
         compatible = "zmk,behavior-tap-dance"; \
@@ -168,6 +169,8 @@
         TD_KEYS(td_toggle_layer_3, 400, <&none>, <&tog 2>)
 
         TD_KEYS(td_enter_layer2, 250, <&macro_enter>, <&tog 2>)
+
+        HT_TD_KEYS(a_A_sel, 200, tap-preferred, <&kp A>, <&kp LS(A)>, <&kp LCTRL &kp A>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
