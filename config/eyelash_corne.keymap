@@ -16,7 +16,7 @@
         #binding-cells = <0>; \
         flavor = #flavor; \
         tapping-term-ms = <term_ms>; \
-        bindings = tap_binding, hold_binding; \
+        bindings = <tap_binding>, <hold_binding>; \
     };
 
 #include <input/processors.dtsi>
@@ -155,6 +155,8 @@
         TD_KEYS(td_toggle_layer_3, 400, <&none>, <&tog 2>)
 
         TD_KEYS(td_enter_layer2, 250, <&macro_enter>, <&tog 2>)
+
+        HT_KEYS(ht_space, 200, tap-preferred, &kp SPACE, &kp LG(LC(SPC)))
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
