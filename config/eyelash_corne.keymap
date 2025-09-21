@@ -176,8 +176,8 @@
 
         TD_KEYS(td_enter_layer2, 250, <&macro_enter>, <&tog 2>)
 
-        HT_KEYS(ht_macro_semicolon, 250, tap_preferred, <&macro_delete_sentence>, <&kp SEMICOLON>)
-        HT_KEYS(ht_macro_fslh, 250, tap_preferred, <&kp LS(FSLH)>, <&kp FSLH>)
+        HT_KEYS(ht_macro_semicolon, 250, tap_preferred, &macro_delete_sentence, &kp SEMICOLON)
+        HT_KEYS(ht_macro_fslh, 250, tap_preferred, &kp LS(FSLH), &kp FSLH)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
