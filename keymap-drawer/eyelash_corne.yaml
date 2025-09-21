@@ -2,17 +2,17 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - '&td_p_pp'
-  - '&td_j_jj'
-  - '&td_t_tt'
-  - '&td_k_kk'
-  - '&td_s_ss'
+  - {t: Q, h: Sft+Q}
+  - {t: W, h: Sft+W}
+  - {t: E, h: Sft+E}
+  - {t: R, h: Sft+R}
+  - {t: T, h: Sft+T}
   - $$mdi:arrow-up-bold$$
   - {t: Y, h: '$$mdi:mouse-left-click-outline$$'}
   - {t: U, h: '$$mdi:menu-up$$'}
   - {t: I, h: 'Ctl+$$mdi:apple-keyboard-option$$'}
-  - '&td_ae_yae'
-  - '&td_e_ye'
+  - {t: O, h: Sft+O}
+  - {t: P, h: Sft+P}
   - '&UC_BS'
   - '&td0'
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
