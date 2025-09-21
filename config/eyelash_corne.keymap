@@ -415,7 +415,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &td_p_pp        &td_j_jj           &td_t_tt             &td_k_kk              &td_s_ss                                       &kp UP                &ht_bh_mkp LCLK Y       &ht_bh_mmv MOVE_UP U    &ht_bh RALT I                    &td_ae_yae                 &td_e_ye                    &UC_BS
-&td0       &ht_bh LCTRL A  &ht_bh LEFT_ALT S  &ht_bh LEFT_SHIFT D  &ht_bh_msc SCRL_UP F  &ht_bh_msc SCRL_DOWN G               &kp LEFT  &kp ENTER  &kp RIGHT  &ht_bh_mmv MOVE_LEFT H  &ht_bh_mmv MOVE_DOWN J  &ht_bh_mmv MOVE_RIGHT K  &ht_bh ENTER L             &ht_bh macro_ctrl_bspc SEMICOLON  &kp SQT
+&td0       &ht_bh LCTRL A  &ht_bh LEFT_ALT S  &ht_bh LEFT_SHIFT D  &ht_bh_msc SCRL_UP F  &ht_bh_msc SCRL_DOWN G               &kp LEFT  &kp ENTER  &kp RIGHT  &ht_bh_mmv MOVE_LEFT H  &ht_bh_mmv MOVE_DOWN J  &ht_bh_mmv MOVE_RIGHT K  &ht_bh ENTER L             &ht_bh &macro_ctrl_bspc SEMICOLON  &kp SQT
 &kp LCTRL  &ht_bh HOME Z   &ht_bh END X       &ht_bh PG_UP C       &ht_bh PAGE_DOWN V    &ht_bh RIGHT_ALT B      &kp SPACE              &kp DOWN              &ht_bh LEFT_ARROW N     &ht_bh DOWN_ARROW M     &ht_bh UP_ARROW COMMA    &ht_bh RIGHT_ARROW PERIOD  &td_slash_question          &mo 6
                                               &alt_gui             &ht_mo1_ltog3 1 2     &lt 2 SPACE                                                          &lt 2 BACKSPACE         &lt 3 ENTER             &kp RALT
             >;
