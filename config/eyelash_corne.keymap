@@ -30,15 +30,15 @@
         bindings = __VA_ARGS__; \
     };
 
-#define HT_KEYS(name, term_ms, flavor, ...) \
-    name: behavior_##name { \
-        compatible = "zmk,behavior-hold-tap"; \
-        label = #name; \
-        #binding-cells = <0>; \
-        flavor = #flavor; \
-        tapping-term-ms = <term_ms>; \
-        bindings = <__VA_ARGS__>; \
-    };
+#define HT_KEYS(name, term_ms, flavor, tap_binding, hold_binding) \
+    name: behavior_##name { \
+        compatible = "zmk,behavior-hold-tap"; \
+        label = #name; \
+        #binding-cells = <0>; \
+        flavor = #flavor; \
+        tapping-term-ms = <term_ms>; \
+        bindings = tap_binding, hold_binding; \
+    };
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -134,13 +134,6 @@
             #binding-cells = <0>;
             bindings = <&mkp MB1 &mkp MB1>;
         };
-
-        macro_delete_sentence: macro_delete_sentence {
-            compatible = "zmk,behavior-macro";
-            label = "MACRO_DELETE_SENTENCE";
-            #binding-cells = <0>;
-            bindings = <&kp LC(BSPC)>;
-        };
     };
 
     behaviors {
@@ -160,6 +153,7 @@
         TD_KEYS(td_8, 250, <&kp N8>, <&kp ASTRK>, <&kp F8>)
         TD_KEYS(td_9, 250, <&kp N9>, <&kp LPAR>,  <&kp F9>)
         TD_KEYS(td_0, 250, <&kp N0>, <&kp RPAR>,  <&kp F10>)
+        TD_KEYS(td_slash_question, 250, <&kp FSLH>, <&kp LS(FSLH)>)
         TD_KEYS(td_f11_minus, 250, <&kp MINUS>, <&kp UNDER>, <&kp F11>)
         TD_KEYS(td_f12_equal, 250, <&kp EQUAL>, <&kp PLUS>, <&kp F12>)
 
@@ -176,8 +170,11 @@
 
         TD_KEYS(td_enter_layer2, 250, <&macro_enter>, <&tog 2>)
 
-        HT_KEYS(ht_macro_semicolon, 250, tap_preferred, &macro_delete_sentence, &kp SEMICOLON)
-        HT_KEYS(ht_macro_fslh, 250, tap_preferred, &kp LS(FSLH), &kp FSLH)
+        // / → ?  
+        HT_KEYS(ht_slash, 200, tap-preferred, <&kp FSLH>, <&kp LS(FSLH)>)
+        
+        // ; → Ctrl+Backspace  
+        HT_KEYS(ht_semicolon, 200, tap-preferred, <&kp SCLN>, <&kp LC(BACKSPACE)>)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -416,9 +413,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &td_p_pp        &td_j_jj           &td_t_tt             &td_k_kk              &td_s_ss                                       &kp UP                &ht_bh_mkp LCLK Y       &ht_bh_mmv MOVE_UP U    &ht_bh RALT I                    &td_ae_yae                 &td_e_ye                    &UC_BS
-&td0       &ht_bh LCTRL A  &ht_bh LEFT_ALT S  &ht_bh LEFT_SHIFT D  &ht_bh_msc SCRL_UP F  &ht_bh_msc SCRL_DOWN G               &kp LEFT  &kp ENTER  &kp RIGHT  &ht_bh_mmv MOVE_LEFT H  &ht_bh_mmv MOVE_DOWN J  &ht_bh_mmv MOVE_RIGHT K  &ht_bh ENTER L             &ht_macro_semicolon  &kp SQT
-&kp LCTRL  &ht_bh HOME Z   &ht_bh END X       &ht_bh PG_UP C       &ht_bh PAGE_DOWN V    &ht_bh RIGHT_ALT B      &kp SPACE              &kp DOWN              &ht_bh LEFT_ARROW N     &ht_bh DOWN_ARROW M     &ht_bh UP_ARROW COMMA    &ht_bh RIGHT_ARROW PERIOD  &ht_macro_fslh          &mo 6
+&kp TAB    &td_p_pp        &td_j_jj           &td_t_tt             &td_k_kk              &td_s_ss                                       &kp UP                &ht_bh_mkp LCLK Y       &ht_bh_mmv MOVE_UP U    &kp I                    &td_ae_yae                 &td_e_ye                    &UC_BS
+&td0       &ht_bh LCTRL A  &ht_bh LEFT_ALT S  &ht_bh LEFT_SHIFT D  &ht_bh_msc SCRL_UP F  &ht_bh_msc SCRL_DOWN G               &kp LEFT  &kp ENTER  &kp RIGHT  &ht_bh_mmv MOVE_LEFT H  &ht_bh_mmv MOVE_DOWN J  &ht_bh_mmv MOVE_RIGHT K  &ht_bh ENTER L             &ht_semicolon  &kp SQT
+&kp LCTRL  &ht_bh HOME Z   &ht_bh END X       &ht_bh PG_UP C       &ht_bh PAGE_DOWN V    &ht_bh RIGHT_ALT B      &kp SPACE              &kp DOWN              &ht_bh LEFT_ARROW N     &ht_bh DOWN_ARROW M     &ht_bh UP_ARROW COMMA    &ht_bh RIGHT_ARROW PERIOD  &ht_slash          &mo 6
                                               &alt_gui             &ht_mo1_ltog3 1 2     &lt 2 SPACE                                                          &lt 2 BACKSPACE         &lt 3 ENTER             &kp RALT
             >;
 
