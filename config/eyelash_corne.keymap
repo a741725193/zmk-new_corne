@@ -30,15 +30,15 @@
         bindings = __VA_ARGS__; \
     };
 
-#define HT_KEYS(name, term_ms, flavor, tap_binding, hold_binding) \
-    name: behavior_##name { \
-        compatible = "zmk,behavior-hold-tap"; \
-        label = #name; \
-        #binding-cells = <0>; \
-        flavor = #flavor; \
-        tapping-term-ms = <term_ms>; \
-        bindings = tap_binding, hold_binding; \
-    };
+#define HT_KEYS(name, term_ms, flavor, ...) \
+    name: behavior_##name { \
+        compatible = "zmk,behavior-hold-tap"; \
+        label = #name; \
+        #binding-cells = <0>; \
+        flavor = #flavor; \
+        tapping-term-ms = <term_ms>; \
+        bindings = <__VA_ARGS__>; \
+    };
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -170,11 +170,8 @@
 
         TD_KEYS(td_enter_layer2, 250, <&macro_enter>, <&tog 2>)
 
-        // / → ?  
-        HT_KEYS(ht_slash, 200, tap-preferred, <&kp FSLH>, <&kp LS(FSLH)>)
-        
-        // ; → Ctrl+Backspace  
-        HT_KEYS(ht_semicolon, 200, tap-preferred, <&kp SCLN>, <&kp LC(BACKSPACE)>)
+        HT_KEYS(ht_macro_semicolon, 250, tap_preferred, &macro_delete_sentence, &kp SEMICOLON)
+        HT_KEYS(ht_macro_fslh, 250, tap_preferred, &kp LS(FSLH), &kp FSLH)
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
