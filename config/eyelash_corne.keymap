@@ -10,6 +10,16 @@
         bindings = __VA_ARGS__; \
     };
 
+#define HT_KEYS(name, term_ms, flavor, tap_binding, hold_binding) \
+    name: behavior_##name { \
+        compatible = "zmk,behavior-hold-tap"; \
+        label = #name; \
+        #binding-cells = <0>; \
+        flavor = #flavor; \
+        tapping-term-ms = <term_ms>; \
+        bindings = tap_binding, hold_binding; \
+    };
+
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
