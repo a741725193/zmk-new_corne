@@ -281,21 +281,21 @@
         combo_x {
             timeout-ms = <80>;
             bindings = <&kp LC(X)>;
-            key-positions = <29 30>;
+            key-positions = <30 31>;
             layers = <0>;
         };
 
         combo_c {
             timeout-ms = <80>;
             bindings = <&kp LC(C)>;
-            key-positions = <30 31>;
+            key-positions = <31 32>;
             layers = <0>;
         };
 
         combo_paste {
             timeout-ms = <80>;
             bindings = <&kp LC(V)>;
-            key-positions = <31 32>;
+            key-positions = <32 33>;
             layers = <0>;
         };
 
@@ -385,6 +385,11 @@
             bindings = <&kp RIGHT_ALT>;
             key-positions = <22 45>;
             layers = <0>;
+        };
+
+        ctrl_y {
+            bindings = <&kp RC(Y)>;
+            key-positions = <29 30>;
         };
     };
 
