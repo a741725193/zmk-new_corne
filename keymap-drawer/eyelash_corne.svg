@@ -596,16 +596,16 @@ rect.held, rect.combo.held {
 <text x="103" y="100" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Ctl+X</text>
+<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
+<text x="168" y="143" class="combo tap">Ctl+X</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="143" class="combo tap">Ctl+C</text>
+<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
+<text x="224" y="143" class="combo tap">Ctl+C</text>
 </g>
 <g class="combo combopos-3">
-<rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
-<text x="224" y="143" class="combo tap">Ctl+V</text>
+<rect rx="6" ry="6" x="266" y="137" width="28" height="26" class="combo"/>
+<text x="280" y="150" class="combo tap">Ctl+V</text>
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="266" y="81" width="28" height="26" class="combo"/>
@@ -676,6 +676,10 @@ rect.held, rect.combo.held {
 <path d="M652,161 l-15,46" class="combo"/>
 <rect rx="6" ry="6" x="638" y="148" width="28" height="26" class="combo"/>
 <use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="643" y="152" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+</g>
+<g class="combo combopos-17">
+<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
+<text x="112" y="154" class="combo tap">Ctl+Y</text>
 </g>
 </g>
 </g>
@@ -973,6 +977,10 @@ rect.held, rect.combo.held {
 <text x="728" y="91" class="combo tap layer-activator"><tspan style="font-size: 60%">right_mou…</tspan></text>
 </a><text x="728" y="102" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
+<text x="112" y="154" class="combo tap">Ctl+Y</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-Fn">
@@ -1261,6 +1269,10 @@ rect.held, rect.combo.held {
 <text x="728" y="91" class="combo tap layer-activator"><tspan style="font-size: 60%">right_mou…</tspan></text>
 </a><text x="728" y="102" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
+<text x="112" y="154" class="combo tap">Ctl+Y</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 955)" class="layer-SYMBOL">
@@ -1544,6 +1556,10 @@ rect.held, rect.combo.held {
 <text x="728" y="91" class="combo tap layer-activator"><tspan style="font-size: 60%">right_mou…</tspan></text>
 </a><text x="728" y="102" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
+<text x="112" y="154" class="combo tap">Ctl+Y</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1274)" class="layer-right_mouse_layer_">
@@ -1826,6 +1842,10 @@ rect.held, rect.combo.held {
 <text x="728" y="91" class="combo tap layer-activator"><tspan style="font-size: 60%">right_mou…</tspan></text>
 </a><text x="728" y="102" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
+<text x="112" y="154" class="combo tap">Ctl+Y</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1592)" class="layer-left_mouse_layer_">
@@ -2101,6 +2121,10 @@ rect.held, rect.combo.held {
 <a href="#right_mouse_layer_">
 <text x="728" y="91" class="combo tap layer-activator"><tspan style="font-size: 60%">right_mou…</tspan></text>
 </a><text x="728" y="102" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
+<text x="112" y="154" class="combo tap">Ctl+Y</text>
 </g>
 </g>
 </g>
@@ -2380,6 +2404,10 @@ rect.held, rect.combo.held {
 <a href="#right_mouse_layer_">
 <text x="728" y="91" class="combo tap layer-activator"><tspan style="font-size: 60%">right_mou…</tspan></text>
 </a><text x="728" y="102" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
+<text x="112" y="154" class="combo tap">Ctl+Y</text>
 </g>
 </g>
 </g>

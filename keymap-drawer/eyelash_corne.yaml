@@ -346,13 +346,13 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-- p: [29, 30]
+- p: [30, 31]
   k: Ctl+X
   l: [QWERTY]
-- p: [30, 31]
+- p: [31, 32]
   k: Ctl+C
   l: [QWERTY]
-- p: [31, 32]
+- p: [32, 33]
   k: Ctl+V
   l: [QWERTY]
 - p: [17, 18]
@@ -397,3 +397,5 @@ combos:
 - p: [22, 45]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
+- p: [29, 30]
+  k: Ctl+Y
