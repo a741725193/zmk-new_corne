@@ -25,8 +25,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: H, h: '$$mdi:menu-left$$'}
   - {t: J, h: '$$mdi:menu-down$$'}
-  - {t: K, h: '$$mdi:menu-right$$'}
-  - {t: L, h: '$$mdi:keyboard-return$$'}
+  - {t: K, h: '$$mdi:keyboard-return$$'}
+  - {t: L, h: '$$mdi:menu-right$$'}
   - {t: ;, h: 'Ctl+$$mdi:backspace$$', s: ':'}
   - {t: '''', h: '&macro_all_del', s: '"'}
   - $$mdi:apple-keyboard-control$$
