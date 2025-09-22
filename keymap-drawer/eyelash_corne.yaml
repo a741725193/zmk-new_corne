@@ -8,9 +8,9 @@ layers:
   - {t: R, h: Sft+R}
   - {t: T, h: Sft+T}
   - $$mdi:arrow-up-bold$$
-  - {t: Y, h: '$$mdi:mouse-left-click-outline$$'}
-  - {t: U, h: '$$mdi:menu-up$$'}
-  - {t: I, h: 'Ctl+$$mdi:apple-keyboard-option$$'}
+  - {t: Y, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: U, h: '&mkp MB1'}
+  - {t: I, h: '$$mdi:menu-up$$'}
   - {t: O, h: Sft+O}
   - {t: P, h: Sft+P}
   - '&UC_BS'
@@ -23,9 +23,9 @@ layers:
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - {t: H, h: '$$mdi:menu-left$$'}
-  - {t: J, h: '$$mdi:menu-down$$'}
-  - {t: K, h: '$$mdi:keyboard-return$$'}
+  - {t: H, h: '$$mdi:keyboard-return$$'}
+  - {t: J, h: '$$mdi:menu-left$$'}
+  - {t: K, h: '$$mdi:menu-down$$'}
   - {t: L, h: '$$mdi:menu-right$$'}
   - {t: ;, h: 'Ctl+$$mdi:backspace$$', s: ':'}
   - {t: '''', h: '&macro_all_del', s: '"'}
