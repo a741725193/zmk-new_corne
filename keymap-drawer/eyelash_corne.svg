@@ -1306,7 +1306,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+F2</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 67%">&amp;mmv_slow</tspan><tspan x="0" dy="1.2em" style="font-size: 67%">MOVE_UP</tspan>
 </text>
 </g>
 <g transform="translate(784, 28)" class="key keypos-9">
@@ -1384,21 +1384,21 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+F4</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 67%">&amp;mmv_slow</tspan><tspan x="0" dy="1.2em" style="font-size: 67%">MOVE_LEFT</tspan>
 </text>
 </g>
 <g transform="translate(728, 91)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+F5</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 67%">&amp;mmv_slow</tspan><tspan x="0" dy="1.2em" style="font-size: 67%">MOVE_DOWN</tspan>
 </text>
 </g>
 <g transform="translate(784, 84)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">Alt+</tspan><tspan x="0" dy="1.2em">Ctl+F6</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 60%">&amp;mmv_slow</tspan><tspan x="0" dy="1.2em" style="font-size: 60%">MOVE_RIGHT</tspan>
 </text>
 </g>
 <g transform="translate(840, 91)" class="key keypos-25">

@@ -156,7 +156,7 @@ layers:
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Alt+Ctl+F1
-  - Alt+Ctl+F2
+  - '&mmv_slow MOVE_UP'
   - Alt+Ctl+F3
   - '&td_bracket'
   - '&td_brace'
@@ -170,9 +170,9 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - Alt+Ctl+F4
-  - Alt+Ctl+F5
-  - Alt+Ctl+F6
+  - '&mmv_slow MOVE_LEFT'
+  - '&mmv_slow MOVE_DOWN'
+  - '&mmv_slow MOVE_RIGHT'
   - '&td_paren'
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
