@@ -264,6 +264,19 @@
             trigger-period-ms = <5>;
             time-to-max-speed-ms = <0>;
         };
+
+        mmv_left_slow: mmv_left_slow {
+            compatible = "zmk,behavior-mouse-move";
+            label = "MMV_LEFT_SLOW";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT>; // &mmv의 왼쪽 이동 기능을 그대로 사용
+
+            // 이 동작에만 적용될 속성들을 새로 정의 (오버라이드)
+            time-to-max-speed-ms = <1000>; // 600ms에 걸쳐 최대 속도 도달 (매우 느린 가속)
+            acceleration-exponent = <2>;   // 초반에 더 느리게 움직이는 가속 곡선
+            delay-ms = <0>;
+        };
+
     };
 
     rgb_encoder: rgb_encoder {
@@ -441,7 +454,7 @@
             display-name = "SYMBOL";
             bindings = <
 &trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp LA(LC(F1))                &kp LA(LC(F2))  &kp LA(LC(F3))  &td_bracket  &td_brace  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &new_behavior_left MOVE_LEFT  &kp LA(LC(F5))  &kp LA(LC(F6))  &td_paren    &kp BSLH   &kp GRAVE
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mmv_left_slow  &kp LA(LC(F5))  &kp LA(LC(F6))  &td_paren    &kp BSLH   &kp GRAVE
 &trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp LA(LC(F7))                &kp LA(LC(F8))  &kp LA(LC(F9))  &kp RBRC     &kp PIPE   &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET                       &trans          &trans
             >;
