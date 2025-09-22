@@ -170,7 +170,7 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - Alt+Ctl+F4
+  - '&new_behavior_left MOVE_LEFT'
   - Alt+Ctl+F5
   - Alt+Ctl+F6
   - '&td_paren'
