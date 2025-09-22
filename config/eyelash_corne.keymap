@@ -36,6 +36,13 @@
     delay-ms = <0>;
 };
 
+&mmv_slow {
+    time-to-max-speed-ms = <1000>;
+    acceleration-exponent = <1>;
+    trigger-period-ms = <5>;
+    delay-ms = <0>;
+};
+
 &soft_off { hold-time-ms = <2000>; };
 
 / {
@@ -146,15 +153,6 @@
         TD_KEYS(td_toggle_layer_3, 400, <&none>, <&tog 2>)
 
         TD_KEYS(td_enter_layer2, 250, <&macro_enter>, <&tog 2>)
-
-        mmv_slow: mmv_slow {
-            compatible = "zmk,behavior-mouse-move";
-            #binding-cells = <2>;
-            time-to-max-speed-ms = <400>;   // 천천히 가속
-            acceleration-exponent = <2>;    // 부드러운 곡선
-            delay-ms = <0>;
-            move-val = <100>;               // 기본보다 작은 값 (정밀 이동)
-        };
 
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -450,8 +448,8 @@
         GO_MOUSE {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp LA(LC(F1))  &mmv_slow MOVE_UP   0  &kp LA(LC(F3))  &td_bracket  &td_brace  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans &trans &trans  &td_paren    &kp BSLH   &kp GRAVE
+&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp LA(LC(F1))  &mmv_slow MOVE_UP  &kp LA(LC(F3))  &td_bracket  &td_brace  &kp BSPC
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mmv_slow MOVE_LEFT &mmv_slow MOVE_LEFT &mmv_slow MOVE_RIGHT  &td_paren    &kp BSLH   &kp GRAVE
 &trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp LA(LC(F7))  &kp LA(LC(F8))  &kp LA(LC(F9))  &kp RBRC     &kp PIPE   &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET         &trans          &trans
             >;
