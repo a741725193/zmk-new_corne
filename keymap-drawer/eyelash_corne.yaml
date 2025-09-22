@@ -155,9 +155,9 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - Sft+F1
-  - Sft+F2
-  - Sft+F3
+  - F13
+  - F14
+  - F15
   - '&td_bracket'
   - '&td_brace'
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -170,9 +170,9 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - Sft+F4
-  - Sft+F5
-  - Sft+F6
+  - F16
+  - F17
+  - F18
   - '&td_paren'
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
@@ -184,9 +184,9 @@ layers:
   - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - Sft+F7
-  - Sft+F8
-  - Sft+F9
+  - F19
+  - F20
+  - F21
   - '}'
   - '|'
   - '~'
