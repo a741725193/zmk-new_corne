@@ -39,17 +39,6 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    // ================================================== //
-    //           ▼▼▼ 1. 느린 마우스 설정 추가 ▼▼▼           //
-    // ================================================== //
-    mmv_slow: mmv_slow_config {
-        compatible = "zmk,behavior-pointing-config-mouse-move";
-        time-to-max-speed-ms = <800>;   // 최대 속도 도달 시간 늘리기 (더 느려짐)
-        acceleration-exponent = <0>;    // 가속도 없애기 (선형적인 느린 움직임)
-        trigger-period-ms = <10>;       // 트리거 주기 늘리기
-        delay-ms = <0>;
-    };
-
     macros {
         // 된소리 매크로
 
@@ -276,15 +265,6 @@
             flavor = "tap-preferred";
         };
 
-        // ==================================================== //
-        //           ▼▼▼ 2. 느린 마우스 비헤이비어 추가 ▼▼▼         //
-        // ==================================================== //
-        slow_mouse: behavior_slow_mouse {
-            compatible = "zmk,behavior-mouse-move";
-            label = "SLOW_MOUSE";
-            #binding-cells = <1>;
-            move-config = <&mmv_slow>; // 1번 단계에서 만든 설정을 여기에 연결
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -458,15 +438,12 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        // =============================================== //
-        //           ▼▼▼ 3. GO_MOUSE 레이어 수정 ▼▼▼           //
-        // =============================================== //
         GO_MOUSE {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &slow_mouse MOVE_UP              &kp LA(LC(F1))  &slow_mouse MOVE_UP  &kp LA(LC(F3))  &td_bracket  &td_brace  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &slow_mouse MOVE_LEFT  &mkp LCLK      &slow_mouse MOVE_RIGHT &slow_mouse MOVE_LEFT &slow_mouse MOVE_DOWN &slow_mouse MOVE_RIGHT  &td_paren    &kp BSLH   &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &slow_mouse MOVE_DOWN            &kp LA(LC(F7))  &kp LA(LC(F8))  &kp LA(LC(F9))  &kp RBRC     &kp PIPE   &kp TILDE
+&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp LA(LC(F1))  &mmv MOVE_UP  &kp LA(LC(F3))  &td_bracket  &td_brace  &kp BSPC
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mmv MOVE_LEFT &mmv MOVE_LEFT &mmv MOVE_RIGHT  &td_paren    &kp BSLH   &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp LA(LC(F7))  &kp LA(LC(F8))  &kp LA(LC(F9))  &kp RBRC     &kp PIPE   &kp TILDE
                                     &trans     &trans     &kp SPACE                                                             &kp RET         &trans          &trans
             >;
 
