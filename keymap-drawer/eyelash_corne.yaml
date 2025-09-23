@@ -51,7 +51,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - '&td_grave_'
-  - {t: '&td_n1', h: F1}
+  - '&ht_f1_td_1'
   - '&td_2'
   - '&td_3'
   - '&td_f11_minus'
