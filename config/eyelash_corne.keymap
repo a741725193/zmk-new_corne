@@ -255,22 +255,58 @@
             flavor = "tap-preferred";
         };
 
-        td_n1: td_n1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_N1";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>;
-        };
+        // =======================================================
+        // ==     F1 ~ F12 복합 동작 (홀드: F-Key, 탭: 숫자/기호)     ==
+        // =======================================================
 
-        bh_n1f1: bh_n1f1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BH_N1F1";
-            bindings = <&kp>, <&td_n1>;
+        // --- F1 ---
+        td_1_excl: behavior_td_1_excl { compatible = "zmk,behavior-tap-dance"; label = "TD_1_EXCL"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N1>, <&kp EXCL>; };
+        ht_f1_td_1: ht_f1_td_1 { compatible = "zmk,behavior-hold-tap"; label = "HT_F1_TD_1"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F1>, <&td_1_excl>; };
 
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <250>;
-        };
+        // --- F2 ---
+        td_2_at: behavior_td_2_at { compatible = "zmk,behavior-tap-dance"; label = "TD_2_AT"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N2>, <&kp AT>; };
+        ht_f2_td_2: ht_f2_td_2 { compatible = "zmk,behavior-hold-tap"; label = "HT_F2_TD_2"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F2>, <&td_2_at>; };
+
+        // --- F3 ---
+        td_3_hash: behavior_td_3_hash { compatible = "zmk,behavior-tap-dance"; label = "TD_3_HASH"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N3>, <&kp HASH>; };
+        ht_f3_td_3: ht_f3_td_3 { compatible = "zmk,behavior-hold-tap"; label = "HT_F3_TD_3"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F3>, <&td_3_hash>; };
+
+        // --- F4 ---
+        td_4_dllr: behavior_td_4_dllr { compatible = "zmk,behavior-tap-dance"; label = "TD_4_DLLR"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N4>, <&kp DLLR>; };
+        ht_f4_td_4: ht_f4_td_4 { compatible = "zmk,behavior-hold-tap"; label = "HT_F4_TD_4"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F4>, <&td_4_dllr>; };
+
+        // --- F5 ---
+        td_5_prcnt: behavior_td_5_prcnt { compatible = "zmk,behavior-tap-dance"; label = "TD_5_PRCNT"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N5>, <&kp PRCNT>; };
+        ht_f5_td_5: ht_f5_td_5 { compatible = "zmk,behavior-hold-tap"; label = "HT_F5_TD_5"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F5>, <&td_5_prcnt>; };
+
+        // --- F6 ---
+        td_6_caret: behavior_td_6_caret { compatible = "zmk,behavior-tap-dance"; label = "TD_6_CARET"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N6>, <&kp CARET>; };
+        ht_f6_td_6: ht_f6_td_6 { compatible = "zmk,behavior-hold-tap"; label = "HT_F6_TD_6"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F6>, <&td_6_caret>; };
+
+        // --- F7 ---
+        td_7_amps: behavior_td_7_amps { compatible = "zmk,behavior-tap-dance"; label = "TD_7_AMPS"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N7>, <&kp AMPS>; };
+        ht_f7_td_7: ht_f7_td_7 { compatible = "zmk,behavior-hold-tap"; label = "HT_F7_TD_7"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F7>, <&td_7_amps>; };
+
+        // --- F8 ---
+        td_8_astrk: behavior_td_8_astrk { compatible = "zmk,behavior-tap-dance"; label = "TD_8_ASTRK"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N8>, <&kp ASTRK>; };
+        ht_f8_td_8: ht_f8_td_8 { compatible = "zmk,behavior-hold-tap"; label = "HT_F8_TD_8"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F8>, <&td_8_astrk>; };
+
+        // --- F9 ---
+        td_9_lpar: behavior_td_9_lpar { compatible = "zmk,behavior-tap-dance"; label = "TD_9_LPAR"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N9>, <&kp LPAR>; };
+        ht_f9_td_9: ht_f9_td_9 { compatible = "zmk,behavior-hold-tap"; label = "HT_F9_TD_9"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F9>, <&td_9_lpar>; };
+
+        // --- F10 ---
+        td_0_rpar: behavior_td_0_rpar { compatible = "zmk,behavior-tap-dance"; label = "TD_0_RPAR"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp N0>, <&kp RPAR>; };
+        ht_f10_td_0: ht_f10_td_0 { compatible = "zmk,behavior-hold-tap"; label = "HT_F10_TD_0"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F10>, <&td_0_rpar>; };
+
+        // --- F11 ---
+        td_minus_under: behavior_td_minus_under { compatible = "zmk,behavior-tap-dance"; label = "TD_MINUS_UNDER"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp MINUS>, <&kp UNDER>; };
+        ht_f11_td_minus: ht_f11_td_minus { compatible = "zmk,behavior-hold-tap"; label = "HT_F11_TD_MINUS"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F11>, <&td_minus_under>; };
+
+        // --- F12 ---
+        td_equal_plus: behavior_td_equal_plus { compatible = "zmk,behavior-tap-dance"; label = "TD_EQUAL_PLUS"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&kp EQUAL>, <&kp PLUS>; };
+        ht_f12_td_equal: ht_f12_td_equal { compatible = "zmk,behavior-hold-tap"; label = "HT_F12_TD_EQUAL"; #binding-cells = <2>; tapping-term-ms = <250>; flavor = "tap-preferred"; bindings = <&kp F12>, <&td_equal_plus>; };
+
     };
 
     rgb_encoder: rgb_encoder {
@@ -428,7 +464,7 @@
         number_layer {
             display-name = "NUMBER";
             bindings = <
-&td_grave_  &bh_n1f1 F1 0  &td_2  &td_3   &td_f11_minus  &td_f12_equal                                &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&td_grave_  &ht_f1_td_1  &td_2  &td_3   &td_f11_minus  &td_f12_equal                                &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &kp ENTER   &td_4          &td_5  &td_6   &kp LC(MINUS)  &kp LC(PLUS)                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &trans      &td_7          &td_8  &td_9   &td_0          &dotcom_bh     &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                   &trans  &trans         &trans                                                                        &kp INS          &kp DEL          &trans
