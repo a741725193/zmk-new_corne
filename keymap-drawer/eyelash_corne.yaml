@@ -78,7 +78,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - HOME
   - PG UP
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '&td_n7', h: F7}
   - {t: '&td_n8', h: F8}
   - {t: '&td_n9', h: F9}
