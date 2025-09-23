@@ -155,7 +155,7 @@ layers:
   - $
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - F13
+  - '&td_mb_src'
   - F14
   - F15
   - '&td_bracket'
