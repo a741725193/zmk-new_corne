@@ -44,12 +44,12 @@ layers:
   - {t: /, h: '?', s: '?'}
   - funtion
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '&td_toggle_layer_3 2', h: NUMBER}
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:backspace$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '&td_toggle_layer_3 2', h: number_layer}
+  - {t: '$$mdi:keyboard-space$$', h: mo_mouse_layer}
+  - {t: '$$mdi:backspace$$', h: mo_mouse_layer}
+  - {t: '$$mdi:keyboard-return$$', h: GO_MOUSE}
   - $$mdi:apple-keyboard-option$$
-  NUMBER:
+  number_layer:
   - '&td_grave_'
   - {t: '&td_n1', h: F1}
   - {t: '&td_n2', h: F2}
@@ -98,7 +98,7 @@ layers:
   - INS
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  mo_mouse_layer:
   - Ctl+Sft+$$mdi:keyboard-tab$$
   - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:keyboard-tab$$
@@ -143,11 +143,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-space$$', h: Fn, type: held}
-  - {t: '$$mdi:keyboard-return$$', h: Fn, type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', h: mo_mouse_layer, type: held}
+  - {t: '$$mdi:keyboard-return$$', h: mo_mouse_layer, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
-  SYMBOL:
+  GO_MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
@@ -242,7 +242,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - {t: '$$mdi:keyboard-return$$', h: mo_mouse_layer}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   left_mouse_layer_:
@@ -290,7 +290,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - LGUI
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
+  - {t: '$$mdi:keyboard-space$$', h: mo_mouse_layer}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -377,10 +377,10 @@ combos:
   l: [QWERTY]
 - p: [7, 8]
   k: '&macro_double_click'
-  l: [Fn, right_mouse_layer_]
+  l: [mo_mouse_layer, right_mouse_layer_, GO_MOUSE]
 - p: [0, 1]
   k: {t: '`', s: '~'}
-  l: [NUMBER]
+  l: [number_layer]
 - p: [16, 17, 18]
   k: {t: left_mouse_layer_, h: toggle}
 - p: [22, 23, 24]
