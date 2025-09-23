@@ -256,44 +256,44 @@
         };
 
         // =======================================================
-        // ==     F1 ~ F12 복합 동작 (기존 형식 유지)     ==
+        // ==     F1 ~ F12 복합 동작 (수정본, 한 줄 형식)     ==
         // =======================================================
         // --- F1 ---
-        td_n1: td_n1 { compatible = "zmk,behavior-tap-dance"; label = "TD_N1"; #binding-cells = <0>; bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>; };
-        bh_n1f1: bh_n1f1 { compatible = "zmk,behavior-hold-tap"; label = "BH_N1F1"; bindings = <&kp>, <&td_n1>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n1: td_n1 { compatible = "zmk,behavior-tap-dance"; label = "TD_N1"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>; };
+        bh_n1f1: bh_n1f1 { compatible = "zmk,behavior-hold-tap"; label = "BH_N1F1"; bindings = <&kp>, <&td_n1>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F2 ---
-        td_n2: td_n2 { compatible = "zmk,behavior-tap-dance"; label = "TD_N2"; #binding-cells = <0>; bindings = <&kp NUMBER_2>, <&kp AT>; };
-        bh_n2f2: bh_n2f2 { compatible = "zmk,behavior-hold-tap"; label = "BH_N2F2"; bindings = <&kp>, <&td_n2>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n2: td_n2 { compatible = "zmk,behavior-tap-dance"; label = "TD_N2"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_2>, <&kp AT>; };
+        bh_n2f2: bh_n2f2 { compatible = "zmk,behavior-hold-tap"; label = "BH_N2F2"; bindings = <&kp>, <&td_n2>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F3 ---
-        td_n3: td_n3 { compatible = "zmk,behavior-tap-dance"; label = "TD_N3"; #binding-cells = <0>; bindings = <&kp NUMBER_3>, <&kp HASH>; };
-        bh_n3f3: bh_n3f3 { compatible = "zmk,behavior-hold-tap"; label = "BH_N3F3"; bindings = <&kp>, <&td_n3>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n3: td_n3 { compatible = "zmk,behavior-tap-dance"; label = "TD_N3"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_3>, <&kp HASH>; };
+        bh_n3f3: bh_n3f3 { compatible = "zmk,behavior-hold-tap"; label = "BH_N3F3"; bindings = <&kp>, <&td_n3>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F4 ---
-        td_n4: td_n4 { compatible = "zmk,behavior-tap-dance"; label = "TD_N4"; #binding-cells = <0>; bindings = <&kp NUMBER_4>, <&kp DLLR>; };
-        bh_n4f4: bh_n4f4 { compatible = "zmk,behavior-hold-tap"; label = "BH_N4F4"; bindings = <&kp>, <&td_n4>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n4: td_n4 { compatible = "zmk,behavior-tap-dance"; label = "TD_N4"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_4>, <&kp DLLR>; };
+        bh_n4f4: bh_n4f4 { compatible = "zmk,behavior-hold-tap"; label = "BH_N4F4"; bindings = <&kp>, <&td_n4>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F5 ---
-        td_n5: td_n5 { compatible = "zmk,behavior-tap-dance"; label = "TD_N5"; #binding-cells = <0>; bindings = <&kp NUMBER_5>, <&kp PRCNT>; };
-        bh_n5f5: bh_n5f5 { compatible = "zmk,behavior-hold-tap"; label = "BH_N5F5"; bindings = <&kp>, <&td_n5>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n5: td_n5 { compatible = "zmk,behavior-tap-dance"; label = "TD_N5"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_5>, <&kp PRCNT>; };
+        bh_n5f5: bh_n5f5 { compatible = "zmk,behavior-hold-tap"; label = "BH_N5F5"; bindings = <&kp>, <&td_n5>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F6 ---
-        td_n6: td_n6 { compatible = "zmk,behavior-tap-dance"; label = "TD_N6"; #binding-cells = <0>; bindings = <&kp NUMBER_6>, <&kp CARET>; };
-        bh_n6f6: bh_n6f6 { compatible = "zmk,behavior-hold-tap"; label = "BH_N6F6"; bindings = <&kp>, <&td_n6>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n6: td_n6 { compatible = "zmk,behavior-tap-dance"; label = "TD_N6"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_6>, <&kp CARET>; };
+        bh_n6f6: bh_n6f6 { compatible = "zmk,behavior-hold-tap"; label = "BH_N6F6"; bindings = <&kp>, <&td_n6>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F7 ---
-        td_n7: td_n7 { compatible = "zmk,behavior-tap-dance"; label = "TD_N7"; #binding-cells = <0>; bindings = <&kp NUMBER_7>, <&kp AMPS>; };
-        bh_n7f7: bh_n7f7 { compatible = "zmk,behavior-hold-tap"; label = "BH_N7F7"; bindings = <&kp>, <&td_n7>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n7: td_n7 { compatible = "zmk,behavior-tap-dance"; label = "TD_N7"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_7>, <&kp AMPS>; };
+        bh_n7f7: bh_n7f7 { compatible = "zmk,behavior-hold-tap"; label = "BH_N7F7"; bindings = <&kp>, <&td_n7>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F8 ---
-        td_n8: td_n8 { compatible = "zmk,behavior-tap-dance"; label = "TD_N8"; #binding-cells = <0>; bindings = <&kp NUMBER_8>, <&kp ASTRK>; };
-        bh_n8f8: bh_n8f8 { compatible = "zmk,behavior-hold-tap"; label = "BH_N8F8"; bindings = <&kp>, <&td_n8>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n8: td_n8 { compatible = "zmk,behavior-tap-dance"; label = "TD_N8"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_8>, <&kp ASTRK>; };
+        bh_n8f8: bh_n8f8 { compatible = "zmk,behavior-hold-tap"; label = "BH_N8F8"; bindings = <&kp>, <&td_n8>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F9 ---
-        td_n9: td_n9 { compatible = "zmk,behavior-tap-dance"; label = "TD_N9"; #binding-cells = <0>; bindings = <&kp NUMBER_9>, <&kp LPAR>; };
-        bh_n9f9: bh_n9f9 { compatible = "zmk,behavior-hold-tap"; label = "BH_N9F9"; bindings = <&kp>, <&td_n9>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n9: td_n9 { compatible = "zmk,behavior-tap-dance"; label = "TD_N9"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_9>, <&kp LPAR>; };
+        bh_n9f9: bh_n9f9 { compatible = "zmk,behavior-hold-tap"; label = "BH_N9F9"; bindings = <&kp>, <&td_n9>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F10 ---
-        td_n0: td_n0 { compatible = "zmk,behavior-tap-dance"; label = "TD_N0"; #binding-cells = <0>; bindings = <&kp NUMBER_0>, <&kp RPAR>; };
-        bh_n0f10: bh_n0f10 { compatible = "zmk,behavior-hold-tap"; label = "BH_N0F10"; bindings = <&kp>, <&td_n0>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_n0: td_n0 { compatible = "zmk,behavior-tap-dance"; label = "TD_N0"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp NUMBER_0>, <&kp RPAR>; };
+        bh_n0f10: bh_n0f10 { compatible = "zmk,behavior-hold-tap"; label = "BH_N0F10"; bindings = <&kp>, <&td_n0>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F11 ---
-        td_minus: td_minus { compatible = "zmk,behavior-tap-dance"; label = "TD_MINUS"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp UNDER>; };
-        bh_minusf11: bh_minusf11 { compatible = "zmk,behavior-hold-tap"; label = "BH_MINUSF11"; bindings = <&kp>, <&td_minus>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_minus: td_minus { compatible = "zmk,behavior-tap-dance"; label = "TD_MINUS"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp MINUS>, <&kp UNDER>; };
+        bh_minusf11: bh_minusf11 { compatible = "zmk,behavior-hold-tap"; label = "BH_MINUSF11"; bindings = <&kp>, <&td_minus>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
         // --- F12 ---
-        td_equal: td_equal { compatible = "zmk,behavior-tap-dance"; label = "TD_EQUAL"; #binding-cells = <0>; bindings = <&kp EQUAL>, <&kp PLUS>; };
-        bh_equalf12: bh_equalf12 { compatible = "zmk,behavior-hold-tap"; label = "BH_EQUALF12"; bindings = <&kp>, <&td_equal>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <450>; };
+        td_equal: td_equal { compatible = "zmk,behavior-tap-dance"; label = "TD_EQUAL"; #binding-cells = <0>; tapping-term-ms = <400>; bindings = <&kp EQUAL>, <&kp PLUS>; };
+        bh_equalf12: bh_equalf12 { compatible = "zmk,behavior-hold-tap"; label = "BH_EQUALF12"; bindings = <&kp>, <&td_equal>; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <250>; };
 
     };
 
