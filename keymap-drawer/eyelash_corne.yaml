@@ -47,8 +47,8 @@ layers:
   - {t: '&td_toggle_layer_3 2', h: number_layer}
   - {t: '$$mdi:keyboard-space$$', h: mo_mouse_layer}
   - {t: '$$mdi:backspace$$', h: mo_mouse_layer}
-  - {t: '$$mdi:apple-keyboard-option$$', h: GO_MOUSE}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: F24, h: GO_MOUSE}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   number_layer:
   - '&td_grave_'
   - {t: '&td_n1', h: F1}
