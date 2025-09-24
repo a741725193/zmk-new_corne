@@ -43,7 +43,7 @@ layers:
   - {t: ., h: '$$mdi:arrow-right-bold$$'}
   - {t: /, h: '?', s: '?'}
   - funtion
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-command$$'}
+  - '&alt_gui'
   - {t: '&td_toggle_layer_3 2', h: number_layer}
   - {t: '$$mdi:keyboard-space$$', h: mo_mouse_layer}
   - {t: '$$mdi:backspace$$', h: mo_mouse_layer}
