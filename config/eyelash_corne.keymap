@@ -211,7 +211,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
         };
 
@@ -221,7 +221,7 @@
             bindings = <&mmv>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
         };
 
@@ -231,7 +231,7 @@
             bindings = <&mkp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
         };
 
@@ -241,7 +241,7 @@
             bindings = <&msc>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             flavor = "tap-preferred";
         };
 
