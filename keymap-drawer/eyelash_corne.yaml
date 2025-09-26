@@ -360,9 +360,6 @@ combos:
 - p: [22, 23]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
   l: [QWERTY]
-- p: [22, 24]
-  k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY]
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
@@ -390,9 +387,6 @@ combos:
   l: [QWERTY]
 - p: [45, 7]
   k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
-  l: [QWERTY]
-- p: [45, 23]
-  k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
 - p: [22, 45]
   k: $$mdi:apple-keyboard-option$$
