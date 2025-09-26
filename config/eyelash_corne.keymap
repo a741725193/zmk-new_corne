@@ -553,12 +553,6 @@
             layers = <0>;
         };
 
-        alt_hk {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <22 24>;
-            layers = <0>;
-        };
-
         combo_esc: combo_esc {
             timeout-ms = <50>;
             key-positions = <10 11>;
@@ -615,12 +609,6 @@
         ctrl_back {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <45 7>;
-            layers = <0>;
-        };
-
-        jb_alt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <45 23>;
             layers = <0>;
         };
 
