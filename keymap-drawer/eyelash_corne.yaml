@@ -106,11 +106,11 @@ layers:
   - F12
   - F9
   - '&ppt_v'
-  - HOME
+  - PgUp
   - Sft+Ctl+$$mdi:keyboard-tab$$
   - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:keyboard-tab$$
-  - PgUp
+  - HOME
   - '&ppt_c'
   - '&ppt_waku'
   - {t: F1, h: '$$mdi:apple-keyboard-command$$'}
@@ -121,11 +121,11 @@ layers:
   - '&ppt_h'
   - '&mkp MB3'
   - '&ppt_c'
-  - END
+  - PgDn
   - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-option$$'}
-  - PgDn
+  - {t: END, h: RIGHT GUI}
   - '&ppt_chobj'
   - '&ppt_nuri'
   - {t: '$$mdi:transfer$$', type: trans}
