@@ -228,10 +228,10 @@
         right {
             display-name = "right";
             bindings = <
-&ppt_m     &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &ppt_v            &kp HOME   &kp RS(RC(TAB))       &kp UP                        &kp RC(TAB)          &kp PAGE_UP      &ppt_c
-&ppt_waku  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &ppt_h  &mkp MB3  &ppt_c  &kp END    &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &kp PAGE_DOWN    &ppt_chobj
-&ppt_nuri  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &ppt_m            &kp GRAVE  &mmv MOVE_LEFT        &mmv MOVE_DOWN                &mmv MOVE_UP         &mmv MOVE_RIGHT  &none
-                                              &mkp MB3             &mkp MB2           &mkp MB1                                      &trans     &trans                &trans
+&ppt_m     &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &ppt_v            &kp PAGE_UP    &kp RS(RC(TAB))       &kp UP                        &kp RC(TAB)          &kp HOME           &ppt_c
+&ppt_waku  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &ppt_h  &mkp MB3  &ppt_c  &kp PAGE_DOWN  &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &mt RIGHT_GUI END  &ppt_chobj
+&ppt_nuri  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &ppt_m            &kp GRAVE      &mmv MOVE_LEFT        &mmv MOVE_DOWN                &mmv MOVE_UP         &mmv MOVE_RIGHT    &none
+                                              &mkp MB3             &mkp MB2           &mkp MB1                                      &trans         &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
