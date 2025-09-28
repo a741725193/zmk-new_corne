@@ -27,7 +27,7 @@ layers:
   - {t: J, h: '$$mdi:menu-left$$'}
   - {t: K, h: '$$mdi:menu-down$$'}
   - {t: L, h: '$$mdi:menu-right$$'}
-  - {t: ;, h: 'Ctl+$$mdi:backspace$$', s: ':'}
+  - {t: ;, h: '&bh_word_del', s: ':'}
   - {t: '''', h: '&macro_all_del', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - {t: Z, h: HOME}
