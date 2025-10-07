@@ -535,7 +535,7 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <1 15 29>;
+            key-positions = <1 0 11 12>;
         };
 
         combo_x {
@@ -560,7 +560,7 @@
         };
 
         enter_fg {
-            bindings = <&kp SPACE>;
+            bindings = <&kp ENTER>;
             key-positions = <17 18>;
         };
 
