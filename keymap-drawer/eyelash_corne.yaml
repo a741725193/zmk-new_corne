@@ -393,3 +393,6 @@ combos:
   l: [QWERTY]
 - p: [29, 30]
   k: Ctl+Y
+- p: [27, 41]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [QWERTY]
