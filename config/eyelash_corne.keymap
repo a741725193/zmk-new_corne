@@ -639,6 +639,12 @@
             bindings = <&kp RC(Y)>;
             key-positions = <29 30>;
         };
+
+        del_combo {
+            bindings = <&kp DELETE>;
+            key-positions = <27 41>;
+            layers = <0>;
+        };
     };
 
     keymap {
