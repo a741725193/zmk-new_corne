@@ -54,14 +54,14 @@ layers:
   - {t: '&td_n1', h: F1}
   - {t: '&td_n2', h: F2}
   - {t: '&td_n3', h: F3}
-  - {t: '&td_minus', h: F11}
-  - {t: '&td_equal', h: F12}
+  - {t: '&td_n4', h: F4}
+  - {t: '&td_n5', h: F5}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - {t: '&td_n6', h: F6}
+  - {t: '&td_n7', h: F7}
+  - {t: '&td_n8', h: F8}
+  - {t: '&td_n9', h: F9}
+  - {t: '&td_n0', h: F10}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '&td_n4', h: F4}
@@ -76,8 +76,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - HOME
-  - PG UP
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '&td_minus', h: F11}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '&td_n7', h: F7}
   - {t: '&td_n8', h: F8}
@@ -86,12 +86,12 @@ layers:
   - '&dotcom_bh'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - RGB EFR
-  - RGB SPI
-  - RGB BRI
-  - RGB BRD
+  - HOME
   - END
-  - PG DN
+  - PG UP
+  - PgDn
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '&td_equal', h: F12}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
