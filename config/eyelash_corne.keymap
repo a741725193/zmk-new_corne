@@ -665,9 +665,9 @@
         number_layer {
             display-name = "number_layer";
             bindings = <
-&td_grave_     &bh_n1f1 F1 0  &bh_n2f2 F2 0  &bh_n3f3 F3 0  &bh_minusf11 F11 0  &bh_equalf12 F12 0                                &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&kp ENTER      &bh_n4f4 F4 0  &bh_n5f5 F5 0  &bh_n6f6 F6 0  &kp LC(MINUS)       &kp LC(PLUS)                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&kp BACKSPACE  &bh_n7f7 F7 0  &bh_n8f8 F8 0  &bh_n9f9 F9 0  &bh_n0f10 F10 0     &dotcom_bh          &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+&td_grave_     &bh_n1f1 F1 0  &bh_n2f2 F2 0  &bh_n3f3 F3 0  &bh_n4f4 F4 0  &bh_n5f5 F5 0                                &mmv MOVE_UP                     &bh_n6f6 F6 0    &bh_n7f7 F7 0    &bh_n8f8 F8 0    &bh_n9f9 F9 0    &bh_n0f10 F10 0    &kp BSPC
+&kp ENTER      &bh_n4f4 F4 0  &bh_n5f5 F5 0  &bh_n6f6 F6 0  &kp LC(MINUS)       &kp LC(PLUS)                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &trans  &bh_minusf11 F11 0
+&kp BACKSPACE  &bh_n7f7 F7 0  &bh_n8f8 F8 0  &bh_n9f9 F9 0  &bh_n0f10 F10 0     &dotcom_bh          &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME  &kp END  &kp PG_UP  &kp PAGE_DOWN  &trans   &bh_equalf12 F12 0
                                              &trans         &trans              &trans                                                                             &kp INS          &kp DEL          &trans
             >;
 
