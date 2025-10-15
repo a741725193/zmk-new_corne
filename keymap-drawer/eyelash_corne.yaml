@@ -34,7 +34,7 @@ layers:
   - {t: X, h: END}
   - {t: C, h: PG UP}
   - {t: V, h: PgDn}
-  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: B, h: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - {t: N, h: '$$mdi:arrow-left-bold$$'}
@@ -90,7 +90,7 @@ layers:
   - END
   - PG UP
   - PgDn
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '&td_equal', h: F12}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
