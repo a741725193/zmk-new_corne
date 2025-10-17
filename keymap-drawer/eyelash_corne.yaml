@@ -82,8 +82,8 @@ layers:
   - {t: '&td_n7', h: F7}
   - {t: '&td_n8', h: F8}
   - {t: '&td_n9', h: F9}
-  - '&dotcom_bh'
   - {t: '&td_n0', h: F10}
+  - '&dotcom_bh'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - HOME
