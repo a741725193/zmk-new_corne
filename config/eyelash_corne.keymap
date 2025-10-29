@@ -96,7 +96,7 @@
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &mo 3  &lt 3 ENTER                                               &lt 3 SPACE  &mo 4  &kp RALT
             >;
-x
+
              sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
