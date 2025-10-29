@@ -45,8 +45,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - LGUI
   - Number
-  - {t: '$$mdi:keyboard-return$$', h: Number}
-  - {t: '$$mdi:keyboard-space$$', h: Number}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - {t: '$$mdi:keyboard-space$$', h: Fn}
   - Symbol
   - $$mdi:apple-keyboard-option$$
   Workman:
@@ -94,8 +94,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - LGUI
   - Number
-  - {t: '$$mdi:keyboard-return$$', h: Number}
-  - {t: '$$mdi:keyboard-space$$', h: Number}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - {t: '$$mdi:keyboard-space$$', h: Fn}
   - Symbol
   - $$mdi:apple-keyboard-option$$
   Qwerty:
@@ -143,8 +143,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - LGUI
   - Number
-  - {t: '$$mdi:keyboard-return$$', h: Number}
-  - {t: '$$mdi:keyboard-space$$', h: Number}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - {t: '$$mdi:keyboard-space$$', h: Fn}
   - Symbol
   - $$mdi:apple-keyboard-option$$
   Number:
@@ -192,8 +192,8 @@ layers:
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
-  - {t: INS, type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - INS
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   Symbol:
@@ -290,8 +290,8 @@ layers:
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
