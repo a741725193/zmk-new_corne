@@ -8,7 +8,7 @@ layers:
   - {t: R, h: Sft+R}
   - {t: T, h: Sft+T}
   - $$mdi:arrow-up-bold$$
-  - {t: Y, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: Y, h: 'Ctl+$$mdi:keyboard-space$$'}
   - {t: U, h: '&mkp MB1'}
   - {t: I, h: '$$mdi:menu-up$$'}
   - {t: O, h: Sft+O}
@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: mo_mouse_layer}
   - {t: '$$mdi:backspace$$', h: mo_mouse_layer}
   - {t: '$$mdi:keyboard-return$$', h: GO_MOUSE}
-  - $$mdi:apple-keyboard-option$$
+  - Ctl+$$mdi:keyboard-space$$
   number_layer:
   - '&td_grave_'
   - {t: '&td_n1', h: F1}
@@ -347,13 +347,13 @@ combos:
 - p: [1, 0, 11, 12]
   k: '&soft_off'
 - p: [30, 31]
-  k: Ctl+X
+  k: {t: X, h: '$$mdi:apple-keyboard-command$$'}
   l: [QWERTY]
 - p: [31, 32]
-  k: Ctl+C
+  k: {t: C, h: '$$mdi:apple-keyboard-command$$'}
   l: [QWERTY]
 - p: [32, 33]
-  k: Ctl+V
+  k: {t: V, h: '$$mdi:apple-keyboard-command$$'}
   l: [QWERTY]
 - p: [17, 18]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
@@ -363,14 +363,11 @@ combos:
 - p: [10, 11]
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
-- p: [22, 8]
-  k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY]
 - p: [10, 11, 12]
   k: Alt+F4
   l: [QWERTY]
 - p: [15, 16]
-  k: Sft+$$mdi:backspace-reverse-outline$$
+  k: Sft+Gui+K
   l: [QWERTY]
 - p: [7, 8]
   k: '&macro_double_click'
@@ -389,10 +386,10 @@ combos:
   k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
 - p: [22, 45]
-  k: $$mdi:apple-keyboard-option$$
+  k: Gui+$$mdi:keyboard-space$$
   l: [QWERTY]
 - p: [29, 30]
-  k: Ctl+Y
+  k: Gui+Y
 - p: [27, 41]
   k: $$mdi:backspace-reverse-outline$$
   l: [QWERTY]
