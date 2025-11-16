@@ -635,7 +635,7 @@
         };
 
         combo_mac_sleep {
-            bindings = <&kp K_SLEEP>;
+            bindings = <&kp LA(LG(LC(K_POWER)))>;
             key-positions = <42 44 43 45 46 47 42 43 44 45 46 47>;
         };
     };
