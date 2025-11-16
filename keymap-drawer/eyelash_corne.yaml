@@ -364,7 +364,7 @@ combos:
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
 - p: [10, 11, 12]
-  k: Alt+F4
+  k: Gui+Q
   l: [QWERTY]
 - p: [15, 16]
   k: Sft+Gui+K
@@ -381,9 +381,6 @@ combos:
   k: {t: right_mouse_layer_, h: toggle}
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$
-  l: [QWERTY]
-- p: [45, 7]
-  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   l: [QWERTY]
 - p: [22, 45]
   k: Gui+$$mdi:keyboard-space$$
