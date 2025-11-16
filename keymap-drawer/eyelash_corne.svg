@@ -688,7 +688,9 @@ rect.held, rect.combo.held {
 <path d="M490,212 l186,-3" class="combo"/>
 <path d="M490,212 l247,-9" class="combo"/>
 <rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">SLEEP</text>
+<text x="490" y="212" class="combo tap">
+<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1011,7 +1013,9 @@ rect.held, rect.combo.held {
 <path d="M490,212 l186,-3" class="combo"/>
 <path d="M490,212 l247,-9" class="combo"/>
 <rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">SLEEP</text>
+<text x="490" y="212" class="combo tap">
+<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1322,7 +1326,9 @@ rect.held, rect.combo.held {
 <path d="M490,212 l186,-3" class="combo"/>
 <path d="M490,212 l247,-9" class="combo"/>
 <rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">SLEEP</text>
+<text x="490" y="212" class="combo tap">
+<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1632,7 +1638,9 @@ rect.held, rect.combo.held {
 <path d="M490,212 l186,-3" class="combo"/>
 <path d="M490,212 l247,-9" class="combo"/>
 <rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">SLEEP</text>
+<text x="490" y="212" class="combo tap">
+<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1937,7 +1945,9 @@ rect.held, rect.combo.held {
 <path d="M490,212 l186,-3" class="combo"/>
 <path d="M490,212 l247,-9" class="combo"/>
 <rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">SLEEP</text>
+<text x="490" y="212" class="combo tap">
+<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2236,7 +2246,9 @@ rect.held, rect.combo.held {
 <path d="M490,212 l186,-3" class="combo"/>
 <path d="M490,212 l247,-9" class="combo"/>
 <rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">SLEEP</text>
+<text x="490" y="212" class="combo tap">
+<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -2538,7 +2550,9 @@ rect.held, rect.combo.held {
 <path d="M490,212 l186,-3" class="combo"/>
 <path d="M490,212 l247,-9" class="combo"/>
 <rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">SLEEP</text>
+<text x="490" y="212" class="combo tap">
+<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
+</text>
 </g>
 </g>
 </g>
