@@ -635,8 +635,13 @@
         };
 
         combo_mac_sleep {
-            bindings = <&kp LA(LG(LC(K_POWER)))>;
-            key-positions = <42 44 43 45 46 47 42 43 44 45 46 47>;
+            bindings = <&kp K_POWER>;
+            key-positions = <0 1 2 10 11 12>;
+        };
+
+        combo_next_lan {
+            bindings = <&kp LA(SPACE)>;
+            key-positions = <37 38>;
         };
     };
 
