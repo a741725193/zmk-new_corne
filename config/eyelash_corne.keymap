@@ -108,14 +108,14 @@
         macro_all_del: macro_all_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LEFT) &kp LS(END) &kp BACKSPACE>;
+            bindings = <&kp LG(LEFT) &kp BACKSPACE>;
             label = "MACRO_ALL_DEL";
         };
 
         bh_word_del: bh_word_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LEFT_ARROW) &kp LG(LS(RIGHT)) &kp BACKSPACE>;
+            bindings = <&kp LC(LG(LS(LEFT_ARROW))) &kp LG(LS(RIGHT)) &kp BACKSPACE>;
             label = "BH_WORD_DEL";
         };
     };
