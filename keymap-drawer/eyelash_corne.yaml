@@ -390,5 +390,7 @@ combos:
 - p: [27, 41]
   k: $$mdi:backspace-reverse-outline$$
   l: [QWERTY]
-- p: [42, 44, 43, 45, 46, 47, 42, 43, 44, 45, 46, 47]
-  k: Alt+Gui+Ctl+POWER
+- p: [0, 1, 2, 10, 11, 12]
+  k: POWER
+- p: [37, 38]
+  k: Alt+$$mdi:keyboard-space$$

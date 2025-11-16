@@ -675,22 +675,18 @@ rect.held, rect.combo.held {
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="943" y="124" height="18" width="18.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
 <g class="combo combopos-15">
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">
-<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
-</text>
+<path d="M490,44 l-443,4" class="combo"/>
+<path d="M490,44 l-387,4" class="combo"/>
+<path d="M490,44 l-331,-9" class="combo"/>
+<path d="M490,44 l331,-9" class="combo"/>
+<path d="M490,44 l387,4" class="combo"/>
+<path d="M490,44 l443,4" class="combo"/>
+<rect rx="6" ry="6" x="476" y="31" width="28" height="26" class="combo"/>
+<text x="490" y="44" class="combo tap">POWER</text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -1000,22 +996,18 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
 <g class="combo combopos-6">
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">
-<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
-</text>
+<path d="M490,44 l-443,4" class="combo"/>
+<path d="M490,44 l-387,4" class="combo"/>
+<path d="M490,44 l-331,-9" class="combo"/>
+<path d="M490,44 l331,-9" class="combo"/>
+<path d="M490,44 l387,4" class="combo"/>
+<path d="M490,44 l443,4" class="combo"/>
+<rect rx="6" ry="6" x="476" y="31" width="28" height="26" class="combo"/>
+<text x="490" y="44" class="combo tap">POWER</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -1313,22 +1305,18 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
 <g class="combo combopos-6">
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">
-<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
-</text>
+<path d="M490,44 l-443,4" class="combo"/>
+<path d="M490,44 l-387,4" class="combo"/>
+<path d="M490,44 l-331,-9" class="combo"/>
+<path d="M490,44 l331,-9" class="combo"/>
+<path d="M490,44 l387,4" class="combo"/>
+<path d="M490,44 l443,4" class="combo"/>
+<rect rx="6" ry="6" x="476" y="31" width="28" height="26" class="combo"/>
+<text x="490" y="44" class="combo tap">POWER</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -1625,22 +1613,18 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
 <g class="combo combopos-6">
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">
-<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
-</text>
+<path d="M490,44 l-443,4" class="combo"/>
+<path d="M490,44 l-387,4" class="combo"/>
+<path d="M490,44 l-331,-9" class="combo"/>
+<path d="M490,44 l331,-9" class="combo"/>
+<path d="M490,44 l387,4" class="combo"/>
+<path d="M490,44 l443,4" class="combo"/>
+<rect rx="6" ry="6" x="476" y="31" width="28" height="26" class="combo"/>
+<text x="490" y="44" class="combo tap">POWER</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -1932,22 +1916,18 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
 <g class="combo combopos-6">
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">
-<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
-</text>
+<path d="M490,44 l-443,4" class="combo"/>
+<path d="M490,44 l-387,4" class="combo"/>
+<path d="M490,44 l-331,-9" class="combo"/>
+<path d="M490,44 l331,-9" class="combo"/>
+<path d="M490,44 l387,4" class="combo"/>
+<path d="M490,44 l443,4" class="combo"/>
+<rect rx="6" ry="6" x="476" y="31" width="28" height="26" class="combo"/>
+<text x="490" y="44" class="combo tap">POWER</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -2233,22 +2213,18 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
 <g class="combo combopos-5">
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">
-<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
-</text>
+<path d="M490,44 l-443,4" class="combo"/>
+<path d="M490,44 l-387,4" class="combo"/>
+<path d="M490,44 l-331,-9" class="combo"/>
+<path d="M490,44 l331,-9" class="combo"/>
+<path d="M490,44 l387,4" class="combo"/>
+<path d="M490,44 l443,4" class="combo"/>
+<rect rx="6" ry="6" x="476" y="31" width="28" height="26" class="combo"/>
+<text x="490" y="44" class="combo tap">POWER</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -2537,22 +2513,18 @@ rect.held, rect.combo.held {
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
 <g class="combo combopos-5">
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<path d="M490,212 l-247,-9" class="combo"/>
-<path d="M490,212 l-186,-3" class="combo"/>
-<path d="M490,212 l-123,12" class="combo"/>
-<path d="M490,212 l123,11" class="combo"/>
-<path d="M490,212 l186,-3" class="combo"/>
-<path d="M490,212 l247,-9" class="combo"/>
-<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
-<text x="490" y="212" class="combo tap">
-<tspan x="490" dy="-0.6em" style="font-size: 60%">Alt+</tspan><tspan x="490" dy="1.2em" style="font-size: 60%">Gui+Ctl+P…</tspan>
-</text>
+<path d="M490,44 l-443,4" class="combo"/>
+<path d="M490,44 l-387,4" class="combo"/>
+<path d="M490,44 l-331,-9" class="combo"/>
+<path d="M490,44 l331,-9" class="combo"/>
+<path d="M490,44 l387,4" class="combo"/>
+<path d="M490,44 l443,4" class="combo"/>
+<rect rx="6" ry="6" x="476" y="31" width="28" height="26" class="combo"/>
+<text x="490" y="44" class="combo tap">POWER</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
