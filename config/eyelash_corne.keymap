@@ -108,14 +108,14 @@
         macro_all_del: macro_all_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp HOME &kp LS(END) &kp BACKSPACE>;
+            bindings = <&kp LG(LEFT) &kp LS(END) &kp BACKSPACE>;
             label = "MACRO_ALL_DEL";
         };
 
         bh_word_del: bh_word_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(LEFT_ARROW)) &kp BACKSPACE>;
+            bindings = <&kp LG(LEFT_ARROW) &kp LG(LS(RIGHT)) &kp BACKSPACE>;
             label = "BH_WORD_DEL";
         };
     };
@@ -540,21 +540,21 @@
 
         combo_x {
             timeout-ms = <80>;
-            bindings = <&kp LC(X)>;
+            bindings = <&kp LG(X)>;
             key-positions = <30 31>;
             layers = <0>;
         };
 
         combo_c {
             timeout-ms = <80>;
-            bindings = <&kp LC(C)>;
+            bindings = <&kp LG(C)>;
             key-positions = <31 32>;
             layers = <0>;
         };
 
         combo_paste {
             timeout-ms = <80>;
-            bindings = <&kp LC(V)>;
+            bindings = <&kp LG(V)>;
             key-positions = <32 33>;
             layers = <0>;
         };
@@ -577,12 +577,6 @@
             layers = <0>;
         };
 
-        gh_han {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <22 8>;
-            layers = <0>;
-        };
-
         op_alt_f4 {
             bindings = <&kp LA(F4)>;
             key-positions = <10 11 12>;
@@ -590,7 +584,7 @@
         };
 
         sd_shift_del {
-            bindings = <&kp LS(DELETE)>;
+            bindings = <&kp LS(LG(K))>;
             key-positions = <15 16>;
             layers = <0>;
         };
@@ -630,13 +624,13 @@
         };
 
         hb_alt {
-            bindings = <&kp RIGHT_ALT>;
+            bindings = <&kp LG(SPACE)>;
             key-positions = <22 45>;
             layers = <0>;
         };
 
         ctrl_y {
-            bindings = <&kp RC(Y)>;
+            bindings = <&kp LG(Y)>;
             key-positions = <29 30>;
         };
 
@@ -653,10 +647,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB        &ht_bh LS(Q) Q  &ht_bh LS(W) W     &ht_bh LS(E) E       &ht_bh LS(R) R        &ht_bh LS(T) T                                 &kp UP                &ht_bh RIGHT_ALT Y   &ht_bh_mkp MB1 U        &ht_bh_mmv MOVE_UP I    &ht_bh LS(O) O             &ht_bh LS(P) P               &UC_BS
+&kp TAB        &ht_bh LS(Q) Q  &ht_bh LS(W) W     &ht_bh LS(E) E       &ht_bh LS(R) R        &ht_bh LS(T) T                                 &kp UP                &ht_bh LC(SPACE) Y   &ht_bh_mkp MB1 U        &ht_bh_mmv MOVE_UP I    &ht_bh LS(O) O             &ht_bh LS(P) P               &UC_BS
 &td0           &ht_bh LCTRL A  &ht_bh LEFT_ALT S  &ht_bh LEFT_SHIFT D  &ht_bh_msc SCRL_UP F  &ht_bh_msc SCRL_DOWN G               &kp LEFT  &kp ENTER  &kp RIGHT  &ht_bh ENTER H       &ht_bh_mmv MOVE_LEFT J  &ht_bh_mmv MOVE_DOWN K  &ht_bh_mmv MOVE_RIGHT L    &bh_word_del_bh 0 SEMICOLON  &bh_ht_alldel 0 SQT
 &kp LG(LCTRL)  &ht_bh HOME Z   &ht_bh END X       &ht_bh PG_UP C       &ht_bh PAGE_DOWN V    &ht_bh DELETE B         &kp SPACE              &kp DOWN              &ht_bh LEFT_ARROW N  &ht_bh DOWN_ARROW M     &ht_bh UP_ARROW COMMA   &ht_bh RIGHT_ARROW PERIOD  &ht_bh QUESTION SLASH        &mo 6
-                                                  &alt_gui             &ht_mo1_ltog3 1 2     &lt 2 SPACE                                                          &lt 2 BACKSPACE      &lt 3 ENTER             &kp RALT
+                                                  &alt_gui             &ht_mo1_ltog3 1 2     &lt 2 SPACE                                                          &lt 2 BACKSPACE      &lt 3 ENTER             &kp LC(SPACE)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
