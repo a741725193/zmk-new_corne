@@ -67,8 +67,8 @@ layers:
   - {t: '&td_n4', h: F4}
   - {t: '&td_n5', h: F5}
   - {t: '&td_n6', h: F6}
-  - {t: Ctl+-, s: Ctl+_}
-  - Ctl++
+  - {t: Gui+-, s: Gui+_}
+  - Gui++
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
