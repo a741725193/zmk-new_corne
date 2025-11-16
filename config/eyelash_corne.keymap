@@ -641,7 +641,7 @@
 
         combo_next_lan {
             bindings = <&kp LA(SPACE)>;
-            key-positions = <37 38>;
+            key-positions = <23 24>;
         };
     };
 
