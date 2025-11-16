@@ -674,6 +674,22 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="938" y="120" width="28" height="26" class="combo"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="943" y="124" height="18" width="18.0" class="combo tap glyph mdi:backspace-reverse-outline"/>
 </g>
+<g class="combo combopos-15">
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
+<text x="490" y="212" class="combo tap">SLEEP</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-number_layer">
@@ -981,6 +997,22 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
+<g class="combo combopos-6">
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
+<text x="490" y="212" class="combo tap">SLEEP</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-mo_mouse_layer">
@@ -1276,6 +1308,22 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
+<g class="combo combopos-6">
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
+<text x="490" y="212" class="combo tap">SLEEP</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 955)" class="layer-GO_MOUSE">
@@ -1570,6 +1618,22 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
+<g class="combo combopos-6">
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
+<text x="490" y="212" class="combo tap">SLEEP</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1274)" class="layer-right_mouse_layer_">
@@ -1859,6 +1923,22 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
 <text x="112" y="154" class="combo tap">Gui+Y</text>
 </g>
+<g class="combo combopos-6">
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
+<text x="490" y="212" class="combo tap">SLEEP</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1592)" class="layer-left_mouse_layer_">
@@ -2141,6 +2221,22 @@ rect.held, rect.combo.held {
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
 <text x="112" y="154" class="combo tap">Gui+Y</text>
+</g>
+<g class="combo combopos-5">
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
+<text x="490" y="212" class="combo tap">SLEEP</text>
 </g>
 </g>
 </g>
@@ -2427,6 +2523,22 @@ rect.held, rect.combo.held {
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
 <text x="112" y="154" class="combo tap">Gui+Y</text>
+</g>
+<g class="combo combopos-5">
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<path d="M490,212 l-247,-9" class="combo"/>
+<path d="M490,212 l-186,-3" class="combo"/>
+<path d="M490,212 l-123,12" class="combo"/>
+<path d="M490,212 l123,11" class="combo"/>
+<path d="M490,212 l186,-3" class="combo"/>
+<path d="M490,212 l247,-9" class="combo"/>
+<rect rx="6" ry="6" x="476" y="199" width="28" height="26" class="combo"/>
+<text x="490" y="212" class="combo tap">SLEEP</text>
 </g>
 </g>
 </g>

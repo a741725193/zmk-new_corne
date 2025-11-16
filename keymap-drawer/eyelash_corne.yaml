@@ -390,3 +390,5 @@ combos:
 - p: [27, 41]
   k: $$mdi:backspace-reverse-outline$$
   l: [QWERTY]
+- p: [42, 44, 43, 45, 46, 47, 42, 43, 44, 45, 46, 47]
+  k: SLEEP
