@@ -115,7 +115,7 @@
         bh_word_del: bh_word_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LG(LS(LEFT_ARROW))) &kp LG(LS(RIGHT)) &kp BACKSPACE>;
+            bindings = <&kp LC(LG(LS(LEFT_ARROW))) &kp BACKSPACE>;
             label = "BH_WORD_DEL";
         };
     };
@@ -632,6 +632,11 @@
             bindings = <&kp DELETE>;
             key-positions = <27 41>;
             layers = <0>;
+        };
+
+        combo_mac_sleep {
+            bindings = <&kp K_SLEEP>;
+            key-positions = <42 44 43 45 46 47 42 43 44 45 46 47>;
         };
     };
 
