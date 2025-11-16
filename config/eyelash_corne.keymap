@@ -618,7 +618,7 @@
         };
 
         hb_alt {
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&kp LC(SPACE)>;
             key-positions = <22 45>;
             layers = <0>;
         };
