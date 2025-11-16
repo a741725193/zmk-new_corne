@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1400  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100    // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // 10
 
 #define TD_KEYS(name, term_ms, ...) \
     name: behavior_##name { \
