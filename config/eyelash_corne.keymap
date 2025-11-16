@@ -578,7 +578,7 @@
         };
 
         op_alt_f4 {
-            bindings = <&kp LA(F4)>;
+            bindings = <&kp LG(Q)>;
             key-positions = <10 11 12>;
             layers = <0>;
         };
@@ -614,12 +614,6 @@
         esc_asd {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            layers = <0>;
-        };
-
-        ctrl_back {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <45 7>;
             layers = <0>;
         };
 
