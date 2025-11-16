@@ -392,5 +392,5 @@ combos:
   l: [QWERTY]
 - p: [0, 1, 2, 10, 11, 12]
   k: POWER
-- p: [37, 38]
+- p: [23, 24]
   k: Alt+$$mdi:keyboard-space$$

@@ -685,8 +685,8 @@ rect.held, rect.combo.held {
 <text x="490" y="44" class="combo tap">POWER</text>
 </g>
 <g class="combo combopos-16">
-<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -1006,8 +1006,8 @@ rect.held, rect.combo.held {
 <text x="490" y="44" class="combo tap">POWER</text>
 </g>
 <g class="combo combopos-7">
-<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -1315,8 +1315,8 @@ rect.held, rect.combo.held {
 <text x="490" y="44" class="combo tap">POWER</text>
 </g>
 <g class="combo combopos-7">
-<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -1623,8 +1623,8 @@ rect.held, rect.combo.held {
 <text x="490" y="44" class="combo tap">POWER</text>
 </g>
 <g class="combo combopos-7">
-<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -1926,8 +1926,8 @@ rect.held, rect.combo.held {
 <text x="490" y="44" class="combo tap">POWER</text>
 </g>
 <g class="combo combopos-7">
-<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -2223,8 +2223,8 @@ rect.held, rect.combo.held {
 <text x="490" y="44" class="combo tap">POWER</text>
 </g>
 <g class="combo combopos-6">
-<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
@@ -2523,8 +2523,8 @@ rect.held, rect.combo.held {
 <text x="490" y="44" class="combo tap">POWER</text>
 </g>
 <g class="combo combopos-6">
-<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="134" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 </g>
 </g>
