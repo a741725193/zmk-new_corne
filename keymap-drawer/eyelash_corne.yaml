@@ -302,9 +302,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Sft+$$mdi:keyboard-esc$$
+  - Gui+$$mdi:keyboard-space$$
   - Gui+$$mdi:arrow-up-bold$$
-  - Gui+Sft+S
+  - Gui+Sft+Ctl+4
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - $$mdi:volume-off$$
