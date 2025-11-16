@@ -29,7 +29,7 @@ layers:
   - {t: L, h: '$$mdi:menu-right$$'}
   - {t: ;, h: '&bh_word_del', s: ':'}
   - {t: '''', h: '&macro_all_del', s: '"'}
-  - $$mdi:apple-keyboard-control$$
+  - Gui+$$mdi:apple-keyboard-control$$
   - {t: Z, h: HOME}
   - {t: X, h: END}
   - {t: C, h: PG UP}
