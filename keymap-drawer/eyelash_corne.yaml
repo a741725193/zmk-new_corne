@@ -383,7 +383,7 @@ combos:
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
 - p: [22, 45]
-  k: Gui+$$mdi:keyboard-space$$
+  k: Ctl+$$mdi:keyboard-space$$
   l: [QWERTY]
 - p: [29, 30]
   k: Gui+Y
