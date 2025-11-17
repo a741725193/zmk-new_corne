@@ -173,7 +173,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <43 16>;
+            key-positions = <16 44>;
         };
 
         escape-left {
