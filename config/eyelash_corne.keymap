@@ -306,7 +306,7 @@
         layer_5 {
 display-name = "test1";
             bindings = <
-&trans  &trans     &kp DOLLAR  &kp UP          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUDs  &trans
+&trans  &trans     &kp DOLLAR  &kp UP          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans
 &trans  &kp LC(A)  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT             &trans                               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD   &trans
 &trans  &kp LC(Z)  &kp LC(X)   &kp LC(C)       &kp LC(V)             &trans                 &kp C_MUTE                    &mmv MOVE_DOWN                   &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans           &trans            &trans
                                &trans          &trans                &trans                                                                                &trans           &trans           &trans
