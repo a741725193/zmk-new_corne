@@ -103,9 +103,9 @@ macros {
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp TAB    &as Q  &as W  &as E     &as R  &as T                               &kp UP                &as Y        &as U  &as I      &as O    &as P     &kp BSPC
+&td0       &as A  &as S  &as D     &as F  &as G                     &kp LEFT  &kp ENTER  &kp RIGHT  &as H        &as J  &as K      &as L    &as SEMI  &kp SQT
+&kp LCTRL  &as Z  &as X  &as C     &as V  &as B        &kp SPACE              &kp DOWN              &as N        &as M  &as COMMA  &as DOT  &as FSLH  &kp ESC
                          &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
