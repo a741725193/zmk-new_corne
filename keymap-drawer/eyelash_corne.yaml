@@ -257,7 +257,7 @@ layers:
   - RGB EFR
   - RGB EFF
   - RGB HUI
-  - RGB HUDs
+  - RGB HUD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+A
