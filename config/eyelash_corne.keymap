@@ -158,27 +158,27 @@
 
         delete-left {
             bindings = <&kp DELETE>;
-            key-positions = <16 15>;
+            key-positions = <16 17>;
         };
 
         delete-right {
             bindings = <&kp DELETE>;
-            key-positions = <20 19>;
+            key-positions = <23 24>;
         };
 
         enter-left {
             bindings = <&kp ENTER>;
-            key-positions = <38 16>;
+            key-positions = <44 17>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <15 37>;
+            key-positions = <43 16>;
         };
 
         escape-left {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 38>;
+            key-positions = <1 44>;
         };
     };
 
@@ -282,10 +282,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4        &kp F5                                          &mmv MOVE_UP                      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans         &kp PRINTSCREEN  &kp F11
-&trans  &kp F5   &kp F6   &kp F7   &kp F8        &out OUT_USB                    &mmv MOVE_LEFT  &mkp LCLK        &mmv MOVE_RIGHT  &kp DOLLAR     &kp PRCNT     &kp CARET             &trans         &kp PAGE_UP      &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &out OUT_BLE  &kp C_MUTE    &mmv MOVE_DOWN                    &kp EXCLAMATION                   &kp AT_SIGN    &kp HASH      &trans                &kp PAGE_DOWN  &kp PAUSE_BREAK  &trans
-                          &trans   &trans        &trans                                                                            &trans         &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp F5                                      &mmv MOVE_UP                     &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans  &kp PRINTSCREEN  &kp F11
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &out OUT_USB                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp DOLLAR       &kp PRCNT     &kp CARET             &trans  &kp PAGE_UP      &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &out OUT_BLE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans  &kp PAGE_DOWN    &kp PAUSE_BREAK
+                         &trans   &trans   &trans                                                                       &trans           &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -304,11 +304,11 @@
         };
 
         layer_5 {
-display-name = "test1";
+            display-name = "test1";
             bindings = <
 &trans  &trans     &kp DOLLAR  &kp UP          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans
-&trans  &kp LC(A)  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT             &trans                               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD   &trans
-&trans  &kp LC(Z)  &kp LC(X)   &kp LC(C)       &kp LC(V)             &trans                 &kp C_MUTE                    &mmv MOVE_DOWN                   &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans           &trans            &trans
+&trans  &kp LC(A)  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT             &trans                               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &trans
+&trans  &kp LC(Z)  &kp LC(X)   &kp LC(C)       &kp LC(V)             &trans                 &kp C_MUTE                    &mmv MOVE_DOWN                   &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans           &trans           &trans
                                &trans          &trans                &trans                                                                                &trans           &trans           &trans
             >;
 
@@ -316,7 +316,7 @@ display-name = "test1";
         };
 
         layer_6 {
-display-name = "test2";
+            display-name = "test2";
             bindings = <
 &trans  &trans     &trans     &trans     &trans     &kp LC(Y)                                &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(A)  &trans     &trans     &kp LC(F)  &trans                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
