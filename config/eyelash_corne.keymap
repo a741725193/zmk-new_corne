@@ -40,9 +40,99 @@ as_ht: autoshift_hold_tap {
   };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
+            label = "TD0";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        hm: hm {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        as_ht: autoshift_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTOSHIFT_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+            bindings = <&shifted>, <&kp>;
+
+            flavor = "tap-preferred";
+        };
+
+        tdshiftwin: tdshiftwin {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDSHIFTWIN";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp LEFT_WIN>;
+        };
+
+        tdaltlayer3: tdaltlayer3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDALTLAYER3";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT>, <&mo 3>;
+        };
+
+        tdlayer4: tdlayer4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDLAYER4";
+            #binding-cells = <0>;
+            bindings = <&trans>, <&tog 4>;
+        };
+
+        tdbl: tdbl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBL";
+            #binding-cells = <0>;
+            bindings = <&none>, <&bootloader>;
+        };
+
+        tdblueclear: tdblueclear {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBLUECLEAR";
+            #binding-cells = <0>;
+            bindings = <&trans>, <&bt BT_CLR_ALL>;
+        };
+
+        tdbt2: tdbt2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBT2";
+            #binding-cells = <0>;
+            bindings = <&trans>, <&bt BT_SEL 2>;
+        };
+
+        tdbt1: tdbt1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBT1";
+            #binding-cells = <0>;
+            bindings = <&trans>, <&bt BT_SEL 1>;
+        };
+
+        tdbt0: tdbt0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBT0";
+            #binding-cells = <0>;
+            bindings = <&trans>, <&bt BT_SEL 0>;
+        };
+
+        tp_pw_bl: tp_pw_bl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_PW_BL";
+            #binding-cells = <0>;
+            bindings = <&password3VPN>, <&bootloader>;
+        };
+
+        tdbt3: tdbt3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDBT3";
+            #binding-cells = <0>;
+            bindings = <&none>, <&bt BT_SEL 3>;
         };
     };
 
@@ -94,8 +184,72 @@ macros {
         <&macro_param_1to2>,
         <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
     };
+        password0: PASSWORD1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N3 &kp I &kp N4 &kp N3 &kp N1 &kp S &kp U &kp M &kp M &kp E &kp R &kp LS(R) &kp LS(O) &kp LS(S) &kp LS(E)>;
+            label = "PASSWORD1";
+            wait-ms = <3>;
+        };
+
+        password1: password2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N3 &kp I &kp N4 &kp N3 &kp N1 &kp W &kp I &kp L &kp D &kp LS(L) &kp LS(O) &kp LS(V) &kp LS(E)>;
+            label = "PASSWORD2";
+            wait-ms = <3>;
+        };
+
+        password2: password3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp N1 &kp N3 &kp I &kp N4 &kp N3 &kp N1 &kp LS(S) &kp LS(U) &kp LS(M) &kp LS(M) &kp LS(E) &kp LS(R) &kp R &kp O &kp S &kp E>;
+            label = "PASSWORD3";
+            wait-ms = <3>;
+        };
+
+        password3VPN: password3VPN {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N3 &kp EXCL &kp N4 &kp N3 &kp N1 &kp W &kp I &kp L &kp D &kp LS(L) &kp LS(O) &kp LS(V) &kp LS(E)>;
+            label = "PASSWORD3VPN";
+        };
   };
 
+    combos {
+        compatible = "zmk,combos";
+
+        bsp-left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <4 3>;
+            timeout-ms = <30>;
+        };
+
+        delete-left {
+            bindings = <&kp DELETE>;
+            key-positions = <16 15>;
+        };
+
+        delete-right {
+            bindings = <&kp DELETE>;
+            key-positions = <20 19>;
+        };
+
+        enter-left {
+            bindings = <&kp ENTER>;
+            key-positions = <38 16>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 37>;
+        };
+
+        escape-left {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 38>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
