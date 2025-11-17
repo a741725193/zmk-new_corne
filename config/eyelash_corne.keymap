@@ -258,10 +258,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp PRINTSCREEN  &kp DOLLAR  &kp UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &as N7  &as N8  &as N9      &as MINUS  &as EQUAL      &kp BSPC
-&trans  &trans           &kp LEFT    &kp DOWN  &kp RIGHT             &tdlayer4                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &as N4  &as N5  &as N6      &kp PLUS   &trans         &kp PG_UP
-&trans  &tdblueclear     &tdbt0      &tdbt1    &tdbt2                &tdbt3                 &kp C_MUTE                    &mmv MOVE_DOWN                   &as N1  &as N2  &as N3      &kp ASTRK  &kp KP_DIVIDE  &kp PG_DN
-                                     &trans    &trans                &trans                                                                                &trans  &as N0  &kp KP_DOT
+&trans      &kp PRINTSCREEN  &kp DOLLAR  &kp UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &as N7  &as N8  &as N9      &as MINUS  &as EQUAL      &kp BSPC
+&caps_word  &trans           &kp LEFT    &kp DOWN  &kp RIGHT             &tdlayer4                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &as N4  &as N5  &as N6      &kp PLUS   &trans         &kp PG_UP
+&trans      &tdblueclear     &tdbt0      &tdbt1    &tdbt2                &tdbt3                 &kp C_MUTE                    &mmv MOVE_DOWN                   &as N1  &as N2  &as N3      &kp ASTRK  &kp KP_DIVIDE  &kp PG_DN
+                                         &trans    &trans                &trans                                                                                &trans  &as N0  &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -282,10 +282,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4        &kp F5                                          &mmv MOVE_UP                      &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans         &kp PRINTSCREEN  &kp F11
-&trans  &kp F5   &kp F6   &kp F7   &kp F8        &out OUT_USB                    &mmv MOVE_LEFT  &mkp LCLK        &mmv MOVE_RIGHT  &kp DOLLAR     &kp PRCNT     &kp CARET             &trans         &kp PAGE_UP      &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &out OUT_BLE  &kp C_MUTE    &mmv MOVE_DOWN                    &kp EXCLAMATION                   &kp AT_SIGN    &kp HASH      &trans                &kp PAGE_DOWN  &kp PAUSE_BREAK  &trans
-                          &trans   &trans        &trans                                                                            &trans         &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp F5                                      &mmv MOVE_UP                     &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans  &kp PRINTSCREEN  &kp F11
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &out OUT_USB                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp DOLLAR       &kp PRCNT     &kp CARET             &trans  &kp PAGE_UP      &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &out OUT_BLE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &trans  &kp PAGE_DOWN    &kp PAUSE_BREAK
+                         &trans   &trans   &trans                                                                       &trans           &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
