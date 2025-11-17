@@ -348,13 +348,13 @@ combos:
   k: '&soft_off'
 - p: [4, 3]
   k: {t: '$$mdi:backspace$$', type: backspace}
-- p: [16, 15]
+- p: [16, 17]
   k: $$mdi:backspace-reverse-outline$$
-- p: [20, 19]
+- p: [23, 24]
   k: $$mdi:backspace-reverse-outline$$
-- p: [38, 16]
+- p: [44, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [15, 37]
+- p: [43, 16]
   k: $$mdi:keyboard-tab$$
-- p: [1, 38]
+- p: [1, 44]
   k: $$mdi:keyboard-esc$$
