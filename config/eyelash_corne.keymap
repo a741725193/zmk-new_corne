@@ -30,13 +30,6 @@
 
 / {
     behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD0";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
-
         hm: hm {
             compatible = "zmk,behavior-hold-tap";
             label = "HM";
@@ -125,6 +118,13 @@
             label = "TDBT3";
             #binding-cells = <0>;
             bindings = <&none>, <&bt BT_SEL 3>;
+        };
+
+        tdps: tdps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDPS";
+            #binding-cells = <0>;
+            bindings = <&trans>, <&password0>;
         };
     };
 
@@ -247,19 +247,19 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &as Q  &as W  &as E        &as R                  &as T                               &kp UP                &as Y        &as U          &as I         &as O    &as P     &kp BSPC
-&td0       &as A  &as S  &as D        &as F                  &as G                     &kp LEFT  &kp ENTER  &kp RIGHT  &as H        &as J          &as K         &as L    &as SEMI  &kp SQT
+&none      &as A  &as S  &as D        &as F                  &as G                     &kp LEFT  &kp ENTER  &kp RIGHT  &as H        &as J          &as K         &as L    &as SEMI  &kp SQT
 &kp LCTRL  &as Z  &as X  &as C        &as V                  &as B        &kp SPACE              &kp DOWN              &as N        &as M          &as COMMA     &as DOT  &as FSLH  &kp ESC
                          &tdshiftwin  &mt LEFT_CONTROL CAPS  &lt 1 SPACE                                               &lt 2 ENTER  &kp BACKSPACE  &tdaltlayer3
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         lower_layer {
             display-name = "NUMBER";
             bindings = <
 &trans  &kp PRINTSCREEN  &kp DOLLAR  &kp UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &as N7  &as N8  &as N9      &as MINUS  &as EQUAL      &kp BSPC
-&trans  &trans           &kp LEFT    &kp DOWN  &kp RIGHT             &tdlayer4                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &as N4  &as N5  &as N6      &kp PLUS   &trans         &kp PG_UP
+&trans  &tdps            &kp LEFT    &kp DOWN  &kp RIGHT             &tdlayer4                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &as N4  &as N5  &as N6      &kp PLUS   &trans         &kp PG_UP
 &trans  &tdblueclear     &tdbt0      &tdbt1    &tdbt2                &tdbt3                 &kp C_MUTE                    &mmv MOVE_DOWN                   &as N1  &as N2  &as N3      &kp ASTRK  &kp KP_DIVIDE  &kp PG_DN
                                      &trans    &trans                &trans                                                                                &trans  &as N0  &kp KP_DOT
             >;
