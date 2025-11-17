@@ -36,7 +36,7 @@ as_ht: autoshift_hold_tap {
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       bindings = <&shifted>, <&kp>;
-    };
+   
   };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
