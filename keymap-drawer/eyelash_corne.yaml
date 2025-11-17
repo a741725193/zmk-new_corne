@@ -14,7 +14,7 @@ layers:
   - '&as O'
   - '&as P'
   - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&as A'
   - '&as S'
   - '&as D'
@@ -64,7 +64,7 @@ layers:
   - '&as EQUAL'
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&tdps'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
