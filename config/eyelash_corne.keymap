@@ -258,10 +258,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&trans  &kp PRINTSCREEN  &kp DOLLAR  &kp UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                          &mmv MOVE_UP                      &as N7  &as N8  &as N9      &as MINUS  &as EQUAL    &kp BSPC
+&trans  &trans           &kp LEFT    &kp DOWN  &kp RIGHT             &tdlayer4                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT   &as N4  &as N5  &as N6      &kp PLUS   &trans    &kp PG_UP
+&trans   &tdblueclear     &tdbt0      &tdbt1    &tdbt2                &tdbt3   &kp C_MUTE                    &mmv MOVE_DOWN                   &as N1  &as N2  &as N3      &kp ASTRK  &kp KP_DIVIDE     &kp PG_DN
+                                         &trans        &trans        &trans                                                                          &trans  &as N0  &kp KP_DOT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -270,10 +270,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&trans  &as N1         &as N2             &as N3        &as N4            &as N5                          &mmv MOVE_UP                      &kp TILDE        &kp GRAVE  &kp UP    &as MINUS  &as EQUAL  &kp BSPC
+&trans  &kp SEMICOLON  &kp DOUBLE_QUOTES  &kp QUESTION  &as LEFT_BRACKET  &as RIGHT_BRACKET            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp UNDERSCORE   &kp LEFT   &kp DOWN  &kp RIGHT  &kp HOME  &kp GRAVE
+&trans  &kp COLON      &kp SQT            &kp SLASH     &kp BACKSLASH     &kp PIPE                    &mmv MOVE_DOWN                  &kp EXCLAMATION  &kp CARET  &kp LBRC  &kp RBRC   &kp END   &kp TILDE
+                                     &trans        &trans            &trans                                                      &trans           &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
