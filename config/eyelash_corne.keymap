@@ -150,7 +150,7 @@
             key-positions = <1 15 29>;
         };
 
- bsp-left {
+        bsp-left {
             bindings = <&kp BACKSPACE>;
             key-positions = <4 3>;
             timeout-ms = <30>;
@@ -181,32 +181,33 @@
             key-positions = <1 38>;
         };
     };
-macros {
-    shifted: macro_shifted_kp {
-      #binding-cells = <1>;
-      label = "MACRO_SHIFTED_KP";
-      compatible = "zmk,behavior-macro-one-param";
-      bindings =
-        <&macro_press &kp LSHFT>,
-        <&macro_param_1to1 &macro_tap &kp MACRO_PLACEHOLDER>,
-        <&macro_release &kp LSHFT>;
-    };
 
-    as: autoshift {
-      compatible = "zmk,behavior-macro-one-param";
-      #binding-cells = <1>;
-      label = "AUTOSHIFT_KP";
-      bindings =
-        <&macro_press>,
-        <&macro_param_1to1>,
-        <&macro_param_1to2>,
-        <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
-        <&macro_pause_for_release>,
-        <&macro_release>,
-        <&macro_param_1to1>,
-        <&macro_param_1to2>,
-        <&as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
-    };
+    macros {
+        shifted: macro_shifted_kp {
+            #binding-cells = <1>;
+            label = "MACRO_SHIFTED_KP";
+            compatible = "zmk,behavior-macro-one-param";
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp LSHFT>;
+        };
+
+        as: autoshift {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            label = "AUTOSHIFT_KP";
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
+        };
+
         password0: PASSWORD1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -237,9 +238,7 @@ macros {
             bindings = <&kp N1 &kp N3 &kp EXCL &kp N4 &kp N3 &kp N1 &kp W &kp I &kp L &kp D &kp LS(L) &kp LS(O) &kp LS(V) &kp LS(E)>;
             label = "PASSWORD3VPN";
         };
-  };
-
-
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -247,14 +246,13 @@ macros {
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &as Q  &as W  &as E     &as R  &as T                               &kp UP                &as Y        &as U  &as I      &as O    &as P     &kp BSPC
-&td0       &as A  &as S  &as D     &as F  &as G                     &kp LEFT  &kp ENTER  &kp RIGHT  &as H        &as J  &as K      &as L    &as SEMI  &kp SQT
-&kp LCTRL  &as Z  &as X  &as C     &as V  &as B        &kp SPACE              &kp DOWN              &as N        &as M  &as COMMA  &as DOT  &as FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+&kp TAB    &as Q  &as W  &as E        &as R                  &as T                               &kp UP                &as Y        &as U          &as I         &as O    &as P     &kp BSPC
+&td0       &as A  &as S  &as D        &as F                  &as G                     &kp LEFT  &kp ENTER  &kp RIGHT  &as H        &as J          &as K         &as L    &as SEMI  &kp SQT
+&kp LCTRL  &as Z  &as X  &as C        &as V                  &as B        &kp SPACE              &kp DOWN              &as N        &as M          &as COMMA     &as DOT  &as FSLH  &kp ESC
+                         &tdshiftwin  &mt LEFT_CONTROL CAPS  &lt 1 SPACE                                               &lt 2 ENTER  &kp BACKSPACE  &tdaltlayer3
             >;
 
-
-             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         lower_layer {
