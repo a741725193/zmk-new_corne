@@ -30,14 +30,6 @@
 
 / {
     behaviors {
-as_ht: autoshift_hold_tap {
-      compatible = "zmk,behavior-hold-tap";
-      label = "AUTOSHIFT_HOLD_TAP";
-      #binding-cells = <2>;
-      tapping-term-ms = <200>;
-      bindings = <&shifted>, <&kp>;
-   
-  };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD0";
@@ -157,6 +149,37 @@ as_ht: autoshift_hold_tap {
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+ bsp-left {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <4 3>;
+            timeout-ms = <30>;
+        };
+
+        delete-left {
+            bindings = <&kp DELETE>;
+            key-positions = <16 15>;
+        };
+
+        delete-right {
+            bindings = <&kp DELETE>;
+            key-positions = <20 19>;
+        };
+
+        enter-left {
+            bindings = <&kp ENTER>;
+            key-positions = <38 16>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <15 37>;
+        };
+
+        escape-left {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 38>;
+        };
     };
 macros {
     shifted: macro_shifted_kp {
@@ -216,40 +239,7 @@ macros {
         };
   };
 
-    combos {
-        compatible = "zmk,combos";
 
-        bsp-left {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <4 3>;
-            timeout-ms = <30>;
-        };
-
-        delete-left {
-            bindings = <&kp DELETE>;
-            key-positions = <16 15>;
-        };
-
-        delete-right {
-            bindings = <&kp DELETE>;
-            key-positions = <20 19>;
-        };
-
-        enter-left {
-            bindings = <&kp ENTER>;
-            key-positions = <38 16>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <15 37>;
-        };
-
-        escape-left {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 38>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
