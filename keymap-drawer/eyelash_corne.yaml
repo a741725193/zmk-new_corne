@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  QWERTY:
+  0 QWE:
   - $$mdi:keyboard-tab$$
   - '&as Q'
   - '&as W'
@@ -15,7 +15,7 @@ layers:
   - '&as P'
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: A, h: Keypad-left}
+  - {t: A, h: 4 NUM-left}
   - {t: S, s: '$$mdi:apple-keyboard-option$$'}
   - '&as D'
   - '&as F'
@@ -45,11 +45,11 @@ layers:
   - $$mdi:keyboard-esc$$
   - '&tdshiftwin'
   - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: 1 NUM-R}
+  - {t: '$$mdi:keyboard-return$$', h: 2 SYMBOL}
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&tdaltlayer3'
-  NUMBER:
+  1 NUM-R:
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
   - $
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&as N0'
   - KP DOT
-  SYMBOL:
+  2 SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&as N1'
   - '&as N2'
@@ -147,7 +147,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  3 Fn:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Keypad-left:
+  4 NUM-left:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
   - {t: '=', s: +}
@@ -211,7 +211,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Keypad-left, h: toggle, type: held}
+  - {t: 4 NUM-left, h: toggle, type: held}
   - +
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -240,12 +240,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', h: '$$mdi:apple-keyboard-shift$$', s: )}
-  - {t: KP DOT, h: test2}
-  - {t: '$$mdi:keyboard-space$$', h: test1}
+  - {t: KP DOT, h: '6'}
+  - {t: '$$mdi:keyboard-space$$', h: '5 '}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  test1:
+  '5 ':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $
@@ -294,7 +294,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  test2:
+  '6':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
