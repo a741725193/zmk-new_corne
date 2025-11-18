@@ -244,7 +244,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
+            display-name = "0 QWE";
             bindings = <
 &kp TAB    &as Q    &as W           &as E        &as R                  &as T                               &kp UP                &as Y        &as U          &as I         &as O    &as P     &kp BSPC
 &none      &lt 4 A  &hm LEFT_ALT S  &as D        &as F                  &as G                     &kp LEFT  &kp ENTER  &kp RIGHT  &as H        &as J          &as K         &as L    &as SEMI  &kp SQT
@@ -256,7 +256,7 @@
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "1 NUM-R";
             bindings = <
 &trans  &kp PRINTSCREEN  &kp DOLLAR  &kp UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &as N7  &as N8  &as N9      &as MINUS  &as EQUAL      &kp BSPC
 &trans  &tdps            &kp LEFT    &kp DOWN  &kp RIGHT             &tdlayer4                            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &as N4  &as N5  &as N6      &kp PLUS   &trans         &kp PG_UP
@@ -268,7 +268,7 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "2 SYMBOL";
             bindings = <
 &trans  &as N1         &as N2             &as N3        &as N4            &as N5                                           &mmv MOVE_UP                     &kp TILDE        &kp GRAVE  &kp UP    &as MINUS  &as EQUAL  &kp BSPC
 &trans  &kp SEMICOLON  &kp DOUBLE_QUOTES  &kp QUESTION  &as LEFT_BRACKET  &as RIGHT_BRACKET                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp UNDERSCORE   &kp LEFT   &kp DOWN  &kp RIGHT  &kp HOME   &kp GRAVE
@@ -280,7 +280,7 @@
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "3 Fn";
             bindings = <
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp F5                                      &mmv MOVE_UP                     &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &trans  &kp PRINTSCREEN  &kp F11
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &out OUT_USB                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp DOLLAR       &kp PRCNT     &kp CARET             &trans  &kp PAGE_UP      &trans
@@ -292,7 +292,7 @@
         };
 
         layer_4 {
-            display-name = "Keypad-left";
+            display-name = "4 NUM-left";
             bindings = <
 &trans  &kp MINUS     &kp EQUAL      &kp N7             &kp N8        &kp N9                                     &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &tog 4        &kp PLUS       &kp N4             &kp N5        &kp N6                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
@@ -304,7 +304,7 @@
         };
 
         layer_5 {
-            display-name = "test1";
+            display-name = "5 ";
             bindings = <
 &trans  &trans     &kp DOLLAR  &kp UP          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                &mmv MOVE_UP                     &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &trans
 &trans  &kp LC(A)  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT             &trans                               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans           &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &trans
@@ -316,7 +316,7 @@
         };
 
         layer_6 {
-            display-name = "test2";
+            display-name = "6";
             bindings = <
 &trans  &trans     &trans     &trans     &trans     &kp LC(Y)                                &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(A)  &trans     &trans     &kp LC(F)  &trans                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
