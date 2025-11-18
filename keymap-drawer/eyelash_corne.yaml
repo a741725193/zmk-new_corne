@@ -15,8 +15,8 @@ layers:
   - '&as P'
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&as A'
-  - '&as S'
+  - {t: A, h: Keypad-left}
+  - {t: S, s: '$$mdi:apple-keyboard-option$$'}
   - '&as D'
   - '&as F'
   - '&as G'
@@ -211,7 +211,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Keypad-left, h: toggle}
+  - {t: Keypad-left, h: toggle, type: held}
   - +
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -260,7 +260,7 @@ layers:
   - RGB HUD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+A
+  - {t: Ctl+A, type: held}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -309,7 +309,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+A
+  - {t: Ctl+A, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+F
