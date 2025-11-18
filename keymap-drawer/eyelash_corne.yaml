@@ -354,7 +354,7 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [44, 17]
   k: {t: '$$mdi:keyboard-return$$', type: enter}
-- p: [16, 44]
+- p: [16, 43]
   k: $$mdi:keyboard-tab$$
 - p: [1, 44]
   k: $$mdi:keyboard-esc$$
