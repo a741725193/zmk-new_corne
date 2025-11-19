@@ -131,7 +131,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "SCROLL_ENCODER_LEFT";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
 
             tap-ms = <100>;
         };
@@ -148,7 +148,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <50>;
+        tap-ms = <100>;
         label = "scroll_encoder_up";
     };
 
@@ -262,7 +262,7 @@
                                     &tdshiftwin  &mt LEFT_CONTROL CAPS  &lt 1 SPACE                                               &lt 2 ENTER  &kp BACKSPACE  &tdaltlayer3
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         lower_layer {
@@ -274,7 +274,7 @@
                                      &trans    &trans                &trans                                                                                &trans  &as N0  &kp KP_DOT
             >;
 
-            sensor-bindings = <&scroll_encoder_left>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         raise_layer {
