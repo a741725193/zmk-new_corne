@@ -132,6 +132,8 @@
             label = "SCROLL_ENCODER_LEFT";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <100>;
         };
     };
 
@@ -146,7 +148,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <10>;
+        tap-ms = <50>;
         label = "scroll_encoder_up";
     };
 
