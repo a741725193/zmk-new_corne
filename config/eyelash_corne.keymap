@@ -55,11 +55,11 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        app_lt3_del: app_lt3_del {
+        app_lt4_del: app_lt4_del {
             compatible = "zmk,behavior-tap-dance";
-            label = "APP_LT3_DEL";
+            label = "APP_LT4_DEL";
             #binding-cells = <0>;
-            bindings = <&lt 3 K_APPLICATION>, <&kp DELETE>;
+            bindings = <&lt 4 K_APPLICATION>, <&kp DELETE>;
         };
 
         left_kakko: left_kakko {
@@ -102,6 +102,13 @@
             label = "PERI_APO";
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&kp APOS>;
+        };
+
+        q_at: q_at {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Q_AT";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp AT>;
         };
     };
 
@@ -204,10 +211,10 @@
         default_layer {
             display-name = "QLU";
             bindings = <
-&kp AT_SIGN    &kp Q           &kp L           &kp U        &com_col          &peri_apo                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp RS(RG(S))
+&kp AT_SIGN    &q_at           &kp L           &kp U        &com_col          &peri_apo                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp RS(RG(S))
 &left_kakko    &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &mi_pl                       &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &right_kakko
 &kp LA(GRAVE)  &kp Z           &kp X           &kp C        &kp V             &slash     &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp RG(RC(V))
-                                               &kp ESC      &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt3_del
+                                               &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
@@ -235,6 +242,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        ppt {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &ppt_t          &ppt_waku   &ppt_h  &ppt_t  &ppt_v  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &ppt_l  &trans  &ppt_r  &ppt_nuri   &ppt_l  &ppt_b  &ppt_r  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &ppt_b          &ppt_chobj  &ppt_m  &ppt_c  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans      &trans  &trans
+            >;
         };
 
         conf {
