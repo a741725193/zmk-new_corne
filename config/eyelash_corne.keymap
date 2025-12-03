@@ -618,7 +618,7 @@
         };
 
         hb_alt {
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&kp LC(LA(SPACE))>;
             key-positions = <22 45>;
             layers = <0>;
         };
@@ -651,10 +651,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB   &ht_bh LS(Q) Q  &ht_bh LS(W) W     &ht_bh LS(E) E       &ht_bh LS(R) R        &ht_bh LS(T) T                                 &kp UP                &ht_bh LC(SPACE) Y   &ht_bh_mkp MB1 U        &ht_bh_mmv MOVE_UP I    &ht_bh LS(O) O             &ht_bh LS(P) P               &UC_BS
-&td0      &ht_bh LCTRL A  &ht_bh LEFT_ALT S  &ht_bh LEFT_SHIFT D  &ht_bh_msc SCRL_UP F  &ht_bh_msc SCRL_DOWN G               &kp LEFT  &kp ENTER  &kp RIGHT  &ht_bh ENTER H       &ht_bh_mmv MOVE_LEFT J  &ht_bh_mmv MOVE_DOWN K  &ht_bh_mmv MOVE_RIGHT L    &bh_word_del_bh 0 SEMICOLON  &bh_ht_alldel 0 SQT
-&kp LGUI  &ht_bh HOME Z   &ht_bh END X       &ht_bh PG_UP C       &ht_bh PAGE_DOWN V    &ht_bh DELETE B         &kp SPACE              &kp DOWN              &ht_bh LEFT_ARROW N  &ht_bh DOWN_ARROW M     &ht_bh UP_ARROW COMMA   &ht_bh RIGHT_ARROW PERIOD  &ht_bh QUESTION SLASH        &mo 6
-                                             &alt_gui             &ht_mo1_ltog3 1 2     &lt 2 SPACE                                                          &lt 2 BACKSPACE      &lt 3 ENTER             &kp LC(SPACE)
+&kp TAB   &ht_bh LS(Q) Q  &ht_bh LS(W) W     &ht_bh LS(E) E       &ht_bh LS(R) R        &ht_bh LS(T) T                                 &kp UP                &ht_bh LC(LA(SPACE)) Y  &ht_bh_mkp MB1 U        &ht_bh_mmv MOVE_UP I    &ht_bh LS(O) O             &ht_bh LS(P) P               &UC_BS
+&td0      &ht_bh LCTRL A  &ht_bh LEFT_ALT S  &ht_bh LEFT_SHIFT D  &ht_bh_msc SCRL_UP F  &ht_bh_msc SCRL_DOWN G               &kp LEFT  &kp ENTER  &kp RIGHT  &ht_bh ENTER H          &ht_bh_mmv MOVE_LEFT J  &ht_bh_mmv MOVE_DOWN K  &ht_bh_mmv MOVE_RIGHT L    &bh_word_del_bh 0 SEMICOLON  &bh_ht_alldel 0 SQT
+&kp LGUI  &ht_bh HOME Z   &ht_bh END X       &ht_bh PG_UP C       &ht_bh PAGE_DOWN V    &ht_bh DELETE B         &kp SPACE              &kp DOWN              &ht_bh LEFT_ARROW N     &ht_bh DOWN_ARROW M     &ht_bh UP_ARROW COMMA   &ht_bh RIGHT_ARROW PERIOD  &ht_bh QUESTION SLASH        &mo 6
+                                             &alt_gui             &ht_mo1_ltog3 1 2     &lt 2 SPACE                                                          &lt 2 BACKSPACE         &lt 3 ENTER             &kp LC(SPACE)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
