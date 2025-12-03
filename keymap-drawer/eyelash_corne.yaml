@@ -8,7 +8,7 @@ layers:
   - {t: R, h: Sft+R}
   - {t: T, h: Sft+T}
   - $$mdi:arrow-up-bold$$
-  - {t: Y, h: 'Ctl+Alt+$$mdi:keyboard-space$$'}
+  - {t: Y, h: 'Alt+$$mdi:keyboard-space$$'}
   - {t: U, h: '&mkp MB1'}
   - {t: I, h: '$$mdi:menu-up$$'}
   - {t: O, h: Sft+O}
@@ -383,7 +383,7 @@ combos:
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
 - p: [22, 45]
-  k: Ctl+Alt+$$mdi:keyboard-space$$
+  k: Alt+$$mdi:keyboard-space$$
   l: [QWERTY]
 - p: [29, 30]
   k: Gui+Y
