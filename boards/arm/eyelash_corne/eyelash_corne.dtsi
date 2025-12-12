@@ -23,7 +23,7 @@
         zmk,kscan = &kscan0;
         zmk,battery = &vbatt;
         zmk,underglow = &led_strip;
-        zmk,physical-layout = &default_layout;
+      //  zmk,physical-layout = &default_layout;
         zmk,backlight = &backlight;
     };
 
