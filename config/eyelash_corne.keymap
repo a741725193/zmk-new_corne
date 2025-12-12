@@ -69,10 +69,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&trans &trans &kp TAB    &upleft         &mmv MOVE_UP    &upright         &mmv MOVE_UP    &upright                                &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC                  &trans           &trans 
-&trans &trans &td0       &mmv MOVE_LEFT  &kp S           &mmv MOVE_RIGHT  &upleft         &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT                   &trans          &trans  
-&trans &trans &kp LCTRL  &downleft       &mmv MOVE_DOWN  &downright       &mmv MOVE_LEFT  &downright       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC                   &trans           &trans 
-                                           &kp LGUI         &downleft       &mmv MOVE_DOWN                                                &lt 3 ENTER  &mo 2  &kp RALT                                                         
+&trans &trans &kp TAB    &trans         &mmv MOVE_UP    &trans        &mmv MOVE_UP    &upright                                &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC                  &trans           &trans 
+&trans &trans &td0       &mmv MOVE_LEFT  &kp S           &mmv MOVE_RIGHT  &trans        &mmv MOVE_RIGHT               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT                   &trans          &trans  
+&trans &trans &kp LCTRL  &trans       &mmv MOVE_DOWN  &trans       &mmv MOVE_LEFT  &downright       &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC                   &trans           &trans 
+                                           &kp LGUI         &trans       &mmv MOVE_DOWN                                                &lt 3 ENTER  &mo 2  &kp RALT                                                         
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
