@@ -66,6 +66,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_release>,
+                <&mmv MOVE_UP &mmv MOVE_DOWN &mmv MOVE_LEFT &mmv MOVE_RIGHT>,
                 <&macro_press>,
                 <&mmv MOVE_LEFT &mmv MOVE_UP>,
                 <&macro_pause_for_release>,
@@ -83,7 +85,8 @@
                 <&mmv MOVE_RIGHT &mmv MOVE_UP>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mmv MOVE_RIGHT &mmv MOVE_UP>;
+                <&mmv MOVE_RIGHT &mmv MOVE_UP>,
+                <&macro_release>;
 
             label = "UPRIGHT";
         };
@@ -96,7 +99,8 @@
                 <&mmv MOVE_DOWN &mmv MOVE_LEFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mmv MOVE_DOWN &mmv MOVE_LEFT>;
+                <&mmv MOVE_DOWN &mmv MOVE_LEFT>,
+                <&macro_release>;
 
             label = "DOWNLEFT";
         };
