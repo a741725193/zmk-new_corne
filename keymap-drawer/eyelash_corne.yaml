@@ -6,7 +6,7 @@ layers:
   - W
   - E
   - R
-  - T
+  - '&upleft'
   - $$mdi:arrow-up-bold$$
   - Y
   - U
