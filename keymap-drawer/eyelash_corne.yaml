@@ -5,7 +5,7 @@ layers:
   - Q
   - W
   - E
-  - R
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&upleft'
   - $$mdi:arrow-up-bold$$
   - Y
@@ -18,8 +18,8 @@ layers:
   - A
   - S
   - D
-  - F
-  - G
+  - '&upleft'
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
@@ -33,8 +33,8 @@ layers:
   - Z
   - X
   - C
-  - V
-  - B
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&downright'
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - N
@@ -44,8 +44,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
-  - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
+  - '&downleft'
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - SYMBOL
   - $$mdi:apple-keyboard-option$$
@@ -93,7 +93,7 @@ layers:
   - END
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - INS
   - $$mdi:backspace-reverse-outline$$
@@ -192,8 +192,8 @@ layers:
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
