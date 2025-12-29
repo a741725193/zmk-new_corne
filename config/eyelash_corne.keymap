@@ -267,8 +267,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LANGUAGE_2>,
-                <&macro_wait_time 75>,
                 <&kp LA(I)>,
                 <&macro_wait_time 75>,
                 <&kp LS(Y)>,
@@ -281,12 +279,7 @@
         sp_font_sl: sp_font_sl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LANGUAGE_2>,
-                <&macro_wait_time 75>,
-                <&kp LA(I)>,
-                <&macro_wait_time 75>,
-                <&kp C>;
+            bindings = <&kp LA(I)>, <&macro_wait_time 75>, <&kp C>;
 
             label = "SP_FONT_SL";
         };
