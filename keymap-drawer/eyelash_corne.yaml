@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&app_lt4_del'
   left:
-  - '&ppt_l'
+  - {t: '$$mdi:transfer$$', type: trans}
   - '#'
   - $
   - $$mdi:arrow-up-bold$$
@@ -62,8 +62,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - '&slash'
-  - '&ppt_r'
-  - '&ppt_t'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '!', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
@@ -77,21 +77,21 @@ layers:
   - {t: '5', h: '$$mdi:apple-keyboard-control$$', s: '%'}
   - {t: '6', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '0', h: RIGHT GUI, s: )}
-  - '&ppt_b'
-  - '&ppt_h'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&letf_arrow'
   - '&r_arrow'
   - '&'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
   - '&ppt_b'
   - '&peri_apo'
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - '3'
   - '&mi_pl'
-  - '&ppt_v'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -99,7 +99,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   right:
-  - '&ppt_m'
+  - {t: '$$mdi:transfer$$', type: trans}
   - F11
   - F5
   - F4
@@ -111,8 +111,8 @@ layers:
   - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:keyboard-tab$$
   - HOME
-  - '&ppt_c'
-  - '&ppt_waku'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: F1, h: '$$mdi:apple-keyboard-command$$'}
   - {t: F10, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
@@ -126,8 +126,8 @@ layers:
   - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: END, h: RIGHT GUI}
-  - '&ppt_chobj'
-  - '&ppt_nuri'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F8
@@ -140,7 +140,7 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB3'
   - '&mkp MB2'
   - '&mkp MB1'
@@ -220,9 +220,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:volume-off$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&bl BL_DEC'
   - '&bl BL_CYCLE'
   - RGB TOG
@@ -231,7 +231,7 @@ layers:
   - RGB BRD
   - RGB SPD
   - RGB EFR
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - MUTE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
