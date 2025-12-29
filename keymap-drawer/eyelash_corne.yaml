@@ -29,7 +29,7 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: H, h: RIGHT GUI}
   - '&right_kakko'
-  - {t: Alt+`, s: Alt+~}
+  - '&lang'
   - Z
   - X
   - C
@@ -174,7 +174,7 @@ layers:
   - '&ppt_l'
   - '&ppt_b'
   - '&ppt_r'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&sp_font_d'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -187,8 +187,8 @@ layers:
   - '&ppt_chobj'
   - '&ppt_m'
   - '&ppt_c'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&fc'
+  - '&sp_font_sl'
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
