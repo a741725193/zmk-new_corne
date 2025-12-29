@@ -46,6 +46,51 @@
     };
 
     behaviors {
+        rot_und_zd: rot_und_zd {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ROT_UND_ZD";
+            bindings = <&kp LC(Z)>, <&kp LC(MINUS)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rot_red_zu: rot_red_zu {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ROT_RED_ZU";
+            bindings = <&kp LC(Y)>, <&kp LC(EQUAL)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rot_ur_z: rot_ur_z {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ROT_UR_Z";
+            #sensor-binding-cells = <2>;
+            bindings = <&rot_red_zu>, <&rot_und_zd>;
+        };
+
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            // 追加: スクロールのタップ時間を設定 (20ms)
+
+            tap-ms = <20>;
+        };
+
+        scroll_right_left: behavior_sensor_rotate_mouse_wheel_right_left {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+
+            // 追加: スクロールのタップ時間を設定 (20ms)
+
+            tap-ms = <20>;
+        };
+
         bs_del: bs_del {
             compatible = "zmk,behavior-mod-morph";
             label = "BS_DEL";
