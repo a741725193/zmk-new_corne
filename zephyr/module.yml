@@ -1,3 +1,5 @@
 build:
+  depends:
+    - zmk-driver-azoteq-iqs5xx
   settings:
      board_root: .

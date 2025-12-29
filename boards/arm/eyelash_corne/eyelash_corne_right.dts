@@ -10,3 +10,11 @@
 &default_transform {
     col-offset = <7>;
 };
+
+&i2c1 {
+  status = "okay";
+};
+
+&tps43 {
+  status = "okay";
+};
