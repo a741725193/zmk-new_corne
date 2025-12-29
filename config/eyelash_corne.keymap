@@ -297,28 +297,28 @@
                                              &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         left {
             display-name = "left";
             bindings = <
-&ppt_l  &kp HASH                  &kp DOLLAR               &kp UP_ARROW                 &kp ASTERISK           &kp PERCENT                      &ppt_t            &bs_del    &kp N7                    &kp N8                &kp N9                  &slash            &ppt_r
-&ppt_t  &mt LEFT_GUI EXCLAMATION  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LSHFT RIGHT_ARROW  &kp CARET                &ppt_l  &mkp MB3  &ppt_r  &com_col   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI N0  &ppt_b
-&ppt_h  &trans                    &trans                   &letf_arrow                  &r_arrow               &kp AMPERSAND  &trans            &ppt_b            &peri_apo  &kp N1                    &kp N2                &kp NUMBER_3            &mi_pl            &ppt_v
-                                                           &trans                       &trans                 &trans                                             &trans     &trans                    &trans
+&trans  &kp HASH                  &kp DOLLAR               &kp UP_ARROW                 &kp ASTERISK           &kp PERCENT                              &ppt_t            &bs_del    &kp N7                    &kp N8                &kp N9                  &slash            &trans
+&trans  &mt LEFT_GUI EXCLAMATION  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_CONTROL DOWN_ARROW  &mt LSHFT RIGHT_ARROW  &kp CARET                        &ppt_l  &mkp MB3  &ppt_r  &com_col   &mt RIGHT_SHIFT NUMBER_4  &mt RIGHT_CONTROL N5  &mt RIGHT_ALT NUMBER_6  &mt RIGHT_GUI N0  &trans
+&trans  &trans                    &trans                   &letf_arrow                  &r_arrow               &kp AMPERSAND  &kp LEFT_SHIFT            &ppt_b            &peri_apo  &kp N1                    &kp N2                &kp NUMBER_3            &mi_pl            &trans
+                                                           &trans                       &trans                 &trans                                                     &trans     &trans                    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&rot_ur_z 0 0>;
         };
 
         right {
             display-name = "right";
             bindings = <
-&ppt_m     &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &ppt_v            &kp PAGE_UP    &kp RS(RC(TAB))       &kp UP                        &kp RC(TAB)          &kp HOME           &ppt_c
-&ppt_waku  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &ppt_h  &mkp MB3  &ppt_c  &kp PAGE_DOWN  &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &mt RIGHT_GUI END  &ppt_chobj
-&ppt_nuri  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &ppt_m            &kp GRAVE      &mmv MOVE_LEFT        &mmv MOVE_DOWN                &mmv MOVE_UP         &mmv MOVE_RIGHT    &none
-                                              &mkp MB3             &mkp MB2           &mkp MB1                                      &trans         &trans                &trans
+&trans  &kp F11          &kp F5            &kp F4               &kp F12            &kp F9                      &ppt_v            &kp PAGE_UP    &kp RS(RC(TAB))       &kp UP                        &kp RC(TAB)          &kp HOME           &trans
+&trans  &mt LEFT_GUI F1  &mt LEFT_ALT F10  &mt LEFT_CONTROL F6  &mt LEFT_SHIFT F2  &kp F3              &ppt_h  &mkp MB3  &ppt_c  &kp PAGE_DOWN  &mt RIGHT_SHIFT LEFT  &mt RIGHT_CONTROL DOWN_ARROW  &mt RIGHT_ALT RIGHT  &mt RIGHT_GUI END  &trans
+&trans  &trans           &trans            &kp F8               &kp F7             &kp CAPS  &trans            &ppt_m            &kp GRAVE      &mmv MOVE_LEFT        &mmv MOVE_DOWN                &mmv MOVE_UP         &mmv MOVE_RIGHT    &trans
+                                           &mkp MB3             &mkp MB2           &mkp MB1                                      &trans         &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -336,11 +336,13 @@
         conf {
             display-name = "conf";
             bindings = <
-&out OUT_USB     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                     &none         &bt BT_CLR     &bt BT_CLR_ALL  &none              &none            &bl BL_INC     &bl BL_ON
-&out OUT_BLE     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF           &none  &none  &none  &none          &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &bl BL_DEC     &bl BL_CYCLE
-&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &none           &none         &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2      &bt BT_DISC 3    &bt BT_DISC 4  &bl BL_OFF
-                                                   &none            &none            &none                                          &none          &none           &none
+&out OUT_USB     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                          &none         &bt BT_CLR     &bt BT_CLR_ALL  &none          &none          &bl BL_INC     &bl BL_ON
+&out OUT_BLE     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF                &none  &none  &none  &none          &none           &none          &none          &bl BL_DEC     &bl BL_CYCLE
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &kp K_MUTE           &none         &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bl BL_OFF
+                                                   &none            &none            &none                                               &none          &none           &none
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
