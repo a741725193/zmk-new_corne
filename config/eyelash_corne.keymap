@@ -110,6 +110,13 @@
             #binding-cells = <0>;
             bindings = <&kp Q>, <&kp AT>;
         };
+
+        lang: lang {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LANG";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1>, <&kp LANGUAGE_2>;
+        };
     };
 
     macros {
@@ -203,6 +210,34 @@
             bindings = <&kp LEFT_ALT &kp J &kp D &kp E>;
             label = "PPT_CHOBJ";
         };
+
+        fc: fc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(H) &kp F &kp C>;
+            label = "FC";
+        };
+
+        sp_font_d: sp_font {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LA(I)>,
+                <&macro_wait_time 75>,
+                <&kp LS(Y)>,
+                <&macro_wait_time 75>,
+                <&kp C>;
+
+            label = "SP_FONT";
+        };
+
+        sp_font_sl: sp_font_sl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(I)>, <&macro_wait_time 75>, <&kp C>;
+
+            label = "SP_FONT_SL";
+        };
     };
 
     keymap {
@@ -211,10 +246,10 @@
         default_layer {
             display-name = "QLU";
             bindings = <
-&kp AT_SIGN    &q_at           &kp L           &kp U        &com_col          &peri_apo                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp RS(RG(S))
-&left_kakko    &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &mi_pl                       &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &right_kakko
-&kp LA(GRAVE)  &kp Z           &kp X           &kp C        &kp V             &slash     &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp RG(RC(V))
-                                               &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
+&kp AT_SIGN  &q_at           &kp L           &kp U        &com_col          &peri_apo                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp RS(RG(S))
+&left_kakko  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &mi_pl                       &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &right_kakko
+&lang        &kp Z           &kp X           &kp C        &kp V             &slash     &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp RG(RC(V))
+                                             &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
@@ -246,9 +281,9 @@
 
         ppt {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &ppt_t          &ppt_waku   &ppt_h  &ppt_t  &ppt_v  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &ppt_l  &trans  &ppt_r  &ppt_nuri   &ppt_l  &ppt_b  &ppt_r  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &ppt_b          &ppt_chobj  &ppt_m  &ppt_c  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &ppt_t          &ppt_waku   &ppt_h  &ppt_t  &ppt_v  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &ppt_l  &trans  &ppt_r  &ppt_nuri   &ppt_l  &ppt_b  &ppt_r  &sp_font_d   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &ppt_b          &ppt_chobj  &ppt_m  &ppt_c  &fc     &sp_font_sl  &trans
                         &trans  &trans  &trans                                    &trans      &trans  &trans
             >;
         };
