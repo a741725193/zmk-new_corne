@@ -96,6 +96,18 @@
         compatible = "zmk,input-listener";
         device = <&tps43>;
     };
+
+
+
+   	tps43_listener: tps43_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&tps43_split>;
+    };
+
+
+
+
 };
 
 &adc {
