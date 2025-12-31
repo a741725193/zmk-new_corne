@@ -6,9 +6,7 @@
 */
 
 #include "eyelash_corne.dtsi"
-&tps43_listener {
-    status = "okay";
-};
+
 &left_encoder {
     status = "okay";
 };
