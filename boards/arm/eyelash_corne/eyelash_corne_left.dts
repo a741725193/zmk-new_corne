@@ -6,13 +6,8 @@
 */
 
 #include "eyelash_corne.dtsi"
-/{
-
-   	tps43_listener: tps43_listener {
-        compatible = "zmk,input-listener";
-        status = "ok";
-        device = <&tps43_split>;
-    };
+&tps43_listener {
+    status = "okay";
 };
 &left_encoder {
     status = "okay";
