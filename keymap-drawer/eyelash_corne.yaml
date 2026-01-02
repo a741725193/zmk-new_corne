@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QLU:
-  - '@'
+  - Gui+$$mdi:keyboard-space$$
   - '&q_at'
   - L
   - U
