@@ -291,10 +291,10 @@
         default_layer {
             display-name = "QLU";
             bindings = <
-&kp AT_SIGN  &q_at           &kp L           &kp U        &com_col          &peri_apo                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp RS(RG(S))
-&left_kakko  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &mi_pl                       &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &right_kakko
-&lang        &kp Z           &kp X           &kp C        &kp V             &slash     &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp RG(RC(V))
-                                             &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
+&kp LG(SPACE)  &q_at           &kp L           &kp U        &com_col          &peri_apo                                    &mmv MOVE_UP                     &kp F        &kp W         &kp R                &kp Y            &kp P            &kp RS(RG(S))
+&left_kakko    &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LCTRL A  &mt LEFT_SHIFT O  &mi_pl                       &mmv MOVE_LEFT  &mkp MB1        &mmv MOVE_RIGHT  &kp K        &mt RSHIFT T  &mt RIGHT_CONTROL N  &mt RIGHT_ALT S  &mt RIGHT_GUI H  &right_kakko
+&lang          &kp Z           &kp X           &kp C        &kp V             &slash     &kp LEFT_SHIFT                    &mmv MOVE_DOWN                   &kp G        &kp D         &kp M                &kp J            &kp B            &kp RG(RC(V))
+                                               &lt 3 ESC    &bs_del           &lt 1 TAB                                                                     &lt 2 SPACE  &kp ENTER     &app_lt4_del
             >;
 
             sensor-bindings = <&scroll_up_down>;
