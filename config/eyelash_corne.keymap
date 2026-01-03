@@ -29,11 +29,6 @@
     combos {
         compatible = "zmk,combos";
 
-        kana {
-            bindings = <&kp LA(GRAVE)>;
-            key-positions = <36 38>;
-        };
-
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <30 31>;
@@ -161,6 +156,13 @@
             label = "LANG";
             #binding-cells = <0>;
             bindings = <&kp LANG1>, <&kp LANGUAGE_2>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1>, <&kp LANGUAGE_2>;
         };
     };
 
