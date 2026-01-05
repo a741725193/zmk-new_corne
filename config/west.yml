@@ -9,9 +9,9 @@ manifest:
     - name: AYM1607
       url-base: https://github.com/AYM1607
   projects:
-    - name: eyelash_corne
-      url: https://github.com/a741725193/zmk-new_corne
-      revision: main
+    # - name: eyelash_corne
+    #   url: https://github.com/a741725193/zmk-new_corne
+    #   revision: main
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
