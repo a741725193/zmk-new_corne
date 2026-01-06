@@ -8,7 +8,7 @@ layers:
   - {t: R, h: Sft+R}
   - {t: T, h: Sft+T}
   - $$mdi:arrow-up-bold$$
-  - {t: Y, h: 'Alt+$$mdi:keyboard-space$$'}
+  - {t: Y, h: F18}
   - {t: U, h: '&mkp MB1'}
   - {t: I, h: '$$mdi:menu-up$$'}
   - {t: O, h: Sft+O}
@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: mo_mouse_layer}
   - {t: '$$mdi:backspace$$', h: mo_mouse_layer}
   - {t: '$$mdi:keyboard-return$$', h: GO_MOUSE}
-  - Ctl+$$mdi:keyboard-space$$
+  - F18
   number_layer:
   - '&td_grave_'
   - {t: '&td_n1', h: F1}
@@ -383,7 +383,7 @@ combos:
   k: $$mdi:keyboard-esc$$
   l: [QWERTY]
 - p: [22, 45]
-  k: Alt+$$mdi:keyboard-space$$
+  k: F18
   l: [QWERTY]
 - p: [29, 30]
   k: Gui+Y
@@ -392,5 +392,3 @@ combos:
   l: [QWERTY]
 - p: [0, 1, 2, 10, 11, 12]
   k: POWER
-- p: [23, 24]
-  k: Alt+$$mdi:keyboard-space$$
