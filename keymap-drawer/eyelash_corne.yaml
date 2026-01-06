@@ -29,7 +29,7 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: H, h: RIGHT GUI}
   - '&right_kakko'
-  - LANG ZENKAKUHANKAKU
+  - '&lang'
   - Z
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - M
   - J
   - B
-  - Gui+Ctl+V
+  - {t: Gui+/, s: 'Gui+?'}
   - {t: '$$mdi:keyboard-esc$$', h: ppt}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-tab$$', h: left}
