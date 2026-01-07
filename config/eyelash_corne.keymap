@@ -321,10 +321,10 @@
 
         ppt {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &ppt_t          &ppt_waku   &ppt_h  &ppt_t  &ppt_v  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &ppt_l  &trans  &ppt_r  &ppt_nuri   &ppt_l  &ppt_b  &ppt_r  &sp_font_d   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &ppt_b          &ppt_chobj  &ppt_m  &ppt_c  &fc     &sp_font_sl  &trans
-                        &trans  &trans  &trans                                    &trans      &trans  &trans
+&trans  &trans  &trans      &trans             &trans           &trans                    &ppt_t          &ppt_waku   &ppt_h  &ppt_t  &ppt_v  &trans       &trans
+&trans  &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans            &ppt_l  &trans  &ppt_r  &ppt_nuri   &ppt_l  &ppt_b  &ppt_r  &sp_font_d   &trans
+&trans  &trans  &trans      &trans             &trans           &trans  &trans            &ppt_b          &ppt_chobj  &ppt_m  &ppt_c  &fc     &sp_font_sl  &trans
+                            &trans             &trans           &trans                                    &trans      &trans  &trans
             >;
         };
 
