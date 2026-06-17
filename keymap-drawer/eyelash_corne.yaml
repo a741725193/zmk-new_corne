@@ -2,47 +2,47 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   Graphite:
   - {t: '$$mdi:backspace$$', type: backspace}
-  - B
-  - L
-  - D
-  - W
-  - Z
+  - FR B
+  - FR L
+  - FR D
+  - FR W
+  - FR Z
   - $$mdi:pan-up$$
-  - {t: '''', s: '"'}
-  - F
-  - O
-  - U
-  - J
+  - FR SQT
+  - FR F
+  - FR O
+  - FR U
+  - FR J
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:keyboard-esc$$
-  - N
-  - {t: R, h: LEFT WIN}
-  - {t: T, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - G
+  - FR N
+  - {t: FR R, h: LEFT WIN}
+  - {t: FR T, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: FR S, h: '$$mdi:apple-keyboard-control$$'}
+  - FR G
   - $$mdi:pan-left$$
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:pan-right$$
-  - Y
-  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: E, h: LEFT WIN}
-  - I
-  - ':'
+  - FR Y
+  - {t: FR H, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: FR A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: FR E, h: LEFT WIN}
+  - FR I
+  - FR COLON
   - APP
-  - X
-  - M
-  - C
-  - V
-  - Q
+  - FR X
+  - FR M
+  - FR C
+  - FR V
+  - FR Q
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:pan-down$$
-  - K
-  - P
-  - .
-  - {t: ',', s: <}
-  - {t: /, s: '?'}
-  - {t: ;, s: ':'}
+  - FR K
+  - FR P
+  - FR PERIOD
+  - FR COMMA
+  - FR SLASH
+  - FR SEMICOLON
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
   - $$mdi:apple-keyboard-shift$$
@@ -51,11 +51,11 @@ layers:
   - Fn
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '*'
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '-', s: _}
+  - FR ASTERISK
+  - FR 7
+  - FR 8
+  - FR 9
+  - FR MINUS
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-control$$
@@ -64,26 +64,26 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '4'
-  - {t: '0', s: )}
-  - {t: '4', h: LEFT META}
-  - {t: '5', h: '$$mdi:apple-keyboard-option$$', s: '%'}
-  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
-  - +
+  - FR 0
+  - {t: FR 4, h: LEFT META}
+  - {t: FR 5, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: FR 6, h: '$$mdi:apple-keyboard-control$$'}
+  - FR PLUS
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
-  - H
-  - J
-  - K
-  - L
+  - FR H
+  - FR J
+  - FR K
+  - FR L
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - .
-  - '1'
-  - '2'
-  - '3'
-  - {t: ',', s: <}
+  - FR PERIOD
+  - FR 1
+  - FR 2
+  - FR 3
+  - FR COMMA
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
@@ -102,44 +102,44 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - ^
+  - FR LEFT BRACKET
+  - FR RIGHT BRACKET
+  - FR CARET
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
-  - '*'
-  - '?'
-  - $
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '{'
-  - {t: (, h: LEFT WIN}
-  - {t: ), h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '}', h: '$$mdi:apple-keyboard-control$$'}
-  - +
+  - FR GRAVE
+  - FR ASTERISK
+  - FR QUESTION
+  - FR DOLLAR
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&'
-  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
-  - {t: _, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '=', h: LEFT META, s: +}
-  - '!'
+  - FR LEFT BRACE
+  - {t: FR LEFT PARENTHESIS, h: LEFT WIN}
+  - {t: FR RIGHT PARENTHESIS, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: FR RIGHT BRACE, h: '$$mdi:apple-keyboard-control$$'}
+  - FR PLUS
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - FR AMPERSAND
+  - {t: FR MINUS, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: FR UNDERSCORE, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: FR EQUAL, h: LEFT META}
+  - FR EXCLAMATION
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - <
-  - '>'
-  - '@'
+  - FR LESS THAN
+  - FR GREATER THAN
+  - FR AT SIGN
   - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
-  - '%'
-  - '|'
-  - '#'
-  - '~'
-  - {t: \, s: '|'}
+  - FR PERCENT
+  - FR PIPE
+  - FR HASH
+  - FR TILDE
+  - FR BACKSLASH
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
