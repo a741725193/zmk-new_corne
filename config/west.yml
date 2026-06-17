@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: joelspadin
+      url-base: https://github.com/joelspadin
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
@@ -9,6 +11,9 @@ manifest:
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
+      revision: main
+    - name: zmk-locales
+      remote: joelspadin
       revision: main
     - name: zmk
       remote: zmkfirmware

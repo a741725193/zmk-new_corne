@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <locale/keys_fr.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -77,9 +78,9 @@
         default_layer {
             display-name = "Graphite";
             bindings = <
-&kp BACKSPACE  &kp B  &kp L           &kp D           &kp W        &kp Z                                        &msc SCRL_UP                     &kp SQT         &kp F        &kp O           &kp U           &kp J      &kp DEL
-&kp ESC        &kp N  &mt LEFT_WIN R  &mt LEFT_ALT T  &mt LCTRL S  &kp G                        &msc SCRL_LEFT  &mkp RCLK       &msc SCRL_RIGHT  &kp Y           &mt LCTRL H  &mt LEFT_ALT A  &mt LEFT_WIN E  &kp I      &kp COLON
-&kp K_APP      &kp X  &kp M           &kp C           &kp V        &kp Q           &mkp LCLK                    &msc SCRL_DOWN                   &kp K           &kp P        &kp PERIOD      &kp COMMA       &kp SLASH  &kp SEMICOLON
+&kp BACKSPACE  &kp FR_B  &kp FR_L           &kp FR_D           &kp FR_W        &kp FR_Z                                        &msc SCRL_UP                     &kp FR_SQT      &kp FR_F        &kp FR_O           &kp FR_U           &kp FR_J         &kp DEL
+&kp ESC        &kp FR_N  &mt LEFT_WIN FR_R  &mt LEFT_ALT FR_T  &mt LCTRL FR_S  &kp FR_G                        &msc SCRL_LEFT  &mkp RCLK       &msc SCRL_RIGHT  &kp FR_Y        &mt LCTRL FR_H  &mt LEFT_ALT FR_A  &mt LEFT_WIN FR_E  &kp FR_I         &kp FR_COLON
+&kp K_APP      &kp FR_X  &kp FR_M           &kp FR_C           &kp FR_V        &kp FR_Q        &mkp LCLK                    &msc SCRL_DOWN                   &kp FR_K        &kp FR_P        &kp FR_PERIOD      &kp FR_COMMA       &kp FR_SLASH     &kp FR_SEMICOLON
                                       &kp TAB         &lt 1 SPACE  &kp LEFT_SHIFT                                                                &kp LEFT_SHIFT  &lt 2 ENTER  &mo 3
             >;
 
@@ -89,9 +90,9 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp ASTERISK  &kp N7                  &kp N8           &kp N9              &kp MINUS                            &mmv MOVE_UP                     &trans     &kp LCTRL  &kp LEFT_ALT   &kp LEFT_WIN  &trans   &trans
-&mo 4   &kp N0        &mt LEFT_META NUMBER_4  &mt LEFT_ALT N5  &mt LCTRL NUMBER_6  &kp PLUS             &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &mkp RCLK  &kp H      &kp J          &kp K         &kp L    &trans
-&trans  &kp PERIOD    &kp NUMBER_1            &kp NUMBER_2     &kp NUMBER_3        &kp COMMA  &trans                    &mmv MOVE_DOWN                   &mkp LCLK  &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END  &trans
+&trans  &kp FR_ASTERISK  &kp FR_N7              &kp FR_N8          &kp FR_N9          &kp FR_MINUS                         &mmv MOVE_UP                     &trans     &kp LCTRL    &kp LEFT_ALT   &kp LEFT_WIN  &trans   &trans
+&mo 4   &kp FR_N0        &mt LEFT_META FR_N4    &mt LEFT_ALT FR_N5  &mt LCTRL FR_N6   &kp FR_PLUS          &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &mkp RCLK  &kp FR_H     &kp FR_J       &kp FR_K      &kp FR_L  &trans
+&trans  &kp FR_PERIOD    &kp FR_N1              &kp FR_N2          &kp FR_N3          &kp FR_COMMA  &trans                 &mmv MOVE_DOWN                   &mkp LCLK  &kp HOME     &kp PAGE_DOWN  &kp PG_UP     &kp END  &trans
                                               &trans           &trans              &trans                                                                &trans     &trans     &trans
             >;
 
@@ -101,9 +102,9 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &trans          &trans                         &kp LEFT_BRACKET                &kp RIGHT_BRACKET      &kp CARET                          &trans          &kp GRAVE      &kp ASTERISK     &kp QUESTION             &kp DOLLAR           &trans           &trans
-&trans  &kp LEFT_BRACE  &mt LEFT_WIN LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL RIGHT_BRACE  &kp PLUS                   &trans  &trans  &trans  &kp AMPERSAND  &mt LCTRL MINUS  &mt LEFT_ALT UNDERSCORE  &mt LEFT_META EQUAL  &kp EXCLAMATION  &trans
-&trans  &trans          &trans                         &kp LESS_THAN                   &kp GREATER_THAN       &kp AT_SIGN  &kp K_MUTE            &trans          &kp PERCENT    &kp PIPE         &kp HASH                 &kp TILDE            &kp BACKSLASH    &trans
+&trans  &trans             &trans                            &kp FR_LEFT_BRACKET                &kp FR_RIGHT_BRACKET      &kp FR_CARET                          &trans          &kp FR_GRAVE      &kp FR_ASTERISK     &kp FR_QUESTION             &kp FR_DOLLAR           &trans              &trans
+&trans  &kp FR_LEFT_BRACE  &mt LEFT_WIN FR_LEFT_PARENTHESIS  &mt LEFT_ALT FR_RIGHT_PARENTHESIS  &mt LCTRL FR_RIGHT_BRACE  &kp FR_PLUS                   &trans  &trans  &trans  &kp FR_AMPERSAND  &mt LCTRL FR_MINUS  &mt LEFT_ALT FR_UNDERSCORE  &mt LEFT_META FR_EQUAL  &kp FR_EXCLAMATION  &trans
+&trans  &trans             &trans                            &kp FR_LESS_THAN                   &kp FR_GREATER_THAN       &kp FR_AT_SIGN  &kp K_MUTE            &trans          &kp FR_PERCENT    &kp FR_PIPE         &kp FR_HASH                 &kp FR_TILDE            &kp FR_BACKSLASH    &trans
                                                        &trans                          &trans                 &trans                                             &trans         &trans           &trans
             >;
 
