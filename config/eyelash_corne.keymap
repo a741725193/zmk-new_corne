@@ -88,7 +88,7 @@
         rgb_colmak: rgb_colmak {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &rgb_ug RGB_COLOR_HSB(253,97,52)>;
+            bindings = <&to 2 &rgb_ug RGB_COLOR_HSB(253,97,52)>;
             label = "RGB_COLMAK";
         };
 
@@ -103,6 +103,16 @@
     keymap {
         compatible = "zmk,keymap";
 
+        QWERTY {
+            label = "QUERTY";
+            bindings = <
+&lt 3 ESCAPE  &lt 4 Q         &lt 4 W             &lt 3 E             &lt 2 R            &ht C_AC_DESKTOP_SHOW_ALL_WINDOWS T                      &kp UP                       &ht LG(LA(J)) Y  &lt 2 U            &lt 3 I              &lt 4 O              &lt 4 P                  &ht MINUS APOS
+&lt 3 TAB     &ht LEFT_ALT A  &ht LEFT_CONTROL S  &ht LEFT_COMMAND D  &ht LSHIFT F       &lt 2 G                                        &kp LEFT  &kp C_PLAY_PAUSE  &kp RIGHT  &lt 2 H          &ht RIGHT_SHIFT J  &ht RIGHT_COMMAND K  &ht RIGHT_CONTROL L  &ht RIGHT_ALT SEMICOLON  &lt 3 BACKSPACE
+&tog 4        &kp Z           &kp X               &kp C               &kp V              &ht CAPS B                           &trans              &kp DOWN                     &ht CAPSLOCK N   &kp M              &kp COMMA            &kp DOT              &kp FSLH                 &kp ENTER
+                                                  &kp LA(LG(LEFT))    &kp LG(LA(RIGHT))  &lt 2 SPACE                                                                           &lt 2 ENTER      &kp LC(LEFT)       &kp LC(RIGHT)
+            >;
+        };
+
         COLMAK-DH {
             bindings = <
 &lt 3 ESCAPE  &lt 4 Q         &lt 4 W             &lt 3 F             &lt 2 P            &ht C_AC_DESKTOP_SHOW_ALL_WINDOWS B                      &kp UP                       &ht LG(LA(J)) J  &lt 2 L            &lt 3 U              &lt 4 Y              &lt 4 SEMICOLON  &ht MINUS APOS
@@ -112,16 +122,6 @@
             >;
 
             label = "COLMAK-DH";
-        };
-
-        QWERTY {
-            display-name = "QWERTY";
-            bindings = <
-&kp ESCAPE  &kp Q           &kp W               &kp E               &kp R             &kp T                            &kp UP                       &kp Y        &kp U              &kp I                &kp O                &kp P                    &kp MINUS
-&lt 2 TAB   &ht LEFT_ALT A  &ht LEFT_CONTROL S  &ht LEFT_COMMAND D  &ht LEFT_SHIFT F  &kp G                  &kp LEFT  &kp C_PLAY_PAUSE  &kp RIGHT  &kp H        &ht RIGHT_SHIFT J  &ht RIGHT_COMMAND K  &ht RIGHT_CONTROL K  &ht RIGHT_ALT SEMICOLON  &kp ENTER
-&mo 4       &kp Z           &kp X               &kp C               &kp V             &kp B        &trans              &kp DOWN                     &kp N        &kp M              &kp COMMA            &kp DOT              &kp FSLH                 &fun_rgb
-                                                &to 0               &lt 3 SPACE       &lt 2 SPACE                                                   &lt 2 ENTER  &kp BACKSPACE      &fun_rgb
-            >;
         };
 
         NUMBERS {
@@ -153,8 +153,8 @@
             bindings = <
 &ht LC(C) ESCAPE             &ht LG(Q) LG(W)  &ht LG(S) LG(R)  &kp LG(C)                  &kp LG(V)                          &kp LS(LG(NUMBER_4))                      &kp UP                &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp LG(LA(LEFT))  &kp LC(LEFT)    &kp LC(RIGHT)  &kp LA(LG(RIGHT))  &kp LG(TAB)
 &ht LG(LA(J)) RG(BACKSLASH)  &kp LEFT         &kp DOWN_ARROW   &kp UP_ARROW               &kp RIGHT                          &kp LG(LS(N5))                  &kp LEFT  &kp ENTER  &kp RIGHT  &mkp RCLK                          &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT    &kp BACKSPACE
-&rgb_ug RGB_TOG              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp LEFT_COMMAND           &kp LS(LG(F))                      &kp LEFT_CONTROL      &trans              &kp DOWN              &to 0                              &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT    &kp ENTER
-                                                               &ht LC(LEFT) LG(LA(LEFT))  &ht LC(RIGHT_ARROW) LG(LA(RIGHT))  &kp ENTER                                                       &mkp LCLK                          &kp BACKSPACE     &to 0
+&rgb_ug RGB_TOG              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp LEFT_COMMAND           &kp LS(LG(F))                      &kp LEFT_CONTROL      &trans              &kp DOWN              &to 2                              &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT    &kp ENTER
+                                                               &ht LC(LEFT) LG(LA(LEFT))  &ht LC(RIGHT_ARROW) LG(LA(RIGHT))  &kp ENTER                                                       &mkp LCLK                          &kp BACKSPACE     &to 2
             >;
 
             sensor-bindings = <&scroll_encoder>;
