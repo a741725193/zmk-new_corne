@@ -1,5 +1,54 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
+  QUERTY:
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
+  - {t: Q, h: Fun}
+  - {t: W, h: Fun}
+  - {t: E, h: SYMBOL}
+  - {t: R, h: NUMBER}
+  - {t: T, h: AC DESKTOP SHOW ALL WINDOWS}
+  - $$mdi:arrow-up-bold$$
+  - {t: Y, h: Gui+Alt+J}
+  - {t: U, h: NUMBER}
+  - {t: I, h: SYMBOL}
+  - {t: O, h: Fun}
+  - {t: P, h: Fun}
+  - {t: ., h: '-'}
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
+  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: G, h: NUMBER}
+  - $$mdi:arrow-left-bold$$
+  - PLAY PAUSE
+  - $$mdi:arrow-right-bold$$
+  - {t: H, h: NUMBER}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
+  - {t: '$$mdi:backspace$$', h: SYMBOL}
+  - {t: Fun, h: toggle}
+  - Z
+  - X
+  - C
+  - V
+  - {t: B, h: '$$mdi:apple-keyboard-caps$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-down-bold$$
+  - {t: N, h: '$$mdi:apple-keyboard-caps$$'}
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - Alt+Gui+$$mdi:arrow-left-bold$$
+  - Gui+Alt+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
+  - Ctl+$$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
   COLMAK-DH:
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   - {t: Q, h: Fun}
@@ -49,55 +98,6 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: NUMBER}
   - Ctl+$$mdi:arrow-left-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
-  QWERTY:
-  - $$mdi:keyboard-esc$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-up-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: '-', s: _}
-  - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
-  - {t: A, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
-  - G
-  - $$mdi:arrow-left-bold$$
-  - PLAY PAUSE
-  - $$mdi:arrow-right-bold$$
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Fun
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-down-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - '&fun_rgb'
-  - {t: COLMAK-DH, h: toggle}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&fun_rgb'
   NUMBER:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
@@ -112,7 +112,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '''', s: '"'}
-  - {t: RGB TOG, type: held alternate}
+  - RGB TOG
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
@@ -191,7 +191,7 @@ layers:
   - {t: ']', s: '}'}
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -225,7 +225,7 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: RGB TOG, type: held alternate}
+  - RGB TOG
   - RGB BRD
   - RGB BRI
   - $$mdi:apple-keyboard-command$$
@@ -233,7 +233,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
-  - {t: COLMAK-DH, h: toggle}
+  - {t: NUMBER, h: toggle}
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
   - $$mdi:pan-up$$
@@ -244,7 +244,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: COLMAK-DH, h: toggle}
+  - {t: NUMBER, h: toggle}
   '5':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
